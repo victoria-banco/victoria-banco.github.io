@@ -308,10 +308,12 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center 18%;
+    object-position: center 12%;
+    transform: scale(1.22);
+    transform-origin: center 20%;
     transition: transform 0.8s cubic-bezier(0.16,1,0.3,1);
   }
-  .hero-right:hover img { transform: scale(1.025); }
+  .hero-right:hover img { transform: scale(1.26); }
 
   .hero-credential {
     position: absolute;
@@ -417,7 +419,8 @@
     margin-top: 32px;
     display: block;
     object-fit: cover;
-    aspect-ratio: 4/3;
+    object-position: center 15%;
+    aspect-ratio: 3/4;
     filter: brightness(0.97);
   }
 
@@ -445,6 +448,8 @@
 
   .service-item:hover { padding-left: 12px; }
   .service-item:nth-child(even):hover { padding-left: 52px; }
+  .service-item--full { grid-column: 1 / -1; padding-right: 0; border-left: none; max-width: 640px; }
+  .service-item--full:hover { padding-left: 12px; }
 
   .service-number {
     font-family: 'Cormorant Garamond', serif;
@@ -479,6 +484,36 @@
     transition: color 0.35s, transform 0.45s cubic-bezier(0.23,1,0.32,1);
   }
   .service-item:hover .service-arrow { color: var(--gold); transform: translateX(8px); }
+
+  /* ─── SERVICES CTA ─── */
+  .services-cta {
+    margin-top: 72px;
+    border-top: 0.5px solid var(--border);
+    padding-top: 64px;
+    display: flex;
+    justify-content: center;
+  }
+  .services-cta-inner {
+    text-align: center;
+    max-width: 540px;
+  }
+  .services-cta-text {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 16px;
+  }
+  .services-cta-heading {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(28px, 3.5vw, 44px);
+    font-weight: 300;
+    line-height: 1.2;
+    color: var(--ink);
+    margin-bottom: 32px;
+  }
+  .services-cta-heading em { font-style: italic; }
 
   /* ─── ABOUT ─── */
   .about {
@@ -1092,9 +1127,6 @@
   </div>
   <div class="hero-right">
     <img src="victoriahero.png" alt="Victoria Swart">
-    <div class="hero-credential">
-      <p>5 Languages &nbsp;<span>·</span>&nbsp; 5 Countries<br>Based in <span>Rome, Italy</span><br>Working <span>Internationally</span></p>
-    </div>
   </div>
 </section>
 
@@ -1150,8 +1182,8 @@
 
     <div class="service-item">
       <span class="service-number">02</span>
-      <div class="service-title">Copywriting &amp; Communication</div>
-      <p class="service-desc">Language that earns its place. Website copy, brand messaging, PR, editorial content, and founder voice — written to persuade, not simply impress.</p>
+      <div class="service-title">Copywriting, Speaking &amp; MC</div>
+      <p class="service-desc">Language that earns its place — on the page and on the stage. Website copy, brand messaging, PR, editorial content, and founder voice. Also available for keynotes, panel moderation, event hosting, and MC work across five languages.</p>
       <span class="service-arrow">→</span>
     </div>
 
@@ -1183,6 +1215,14 @@
       <span class="service-arrow">→</span>
     </div>
 
+  </div>
+
+  <div class="services-cta reveal">
+    <div class="services-cta-inner">
+      <p class="services-cta-text">Have a project in mind?</p>
+      <h3 class="services-cta-heading">Let's build something<br><em>worth remembering.</em></h3>
+      <a href="#contact" class="btn-primary">Start a Conversation</a>
+    </div>
   </div>
 </section>
 
@@ -1394,11 +1434,7 @@
         <span class="cd-label">Email</span>
         <span class="cd-value">victoria.c.swart@icloud.com</span>
       </div>
-      <div class="contact-detail-row">
-        <span class="cd-label">Phone</span>
-        <span class="cd-value">+39 351 449 9936</span>
-      </div>
-      <div class="contact-detail-row">
+<div class="contact-detail-row">
         <span class="cd-label">Location</span>
         <span class="cd-value">Rome, Italy · Working Internationally</span>
       </div>
