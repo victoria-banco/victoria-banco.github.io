@@ -720,6 +720,21 @@
     transition: color 0.3s;
   }
 
+  .case-study--live { grid-column: 1 / -1; }
+  .cs-live-link {
+    display: inline-block;
+    margin-top: 16px;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gold);
+    text-decoration: none;
+    transition: letter-spacing 0.3s ease;
+  }
+  .cs-live-link:hover { letter-spacing: 0.22em; }
+  .case-study--live .cs-outcome-bar { margin-top: 20px; }
+
   .cs-outcome-bar {
     position: absolute;
     bottom: 0; left: 0;
@@ -1451,6 +1466,16 @@
   </div>
 
   <div class="case-studies reveal">
+
+    <div class="case-study case-study--live" onclick="window.open('http://victoriaswart.com/ladolcevitaluxuryexperience/','_blank')" style="cursor:pointer;grid-column:1/-1;">
+      <span class="cs-number">Featured Project</span>
+      <span class="cs-label">Web Design &amp; Brand Communication · Luxury Travel</span>
+      <div class="cs-title">La Dolce Vita Luxury Experience</div>
+      <p class="cs-desc">Full website concept and brand communication for a curated Italian luxury travel experience. Strategy, copy, and digital presence crafted to speak directly to a discerning, internationally-minded audience.</p>
+      <a href="http://victoriaswart.com/ladolcevitaluxuryexperience/" target="_blank" rel="noopener noreferrer" class="cs-live-link" onclick="event.stopPropagation()">View Live Site →</a>
+      <div class="cs-outcome-bar"></div>
+    </div>
+
     <div class="case-study">
       <span class="cs-number">Case Study 01</span>
       <span class="cs-label">Brand Positioning &amp; Digital Presence</span>
