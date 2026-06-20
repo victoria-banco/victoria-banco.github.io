@@ -8,6 +8,7 @@
 <meta name="author" content="Victoria Swart">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://victoriaswart.com">
+<link rel="preload" as="image" href="victoriahero.png">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
@@ -61,13 +62,29 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Satoshi:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   :root {
-    --cream: #F8F6F2;
-    --parchment: #EFEDE8;
-    --ink: #1C1A16;
+    --cream: #F7F4EF;
+    --parchment: #EDE8E0;
+    --ink: #18160E;
     --muted: #8A8680;
     --gold: #B5916A;
+    --gold-light: rgba(181,145,106,0.15);
+    --gold-pale: rgba(181,145,106,0.06);
     --stone: #5C5850;
-    --border: rgba(28,26,22,0.12);
+    --border: rgba(28,26,22,0.11);
+    --shadow-sm: 0 2px 16px rgba(28,26,22,0.07);
+    --shadow-md: 0 4px 32px rgba(28,26,22,0.10);
+  }
+
+  /* ─── GRAIN TEXTURE ─── */
+  body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 9996;
+    opacity: 0.038;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E");
+    background-size: 220px 220px;
   }
 
   *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
@@ -421,6 +438,7 @@
   /* ─── INTRO ─── */
   .intro {
     background: var(--parchment);
+    background-image: radial-gradient(ellipse at 80% 20%, rgba(181,145,106,0.09) 0%, transparent 60%);
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 80px;
@@ -572,6 +590,7 @@
   /* ─── ABOUT ─── */
   .about {
     background: var(--ink);
+    background-image: radial-gradient(ellipse at 20% 50%, rgba(181,145,106,0.08) 0%, transparent 55%);
     color: var(--cream);
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -758,9 +777,10 @@
     background: var(--cream);
     padding: 40px 32px;
     border-top: 2px solid transparent;
-    transition: border-color 0.4s ease;
+    box-shadow: var(--shadow-sm);
+    transition: border-color 0.4s ease, box-shadow 0.4s ease, transform 0.4s cubic-bezier(0.16,1,0.3,1);
   }
-  .consult-card:hover { border-color: var(--gold); }
+  .consult-card:hover { border-color: var(--gold); box-shadow: var(--shadow-md); transform: translateY(-2px); }
 
   .consult-num {
     font-family: 'Cormorant Garamond', serif;
@@ -848,7 +868,10 @@
   }
 
   /* ─── TESTIMONIALS ─── */
-  .testimonials { background: var(--parchment); }
+  .testimonials {
+    background: var(--parchment);
+    background-image: radial-gradient(ellipse at 50% 100%, rgba(181,145,106,0.1) 0%, transparent 60%);
+  }
 
   .testimonials-grid {
     display: grid;
@@ -857,7 +880,7 @@
     margin-top: 60px;
   }
 
-  .testimonial-card { background: var(--cream); padding: 48px; }
+  .testimonial-card { background: var(--cream); padding: 48px; box-shadow: var(--shadow-sm); }
 
   .testimonial-mark {
     font-family: 'Cormorant Garamond', serif;
@@ -890,6 +913,8 @@
   /* ─── CONTACT ─── */
   .contact {
     background: var(--ink);
+    background-image: radial-gradient(ellipse at 90% 10%, rgba(181,145,106,0.1) 0%, transparent 50%),
+                      radial-gradient(ellipse at 10% 90%, rgba(181,145,106,0.06) 0%, transparent 50%);
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 100px;
@@ -1352,7 +1377,7 @@
       <div class="stat-number">6</div>
       <div class="stat-label">Service disciplines offered</div>
     </div>
-    <img src="working.png" alt="">
+    <img src="working.png" alt="Victoria Swart at work" loading="lazy">
   </div>
 </section>
 
@@ -1445,7 +1470,7 @@
     </div>
   </div>
   <div class="about-right reveal">
-    <img src="desk.png" alt="Victoria Swart">
+    <img src="desk.png" alt="Victoria Swart — brand strategist at work in Rome" loading="lazy">
     <div class="about-tag">
       <p>Based in Rome<br>Working Globally<br><span style="color:rgba(248,246,242,0.6)">Est. 2022</span></p>
     </div>
@@ -1561,7 +1586,7 @@
     <a href="https://substack.com/@victoriaswart" target="_blank" rel="noopener noreferrer" class="btn-ghost" style="margin-top:24px;display:inline-block;">Follow on Substack</a>
   </div>
 
-  <img src="detailshot.png" alt="" class="reveal" style="width:100%;height:280px;object-fit:cover;object-position:center 30%;display:block;margin:40px 0 0;">
+  <img src="detailshot.png" alt="Victoria Swart journal — brand strategy writing" loading="lazy" class="reveal" style="width:100%;height:280px;object-fit:cover;object-position:center 30%;display:block;margin:40px 0 0;">
 
   <div class="journal-grid reveal">
     <div class="journal-item">
@@ -1652,8 +1677,11 @@
   </div>
 
   <!-- Formspree: replace YOUR_FORM_ID with the ID from your formspree.io dashboard -->
-  <form class="contact-form-side reveal" action="https://formspree.io/f/mdavgjok" method="POST">
+  <form class="contact-form-side reveal" action="https://formspree.io/f/mdavgjok" method="POST" id="contactForm">
     <input type="hidden" name="_subject" value="New inquiry — Victoria Swart">
+    <!-- Honeypot: bots fill this, humans don't see it -->
+    <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+    <input type="hidden" name="_ts" id="formTimestamp">
     <div class="form-group">
       <label class="form-label" for="name">Your Name</label>
       <input type="text" id="name" name="name" class="form-input" placeholder="Name and company" required>
@@ -1739,6 +1767,14 @@
 
   // Footer year
   document.getElementById('footerYear').textContent = new Date().getFullYear();
+
+  // Spam protection: record page load time and block submissions under 4 seconds
+  const formLoadTime = Date.now();
+  document.getElementById('formTimestamp').value = formLoadTime;
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+    const elapsed = Date.now() - formLoadTime;
+    if (elapsed < 4000) { e.preventDefault(); return false; }
+  });
 
   // Cookie consent
   function acceptCookies() {
