@@ -2112,12 +2112,38 @@
   // Footer year
   document.getElementById('footerYear').textContent = new Date().getFullYear();
 
-  // Spam protection: record page load time and block submissions under 4 seconds
+  // Spam protection: honeypot (in markup) + time gate + content checks + double-submit guard
   const formLoadTime = Date.now();
+  let formSubmitted = false;
   document.getElementById('formTimestamp').value = formLoadTime;
   document.getElementById('contactForm').addEventListener('submit', function(e) {
-    const elapsed = Date.now() - formLoadTime;
-    if (elapsed < 4000) { e.preventDefault(); return false; }
+    // Block bots that submit instantly (under 4 seconds)
+    if (Date.now() - formLoadTime < 4000) { e.preventDefault(); return false; }
+
+    // Block double submissions
+    if (formSubmitted) { e.preventDefault(); return false; }
+
+    const msg = document.getElementById('message').value.trim();
+    const name = document.getElementById('name').value.trim();
+
+    // Require a real message (min 25 chars) and a real name (min 2 chars)
+    if (msg.length < 25) {
+      e.preventDefault();
+      alert('Please tell me a little more about your project (a few sentences helps me respond properly).');
+      return false;
+    }
+    if (name.length < 2) { e.preventDefault(); return false; }
+
+    // Block messages that are mostly links or contain classic spam patterns
+    const linkCount = (msg.match(/https?:\/\/|www\./gi) || []).length;
+    const spamPatterns = /\b(seo ranking|guest post|backlinks?|link building|web traffic|increase sales guaranteed|crypto investment|earn \$|make money fast|viagra|casino)\b/i;
+    if (linkCount > 2 || spamPatterns.test(msg)) {
+      e.preventDefault();
+      alert('Your message could not be sent. Please remove promotional links and try again.');
+      return false;
+    }
+
+    formSubmitted = true;
   });
 
   // Cookie consent
