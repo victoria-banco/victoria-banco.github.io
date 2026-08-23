@@ -48,6 +48,30 @@ def overlay_html(current):
 def rel(depth):
     return '' if depth == 0 else '../' * depth
 
+ONWARD = {
+  '/services/':    ('Services',   'What I do — brand strategy, copywriting, SEO and creative direction'),
+  '/about/':       ('About',      'Who I am, the five languages, and how the practice works'),
+  '/work/':        ('Selected work', 'Projects across brand, communication and digital presence'),
+  '/work/la-dolce-vita/': ('Case study', 'A full brand and website concept for Italian luxury travel'),
+  '/consulting/':  ('Consulting', 'Strategy sessions, project consulting and ongoing partnership'),
+  '/journal/':     ('The Journal','Essays on brand, language, psychology and culture'),
+  '/contact/':     ('Contact',    'Start a conversation about your brand'),
+}
+
+def onward_html(hrefs, depth):
+    cards = []
+    for h in hrefs:
+        label, blurb = ONWARD[h]
+        cards.append(
+            f'    <a class="onward-card" href="{h}">\n'
+            f'      <span class="onward-label">{label}</span>\n'
+            f'      <span class="onward-blurb">{blurb}</span>\n'
+            f'      <span class="onward-go">Read on &rarr;</span>\n'
+            f'    </a>')
+    return ('<!-- ONWARD -->\n<section class="onward reveal" aria-label="Continue reading">\n'
+            '  <span class="section-label">Continue</span>\n'
+            '  <div class="onward-grid">\n' + '\n'.join(cards) + '\n  </div>\n</section>')
+
 ORG_SCHEMA = json.loads(re.search(
     r'<script type="application/ld\+json">\s*(\{.*?"@type": "ProfessionalService".*?\})\s*</script>',
     (ROOT/'index.html').read_text(), re.S).group(1))
@@ -58,8 +82,15 @@ def breadcrumbs(trail):
                                for i,(n,u) in enumerate(trail)]}
 
 def page(*, path, depth, title, desc, canonical, body, extra_schema=None,
-         trail=None, og_image='victoriahero.jpg', current=''):
+         trail=None, og_image='victoriahero.jpg', current='', onward=None):
     r = rel(depth)
+    import html as _h
+    plain_t = _h.unescape(re.sub('<[^>]+>', '', title))
+    plain_d = _h.unescape(desc)
+    assert len(plain_t) <= 60, f'{path}: title {len(plain_t)} chars (max 60): {plain_t}'
+    assert len(plain_d) <= 158, f'{path}: description {len(plain_d)} chars (max 158)'
+    if onward:
+        body = body + '\n\n' + onward_html(onward, depth)
     schemas = []
     if depth == 0:
         schemas.append(ORG_SCHEMA)

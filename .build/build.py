@@ -57,9 +57,10 @@ home_body = '\n\n'.join([
 ])
 
 page(path='index.html', depth=0, current='/',
-     title=f'{NAME} — Multilingual Brand Strategist &amp; SEO Copywriter | Rome, Italy',
-     desc='Victoria Clara Swart — multilingual brand strategist and SEO copywriter based in Rome. Native English and German, fluent Italian, Spanish and Danish. Brand positioning, content strategy, and creative direction for international clients.',
-     canonical='/', body=home_body)
+     title='Victoria Clara Swart — Brand Strategist, Rome',
+     desc='Multilingual brand strategist and SEO copywriter in Rome. Brand positioning, content strategy and creative direction, delivered in five languages.',
+     canonical='/', body=home_body,
+     onward=['/services/','/work/','/consulting/'])
 
 # ─────────────────────────────────────────── ABOUT
 about_body = '\n\n'.join([
@@ -69,10 +70,11 @@ about_body = '\n\n'.join([
     fix(BLOCKS['statement'], 1),
 ])
 page(path='about/index.html', depth=1, current='/about/',
-     title=f'About {NAME} — Brand Strategist in Rome, Five Languages',
-     desc='Victoria Clara Swart is a multilingual brand strategist based in Rome, working in English, German, Italian, Spanish and Danish across more than fifteen markets.',
+     title='About — Victoria Clara Swart, Strategist in Rome',
+     desc='Brand strategist based in Rome, working in English, German, Italian, Spanish and Danish across more than fifteen international markets.',
      canonical='/about/', body=about_body,
      og_image='victoria-swart-networking.jpg',
+     onward=['/services/','/work/','/contact/'],
      trail=[('Home','/'), ('About','/about/')])
 
 # ─────────────────────────────────────────── SERVICES
@@ -81,10 +83,11 @@ services_body = '\n\n'.join([
     fix(BLOCKS['faq'], 1),
 ])
 page(path='services/index.html', depth=1, current='/services/',
-     title=f'Services — Brand Strategy, SEO Copywriting &amp; Creative Direction | {NAME}',
-     desc='Brand positioning, multilingual copywriting, social media strategy, SEO, web design and creative direction — for international businesses that sell on judgement rather than price.',
+     title='Services — Brand Strategy &amp; SEO Copywriting',
+     desc='Brand positioning, multilingual copywriting, social media strategy, SEO, web design and creative direction for international businesses.',
      canonical='/services/', body=services_body,
      og_image='victoria-swart-speaking.jpg', extra_schema=[SCHEMA_FAQ],
+     onward=['/consulting/','/work/','/contact/'],
      trail=[('Home','/'), ('Services','/services/')])
 
 # ─────────────────────────────────────────── WORK (index)
@@ -94,32 +97,36 @@ work_body = '\n\n'.join([
     fix(BLOCKS['editorial'], 1),
 ])
 page(path='work/index.html', depth=1, current='/work/',
-     title=f'Selected Work — Brand &amp; Digital Projects | {NAME}',
-     desc='Selected projects across brand strategy, communication and digital presence — including a full brand and website concept for an ultra-luxury Italian concierge service.',
+     title='Selected Work — Brand &amp; Digital Projects',
+     desc='Projects across brand strategy, communication and digital presence, including a full brand and website concept for Italian luxury travel.',
      canonical='/work/', body=work_body,
      og_image='victoria-swart-editorial.jpg',
+     onward=['/work/la-dolce-vita/','/services/','/contact/'],
      trail=[('Home','/'), ('Work','/work/')])
 
 # ─────────────────────────────────────────── CONSULTING
 page(path='consulting/index.html', depth=1, current='/consulting/',
-     title=f'Consulting &amp; Advisory — Strategy Sessions from €150 | {NAME}',
-     desc='Direct strategic support for founders and businesses. One-off 60-minute strategy sessions at €150, project consulting from €800, and ongoing strategic partnership at €2,000 per month.',
+     title='Consulting &amp; Advisory — Sessions from €150',
+     desc='Strategy sessions at €150, project consulting from €800, and ongoing strategic partnership at €2,000 a month. Direct support for founders.',
      canonical='/consulting/', body=h1(fix(BLOCKS['consulting'], 1), 'Consulting &amp;<br><em>Advisory</em>'),
+     onward=['/services/','/about/','/contact/'],
      trail=[('Home','/'), ('Consulting','/consulting/')])
 
 # ─────────────────────────────────────────── JOURNAL
 page(path='journal/index.html', depth=1, current='/journal/',
-     title=f'The Journal — Essays on Brand, Language &amp; Culture | {NAME}',
+     title='The Journal — Essays on Brand &amp; Language',
      desc='Essays on brand strategy, language, psychology and culture — the thinking behind how businesses are seen and remembered.',
      canonical='/journal/', body=h1(fix(BLOCKS['journal'], 1), 'The<br><em>Journal</em>'),
      og_image='detailshot.jpg', extra_schema=[SCHEMA_BLOG],
+     onward=['/about/','/services/','/contact/'],
      trail=[('Home','/'), ('Journal','/journal/')])
 
 # ─────────────────────────────────────────── CONTACT
 page(path='contact/index.html', depth=1, current='/contact/',
-     title=f'Contact — Start a Conversation | {NAME}',
+     title='Contact — Victoria Clara Swart, Rome',
      desc='Get in touch about brand strategy, multilingual communication, SEO content, speaking or event hosting. Based in Rome, working internationally.',
      canonical='/contact/', body=h1(fix(BLOCKS['contact'], 1), "Let's Work<br><em>Together</em>"),
+     onward=['/services/','/consulting/','/work/'],
      trail=[('Home','/'), ('Contact','/contact/')])
 
 print('pages written')
@@ -174,10 +181,31 @@ cs_schema = {
 }
 
 page(path='work/la-dolce-vita/index.html', depth=2, current='/work/',
-     title='Italian Luxury Concierge — Brand &amp; Web Concept | ' + NAME,
-     desc='A full brand and digital concept for an ultra-luxury Italian concierge service: positioning, copy direction, multilingual communication and a complete website, developed independently by Victoria Clara Swart.',
+     title='Italian Luxury Concierge — Brand Concept',
+     desc='A full brand and website concept for an ultra-luxury Italian concierge service: positioning, copy direction, multilingual communication and build.',
      canonical='/work/la-dolce-vita/', body=cs_body,
      extra_schema=[cs_schema], og_image='ladolcevita-poster.jpg',
+     onward=['/work/','/services/','/contact/'],
      trail=[('Home','/'), ('Work','/work/'), ('Italian Luxury Concierge','/work/la-dolce-vita/')])
 
 print('case study written')
+
+# ─────────────────────────────────────────── 404
+notfound = '''<section style="min-height:58svh;display:flex;align-items:center;">
+  <div style="max-width:560px;">
+    <span class="section-label">Error 404</span>
+    <h1 class="section-heading">This page<br><em>doesn't exist.</em></h1>
+    <div class="divider"></div>
+    <p style="font-size:16px;font-weight:300;line-height:1.85;color:var(--stone);margin-bottom:32px;">
+      The link may be out of date, or the address slightly off. Everything on the site is one click away below.
+    </p>
+    <a href="/" class="btn-primary">Back to the homepage</a>
+  </div>
+</section>'''
+
+page(path='404.html', depth=0, current='',
+     title='Page not found — Victoria Clara Swart',
+     desc='That page could not be found. Browse services, selected work, consulting or get in touch.',
+     canonical='/404.html', body=notfound,
+     onward=['/services/','/work/','/contact/'])
+print('404 written')
