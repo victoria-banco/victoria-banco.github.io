@@ -8,21 +8,21 @@
 <meta name="author" content="Victoria Swart">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://victoriaswart.com">
-<link rel="preload" as="image" href="victoriahero.png">
+<link rel="preload" as="image" href="victoriahero.jpg">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://victoriaswart.com">
 <meta property="og:title" content="Victoria Swart — Multilingual Brand Strategist & SEO Copywriter">
 <meta property="og:description" content="Multilingual brand strategist and SEO copywriter based in Rome. Native English and German, fluent Italian, Spanish and Danish. Brand positioning, content strategy, and creative direction for international clients.">
-<meta property="og:image" content="https://victoriaswart.com/victoriahero.png">
+<meta property="og:image" content="https://victoriaswart.com/victoriahero.jpg">
 <meta property="og:locale" content="en_GB">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Victoria Swart — Multilingual Brand Strategist & SEO Copywriter">
 <meta name="twitter:description" content="Multilingual brand strategist and SEO copywriter based in Rome. Native English and German, fluent Italian, Spanish and Danish. Brand positioning, content strategy, and creative direction for international clients.">
-<meta name="twitter:image" content="https://victoriaswart.com/victoriahero.png">
+<meta name="twitter:image" content="https://victoriaswart.com/victoriahero.jpg">
 
 <!-- Structured Data -->
 <script type="application/ld+json">
@@ -40,7 +40,7 @@
     "sameAs": [
       "https://www.linkedin.com/in/victoriaswart",
       "https://www.instagram.com/imma__victoria",
-      "https://substack.com/@victoriaswart"
+      "https://victoriaclaraswart.substack.com"
     ]
   },
   "address": {
@@ -52,6 +52,72 @@
   "serviceType": ["Brand Strategy", "SEO Copywriting", "Social Media Strategy", "UGC Creation", "Event MC", "Multilingual Communication"]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "Victoria Swart — The Journal",
+  "url": "https://victoriaclaraswart.substack.com",
+  "description": "Essays on brand strategy, language, psychology, and culture — the thinking behind how businesses are seen and remembered.",
+  "author": {
+    "@type": "Person",
+    "name": "Victoria Clara Swart",
+    "url": "https://victoriaswart.com"
+  },
+  "blogPost": [
+    {
+      "@type": "BlogPosting",
+      "headline": "The Psychology of Positioning",
+      "url": "https://victoriaclaraswart.substack.com/p/the-psychology-of-positioning",
+      "description": "Why the way a brand is perceived matters as much — if not more — than what it delivers. On anchoring, context, and the invisible architecture of trust.",
+      "keywords": "brand positioning, brand psychology, brand strategy",
+      "author": {"@type": "Person", "name": "Victoria Clara Swart"}
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Why Good Brands Sound Clear Before They Look Expensive",
+      "url": "https://victoriaclaraswart.substack.com/p/why-good-brands-sound-clear-before",
+      "description": "Luxury is often misread as decoration. In communication, it is the opposite: restraint, precision, and the courage to say less.",
+      "keywords": "brand voice, luxury branding, copywriting",
+      "author": {"@type": "Person", "name": "Victoria Clara Swart"}
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "What International Living Teaches You About Communication",
+      "url": "https://victoriaclaraswart.substack.com/p/what-international-living-teaches",
+      "description": "Having lived across five countries and spoken five languages professionally — the gap between fluency and actual understanding.",
+      "keywords": "multilingual communication, cross-cultural marketing, localisation",
+      "author": {"@type": "Person", "name": "Victoria Clara Swart"}
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Taste, Trust, and Digital Presence",
+      "url": "https://victoriaclaraswart.substack.com/p/taste-trust-and-digital-presence",
+      "description": "The aesthetic choices a brand makes online signal far more than style. On visual decisions and perceived credibility.",
+      "keywords": "digital presence, brand credibility, web design",
+      "author": {"@type": "Person", "name": "Victoria Clara Swart"}
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "What Aviation Taught Me About Communication",
+      "url": "https://victoriaclaraswart.substack.com/p/what-aviation-taught-me-about-communication",
+      "description": "In aviation, ambiguity is a safety risk. The same principle applies to brand language — on clarity, protocols, and precision as respect.",
+      "keywords": "clear communication, aviation, brand language",
+      "author": {"@type": "Person", "name": "Victoria Clara Swart"}
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Storytelling Beyond Marketing",
+      "url": "https://victoriaclaraswart.substack.com/p/storytelling-beyond-marketing",
+      "description": "The most compelling brand narratives aren't built in campaign briefs. They come from knowing what a business genuinely stands for.",
+      "keywords": "brand storytelling, narrative strategy, content strategy",
+      "author": {"@type": "Person", "name": "Victoria Clara Swart"}
+    }
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Satoshi:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -1036,7 +1102,27 @@
     margin-top: 60px;
   }
 
-  .journal-item { border-top: 0.5px solid var(--border); padding-top: 24px; }
+  .journal-item {
+    border-top: 0.5px solid var(--border);
+    padding-top: 24px;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.4s ease;
+  }
+  .journal-item:hover { border-top-color: var(--gold); }
+  .journal-item:hover .journal-title { color: var(--gold); }
+  .journal-item:hover .journal-read { letter-spacing: 0.26em; }
+  .journal-read {
+    display: inline-block;
+    margin-top: 14px;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    transition: letter-spacing 0.3s ease;
+  }
 
   .journal-cat {
     font-size: 10px;
@@ -1055,6 +1141,7 @@
     color: var(--ink);
     line-height: 1.25;
     margin-bottom: 10px;
+    transition: color 0.3s ease;
   }
 
   .journal-excerpt {
@@ -1620,7 +1707,7 @@
     </div>
   </div>
   <div class="hero-right">
-    <img src="victoriahero.png" alt="Victoria Swart">
+    <img src="victoriahero.jpg" alt="Victoria Swart — multilingual brand strategist based in Rome" width="1023" height="1537" fetchpriority="high" decoding="async">
   </div>
 </section>
 
@@ -1671,7 +1758,7 @@
       <div class="stat-number">6</div>
       <div class="stat-label">Service disciplines offered</div>
     </div>
-    <img src="working.png" alt="Victoria Swart at work" loading="lazy">
+    <img src="working.jpg" alt="Victoria Swart working on brand strategy" width="1023" height="1537" loading="lazy" decoding="async">
   </div>
 </section>
 
@@ -1781,7 +1868,7 @@
     </div>
   </div>
   <div class="about-right reveal">
-    <img src="desk.png" alt="Victoria Swart — brand strategist at work in Rome" loading="lazy">
+    <img src="desk.jpg" alt="Victoria Swart — brand strategist at work in Rome" width="1402" height="1122" loading="lazy" decoding="async">
     <div class="about-tag">
       <p>Based in Rome<br>Working Globally<br><span style="color:rgba(248,246,242,0.6)">Est. 2022</span></p>
     </div>
@@ -1925,51 +2012,57 @@
     <h2 class="section-heading">The<br><em>Journal</em></h2>
     <div class="divider"></div>
     <p style="font-size:15px;font-weight:300;line-height:1.8;color:var(--stone);max-width:560px;">
-      Where strategy meets essay. Writing on brand, language, psychology, culture, and the thinking behind how businesses are seen and remembered.
+      Where strategy meets essay. The themes I return to — brand, language, psychology, culture, and the thinking behind how businesses are seen and remembered. New essays land on Substack.
     </p>
-    <a href="https://substack.com/@victoriaswart" target="_blank" rel="noopener noreferrer" class="btn-ghost" style="margin-top:24px;display:inline-block;">Follow on Substack</a>
+    <a href="https://victoriaclaraswart.substack.com" target="_blank" rel="noopener noreferrer" class="btn-ghost" style="margin-top:24px;display:inline-block;">Follow on Substack</a>
   </div>
 
-  <img src="detailshot.png" alt="Victoria Swart journal — brand strategy writing" loading="lazy" class="reveal" style="width:100%;height:280px;object-fit:cover;object-position:center 30%;display:block;margin:40px 0 0;">
+  <img src="detailshot.jpg" alt="Victoria Swart journal — brand strategy writing" width="1402" height="1122" loading="lazy" decoding="async" class="reveal" style="width:100%;height:280px;object-fit:cover;object-position:center 30%;display:block;margin:40px 0 0;">
 
   <div class="journal-grid reveal">
-    <div class="journal-item">
+    <a class="journal-item" href="https://victoriaclaraswart.substack.com/p/the-psychology-of-positioning" target="_blank" rel="noopener noreferrer">
       <span class="journal-cat">Strategy</span>
       <div class="journal-title">The Psychology of Positioning</div>
       <p class="journal-excerpt">Why the way a brand is perceived matters as much — if not more — than what it delivers. On anchoring, context, and the invisible architecture of trust.</p>
-      <span class="journal-coming">Coming to Substack</span>
-    </div>
-    <div class="journal-item">
+      <span class="journal-read">Read on Substack →</span>
+    </a>
+    
+    <a class="journal-item" href="https://victoriaclaraswart.substack.com/p/why-good-brands-sound-clear-before" target="_blank" rel="noopener noreferrer">
       <span class="journal-cat">Language</span>
       <div class="journal-title">Why Good Brands Sound Clear Before They Look Expensive</div>
       <p class="journal-excerpt">Luxury is often misread as decoration. In communication, it is the opposite: restraint, precision, and the courage to say less.</p>
-      <span class="journal-coming">Coming to Substack</span>
-    </div>
-    <div class="journal-item">
+      <span class="journal-read">Read on Substack →</span>
+    </a>
+    
+    <a class="journal-item" href="https://victoriaclaraswart.substack.com/p/what-international-living-teaches" target="_blank" rel="noopener noreferrer">
       <span class="journal-cat">Culture</span>
       <div class="journal-title">What International Living Teaches You About Communication</div>
       <p class="journal-excerpt">Having lived across five countries and spoken five languages professionally — here is what I have learned about the gap between fluency and actual understanding.</p>
-      <span class="journal-coming">Coming to Substack</span>
-    </div>
-    <div class="journal-item">
+      <span class="journal-read">Read on Substack →</span>
+    </a>
+    
+    <a class="journal-item" href="https://victoriaclaraswart.substack.com/p/taste-trust-and-digital-presence" target="_blank" rel="noopener noreferrer">
       <span class="journal-cat">Branding</span>
       <div class="journal-title">Taste, Trust, and Digital Presence</div>
       <p class="journal-excerpt">The aesthetic choices a brand makes online signal far more than style. On the relationship between visual decisions and perceived credibility.</p>
-      <span class="journal-coming">Coming to Substack</span>
-    </div>
-    <div class="journal-item">
+      <span class="journal-read">Read on Substack →</span>
+    </a>
+    
+    <a class="journal-item" href="https://victoriaclaraswart.substack.com/p/what-aviation-taught-me-about-communication" target="_blank" rel="noopener noreferrer">
       <span class="journal-cat">Precision</span>
       <div class="journal-title">What Aviation Taught Me About Communication</div>
       <p class="journal-excerpt">In aviation, ambiguity is a safety risk. The same principle applies to brand language — on clarity, protocols, and why precision is an act of respect.</p>
-      <span class="journal-coming">Coming to Substack</span>
-    </div>
-    <div class="journal-item">
+      <span class="journal-read">Read on Substack →</span>
+    </a>
+    
+    <a class="journal-item" href="https://victoriaclaraswart.substack.com/p/storytelling-beyond-marketing" target="_blank" rel="noopener noreferrer">
       <span class="journal-cat">Storytelling</span>
       <div class="journal-title">Storytelling Beyond Marketing</div>
       <p class="journal-excerpt">The most compelling brand narratives aren't built in campaign briefs. They come from knowing, genuinely, what a business stands for and why it exists.</p>
-      <span class="journal-coming">Coming to Substack</span>
+      <span class="journal-read">Read on Substack →</span>
+    </a>
+    
     </div>
-  </div>
 </section>
 
 <!-- TESTIMONIALS -->
@@ -2054,7 +2147,7 @@
   <div class="footer-social">
     <a href="https://www.instagram.com/imma__victoria" target="_blank" rel="noopener noreferrer">Instagram</a>
     <a href="https://it.linkedin.com/in/victoriaswart" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-    <a href="https://substack.com/@victoriaswart" target="_blank" rel="noopener noreferrer">Substack</a>
+    <a href="https://victoriaclaraswart.substack.com" target="_blank" rel="noopener noreferrer">Substack</a>
     <a href="mailto:victoria.c.swart@icloud.com">Email</a>
     <a href="#" onclick="openPrivacy(event)" style="color:rgba(248,246,242,0.2);">Privacy</a>
   </div>
