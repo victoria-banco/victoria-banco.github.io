@@ -326,21 +326,44 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(248,246,242,0.92);
+    background: rgba(248,246,242,0.97);
     backdrop-filter: blur(8px);
     border-bottom: 0.5px solid var(--border);
-    transition: padding 0.5s cubic-bezier(0.16,1,0.3,1), background 0.4s ease;
+    transform: translateY(0);
+    transition: padding 0.5s cubic-bezier(0.16,1,0.3,1),
+                background 0.45s ease,
+                border-color 0.45s ease,
+                transform 0.45s cubic-bezier(0.16,1,0.3,1);
   }
   nav.scrolled { padding: 14px 48px; }
 
+  /* At the top of the page: dark bar, cream type — mirrors the footer */
+  nav.at-top {
+    background: #0B0A07;
+    border-bottom-color: rgba(248,246,242,0.10);
+  }
+  nav.at-top .nav-logo { color: var(--cream); }
+  nav.at-top .nav-logo:hover { opacity: 0.7; }
+  nav.at-top .nav-links a { color: rgba(248,246,242,0.72); }
+  nav.at-top .nav-links a:hover { color: var(--cream); }
+  nav.at-top .nav-links a::after { background: var(--gold); }
+  nav.at-top .hamburger span { background: var(--cream); }
+
+  /* Scrolling down: get out of the way */
+  nav.nav-hidden { transform: translateY(-100%); }
+
   .nav-logo {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 18px;
-    font-weight: 400;
-    letter-spacing: 0.04em;
-    color: var(--ink);
+    font-size: 23px;
+    font-weight: 600;
+    letter-spacing: 0.015em;
+    color: #0F0E09;
     text-decoration: none;
+    line-height: 1;
+    transition: opacity 0.3s ease;
   }
+  .nav-logo:hover { opacity: 0.62; }
+  @media (max-width: 700px) { .nav-logo { font-size: 19px; } }
 
   .nav-links {
     display: flex;
@@ -581,11 +604,11 @@
     height: 100%;
     object-fit: cover;
     object-position: center top;
-    transform: scale(1.45);
-    transform-origin: center top;
+    transform: scale(1.2);
+    transform-origin: center 12%;
     transition: transform 0.8s cubic-bezier(0.16,1,0.3,1);
   }
-  .hero-right:hover img { transform: scale(1.49); }
+  .hero-right:hover img { transform: scale(1.235); }
 
   .hero-credential {
     position: absolute;
@@ -692,9 +715,9 @@
     background: var(--parchment);
     background-image: radial-gradient(ellipse at 80% 20%, rgba(181,145,106,0.09) 0%, transparent 60%);
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 80px;
-    align-items: start;
+    grid-template-columns: 1.25fr 1fr;
+    gap: 72px;
+    align-items: stretch;
   }
 
   .intro-pull {
@@ -714,7 +737,11 @@
     color: var(--stone);
   }
 
-  .intro-aside { padding-top: 8px; }
+  .intro-aside {
+    position: relative;
+    align-self: stretch;
+    display: flex;
+  }
 
   /* Premise inverted: the page's second dark beat */
   .intro--dark {
@@ -729,17 +756,26 @@
   .intro--dark .intro-body em { color: var(--cream); font-style: italic; }
   .intro--dark .divider { background: rgba(181,145,106,0.45); }
   .intro--dark .intro-aside img { filter: none; }
+  .intro--dark .intro-aside::before {
+    content: '';
+    position: absolute;
+    left: -36px; top: 0; bottom: 0;
+    width: 0.5px;
+    background: linear-gradient(to bottom, transparent, rgba(181,145,106,0.35), transparent);
+  }
 
 
   .intro-aside img {
     width: 100%;
-    height: auto;
-    margin-top: 32px;
+    height: 100%;
+    min-height: 460px;
+    margin: -100px -48px -100px 0;
+    width: calc(100% + 48px);
     display: block;
     object-fit: cover;
-    object-position: center 15%;
-    aspect-ratio: 3/4;
-    filter: brightness(0.97);
+    object-position: center 20%;
+    aspect-ratio: auto;
+    filter: none;
   }
 
   /* ─── SERVICES ─── */
@@ -1140,6 +1176,84 @@
     color: rgba(181,145,106,0.55);
     line-height: 1.8;
   }
+  .cs-live-link {
+    display: inline-block;
+    margin-top: 0;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gold);
+    text-decoration: none;
+    transition: letter-spacing 0.3s ease;
+  }
+  .cs-live-link:hover { letter-spacing: 0.22em; }
+  /* ─── FULL-VIEWPORT WORK SHOWCASE ─── */
+  .showcase {
+    position: relative;
+    margin-top: -100px;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    height: 100svh;
+    min-height: 520px;
+    overflow: hidden;
+    background: #000;
+    display: block;
+  }
+  .showcase video {
+    position: absolute;
+    top: -1%;
+    left: 0;
+    width: 100%;
+    height: 114%;
+    object-fit: cover;
+    object-position: center 42%;
+    display: block;
+  }
+  .showcase::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(6,5,4,0.88) 0%, rgba(6,5,4,0.30) 34%, rgba(6,5,4,0.06) 62%, transparent 100%);
+    pointer-events: none;
+  }
+  .showcase-caption {
+    position: absolute;
+    left: clamp(24px, 5vw, 72px);
+    right: clamp(24px, 5vw, 72px);
+    bottom: clamp(36px, 7vh, 76px);
+    z-index: 2;
+  }
+  .showcase-eyebrow {
+    display: block;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: rgba(216,181,137,0.95);
+    margin-bottom: 16px;
+  }
+  .showcase-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(30px, 5vw, 66px);
+    font-weight: 300;
+    line-height: 1.12;
+    color: #FFFFFF;
+    margin: 0 0 14px;
+    max-width: 18ch;
+  }
+  .showcase-note {
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: rgba(248,246,242,0.62);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .showcase video { display: none; }
+    .showcase { background: #0B0A07; }
+  }
+
   .cs-live-link {
     display: inline-block;
     margin-top: 0;
@@ -1831,6 +1945,12 @@
       inset: 0;
       height: 100%;
     }
+    .hero-right img {
+      object-position: center 18%;
+      transform: scale(1.12);
+      transform-origin: center 18%;
+    }
+    .hero-right:hover img { transform: scale(1.12); }
 
     .hero-right::after {
       content: '';
@@ -1838,10 +1958,11 @@
       inset: 0;
       background: linear-gradient(
         to top,
-        rgba(28,26,22,0.92) 0%,
-        rgba(28,26,22,0.5) 38%,
-        rgba(28,26,22,0.12) 65%,
-        transparent 100%
+        rgba(14,13,9,0.97) 0%,
+        rgba(14,13,9,0.90) 30%,
+        rgba(14,13,9,0.66) 52%,
+        rgba(14,13,9,0.34) 72%,
+        rgba(14,13,9,0.10) 100%
       );
       z-index: 1;
     }
@@ -1854,7 +1975,13 @@
     }
 
     .hero-headline { color: var(--cream); font-size: clamp(42px, 10.5vw, 68px); }
-    .hero-sub { color: rgba(248,246,242,0.72); max-width: 100%; }
+    .hero-sub { color: rgba(248,246,242,0.92); max-width: 100%; }
+    .hero-seo-sub { color: rgba(248,246,242,0.78); max-width: 100%; }
+    .hero-eyebrow { color: #D8B589; }
+    .hero-ctas .btn-primary { background: var(--cream); color: var(--ink); border: 0.5px solid var(--cream); }
+    .hero-ctas .btn-primary:hover { background: transparent; color: var(--cream); }
+    .hero-ctas .btn-ghost { border-color: rgba(248,246,242,0.85); color: var(--cream); }
+    .hero-ctas .btn-ghost:hover { background: var(--cream); border-color: var(--cream); color: var(--ink); }
 
     .hero-credential {
       position: absolute;
@@ -1863,9 +1990,16 @@
     }
 
     /* Intro */
-    .intro { grid-template-columns: 1fr; gap: 48px; }
-    .intro-aside { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
-    .intro-aside img { grid-column: 1 / -1; }
+    .intro { grid-template-columns: 1fr; gap: 40px; }
+    .intro-aside { display: block; }
+    .intro-aside::before { display: none; }
+    .intro-aside img {
+      margin: 0 -24px;
+      width: calc(100% + 48px);
+      min-height: 0;
+      aspect-ratio: 4/5;
+      object-position: center 18%;
+    }
 
     /* Services */
     .services-grid { grid-template-columns: 1fr; }
@@ -2253,24 +2387,12 @@
           <p class="cs-rights">Independent concept project. Strategy, copy, design and code © <span class="cs-year"></span> Victoria Clara Swart. All rights reserved. Not licensed for commercial use or reproduction by any third party.</p>
         </div>
       </div>
-      <div class="cs-live-right" onclick="event.stopPropagation()">
-        <figure class="cs-video-figure">
-          <div class="cs-video-frame">
-            <video
-              class="cs-video"
-              poster="ladolcevita-poster.jpg"
-              preload="none"
-              controls
-              playsinline
-              muted
-              width="1280" height="748"
-              aria-label="Screen recording walkthrough of the La Dolce Vita Luxury Experience website concept designed by Victoria Clara Swart">
-              <source src="ladolcevita-walkthrough.mp4" type="video/mp4">
-              Your browser does not support embedded video. <a href="ladolcevita-walkthrough.mp4">Download the walkthrough</a>.
-            </video>
-          </div>
-          <figcaption class="cs-video-caption">Walkthrough — concept site, design and copy by Victoria Clara Swart</figcaption>
-        </figure>
+      <div class="cs-live-right" aria-hidden="true">
+        <div class="cs-brand-preview">
+          <div class="cs-brand-name">Italy, as it was<br>meant to be seen.</div>
+          <div class="cs-brand-rule"></div>
+          <div class="cs-brand-tagline">Concept copy &amp; brand voice<br>by Victoria Clara Swart</div>
+        </div>
       </div>
     </div>
 
@@ -2612,11 +2734,35 @@
   }
   window.addEventListener('scroll', updateProgress, { passive: true });
 
-  // Nav compression
+  // Nav: dark at the top, hides on scroll down, returns cream on scroll up
   const navEl = document.querySelector('nav');
+  let lastY = window.scrollY;
+  let navTicking = false;
+
+  function updateNav() {
+    const y = Math.max(0, window.scrollY);
+    const atTop = y < 40;
+    const menuOpen = document.querySelector('.nav-overlay')?.classList.contains('open');
+
+    navEl.classList.toggle('at-top', atTop);
+    navEl.classList.toggle('scrolled', y > 60);
+
+    if (menuOpen || atTop) {
+      navEl.classList.remove('nav-hidden');
+    } else if (y > lastY + 6 && y > 120) {
+      navEl.classList.add('nav-hidden');      // scrolling down
+    } else if (y < lastY - 6) {
+      navEl.classList.remove('nav-hidden');   // scrolling up
+    }
+
+    lastY = y;
+    navTicking = false;
+  }
+
   window.addEventListener('scroll', () => {
-    navEl.classList.toggle('scrolled', window.scrollY > 60);
+    if (!navTicking) { navTicking = true; requestAnimationFrame(updateNav); }
   }, { passive: true });
+  updateNav();
 
   // Mobile menu
   const hamburger = document.querySelector('.hamburger');
