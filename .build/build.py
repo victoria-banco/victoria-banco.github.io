@@ -36,8 +36,23 @@ def fix(html, depth, *, keep_anchors=()):
         html = html.replace(f'href="{frm}"', f'href="{to}"')
     return html
 
-def strip_reveal_ids(html):
-    return html
+
+def showcase_html(depth, title, note='Brand, copy, design and build by Victoria Clara Swart'):
+    r = rel(depth)
+    return f"""<!-- FULL-VIEWPORT WALKTHROUGH -->
+<div class="showcase" id="showcase">
+  <video id="showcaseVideo" poster="{r}ladolcevita-poster.jpg" preload="none"
+         autoplay muted loop playsinline disablepictureinpicture
+         aria-label="Walkthrough of the Italian luxury concierge website concept designed by Victoria Clara Swart">
+    <source src="{r}ladolcevita-walkthrough.mp4" type="video/mp4">
+  </video>
+  <div class="showcase-caption">
+    <span class="showcase-eyebrow">Selected work &middot; In motion</span>
+    <p class="showcase-title">{title}</p>
+    <span class="showcase-note">{note}</span>
+  </div>
+</div>"""
+
 
 # ─────────────────────────────────────────── HOME
 services_preview = BLOCKS['services']
@@ -92,7 +107,16 @@ page(path='services/index.html', depth=1, current='/services/',
 
 # ─────────────────────────────────────────── WORK (index)
 work_intro = BLOCKS['work']
+# On the index the featured card must lead INTO the case study, not off-site.
+work_intro = work_intro.replace(
+    '''onclick="window.open('https://victoriaswart.com/ladolcevitaluxuryexperience/','_blank')"''',
+    '''onclick="location.href='/work/la-dolce-vita/'"''', 1)
+work_intro = re.sub(
+    r'<a href="https://victoriaswart\.com/ladolcevitaluxuryexperience/"[^>]*class="cs-live-link"[^>]*>[^<]*</a>',
+    '<a href="/work/la-dolce-vita/" class="cs-live-link">View the case study \u2192</a>',
+    work_intro, count=1)
 work_body = '\n\n'.join([
+    showcase_html(1, 'Italian Luxury Concierge &mdash; the concept, in motion.'),
     h1(fix(work_intro, 1), 'Selected<br><em>Work</em>'),
     fix(BLOCKS['editorial'], 1),
 ])
@@ -138,19 +162,7 @@ import re as _re
 m = _re.search(r'<div class="case-study case-study--live".*?\n    </div>\n', cs, _re.S)
 featured = m.group(0) if m else ''
 
-showcase = '''<!-- FULL-VIEWPORT WALKTHROUGH -->
-<div class="showcase" id="showcase">
-  <video id="showcaseVideo" poster="../../ladolcevita-poster.jpg" preload="none"
-         autoplay muted loop playsinline disablepictureinpicture
-         aria-label="Walkthrough of the Italian luxury concierge website concept designed by Victoria Clara Swart">
-    <source src="../../ladolcevita-walkthrough.mp4" type="video/mp4">
-  </video>
-  <div class="showcase-caption">
-    <span class="showcase-eyebrow">Selected work &middot; In motion</span>
-    <p class="showcase-title">The concept, in motion.</p>
-    <span class="showcase-note">Brand, copy, design and build by Victoria Clara Swart</span>
-  </div>
-</div>'''
+showcase = showcase_html(2, 'The concept, in motion.')
 
 cs_body = (showcase +
   '\n\n<section id="work">\n'
