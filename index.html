@@ -210,6 +210,37 @@
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": "Italian Luxury Concierge — Brand & Web Concept",
+  "url": "https://victoriaswart.com/ladolcevitaluxuryexperience/",
+  "description": "An independently developed brand and digital concept for an ultra-luxury Italian concierge service: brand positioning, copy direction, multilingual communication, and a complete website.",
+  "creator": {
+    "@type": "Person",
+    "name": "Victoria Clara Swart",
+    "url": "https://victoriaswart.com"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Victoria Clara Swart",
+    "url": "https://victoriaswart.com"
+  },
+  "copyrightHolder": {
+    "@type": "Person",
+    "name": "Victoria Clara Swart",
+    "url": "https://victoriaswart.com"
+  },
+  "copyrightYear": 2026,
+  "copyrightNotice": "© 2026 Victoria Clara Swart. All rights reserved. Not licensed for commercial use or reproduction by any third party.",
+  "creditText": "Concept, strategy, copy and design by Victoria Clara Swart",
+  "license": "https://victoriaswart.com/#rights",
+  "isAccessibleForFree": true,
+  "usageInfo": "https://victoriaswart.com/#rights",
+  "keywords": "brand strategy, luxury travel branding, multilingual copywriting, web design concept"
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Satoshi:wght@300;400;500&display=swap" rel="stylesheet">
@@ -1076,6 +1107,17 @@
     transition: letter-spacing 0.3s ease;
   }
   .cs-live-link:hover { letter-spacing: 0.22em; }
+  .cs-rights {
+    margin-top: 22px;
+    padding-top: 16px;
+    border-top: 0.5px solid rgba(248,246,242,0.12);
+    font-size: 10.5px;
+    font-weight: 300;
+    line-height: 1.7;
+    letter-spacing: 0.02em;
+    color: rgba(248,246,242,0.35);
+    max-width: 46ch;
+  }
   @media (max-width: 768px) {
     .case-study--live { grid-template-columns: 1fr; }
     .cs-live-right { min-height: 240px; padding: 40px 32px; }
@@ -2094,6 +2136,7 @@
             <span class="cs-del-item">Luxury audience targeting</span>
           </div>
           <a href="https://victoriaswart.com/ladolcevitaluxuryexperience/" target="_blank" rel="noopener noreferrer" class="cs-live-link" onclick="event.stopPropagation()">View Concept →</a>
+          <p class="cs-rights">Independent concept project. Strategy, copy, design and code © <span class="cs-year"></span> Victoria Clara Swart. All rights reserved. Not licensed for commercial use or reproduction by any third party.</p>
         </div>
       </div>
       <div class="cs-live-right" aria-hidden="true">
@@ -2391,7 +2434,8 @@
   <div>
     <div class="footer-name">Victoria Clara Swart</div>
     <div class="footer-tagline" style="margin-top:4px;">Creative Strategy · Brand Communication · Cross-Cultural Positioning</div>
-    <div class="footer-tagline" style="margin-top:6px;">© <span id="footerYear"></span> Victoria Clara Swart. All rights reserved.</div>
+    <div class="footer-tagline" style="margin-top:6px;" id="rights">© <span id="footerYear"></span> Victoria Clara Swart. All rights reserved.</div>
+    <div class="footer-tagline" style="margin-top:6px;max-width:52ch;opacity:0.72;">All content on this site — including written copy, brand concepts, case-study material, design and code — is the original work and intellectual property of Victoria Clara Swart, protected under Italian and EU copyright law. Concept work shown in the portfolio remains the property of the author and is not licensed for commercial use, reproduction, or republication by any third party.</div>
   </div>
   <div class="footer-tagline">Based in Rome, Italy · Working Internationally</div>
   <div class="footer-social">
@@ -2478,6 +2522,7 @@
 
   // Footer year
   document.getElementById('footerYear').textContent = new Date().getFullYear();
+  document.querySelectorAll('.cs-year').forEach(el => el.textContent = new Date().getFullYear());
 
   // Spam protection: honeypot (in markup) + time gate + content checks + double-submit guard
   const formLoadTime = Date.now();
