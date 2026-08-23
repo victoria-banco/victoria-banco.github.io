@@ -1585,42 +1585,94 @@
 
   /* ─── FOOTER ─── */
   footer {
-    background: var(--ink);
-    padding: 32px 48px;
-    border-top: 0.5px solid rgba(248,246,242,0.08);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background: #000;
+    padding: 72px 48px 0;
+    border-top: 0.5px solid rgba(248,246,242,0.10);
+    display: block;
+    text-align: center;
+    overflow: hidden;
   }
 
-  .footer-name {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 16px;
-    font-weight: 400;
-    color: var(--cream);
-    letter-spacing: 0.04em;
+  .footer-top {
+    max-width: 900px;
+    margin: 0 auto 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
   }
 
   .footer-tagline {
     font-size: 10px;
     font-weight: 400;
-    letter-spacing: 0.15em;
-    color: rgba(248,246,242,0.3);
+    letter-spacing: 0.22em;
+    color: rgba(248,246,242,0.5);
     text-transform: uppercase;
+    line-height: 1.9;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .footer-legal {
+    font-size: 10px;
+    font-weight: 300;
+    letter-spacing: 0.06em;
+    line-height: 1.85;
+    color: rgba(248,246,242,0.32);
+    text-transform: none;
+    max-width: 62ch;
+    margin: 0 auto;
+    text-align: center;
   }
 
-  .footer-social { display: flex; gap: 24px; }
-
+  .footer-social {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 28px;
+  }
   .footer-social a {
     font-size: 10px;
     font-weight: 500;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
-    color: rgba(248,246,242,0.35);
+    color: rgba(248,246,242,0.55);
     text-decoration: none;
-    transition: color 0.3s;
+    position: relative;
+    padding-bottom: 3px;
+    transition: color 0.3s ease;
   }
-  .footer-social a:hover { color: var(--gold); }
+  .footer-social a::after {
+    content: '';
+    position: absolute;
+    left: 0; bottom: 0;
+    width: 0; height: 1px;
+    background: var(--gold);
+    transition: width 0.25s ease;
+  }
+  .footer-social a:hover { color: var(--cream); }
+  .footer-social a:hover::after { width: 100%; }
+
+  /* Gucci-logic wordmark: maximum figure-ground contrast */
+  .footer-wordmark {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    font-size: clamp(30px, 11.4vw, 210px);
+    line-height: 0.95;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    white-space: nowrap;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 0.10em;
+    display: block;
+    user-select: none;
+  }
+
+  @media (max-width: 700px) {
+    footer { padding: 56px 24px 0; }
+    .footer-top { gap: 18px; margin-bottom: 40px; }
+    .footer-wordmark { font-size: clamp(22px, 11.2vw, 60px); letter-spacing: 0.04em; }
+  }
 
   /* ─── BORDEAUX STATEMENT BREAK ─── */
   .statement-break {
@@ -2473,20 +2525,23 @@
 </main>
 
 <footer>
-  <div>
-    <div class="footer-name">Victoria Clara Swart</div>
-    <div class="footer-tagline" style="margin-top:4px;">Creative Strategy · Brand Communication · Cross-Cultural Positioning</div>
-    <div class="footer-tagline" style="margin-top:6px;" id="rights">© <span id="footerYear"></span> Victoria Clara Swart. All rights reserved.</div>
-    <div class="footer-tagline" style="margin-top:6px;max-width:52ch;opacity:0.72;">All content on this site — including written copy, brand concepts, case-study material, design and code — is the original work and intellectual property of Victoria Clara Swart, protected under Italian and EU copyright law. Concept work shown in the portfolio remains the property of the author and is not licensed for commercial use, reproduction, or republication by any third party.</div>
+  <div class="footer-top">
+    <div class="footer-social">
+      <a href="https://www.instagram.com/imma__victoria" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a href="https://it.linkedin.com/in/victoriaswart" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://victoriaclaraswart.substack.com" target="_blank" rel="noopener noreferrer">Substack</a>
+      <a href="mailto:victoria.c.swart@icloud.com">Email</a>
+      <a href="#" onclick="openPrivacy(event)">Privacy</a>
+    </div>
+
+    <div class="footer-tagline">Creative Strategy · Brand Communication · Cross-Cultural Positioning</div>
+    <div class="footer-tagline">Based in Rome, Italy · Working Internationally</div>
+
+    <div class="footer-tagline" id="rights">© <span id="footerYear"></span> Victoria Clara Swart. All rights reserved.</div>
+    <p class="footer-legal">All content on this site — written copy, brand concepts, case-study material, design and code — is the original work and intellectual property of Victoria Clara Swart, protected under Italian and EU copyright law. Concept work shown in the portfolio remains the property of the author and is not licensed for commercial use, reproduction, or republication by any third party.</p>
   </div>
-  <div class="footer-tagline">Based in Rome, Italy · Working Internationally</div>
-  <div class="footer-social">
-    <a href="https://www.instagram.com/imma__victoria" target="_blank" rel="noopener noreferrer">Instagram</a>
-    <a href="https://it.linkedin.com/in/victoriaswart" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-    <a href="https://victoriaclaraswart.substack.com" target="_blank" rel="noopener noreferrer">Substack</a>
-    <a href="mailto:victoria.c.swart@icloud.com">Email</a>
-    <a href="#" onclick="openPrivacy(event)" style="color:rgba(248,246,242,0.2);">Privacy</a>
-  </div>
+
+  <div class="footer-wordmark" aria-hidden="true">Victoria Clara Swart</div>
 </footer>
 
 <!-- PRIVACY POLICY MODAL -->
