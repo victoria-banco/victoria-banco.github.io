@@ -364,9 +364,9 @@
     content: '';
     position: absolute;
     bottom: 0; left: 0;
-    width: 0; height: 0.5px;
-    background: var(--gold);
-    transition: width 0.35s ease;
+    width: 0; height: 1px;
+    background: var(--gold-text);
+    transition: width 0.2s cubic-bezier(0.4,0,0.2,1);
   }
 
   .nav-links a:hover { color: var(--ink); }
@@ -559,9 +559,13 @@
     letter-spacing: 0.16em;
     text-transform: uppercase;
     text-decoration: none;
-    transition: border-color 0.4s ease, color 0.4s ease;
+    transition: border-color 0.35s ease, color 0.35s ease, background 0.35s ease;
   }
-  .btn-ghost:hover { border-color: var(--gold); color: var(--gold); }
+  .btn-ghost:hover {
+    background: var(--ink);
+    border-color: var(--ink);
+    color: var(--cream);
+  }
 
   .hero-right {
     height: 100dvh;
@@ -604,10 +608,10 @@
 
   /* ─── MARQUEE TICKER ─── */
   .cred-strip {
-    background: var(--ink);
+    background: #14120C;
     padding: 36px 48px;
     border-top: 0.5px solid rgba(248,246,242,0.06);
-    border-bottom: 0.5px solid rgba(248,246,242,0.06);
+    
   }
   .cred-strip-inner {
     max-width: 900px;
@@ -712,27 +716,20 @@
 
   .intro-aside { padding-top: 8px; }
 
-  .intro-stat {
-    padding: 28px 0;
-    border-top: 0.5px solid var(--border);
+  /* Premise inverted: the page's second dark beat */
+  .intro--dark {
+    background: #14120C;
+    padding-top: 24px;
+    background-image: radial-gradient(ellipse at 78% 18%, rgba(181,145,106,0.13) 0%, transparent 62%);
+    align-items: center;
   }
-  .intro-stat:last-of-type { border-bottom: 0.5px solid var(--border); }
+  .intro--dark .section-label { color: rgba(181,145,106,0.9); }
+  .intro--dark .intro-pull { color: var(--cream); }
+  .intro--dark .intro-body { color: rgba(248,246,242,0.72); font-size: 17px; }
+  .intro--dark .intro-body em { color: var(--cream); font-style: italic; }
+  .intro--dark .divider { background: rgba(181,145,106,0.45); }
+  .intro--dark .intro-aside img { filter: none; }
 
-  .stat-number {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 48px;
-    font-weight: 300;
-    color: var(--gold-text);
-    line-height: 1;
-    margin-bottom: 6px;
-  }
-
-  .stat-label {
-    font-size: 11px;
-    font-weight: 400;
-    letter-spacing: 0.08em;
-    color: var(--muted);
-  }
 
   .intro-aside img {
     width: 100%;
@@ -758,8 +755,19 @@
     padding: 36px 40px 36px 0;
     border-bottom: 0.5px solid var(--border);
     position: relative;
-    transition: padding-left 0.45s cubic-bezier(0.23,1,0.32,1);
+    cursor: pointer;
+    transition: padding-left 0.45s cubic-bezier(0.23,1,0.32,1),
+                transform 0.35s cubic-bezier(0.23,1,0.32,1);
   }
+  .service-item::after {
+    content: '';
+    position: absolute;
+    left: 0; bottom: -0.5px;
+    width: 0; height: 1.5px;
+    background: var(--gold-text);
+    transition: width 0.4s cubic-bezier(0.23,1,0.32,1);
+  }
+  .service-item:hover::after { width: 100%; }
 
   .service-item:nth-child(even) {
     padding-left: 40px;
@@ -767,7 +775,7 @@
     border-left: 0.5px solid var(--border);
   }
 
-  .service-item:hover { padding-left: 12px; }
+  .service-item:hover { padding-left: 12px; transform: translateY(-3px); }
   .service-item:nth-child(even):hover { padding-left: 52px; }
   .service-item--full { grid-column: 1 / -1; padding-right: 0; border-left: none; max-width: 640px; }
   .service-item--full:hover { padding-left: 12px; }
@@ -788,10 +796,11 @@
     font-weight: 400;
     color: var(--ink);
     margin-bottom: 10px;
+    letter-spacing: 0.02em;
   }
 
   .service-kw {
-    font-size: 10px;
+    font-size: 11px;
     font-weight: 400;
     letter-spacing: 0.06em;
     color: var(--muted);
@@ -799,7 +808,7 @@
     line-height: 1.5;
   }
   .service-desc {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 300;
     line-height: 1.75;
     color: var(--stone);
@@ -815,34 +824,69 @@
   .service-item:hover .service-arrow { color: var(--gold); transform: translateX(8px); }
 
   /* ─── SERVICES CTA ─── */
+  /* Gucci close: full-bleed dark zone, name as texture, one high-contrast button */
   .services-cta {
-    margin-top: 72px;
-    border-top: 0.5px solid var(--border);
-    padding-top: 64px;
+    position: relative;
+    margin: 96px -48px 0;
+    padding: 104px 48px 112px;
+    background: #0B0A07;
     display: flex;
     justify-content: center;
+    overflow: hidden;
+  }
+  .services-cta-mark {
+    position: absolute;
+    left: 0; right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: auto;
+    opacity: 0.13;
+    pointer-events: none;
+    user-select: none;
+  }
+  .services-cta-mark text {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    font-size: 108px;
+    fill: var(--cream);
   }
   .services-cta-inner {
+    position: relative;
+    z-index: 2;
     text-align: center;
-    max-width: 540px;
+    max-width: 560px;
   }
   .services-cta-text {
     font-size: 11px;
     font-weight: 500;
-    letter-spacing: 0.22em;
+    letter-spacing: 0.28em;
     text-transform: uppercase;
-    color: var(--gold-text);
-    margin-bottom: 16px;
+    color: rgba(181,145,106,0.95);
+    margin-bottom: 20px;
   }
   .services-cta-heading {
     font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(28px, 3.5vw, 44px);
+    font-size: clamp(30px, 4vw, 52px);
     font-weight: 300;
-    line-height: 1.2;
-    color: var(--ink);
-    margin-bottom: 32px;
+    line-height: 1.18;
+    color: #FFFFFF;
+    margin-bottom: 38px;
   }
-  .services-cta-heading em { font-style: italic; }
+  .services-cta-heading em { font-style: italic; color: rgba(255,255,255,0.78); }
+  .services-cta .btn-primary {
+    background: var(--cream);
+    color: var(--ink);
+    border: 0.5px solid var(--cream);
+  }
+  .services-cta .btn-primary:hover {
+    background: transparent;
+    color: var(--cream);
+    border-color: var(--cream);
+  }
+  @media (max-width: 700px) {
+    .services-cta { margin: 72px -24px 0; padding: 72px 24px 80px; }
+  }
 
   /* ─── ABOUT ─── */
   .about {
@@ -2043,7 +2087,7 @@
 </div>
 
 <!-- INTRO -->
-<section class="intro reveal">
+<section class="intro intro--dark reveal">
   <div>
     <span class="section-label">The premise</span>
     <p class="intro-pull">
@@ -2051,24 +2095,10 @@
     </p>
     <div class="divider"></div>
     <p class="intro-body">
-      Victoria Clara Swart is a multilingual creative strategist and independent consultant working at the intersection of brand, language, and culture. Based in Rome and operating across markets, she supports businesses and founders who understand that <em>how</em> you communicate is as strategic as what you offer.
-      <br><br>
-      Her practice spans brand strategy, creative direction, communication design, multilingual consulting, and digital positioning — brought together by a single question: how does this brand need to be understood?
+      Victoria Clara Swart is a multilingual brand strategist and independent consultant. Her work sits at the intersection of brand, language, and culture. Based in Rome. Operating internationally.
     </p>
   </div>
   <div class="intro-aside">
-    <div class="intro-stat">
-      <div class="stat-number">5</div>
-      <div class="stat-label">Languages spoken fluently</div>
-    </div>
-    <div class="intro-stat">
-      <div class="stat-number">5</div>
-      <div class="stat-label">Countries lived and worked in</div>
-    </div>
-    <div class="intro-stat">
-      <div class="stat-number">6</div>
-      <div class="stat-label">Service disciplines offered</div>
-    </div>
     <img src="victoria-swart-speaking.jpg" alt="Victoria Clara Swart speaking and moderating at an international business event in Rome" width="1068" height="1600" loading="lazy" decoding="async">
   </div>
 </section>
@@ -2136,6 +2166,9 @@
   </div>
 
   <div class="services-cta reveal">
+    <svg class="services-cta-mark" viewBox="0 0 1000 132" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+      <text x="500" y="100" text-anchor="middle" textLength="980" lengthAdjust="spacingAndGlyphs">Victoria Clara Swart</text>
+    </svg>
     <div class="services-cta-inner">
       <p class="services-cta-text">Have a project in mind?</p>
       <h3 class="services-cta-heading">Let's build something<br><em>worth remembering.</em></h3>
