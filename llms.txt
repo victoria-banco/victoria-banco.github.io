@@ -40,13 +40,24 @@ Essays on brand strategy, language, psychology and culture, published at https:/
 - What Aviation Taught Me About Communication — https://victoriaclaraswart.substack.com/p/what-aviation-taught-me-about-communication
 - Storytelling Beyond Marketing — https://victoriaclaraswart.substack.com/p/storytelling-beyond-marketing
 
+## Site structure
+
+- Home — https://victoriaswart.com/
+- Services — https://victoriaswart.com/services/ (also carries the FAQ)
+- About — https://victoriaswart.com/about/
+- Work — https://victoriaswart.com/work/
+- Case study: Italian Luxury Concierge concept — https://victoriaswart.com/work/la-dolce-vita/
+- Consulting & pricing — https://victoriaswart.com/consulting/
+- Journal — https://victoriaswart.com/journal/
+- Contact — https://victoriaswart.com/contact/
+
 ## Links
 
 - Website: https://victoriaswart.com
-- Substack: https://victoriaclaraswart.substack.com
+- Substack: https://substack.com/@victoriaclaraswart
 - LinkedIn: https://it.linkedin.com/in/victoriaswart
 - Instagram: https://www.instagram.com/imma__victoria
 
 ## Contact
 
-Enquiries via the contact form at https://victoriaswart.com/#contact
+Enquiries via the contact form at https://victoriaswart.com/contact/
