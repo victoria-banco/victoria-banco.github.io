@@ -7,6 +7,9 @@
 <meta name="description" content="Multilingual brand strategist and SEO copywriter in Rome. Brand positioning, content strategy and creative direction, delivered in five languages.">
 <meta name="author" content="Victoria Clara Swart">
 <link rel="canonical" href="https://victoriaswart.com/">
+<link rel="alternate" hreflang="en" href="https://victoriaswart.com/">
+<link rel="alternate" hreflang="de" href="https://victoriaswart.com/de/">
+<link rel="alternate" hreflang="x-default" href="https://victoriaswart.com/">
 <link rel="preload" as="image" href="victoriahero.jpg" fetchpriority="high">
 
 <!-- Favicon -->
@@ -102,6 +105,33 @@
     "UGC Creation",
     "Event MC",
     "Multilingual Communication"
+  ],
+  "availableLanguage": [
+    {
+      "@type": "Language",
+      "name": "English",
+      "alternateName": "en"
+    },
+    {
+      "@type": "Language",
+      "name": "German",
+      "alternateName": "de"
+    },
+    {
+      "@type": "Language",
+      "name": "Italian",
+      "alternateName": "it"
+    },
+    {
+      "@type": "Language",
+      "name": "Spanish",
+      "alternateName": "es"
+    },
+    {
+      "@type": "Language",
+      "name": "Danish",
+      "alternateName": "da"
+    }
   ]
 }
 </script>
@@ -110,7 +140,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Satoshi:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body data-locale="en" data-route="home">
 
 <div class="scroll-progress"></div>
 <div class="cursor-ring"></div>
@@ -126,6 +156,7 @@
 <nav aria-label="Primary">
   <a href="/" class="nav-logo">Victoria Clara Swart</a>
   <ul class="nav-links">
+    <li><a href="/" aria-current="page">Home</a></li>
     <li><a href="/services/">Services</a></li>
     <li><a href="/about/">About</a></li>
     <li><a href="/work/">Work</a></li>
@@ -133,6 +164,16 @@
     <li><a href="/journal/">Journal</a></li>
     <li><a href="/contact/">Contact</a></li>
   </ul>
+  <div class="lang-switch">
+    <button class="lang-current" aria-haspopup="listbox" aria-expanded="false" aria-label="Language">
+      <span>English</span>
+      <svg width="9" height="6" viewBox="0 0 9 6" aria-hidden="true"><path d="M1 1l3.5 3.5L8 1" fill="none" stroke="currentColor" stroke-width="1"/></svg>
+    </button>
+    <div class="lang-menu" role="listbox">
+      <a role="option" href="/" hreflang="en" lang="en" aria-current="true">English</a>
+      <a role="option" href="/de/" hreflang="de" lang="de">Deutsch</a>
+    </div>
+  </div>
   <button class="hamburger" aria-label="Open menu">
     <span></span><span></span><span></span>
   </button>
@@ -142,6 +183,7 @@
 <!-- MOBILE OVERLAY -->
 <div class="nav-overlay">
   <span class="nav-overlay-label">Navigation</span>
+  <a class="nav-overlay-home" href="/">Home</a>
   <a href="/services/">Services</a>
   <a href="/about/">About</a>
   <a href="/work/">Work</a>
@@ -153,7 +195,6 @@
 
 <main id="main">
 <!-- HERO -->
-<main id="main">
 <section class="hero" id="home">
   <div class="hero-text">
     <span class="hero-eyebrow">Multilingual Creative Strategist · Rome, Italy</span>
@@ -165,8 +206,8 @@
     </p>
     <p class="hero-seo-sub">Multilingual brand strategist and copywriter based in Rome — working in English, German, Italian, Spanish and Danish.</p>
     <div class="hero-ctas">
-      <a href="/contact/" class="btn-primary">Work With Me</a>
-      <a href="/consulting/" class="btn-ghost">Book a Consultation</a>
+      <a href="contact" class="btn-primary">Work With Me</a>
+      <a href="consulting" class="btn-ghost">Book a Consultation</a>
     </div>
   </div>
   <div class="hero-right">
@@ -283,7 +324,7 @@
     <div class="services-cta-inner">
       <p class="services-cta-text">Have a project in mind?</p>
       <h3 class="services-cta-heading">Let's build something<br><em>worth remembering.</em></h3>
-      <a href="/contact/" class="btn-primary">Start a Conversation</a>
+      <a href="contact" class="btn-primary">Start a Conversation</a>
     </div>
   </div>
 </section>
@@ -334,7 +375,7 @@
 
 
 <!-- ONWARD -->
-<section class="onward reveal" aria-label="Continue reading">
+<section class="onward reveal" aria-label="Continue">
   <span class="section-label">Continue</span>
   <div class="onward-grid">
     <a class="onward-card" href="/services/">
@@ -390,6 +431,9 @@
 
     <h3>Google Fonts</h3>
     <p>This site loads fonts from Google Fonts (fonts.googleapis.com). This causes your browser to make a request to Google's servers, which may log your IP address. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a> for details.</p>
+
+    <h3>Language preference</h3>
+    <p>If you are offered a different language version of this site, that suggestion is based solely on your browser's own language setting. No location lookup is performed on your IP address and no data is sent to any third party. Your choice is stored locally in your browser only.</p>
 
     <h3>Your Rights (GDPR)</h3>
     <p>If you are located in the EU/EEA, you have the right to access, correct, or request deletion of any personal data you have submitted via the contact form. To exercise these rights, contact: <a href="mailto:victoria.c.swart@icloud.com">victoria.c.swart@icloud.com</a>.</p>

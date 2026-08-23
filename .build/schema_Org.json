@@ -1,0 +1,89 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Victoria Clara Swart",
+  "alternateName": "Victoria Swart",
+  "url": "https://victoriaswart.com",
+  "description": "Multilingual brand strategist and SEO copywriter based in Rome, offering brand positioning, content strategy, copywriting, social media strategy, and creative direction in English, German, Italian, Spanish and Danish.",
+  "founder": {
+    "@type": "Person",
+    "name": "Victoria Clara Swart",
+    "alternateName": [
+      "Victoria Swart",
+      "Victoria C. Swart"
+    ],
+    "jobTitle": "Brand Strategist & SEO Copywriter",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Victoria Clara Swart — Brand Strategy"
+    },
+    "homeLocation": {
+      "@type": "Place",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Rome",
+        "addressCountry": "IT"
+      }
+    },
+    "knowsLanguage": [
+      "en",
+      "de",
+      "it",
+      "es",
+      "da"
+    ],
+    "sameAs": [
+      "https://www.linkedin.com/in/victoriaswart",
+      "https://www.instagram.com/imma__victoria",
+      "https://substack.com/@victoriaclaraswart"
+    ]
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Rome",
+    "addressCountry": "IT"
+  },
+  "areaServed": [
+    "IT",
+    "DE",
+    "DK",
+    "ES",
+    "GB",
+    "US"
+  ],
+  "serviceType": [
+    "Brand Strategy",
+    "SEO Copywriting",
+    "Social Media Strategy",
+    "UGC Creation",
+    "Event MC",
+    "Multilingual Communication"
+  ],
+  "availableLanguage": [
+    {
+      "@type": "Language",
+      "name": "English",
+      "alternateName": "en"
+    },
+    {
+      "@type": "Language",
+      "name": "German",
+      "alternateName": "de"
+    },
+    {
+      "@type": "Language",
+      "name": "Italian",
+      "alternateName": "it"
+    },
+    {
+      "@type": "Language",
+      "name": "Spanish",
+      "alternateName": "es"
+    },
+    {
+      "@type": "Language",
+      "name": "Danish",
+      "alternateName": "da"
+    }
+  ]
+}
