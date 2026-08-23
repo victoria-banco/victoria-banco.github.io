@@ -704,6 +704,7 @@
 
   .intro-aside img {
     width: 100%;
+    height: auto;
     margin-top: 32px;
     display: block;
     object-fit: cover;
@@ -853,6 +854,7 @@
 
   .about-right img {
     width: 100%;
+    height: auto;
     aspect-ratio: 3/4;
     object-fit: cover;
     object-position: center top;
@@ -1253,6 +1255,62 @@
     letter-spacing: 0.18em;
     text-transform: uppercase;
     color: var(--muted);
+  }
+
+  /* ─── EDITORIAL BAND ─── */
+  .editorial-band {
+    position: relative;
+    width: 100%;
+    height: clamp(340px, 52vh, 560px);
+    overflow: hidden;
+    background: var(--ink);
+  }
+  .editorial-band img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 42%;
+    display: block;
+    transform: scale(1.02);
+    transition: transform 1.2s cubic-bezier(0.16,1,0.3,1);
+  }
+  .editorial-band:hover img { transform: scale(1.06); }
+  .editorial-band::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(24,22,14,0.72) 0%, rgba(24,22,14,0.28) 42%, transparent 68%);
+    pointer-events: none;
+  }
+  .editorial-caption {
+    position: absolute;
+    left: clamp(24px, 6vw, 88px);
+    bottom: clamp(32px, 6vh, 64px);
+    z-index: 2;
+    max-width: 460px;
+  }
+  .editorial-eyebrow {
+    display: block;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: rgba(181,145,106,0.85);
+    margin-bottom: 16px;
+  }
+  .editorial-line {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(24px, 3.4vw, 42px);
+    font-weight: 300;
+    line-height: 1.25;
+    color: var(--cream);
+  }
+  .editorial-line em { font-style: italic; color: rgba(247,244,239,0.72); }
+  @media (max-width: 600px) {
+    .editorial-band::after {
+      background: linear-gradient(to top, rgba(24,22,14,0.82) 0%, rgba(24,22,14,0.35) 55%, transparent 100%);
+    }
+    .editorial-caption { max-width: none; right: 24px; }
   }
 
   /* ─── FAQ ─── */
@@ -1888,7 +1946,7 @@
       <div class="stat-number">6</div>
       <div class="stat-label">Service disciplines offered</div>
     </div>
-    <img src="working.jpg" alt="Victoria Clara Swart working on brand strategy" width="1023" height="1537" loading="lazy" decoding="async">
+    <img src="victoria-swart-speaking.jpg" alt="Victoria Clara Swart speaking and moderating at an international business event in Rome" width="1068" height="1600" loading="lazy" decoding="async">
   </div>
 </section>
 
@@ -1998,7 +2056,7 @@
     </div>
   </div>
   <div class="about-right reveal">
-    <img src="desk.jpg" alt="Victoria Clara Swart — brand strategist at work in Rome" width="1402" height="1122" loading="lazy" decoding="async">
+    <img src="victoria-swart-networking.jpg" alt="Victoria Clara Swart in conversation with business leaders at a networking event" width="1068" height="1600" loading="lazy" decoding="async">
     <div class="about-tag">
       <p>Based in Rome<br>Working Globally<br><span style="color:rgba(248,246,242,0.6)">Est. 2022</span></p>
     </div>
@@ -2084,6 +2142,15 @@
     Full case studies available on request for selected collaborations.
   </p>
 </section>
+
+<!-- EDITORIAL BAND -->
+<div class="editorial-band reveal">
+  <img src="victoria-swart-editorial.jpg" alt="Victoria Clara Swart, multilingual brand strategist, photographed at Odense harbour, Denmark" width="2400" height="1600" loading="lazy" decoding="async">
+  <div class="editorial-caption">
+    <span class="editorial-eyebrow">Working internationally</span>
+    <p class="editorial-line">Rome · Copenhagen · Berlin<br><em>and wherever the work asks to be.</em></p>
+  </div>
+</div>
 
 <!-- CONSULTING -->
 <section class="consulting" id="consulting">
