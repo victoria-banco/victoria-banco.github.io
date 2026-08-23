@@ -1107,6 +1107,36 @@
     transition: letter-spacing 0.3s ease;
   }
   .cs-live-link:hover { letter-spacing: 0.22em; }
+  .cs-video-figure { position: relative; z-index: 2; width: 100%; margin: 0; }
+  .cs-video-frame {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1280 / 748;
+    overflow: hidden;
+    background: #000;
+    border: 0.5px solid rgba(181,145,106,0.28);
+    box-shadow: 0 24px 60px rgba(0,0,0,0.5);
+  }
+  .cs-video {
+    position: absolute;
+    top: -6.95%;
+    left: 0;
+    width: 100%;
+    height: 106.95%;
+    object-fit: cover;
+    display: block;
+    background: #000;
+  }
+  .cs-video-caption {
+    margin-top: 14px;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(248,246,242,0.34);
+    text-align: center;
+    line-height: 1.7;
+  }
   .cs-rights {
     margin-top: 22px;
     padding-top: 16px;
@@ -2139,12 +2169,24 @@
           <p class="cs-rights">Independent concept project. Strategy, copy, design and code © <span class="cs-year"></span> Victoria Clara Swart. All rights reserved. Not licensed for commercial use or reproduction by any third party.</p>
         </div>
       </div>
-      <div class="cs-live-right" aria-hidden="true">
-        <div class="cs-brand-preview">
-          <div class="cs-brand-name">Italy, as it was<br>meant to be seen.</div>
-          <div class="cs-brand-rule"></div>
-          <div class="cs-brand-tagline">Concept copy · Brand voice<br>developed by Victoria Clara Swart</div>
-        </div>
+      <div class="cs-live-right" onclick="event.stopPropagation()">
+        <figure class="cs-video-figure">
+          <div class="cs-video-frame">
+            <video
+              class="cs-video"
+              poster="ladolcevita-poster.jpg"
+              preload="none"
+              controls
+              playsinline
+              muted
+              width="1280" height="748"
+              aria-label="Screen recording walkthrough of the La Dolce Vita Luxury Experience website concept designed by Victoria Clara Swart">
+              <source src="ladolcevita-walkthrough.mp4" type="video/mp4">
+              Your browser does not support embedded video. <a href="ladolcevita-walkthrough.mp4">Download the walkthrough</a>.
+            </video>
+          </div>
+          <figcaption class="cs-video-caption">Walkthrough — concept site, design and copy by Victoria Clara Swart</figcaption>
+        </figure>
       </div>
     </div>
 
