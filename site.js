@@ -41,8 +41,8 @@
   const hamburger = document.querySelector('.hamburger');
   const overlay   = document.querySelector('.nav-overlay');
 
-  function openMenu()  { hamburger.classList.add('open'); overlay.classList.add('open'); document.body.style.overflow = 'hidden'; }
-  function closeMenu() { hamburger.classList.remove('open'); overlay.classList.remove('open'); document.body.style.overflow = ''; }
+  function openMenu()  { hamburger.classList.add('open'); overlay.classList.add('open'); document.body.classList.add('menu-open'); document.body.style.overflow = 'hidden'; }
+  function closeMenu() { hamburger.classList.remove('open'); overlay.classList.remove('open'); document.body.classList.remove('menu-open'); document.body.style.overflow = ''; }
 
   hamburger.addEventListener('click', () => hamburger.classList.contains('open') ? closeMenu() : openMenu());
   overlay.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
@@ -71,14 +71,19 @@
   }
 
   // Footer year
-  document.getElementById('footerYear').textContent = new Date().getFullYear();
+  const _fy = document.getElementById('footerYear');
+  if (_fy) _fy.textContent = new Date().getFullYear();
   document.querySelectorAll('.cs-year').forEach(el => el.textContent = new Date().getFullYear());
 
   // Spam protection: honeypot (in markup) + time gate + content checks + double-submit guard
+  // Guarded: the form only exists on the contact page.
+  const contactForm = document.getElementById('contactForm');
+  if (contactForm) {
   const formLoadTime = Date.now();
   let formSubmitted = false;
-  document.getElementById('formTimestamp').value = formLoadTime;
-  document.getElementById('contactForm').addEventListener('submit', function(e) {
+  const _ts = document.getElementById('formTimestamp');
+  if (_ts) _ts.value = formLoadTime;
+  contactForm.addEventListener('submit', function(e) {
     // Block bots that submit instantly (under 4 seconds)
     if (Date.now() - formLoadTime < 4000) { e.preventDefault(); return false; }
 
@@ -107,16 +112,17 @@
 
     formSubmitted = true;
   });
+  }
 
   // Cookie consent
   function acceptCookies() {
     localStorage.setItem('vs_cookie_consent', '1');
-    document.getElementById('cookieBanner').classList.add('hidden');
+    document.getElementById('cookieBanner')?.classList.add('hidden');
   }
-  function openPrivacy(e) { e.preventDefault(); document.getElementById('privacyOverlay').classList.add('open'); document.body.style.overflow = 'hidden'; }
-  function closePrivacy() { document.getElementById('privacyOverlay').classList.remove('open'); document.body.style.overflow = ''; }
-  document.getElementById('privacyOverlay').addEventListener('click', function(e) { if (e.target === this) closePrivacy(); });
-  if (localStorage.getItem('vs_cookie_consent')) document.getElementById('cookieBanner').classList.add('hidden');
+  function openPrivacy(e) { e.preventDefault(); document.getElementById('privacyOverlay')?.classList.add('open'); document.body.style.overflow = 'hidden'; }
+  function closePrivacy() { document.getElementById('privacyOverlay')?.classList.remove('open'); document.body.style.overflow = ''; }
+  document.getElementById('privacyOverlay')?.addEventListener('click', function(e) { if (e.target === this) closePrivacy(); });
+  if (localStorage.getItem('vs_cookie_consent')) document.getElementById('cookieBanner')?.classList.add('hidden');
 
   // Smooth anchor scroll
   document.querySelectorAll('a[href^="#"]').forEach(link => {
@@ -140,4 +146,87 @@
     });
   }, { rootMargin: '200px 0px', threshold: 0.15 });
   io.observe(v);
+})();
+
+// ─── LANGUAGE SWITCHER ───
+(function () {
+  const sw = document.querySelector('.lang-switch');
+  if (!sw) return;
+  const btn = sw.querySelector('.lang-current');
+  const close = () => { sw.classList.remove('open'); btn.setAttribute('aria-expanded', 'false'); };
+  btn.addEventListener('click', e => {
+    e.stopPropagation();
+    const open = sw.classList.toggle('open');
+    btn.setAttribute('aria-expanded', String(open));
+  });
+  document.addEventListener('click', e => { if (!sw.contains(e.target)) close(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && hamburger.classList.contains('open')) closeMenu(); });
+  // two-letter label for the narrow layout
+  const code = document.body.dataset.locale || 'en';
+  btn.dataset.short = code.toUpperCase();
+})();
+
+// ─── LANGUAGE SUGGESTION ───
+// Uses the browser's own language preference. No IP lookup, no third-party
+// request, nothing stored beyond a local dismissal flag.
+(function () {
+  const OFFER = { de: { native: 'Deutsch', dir: '/de' } };
+  const ROUTE_MAP = {
+    de: { home:'/de/', services:'/de/leistungen/', about:'/de/ueber-mich/',
+          work:'/de/arbeiten/', casestudy:'/de/arbeiten/la-dolce-vita/',
+          consulting:'/de/beratung/', journal:'/de/journal/', contact:'/de/kontakt/' },
+    en: { home:'/', services:'/services/', about:'/about/',
+          work:'/work/', casestudy:'/work/la-dolce-vita/',
+          consulting:'/consulting/', journal:'/journal/', contact:'/contact/' },
+  };
+  const COPY = {
+    de: {
+      prompt: 'Sie scheinen Deutsch zu bevorzugen. Möchten Sie zur deutschen Fassung wechseln?',
+      yes: 'Auf Deutsch ansehen',
+      no: 'Stay in English',
+    },
+  };
+
+  const current = document.body.dataset.locale || 'en';
+  const route = document.body.dataset.route || 'home';
+  if (localStorage.getItem('vs_lang_choice')) return;
+
+  const prefs = (navigator.languages && navigator.languages.length)
+    ? navigator.languages : [navigator.language || ''];
+  let target = null;
+  for (const p of prefs) {
+    const base = String(p).toLowerCase().split('-')[0];
+    if (base === current) return;          // already on their language
+    if (OFFER[base]) { target = base; break; }
+    if (base === 'en') return;             // English speaker, English site is right
+  }
+  if (!target) return;
+
+  const href = (ROUTE_MAP[target] && ROUTE_MAP[target][route]) || OFFER[target].dir + '/';
+  const c = COPY[target];
+
+  const bar = document.createElement('div');
+  bar.className = 'lang-offer';
+  bar.setAttribute('role', 'dialog');
+  bar.setAttribute('aria-live', 'polite');
+  bar.lang = target;
+  bar.innerHTML =
+    '<p></p><div class="lang-offer-actions">' +
+    '<a class="lang-offer-yes"></a>' +
+    '<button class="lang-offer-no" type="button"></button></div>';
+  bar.querySelector('p').textContent = c.prompt;
+  const yes = bar.querySelector('.lang-offer-yes');
+  yes.textContent = c.yes;
+  yes.href = href;
+  const no = bar.querySelector('.lang-offer-no');
+  no.textContent = c.no;
+  no.lang = 'en';
+
+  const remember = v => { try { localStorage.setItem('vs_lang_choice', v); } catch (e) {} };
+  yes.addEventListener('click', () => remember(target));
+  no.addEventListener('click', () => { remember(current); bar.classList.remove('show'); });
+
+  document.body.appendChild(bar);
+  setTimeout(() => bar.classList.add('show'), 1200);
 })();
