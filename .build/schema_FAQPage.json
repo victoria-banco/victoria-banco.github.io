@@ -1,0 +1,70 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does a brand strategist actually do?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A brand strategist decides what a business should stand for, who it speaks to, and how it says it — before any design or advertising begins. In practice this means positioning (what makes you distinct and defensible), messaging architecture (your core message and how it adapts by audience and channel), and brand voice (the vocabulary and tone that make you recognisable). Design makes a brand look consistent; strategy makes it mean something consistent."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which languages does Victoria Clara Swart work in?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Five: English and German at native level, plus Italian, Spanish and Danish. Work is delivered directly in each — brand messaging, website copy, and campaign material are written in the target language rather than translated into it, which is what keeps positioning intact across markets."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between translation and cultural adaptation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Translation carries words across languages. Cultural adaptation carries meaning across markets. The same claim does different work in different places: \"quality\" reads as engineering and reliability in German, and closer to care and craftsmanship in Italian. A translated tagline can be technically correct and still land flat, or signal the wrong price tier entirely. Adaptation rewrites for the effect the original was designed to have — which usually means changing the words."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does brand strategy consulting cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A one-off 60-minute strategy session is €150. Project-based private consulting — a rebrand, a launch, or a communication overhaul — starts at €800 and is quoted by scope. Long-term strategic support runs at €2,000 per month for founders and businesses who want a sustained strategic partner rather than a single engagement."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you work with clients outside Italy?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The practice is based in Rome and works across more than fifteen markets, with clients in Italy, Germany, Denmark, Spain, the UK and the US. Engagements run remotely by default; on-site work and event hosting are available across Europe."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What kind of businesses do you work with?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Founders, independent professionals, and small-to-mid sized businesses that sell on judgement rather than price — luxury travel and hospitality, professional services, real estate, and specialist agencies. The common thread is a business whose offer is stronger than its current positioning suggests."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does SEO have to do with brand strategy?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Search is where positioning gets tested. Keyword research reveals the language your market actually uses to describe its problem, which frequently differs from the language a business uses to describe its solution. Closing that gap improves rankings and sharpens the brand at the same time. Increasingly it also determines whether AI answer engines can describe your business correctly when someone asks about your category."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are you available for speaking and event hosting?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — keynotes, panel moderation, and MC work, in any of five languages. Recent work includes hosting and moderating international business events in Rome."
+      }
+    }
+  ]
+}

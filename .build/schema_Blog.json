@@ -1,0 +1,80 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "Victoria Clara Swart — The Journal",
+  "url": "https://victoriaclaraswart.substack.com",
+  "description": "Essays on brand strategy, language, psychology, and culture — the thinking behind how businesses are seen and remembered.",
+  "author": {
+    "@type": "Person",
+    "name": "Victoria Clara Swart",
+    "url": "https://victoriaswart.com"
+  },
+  "blogPost": [
+    {
+      "@type": "BlogPosting",
+      "headline": "The Psychology of Positioning",
+      "url": "https://victoriaclaraswart.substack.com/p/the-psychology-of-positioning",
+      "description": "Why the way a brand is perceived matters as much — if not more — than what it delivers. On anchoring, context, and the invisible architecture of trust.",
+      "keywords": "brand positioning, brand psychology, brand strategy",
+      "author": {
+        "@type": "Person",
+        "name": "Victoria Clara Swart"
+      }
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Why Good Brands Sound Clear Before They Look Expensive",
+      "url": "https://victoriaclaraswart.substack.com/p/why-good-brands-sound-clear-before",
+      "description": "Luxury is often misread as decoration. In communication, it is the opposite: restraint, precision, and the courage to say less.",
+      "keywords": "brand voice, luxury branding, copywriting",
+      "author": {
+        "@type": "Person",
+        "name": "Victoria Clara Swart"
+      }
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "What International Living Teaches You About Communication",
+      "url": "https://victoriaclaraswart.substack.com/p/what-international-living-teaches",
+      "description": "Having lived across five countries and spoken five languages professionally — the gap between fluency and actual understanding.",
+      "keywords": "multilingual communication, cross-cultural marketing, localisation",
+      "author": {
+        "@type": "Person",
+        "name": "Victoria Clara Swart"
+      }
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Taste, Trust, and Digital Presence",
+      "url": "https://victoriaclaraswart.substack.com/p/taste-trust-and-digital-presence",
+      "description": "The aesthetic choices a brand makes online signal far more than style. On visual decisions and perceived credibility.",
+      "keywords": "digital presence, brand credibility, web design",
+      "author": {
+        "@type": "Person",
+        "name": "Victoria Clara Swart"
+      }
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "What Aviation Taught Me About Communication",
+      "url": "https://victoriaclaraswart.substack.com/p/what-aviation-taught-me-about-communication",
+      "description": "In aviation, ambiguity is a safety risk. The same principle applies to brand language — on clarity, protocols, and precision as respect.",
+      "keywords": "clear communication, aviation, brand language",
+      "author": {
+        "@type": "Person",
+        "name": "Victoria Clara Swart"
+      }
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Storytelling Beyond Marketing",
+      "url": "https://victoriaclaraswart.substack.com/p/storytelling-beyond-marketing",
+      "description": "The most compelling brand narratives aren't built in campaign briefs. They come from knowing what a business genuinely stands for.",
+      "keywords": "brand storytelling, narrative strategy, content strategy",
+      "author": {
+        "@type": "Person",
+        "name": "Victoria Clara Swart"
+      }
+    }
+  ]
+}
