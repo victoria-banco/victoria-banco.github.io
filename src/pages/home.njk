@@ -1,0 +1,83 @@
+---
+pagination: { data: site.locales, size: 1, alias: lang }
+permalink: "{{ routes.home[lang] }}index.html"
+layout: layouts/base.njk
+routeKey: home
+copyKey: home
+---
+{% set c = copy.home %}
+
+<section class="hero">
+  <div class="hero-text">
+    <p class="eyebrow">{{ c.eyebrow }}</p>
+    <h1>{{ c.h1 }}</h1>
+    <p class="lead">{{ c.intro }}</p>
+    <p class="hero-ctas">
+      <a class="btn btn-primary" href="{{ 'work' | route(lang) }}">{{ t.cta.work }}</a>
+      <a class="btn btn-ghost" href="{{ 'contact' | route(lang) }}">{{ t.cta.project }}</a>
+    </p>
+  </div>
+  <div class="hero-media">
+    <img src="/assets/victoriahero.jpg" alt="{{ c.heroAlt }}" width="1023" height="1537" fetchpriority="high" decoding="async">
+  </div>
+</section>
+
+<section class="proof">
+  <ul>
+    {%- for p in c.proof %}
+    <li><span class="proof-n">{{ p.n }}</span><span class="proof-l">{{ p.label }}</span></li>
+    {%- endfor %}
+  </ul>
+</section>
+
+<section class="doors">
+  <h2>{{ c.doorsTitle }}</h2>
+  <div class="door-grid">
+    {%- for d in c.doors %}
+    <a class="door" href="{{ d.route | route(lang) }}">
+      <h3>{{ d.title }}</h3>
+      <p>{{ d.text }}</p>
+    </a>
+    {%- endfor %}
+  </div>
+</section>
+
+<section class="work-preview">
+  <h2>{{ c.workTitle }}</h2>
+  <div class="card-grid">
+    {%- for key in ["seabreeze", "eqm", "ladolcevita"] %}
+    {%- set cs = cases[key] %}
+    {%- set ct = cs[lang] %}
+    {%- set named = (not cs.flag) or flags[cs.flag] %}
+    <a class="case-card" href="{{ cs.route | route(lang) }}">
+      <img src="/assets/{{ cs.image }}" alt="{{ ct.sector }}" width="960" height="600" loading="lazy" decoding="async">
+      <h3>{{ ct.name if named else ct.nameFallback }}</h3>
+      <p>{{ ct.sector }}{% if ct.location %}, {{ ct.location }}{% endif %}</p>
+    </a>
+    {%- endfor %}
+  </div>
+  <p><a class="link-more" href="{{ 'work' | route(lang) }}">{{ t.cta.allProjects }} &rarr;</a></p>
+</section>
+
+<section class="said">
+  <h2>{{ c.saidTitle }}</h2>
+  <div class="quote-grid">
+    {%- for r in reviews.short[lang] %}
+    <blockquote><p>{{ r.quote }}</p><cite>{{ r.who }}</cite></blockquote>
+    {%- endfor %}
+    {%- if flags.web_testimonial_marco %}
+    <blockquote><p>{{ reviews.marco[lang].quote }}</p><cite>{{ reviews.marco[lang].who }}</cite></blockquote>
+    {%- endif %}
+  </div>
+</section>
+
+<section class="stage">
+  <h2>{{ c.stageTitle }}</h2>
+  <p>{{ c.stageText }}</p>
+  <p><a class="link-more" href="{{ 'languages' | route(lang) }}#stage">{{ t.cta.event }} &rarr;</a></p>
+</section>
+
+<section class="closing-band">
+  <p class="closing-text">{{ c.closing }}</p>
+  <a class="btn btn-light" href="{{ 'contact' | route(lang) }}">{{ t.cta.write }}</a>
+</section>

@@ -1,0 +1,14 @@
+{
+  "name": "victoriaswart-com",
+  "version": "2.0.0",
+  "private": true,
+  "description": "victoriaswart.com — four-language site",
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve --port=8081",
+    "check": "node tools/check.mjs"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "3.0.0"
+  }
+}

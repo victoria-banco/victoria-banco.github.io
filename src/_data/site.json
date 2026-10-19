@@ -1,0 +1,15 @@
+{
+  "url": "https://victoriaswart.com",
+  "name": "Victoria Clara Swart",
+  "shortName": "Victoria Swart",
+  "email": "victoria.c.swart@icloud.com",
+  "vat": "18420501001",
+  "formspree": "https://formspree.io/f/mdavgjok",
+  "social": {
+    "linkedin": "https://www.linkedin.com/in/victoriaswart",
+    "instagram": "https://www.instagram.com/victoriaclara.css",
+    "substack": "https://substack.com/@victoriaclaraswart"
+  },
+  "defaultLocale": "en",
+  "locales": ["en", "de", "it", "es"]
+}

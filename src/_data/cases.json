@@ -1,0 +1,156 @@
+{
+  "seabreeze": {
+    "order": 1,
+    "route": "seabreeze",
+    "flag": null,
+    "year": "2026",
+    "stack": "Hand-coded, Netlify",
+    "status": "live",
+    "live": "https://seabreeze-alghero.netlify.app",
+    "liveFlag": "seabreeze_own_domain",
+    "image": "case-seabreeze.jpg",
+    "en": {
+      "name": "Seabreeze",
+      "sector": "Houseboat holiday rental",
+      "location": "Alghero, Sardinia",
+      "brief": "A houseboat holiday rental needed a site that turns visitors into booking enquiries, for guests arriving from across Europe.",
+      "did": [
+        "First version built on Wix, handed over with a 29-page guide in February 2026.",
+        "Rebuilt in October 2026 as a fast hand-coded site connected to bookings.",
+        "Copy, structure, design, build and hosting setup."
+      ],
+      "result": "The owner compared both versions and chose the new one. It is moving to his own domain and his own Netlify account.",
+      "starter": "Holiday rentals and hospitality"
+    }
+  },
+  "eqm": {
+    "order": 2,
+    "route": "eqm",
+    "flag": "case_eqm_named",
+    "year": "2026",
+    "stack": "Custom Shopify theme",
+    "status": "pending",
+    "live": null,
+    "image": "case-eqm.jpg",
+    "en": {
+      "name": "EQM Sellier",
+      "nameFallback": "Italian artisan saddlery",
+      "sector": "Artisan saddlery",
+      "location": "Adro, Franciacorta",
+      "ownerNote": "Workshop of master saddler Ivan Persico",
+      "brief": "A workshop making bespoke saddles, bridles and competition trunks by hand needed to move from an old WordPress site to a real shop, without losing the consultation-first way it sells a saddle that costs several thousand euros.",
+      "did": [
+        "A complete custom Shopify Online Store 2.0 theme, in Italian and English.",
+        "A bespoke saddle page with a visual timeline, leather swatches and a quote form tracked as a funnel.",
+        "A repair request form for the workshop.",
+        "Cart drawer, predictive search, filters and a sticky buy button on mobile.",
+        "Product pages ready for 3D and augmented reality using Shopify's native model viewer.",
+        "Structured data for products, organisation, breadcrumbs, articles and FAQ.",
+        "A WordPress to Shopify redirect map, a keyword map and a Journal plan.",
+        "Email recovery flows, analytics setup and a plain-language handover document."
+      ],
+      "details": [
+        "The consultation-first flow for high-ticket bespoke products: the aim is a conversation, not a checkout.",
+        "Augmented reality loads only on products that have a model, so the rest of the shop stays fast.",
+        "A palette and type system built into theme settings, so the client can change the look without touching code."
+      ],
+      "result": "Ready to launch, waiting on the client's photography and final prices.",
+      "starter": "Artisan shops and e-commerce"
+    }
+  },
+  "graziano": {
+    "order": 3,
+    "route": "graziano",
+    "flag": "case_graziano_named",
+    "year": "2026",
+    "stack": "Hand-coded single page",
+    "status": "delivered",
+    "live": null,
+    "image": "case-graziano.jpg",
+    "en": {
+      "name": "Graziano Tumbarello",
+      "nameFallback": "Saxophonist, Sicily",
+      "sector": "Saxophonist",
+      "location": "Marsala, Sicily",
+      "brief": "A professional saxophonist booked for weddings and events needed a site that answers a couple's questions and gets them to message him.",
+      "did": [
+        "Single-page site in Italian: hero, services, repertoire, reviews, FAQ, gallery.",
+        "A WhatsApp booking button, because that is how his clients actually write.",
+        "Local search setup for weddings and events in western Sicily."
+      ],
+      "result": "Delivered and handed over.",
+      "starter": "Musicians and artists"
+    }
+  },
+  "homeserv": {
+    "order": 4,
+    "route": "homeserv",
+    "flag": null,
+    "anonymous": true,
+    "year": "2026",
+    "stack": "Wix",
+    "status": "delivered",
+    "live": null,
+    "image": "case-homeservices.jpg",
+    "en": {
+      "name": "Emergency home services company",
+      "sector": "Emergency plumbing, heating and electrical",
+      "location": "Rome, Fregene and Fiumicino",
+      "brief": "A home services company offering 24-hour emergency call-outs needed to be found by people searching in a panic, and needed a way to track the leads that came in.",
+      "did": [
+        "Four-page website with all Italian copy: home, services, about, contact.",
+        "Google Business Profile set up and filled in.",
+        "A lead tracker so enquiries stop getting lost.",
+        "A plan for Meta and Google Maps advertising."
+      ],
+      "result": "Delivered. The client's name, logo, domain and phone number are not shown here.",
+      "starter": "Trades and home services"
+    }
+  },
+  "ladolcevita": {
+    "order": 5,
+    "route": "ladolcevita",
+    "flag": null,
+    "year": "2025 to 2026",
+    "stack": "Webflow",
+    "status": "brandsite",
+    "live": null,
+    "image": "ladolcevita-poster.jpg",
+    "video": "ladolcevita-walkthrough.mp4",
+    "en": {
+      "name": "La Dolce Vita Luxury Experience",
+      "sector": "Luxury concierge and travel",
+      "location": "Italy",
+      "brief": "A luxury concierge service needed a brand and a website that would speak to travellers who expect access rather than packages.",
+      "did": [
+        "Brand identity, logo, Webflow website, copy and digital presence. 2025 to 2026."
+      ],
+      "result": "Brand and website delivered.",
+      "starter": "Luxury travel and concierge"
+    }
+  },
+  "thissite": {
+    "order": 6,
+    "route": "thissite",
+    "flag": null,
+    "year": "2026",
+    "stack": "Hand-coded, Eleventy",
+    "status": "live",
+    "live": "https://victoriaswart.com",
+    "image": "case-thissite.jpg",
+    "en": {
+      "name": "victoriaswart.com",
+      "sector": "My own site",
+      "location": "Rome",
+      "brief": "My own site, rebuilt to show what I actually do instead of describing it.",
+      "did": [
+        "Four languages with full hreflang and a switcher that keeps you on the same page.",
+        "Self-hosted fonts, no cookies, no analytics, no third-party requests.",
+        "Structured data for a person and her services.",
+        "Every case study written from a real project."
+      ],
+      "result": "Live, and the starting point for every client site I build.",
+      "starter": "Multilingual professional sites"
+    }
+  }
+}

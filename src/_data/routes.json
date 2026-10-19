@@ -1,0 +1,18 @@
+{
+  "home":       { "en": "/",                          "de": "/de/",                           "it": "/it/",                          "es": "/es/" },
+  "webdesign":  { "en": "/web-design/",               "de": "/de/webdesign/",                 "it": "/it/web-design/",               "es": "/es/diseno-web/" },
+  "languages":  { "en": "/languages/",                "de": "/de/sprachen/",                  "it": "/it/lingue/",                   "es": "/es/idiomas/" },
+  "strategy":   { "en": "/strategy/",                 "de": "/de/strategie/",                 "it": "/it/strategia/",                "es": "/es/estrategia/" },
+  "work":       { "en": "/work/",                     "de": "/de/arbeiten/",                  "it": "/it/lavori/",                   "es": "/es/proyectos/" },
+  "seabreeze":  { "en": "/work/seabreeze/",           "de": "/de/arbeiten/seabreeze/",        "it": "/it/lavori/seabreeze/",         "es": "/es/proyectos/seabreeze/" },
+  "eqm":        { "en": "/work/eqm-sellier/",         "de": "/de/arbeiten/eqm-sellier/",      "it": "/it/lavori/eqm-sellier/",       "es": "/es/proyectos/eqm-sellier/" },
+  "graziano":   { "en": "/work/graziano-tumbarello/", "de": "/de/arbeiten/graziano-tumbarello/", "it": "/it/lavori/graziano-tumbarello/", "es": "/es/proyectos/graziano-tumbarello/" },
+  "homeserv":   { "en": "/work/home-services/",       "de": "/de/arbeiten/handwerk/",         "it": "/it/lavori/servizi-casa/",      "es": "/es/proyectos/servicios-hogar/" },
+  "ladolcevita":{ "en": "/work/la-dolce-vita/",       "de": "/de/arbeiten/la-dolce-vita/",    "it": "/it/lavori/la-dolce-vita/",     "es": "/es/proyectos/la-dolce-vita/" },
+  "thissite":   { "en": "/work/victoriaswart-com/",   "de": "/de/arbeiten/victoriaswart-com/","it": "/it/lavori/victoriaswart-com/", "es": "/es/proyectos/victoriaswart-com/" },
+  "about":      { "en": "/about/",                    "de": "/de/ueber-mich/",                "it": "/it/chi-sono/",                 "es": "/es/sobre-mi/" },
+  "journal":    { "en": "/journal/",                  "de": "/de/journal/",                   "it": "/it/journal/",                  "es": "/es/journal/" },
+  "contact":    { "en": "/contact/",                  "de": "/de/kontakt/",                   "it": "/it/contatti/",                 "es": "/es/contacto/" },
+  "privacy":    { "en": "/privacy/",                  "de": "/de/datenschutz/",               "it": "/it/privacy/",                  "es": "/es/privacidad/" },
+  "legal":      { "en": "/legal/",                    "de": "/de/impressum/",                 "it": "/it/note-legali/",              "es": "/es/aviso-legal/" }
+}

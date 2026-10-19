@@ -1,0 +1,22 @@
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-links">
+      <a href="{{ site.social.linkedin }}" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="{{ site.social.instagram }}" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a href="{{ site.social.substack }}" target="_blank" rel="noopener noreferrer">Substack</a>
+      <a href="mailto:{{ site.email }}">{{ t.form.email }}</a>
+      <a href="{{ 'journal' | route(lang) }}">{{ t.nav.journal }}</a>
+      <a href="{{ 'privacy' | route(lang) }}">{{ t.footer.privacy }}</a>
+      <a href="{{ 'legal' | route(lang) }}">{{ t.footer.legal }}</a>
+    </div>
+
+    <p class="footer-tagline">{{ t.footer.tagline }}</p>
+    <p class="footer-location">{{ t.location }}</p>
+    <p class="footer-legal">&copy; {{ '' | year }} {{ site.name }}. {{ t.footer.rights }} &middot; P.IVA {{ site.vat }}</p>
+    <p class="footer-ip">{{ copy.ipNotice }}</p>
+    <p class="footer-maker">{{ t.footer.maker }}</p>
+  </div>
+  <svg class="footer-wordmark" viewBox="0 0 1000 132" preserveAspectRatio="xMidYMid meet" role="img" aria-label="{{ site.name }}">
+    <text x="500" y="100" text-anchor="middle" textLength="980" lengthAdjust="spacingAndGlyphs">{{ site.name }}</text>
+  </svg>
+</footer>

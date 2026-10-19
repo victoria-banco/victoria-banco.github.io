@@ -1,0 +1,342 @@
+{
+  "ipNotice": "All content on this site, including written copy, brand concepts, case-study material, design and code, is the original work and intellectual property of Victoria Clara Swart, protected under Italian and EU copyright law. Work shown in the portfolio is not licensed for commercial use, reproduction or republication by any third party.",
+  "home": {
+    "title": "Victoria Clara Swart · Web Design, Strategy & Languages, Rome",
+    "description": "Multilingual web designer and brand strategist in Rome. Websites, copy and SEO in German, English, Italian, Spanish and Danish.",
+    "eyebrow": "Building brands designed to travel further",
+    "h1": "Websites, brands and words that work in five languages.",
+    "intro": "I'm Victoria Swart. I design and build websites, shape how brands speak, and teach languages. I work in German, English, Italian, Spanish and Danish, so your site doesn't just get translated. It gets understood.",
+    "proof": [
+      {
+        "n": "5",
+        "label": "languages"
+      },
+      {
+        "n": "10",
+        "label": "years teaching, since 2016"
+      },
+      {
+        "n": "5",
+        "label": "countries lived and worked in"
+      }
+    ],
+    "doorsTitle": "What I do",
+    "doors": [
+      {
+        "route": "webdesign",
+        "title": "Web design & development",
+        "text": "Fast, multilingual websites and shops, designed, written and coded by one person. From €900."
+      },
+      {
+        "route": "strategy",
+        "title": "Strategy & SEO",
+        "text": "Positioning, messaging and search visibility for businesses that sell across borders."
+      },
+      {
+        "route": "languages",
+        "title": "Languages",
+        "text": "Lessons, translation and cultural adaptation, and moderation for international events."
+      }
+    ],
+    "workTitle": "Selected work",
+    "saidTitle": "What people say",
+    "stageTitle": "On stage",
+    "stageText": "I host and moderate conferences and pitch events in five languages, from startup pitch nights at Denmark's national startup accelerator in Copenhagen to a senior B2B marketing evening at the Anantara Palazzo Naiadi in Rome.",
+    "closing": "Have a project, a language goal or an event? Write to me.",
+    "heroAlt": "Victoria Clara Swart, web designer and brand strategist based in Rome"
+  },
+  "webdesign": {
+    "title": "Multilingual Web Design in Rome · Victoria Swart",
+    "description": "Websites for small businesses, artisans and hospitality. Designed, written and coded by one person, in up to five languages. From €900.",
+    "h1": "Websites that work in every language your clients speak.",
+    "intro": "I design, write and code websites for small businesses, artisans, hospitality and independent professionals. One person from first call to launch: structure, copy in up to five languages, design, build and search setup. You get a fast site you own completely.",
+    "recentTitle": "Recent sites",
+    "howTitle": "How it works",
+    "how": [
+      {
+        "n": "1",
+        "t": "Call",
+        "d": "30 minutes. What the site has to do, for whom, in which languages."
+      },
+      {
+        "n": "2",
+        "t": "Structure and copy",
+        "d": "Sitemap and the actual words first, so the design serves the message."
+      },
+      {
+        "n": "3",
+        "t": "Design",
+        "d": "One direction, refined with you. No template look."
+      },
+      {
+        "n": "4",
+        "t": "Build",
+        "d": "Hand-coded, or Shopify, Webflow or Wix if you'd rather edit it yourself."
+      },
+      {
+        "n": "5",
+        "t": "Launch and handover",
+        "d": "Domain, search console, analytics, and a written guide. The accounts are in your name."
+      }
+    ],
+    "includedTitle": "What's included in every site",
+    "included": [
+      "Responsive design that loads fast on phones",
+      "Copy written in your languages, not machine-translated",
+      "Technical SEO: titles, structured data, sitemap, hreflang for multilingual sites",
+      "Contact or booking flow, WhatsApp button where it helps",
+      "Privacy-friendly setup and the legal pages your country requires",
+      "A handover guide so you're never dependent on me"
+    ],
+    "toolsTitle": "Tools",
+    "tools": [
+      "HTML, CSS and JavaScript",
+      "Shopify (Liquid, Online Store 2.0)",
+      "Webflow",
+      "Wix",
+      "Figma",
+      "Netlify",
+      "AI-assisted development"
+    ],
+    "startersTitle": "Starting points",
+    "startersIntro": "Each project is also a reusable starting point for its sector.",
+    "pricingTitle": "What it costs",
+    "pricing": [
+      {
+        "t": "One-page site",
+        "d": "A musician, a tradesperson, a small B&B.",
+        "p": "from €900"
+      },
+      {
+        "t": "Multi-page site",
+        "d": "Several pages, a clear structure, room to grow.",
+        "p": "€1,500 to €2,500"
+      },
+      {
+        "t": "Shop on Shopify",
+        "d": "A real shop, built on a custom theme.",
+        "p": "from €3,000"
+      },
+      {
+        "t": "Each extra language",
+        "d": "Written by me, not machine-translated.",
+        "p": "+€300"
+      },
+      {
+        "t": "Care plan",
+        "d": "Hosting checks, updates and small edits each month.",
+        "p": "€60 per month"
+      },
+      {
+        "t": "Small changes outside a plan",
+        "d": "For anything that comes up later.",
+        "p": "€50 per hour"
+      },
+      {
+        "t": "Local visibility setup",
+        "d": "Google Business Profile, basic SEO, reviews.",
+        "p": "€450 one-off"
+      }
+    ],
+    "pricingNote": "Fixed quote before we start. 30 to 50% upfront.",
+    "cta": "Tell me about your site"
+  },
+  "languages": {
+    "title": "Language Lessons, Translation & Event Moderation · Victoria Swart",
+    "description": "Lessons in English and German, translation and cultural adaptation, and conference moderation in five languages. Teaching since 2016.",
+    "h1": "Five languages. Ten years of teaching. One person on stage.",
+    "intro": "Languages are where my work started. I taught my first English class in Colombia in 2016 and have taught ever since. Today I teach, translate and adapt copy between markets, and host international events.",
+    "mineTitle": "My languages",
+    "mine": [
+      {
+        "name": "Deutsch",
+        "line": "Meine Muttersprache.",
+        "level": "Native",
+        "code": "de"
+      },
+      {
+        "name": "English",
+        "line": "The language I first taught in.",
+        "level": "Native level",
+        "code": "en"
+      },
+      {
+        "name": "Italiano",
+        "line": "La lingua in cui ho vissuto e lavorato a Roma.",
+        "level": "Fluent",
+        "code": "it"
+      },
+      {
+        "name": "Español",
+        "line": "El idioma que aprendí en Colombia.",
+        "level": "Fluent",
+        "code": "es"
+      },
+      {
+        "name": "Dansk",
+        "line": "Sproget fra min tid i Danmark.",
+        "level": "Fluent",
+        "code": "da"
+      }
+    ],
+    "teachTitle": "Teaching",
+    "teach": [
+      "English for children, teenagers and adults, since 2016",
+      "German as a foreign language (A1 to B1), including courses at inlingua Roma",
+      "English exam preparation",
+      "Aviation English for people working at and around Rome Fiumicino airport",
+      "Online one-to-one or small groups"
+    ],
+    "teachPricing": [
+      {
+        "t": "One-to-one lesson",
+        "d": "60 minutes, online.",
+        "p": "€35"
+      },
+      {
+        "t": "Ten lessons",
+        "d": "Booked together.",
+        "p": "€320"
+      },
+      {
+        "t": "Business or aviation English",
+        "d": "60 minutes, online.",
+        "p": "€45"
+      },
+      {
+        "t": "Trial lesson",
+        "d": "20 minutes, to see if we fit.",
+        "p": "Free"
+      }
+    ],
+    "transTitle": "Translation and cultural adaptation",
+    "transText": "Translation carries words across. Adaptation carries meaning. I rewrite websites, brand messaging and campaign copy for German, Italian, Spanish, Danish and English-speaking markets so it lands the way the original was meant to.",
+    "stageTitle": "Speaking and moderation",
+    "stageText": "I host and moderate conferences, panels and pitch events in all five languages. Recent: moderating startup pitch events at Denmark's national startup accelerator in Copenhagen, and hosting a BuyerForesight evening for senior B2B marketers at the Anantara Palazzo Naiadi in Rome, booked through Golden Goose Events.",
+    "stagePricing": [
+      {
+        "t": "Moderation and MC",
+        "d": "Quoted per event.",
+        "p": "from €500"
+      }
+    ],
+    "reviewsTitle": "Reviews"
+  },
+  "strategy": {
+    "title": "Brand Strategy & SEO for International Businesses · Victoria Swart",
+    "description": "Positioning, messaging and search for businesses selling across borders. Website and visibility check, €150.",
+    "h1": "Positioning, messaging and search for businesses that sell across borders.",
+    "intro": "Before a website or a campaign, a business needs to know what it stands for and how to say it in each market. My background in Market and Management Anthropology means I start with how your customers actually think and search, then build the message from there.",
+    "servicesTitle": "What I offer",
+    "services": [
+      {
+        "t": "Website and visibility check",
+        "d": "Ninety minutes on your site and how findable it is, with a written list of what to fix first.",
+        "p": "€150"
+      },
+      {
+        "t": "Local visibility setup",
+        "d": "Google Business Profile, basic SEO and a reviews routine, set up once and yours to keep.",
+        "p": "€450"
+      },
+      {
+        "t": "Brand strategy and positioning",
+        "d": "What makes you distinct, who you speak to, your core message and tone.",
+        "p": "On request"
+      },
+      {
+        "t": "Multilingual communication strategy",
+        "d": "How your message adapts for each language and market.",
+        "p": "On request"
+      },
+      {
+        "t": "Ongoing strategic support",
+        "d": "A thinking partner every month, for businesses that want one.",
+        "p": "On request"
+      }
+    ],
+    "examplesTitle": "Examples",
+    "examples": [
+      "Social media strategy and a pitch deck for a padel and pickleball club near Rome",
+      "SEO-led editorial content for an international air-travel company",
+      "Website copy, Google Business Profile and lead tracking for a home services company"
+    ],
+    "faqTitle": "Questions",
+    "faq": [
+      {
+        "q": "What does a brand strategist actually do?",
+        "a": "A brand strategist decides what a business should stand for, who it speaks to and how it says it, before any design or advertising begins. In practice that means positioning, a messaging structure, and a tone of voice. Design makes a brand look consistent. Strategy makes it mean something consistent."
+      },
+      {
+        "q": "What is the difference between translation and cultural adaptation?",
+        "a": "Translation carries words across languages. Adaptation carries meaning across markets. The same claim does different work in different places: quality reads as engineering and reliability in German, and closer to care and craftsmanship in Italian. A translated tagline can be correct and still land flat. Adaptation rewrites for the effect the original was designed to have, which usually means changing the words."
+      },
+      {
+        "q": "How much does it cost?",
+        "a": "A website and visibility check is €150. Local visibility setup is €450. Brand strategy and ongoing support are quoted on request, because the scope varies far more than a website does. Websites start at €900."
+      },
+      {
+        "q": "Do you work with clients outside Italy?",
+        "a": "Yes. I work remotely by default and travel across Europe for on-site work and events."
+      },
+      {
+        "q": "What does SEO have to do with brand strategy?",
+        "a": "Search is where positioning gets tested. Keyword research shows the words your market actually uses for its problem, and those are often not the words a business uses for its solution. Closing that gap improves rankings and sharpens the brand at the same time."
+      }
+    ],
+    "cta": "Book a website and visibility check"
+  },
+  "about": {
+    "title": "About Victoria Clara Swart",
+    "description": "Web designer, brand strategist and language teacher in Rome. Market and Management Anthropology, five languages, websites written and coded by one person.",
+    "h1": "Victoria Clara Swart",
+    "lead": "I grew up in East Frisia, in the north of Germany, between a Frisian family on my father's side and a Volga German family on my mother's, so more than one language was always in the room. At sixteen I spent a year in Colombia and taught my first English class there. Since then I have lived and worked in Denmark, Spain and Italy, studied Market and Management Anthropology, and learned to build websites in code.",
+    "shapedTitle": "What shaped the work",
+    "shaped": "Anthropology taught me to watch how people actually behave before deciding what to say to them. Code lets me build the thing myself instead of describing it to someone else. Languages let me do both for people in five countries at once. I build bridges between languages, cultures, business and technology.",
+    "stage": "You'll also find me on stage, hosting and moderating international conferences and pitch events.",
+    "expTitle": "Experience",
+    "exp": [
+      "Web and brand projects for clients in Italy, Sardinia, Sicily and Germany",
+      "Project assistant at Beyond Beta, Erhvervshus, Denmark's national startup accelerator, Copenhagen: Webflow development, internal systems, pitch event moderation",
+      "European Solidarity Corps, one year in Naples",
+      "Language teaching since 2016: Colombia, inlingua Roma, aviation English in Fiumicino",
+      "Event host and moderator, Rome and Copenhagen",
+      "Market and Management Anthropology, University of Southern Denmark"
+    ],
+    "goodTitle": "Good work, to me",
+    "good": "Good work is work that still makes sense once it's translated."
+  },
+  "work": {
+    "title": "Website & Brand Projects · Victoria Swart",
+    "description": "Websites and brand projects for a houseboat rental, an artisan saddlery, a saxophonist, a home services company and a luxury concierge.",
+    "h1": "Work",
+    "intro": "Six projects, each written, designed and built from scratch. Every one is also a starting point for the next business in that sector."
+  },
+  "contact": {
+    "title": "Contact · Victoria Clara Swart",
+    "description": "Write to me about a website, language lessons, strategy and SEO, or hosting your event. Based in Rome, working across Europe.",
+    "h1": "Write to me",
+    "intro": "Tell me what you're building, what language it needs to work in, and roughly when. I reply within two working days."
+  },
+  "journal": {
+    "title": "Journal · Victoria Swart",
+    "description": "Essays on brand, language and culture, and the thinking behind how businesses are seen and remembered.",
+    "h1": "Journal",
+    "intro": "Essays on brand, language and culture. New pieces land on Substack first."
+  },
+  "privacy": {
+    "title": "Privacy Policy · Victoria Clara Swart",
+    "description": "How this site handles your data. No cookies, no analytics, no tracking.",
+    "h1": "Privacy policy"
+  },
+  "legal": {
+    "title": "Legal Notice · Victoria Clara Swart",
+    "description": "Legal notice and business details for victoriaswart.com.",
+    "h1": "Legal notice"
+  },
+  "e404": {
+    "title": "Page not found · Victoria Swart",
+    "description": "That page does not exist."
+  },
+  "jobTitle": "Web designer and brand strategist"
+}

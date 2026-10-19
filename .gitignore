@@ -1,1 +1,4 @@
+node_modules/
+_site/
 _originals/
+.DS_Store

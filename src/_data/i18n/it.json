@@ -1,0 +1,91 @@
+{
+  "lang": "it",
+  "htmlLang": "it",
+  "ogLocale": "it_IT",
+  "native": "Italiano",
+  "label": "Italian",
+  "nav": {
+    "home": "Home",
+    "web": "Web design",
+    "strategy": "Strategia",
+    "languages": "Lingue",
+    "work": "Lavori",
+    "about": "Chi sono",
+    "contact": "Contatti",
+    "journal": "Journal"
+  },
+  "cta": {
+    "project": "Inizia un progetto",
+    "work": "Guarda i lavori",
+    "lesson": "Prenota una lezione",
+    "event": "Prenotami per un evento",
+    "allProjects": "Tutti i lavori",
+    "tellMeSite": "Raccontami del tuo sito",
+    "strategySession": "Prenota un check del sito",
+    "write": "Scrivimi"
+  },
+  "location": "Base a Roma. Lavoro in tutta Europa.",
+  "form": {
+    "name": "Nome",
+    "email": "Email",
+    "topic": "Di cosa si tratta?",
+    "topicWebsite": "Sito web",
+    "topicLessons": "Lezioni di lingua",
+    "topicStrategy": "Strategia e SEO",
+    "topicMc": "Conduzione e moderazione",
+    "topicOther": "Altro",
+    "message": "Messaggio",
+    "consent": "Ho letto l'informativa sulla privacy.",
+    "send": "Invia",
+    "ok": "Grazie. Ti rispondo entro due giorni lavorativi.",
+    "err": "Qualcosa non ha funzionato. Scrivimi a victoria.c.swart@icloud.com."
+  },
+  "review": {
+    "toggle": "",
+    "translated": "",
+    "readGoogle": "Leggi su Google"
+  },
+  "case": {
+    "live": "Online",
+    "delivered": "Consegnato",
+    "pending": "Pronto, lancio in arrivo",
+    "brandsite": "Marchio e sito",
+    "next": "Progetto successivo",
+    "cta": "Vuoi qualcosa di simile per la tua attività?",
+    "ctaPrice": "Siti come questo partono da 900 €.",
+    "brief": "La richiesta",
+    "did": "Cosa ho fatto",
+    "details": "Dettagli da notare",
+    "result": "Risultato",
+    "visit": "Vai al sito",
+    "sector": "Settore",
+    "location": "Luogo",
+    "year": "Anno",
+    "stack": "Realizzato con",
+    "status": "Stato"
+  },
+  "banner": {
+    "suggest": "Questa pagina è disponibile anche in italiano.",
+    "stay": "Stay in English"
+  },
+  "e404": {
+    "title": "Questa pagina non esiste.",
+    "back": "Torna alla home"
+  },
+  "skip": "Vai al contenuto",
+  "menu": "Menu",
+  "close": "Chiudi",
+  "langLabel": "Lingua",
+  "navAria": "Navigazione principale",
+  "footer": {
+    "rights": "Tutti i diritti riservati.",
+    "maker": "Progettato, scritto e sviluppato da Victoria Clara Swart.",
+    "tagline": "Web design · Strategia · Lingue",
+    "privacy": "Privacy",
+    "legal": "Note legali"
+  },
+  "priceFrom": "Da",
+  "priceOnRequest": "Su richiesta",
+  "perMonth": "al mese",
+  "perHour": "all'ora"
+}

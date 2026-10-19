@@ -1,0 +1,92 @@
+{
+  "full": [
+    {
+      "who": {
+        "en": "Maria Rita, parent of a student",
+        "de": "Maria Rita, Mutter eines Schülers",
+        "it": "Maria Rita, genitore di un alunno",
+        "es": "Maria Rita, madre de un alumno"
+      },
+      "original": "Victoria è stata l'insegnante di mio figlio per 1 anno. Ho letteralmente adorato la sua capacità di rendere le lezioni stimolanti e divertenti per mio figlio ed il suo livello di inglese è notevolmente migliorato. Lei è molto empatica e appassionata di inglese essendo una madrelingua e la consiglio vivamente a tutti quelli che vogliono imparare questa lingua in modo fluente e davvero coinvolgente!",
+      "translation": {
+        "en": "Victoria was my son's teacher for a year. I absolutely loved how she made the lessons stimulating and fun for him, and his English improved remarkably. She is very empathetic and passionate about English, being a native speaker, and I warmly recommend her to anyone who wants to learn the language fluently and in a truly engaging way!",
+        "de": "Victoria war ein Jahr lang die Lehrerin meines Sohnes. Ich habe es geliebt, wie sie den Unterricht für ihn anregend und unterhaltsam gestaltet hat, und sein Englisch hat sich deutlich verbessert. Sie ist sehr empathisch und als Muttersprachlerin mit Leidenschaft bei der Sache. Ich empfehle sie allen wärmstens, die diese Sprache fließend und auf wirklich mitreißende Weise lernen wollen!",
+        "es": "Victoria fue la profesora de mi hijo durante un año. Me encantó su capacidad de hacer las clases estimulantes y divertidas para él, y su nivel de inglés mejoró notablemente. Es muy empática y apasionada del inglés, al ser hablante nativa, y la recomiendo de corazón a todos los que quieran aprender este idioma con fluidez y de una forma realmente atractiva."
+      }
+    },
+    {
+      "who": {
+        "en": "Margherita Cardinalini, German student",
+        "de": "Margherita Cardinalini, Deutschlernende",
+        "it": "Margherita Cardinalini, studentessa di tedesco",
+        "es": "Margherita Cardinalini, estudiante de alemán"
+      },
+      "original": "Victoria è stata la mia prima insegnante di tedesco. Le sue lezioni sono state molto utili per me e ho apprezzato la sua professionalità. Sa anche creare un clima piacevole in classe e coesione del gruppo, altra qualità che mi ha messa a mio agio.",
+      "translation": {
+        "en": "Victoria was my first German teacher. Her lessons were very useful to me and I appreciated her professionalism. She also knows how to create a pleasant atmosphere in class and a real sense of group, another quality that put me at ease.",
+        "de": "Victoria war meine erste Deutschlehrerin. Ihr Unterricht war für mich sehr hilfreich, und ich habe ihre Professionalität geschätzt. Sie schafft außerdem eine angenehme Atmosphäre und echten Zusammenhalt in der Gruppe, eine weitere Eigenschaft, durch die ich mich wohlgefühlt habe.",
+        "es": "Victoria fue mi primera profesora de alemán. Sus clases me resultaron muy útiles y valoré su profesionalidad. También sabe crear un clima agradable en clase y cohesión en el grupo, otra cualidad que me hizo sentir cómoda."
+      }
+    }
+  ],
+  "short": {
+    "en": [
+      {
+        "quote": "She made the lessons stimulating and fun, and his English improved remarkably.",
+        "who": "Maria Rita, parent of a student"
+      },
+      {
+        "quote": "Her lessons were very useful to me and I appreciated her professionalism.",
+        "who": "Margherita Cardinalini, German student"
+      }
+    ],
+    "de": [
+      {
+        "quote": "Sie hat den Unterricht anregend und unterhaltsam gestaltet, und sein Englisch hat sich deutlich verbessert.",
+        "who": "Maria Rita, Mutter eines Schülers"
+      },
+      {
+        "quote": "Ihr Unterricht war sehr hilfreich, und ich habe ihre Professionalität geschätzt.",
+        "who": "Margherita Cardinalini, Deutschlernende"
+      }
+    ],
+    "it": [
+      {
+        "quote": "Ha reso le lezioni stimolanti e divertenti e il suo livello di inglese è notevolmente migliorato.",
+        "who": "Maria Rita, genitore di un alunno"
+      },
+      {
+        "quote": "Le sue lezioni sono state molto utili per me e ho apprezzato la sua professionalità.",
+        "who": "Margherita Cardinalini, studentessa di tedesco"
+      }
+    ],
+    "es": [
+      {
+        "quote": "Hizo las clases estimulantes y divertidas, y su inglés mejoró notablemente.",
+        "who": "Maria Rita, madre de un alumno"
+      },
+      {
+        "quote": "Sus clases me resultaron muy útiles y valoré su profesionalidad.",
+        "who": "Margherita Cardinalini, estudiante de alemán"
+      }
+    ]
+  },
+  "marco": {
+    "en": {
+      "quote": "",
+      "who": "Marco Manca"
+    },
+    "de": {
+      "quote": "",
+      "who": "Marco Manca"
+    },
+    "it": {
+      "quote": "",
+      "who": "Marco Manca"
+    },
+    "es": {
+      "quote": "",
+      "who": "Marco Manca"
+    }
+  }
+}

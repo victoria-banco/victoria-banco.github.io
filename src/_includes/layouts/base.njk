@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="{{ t.htmlLang }}">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ title }}</title>
+<meta name="description" content="{{ description }}">
+<meta name="author" content="{{ site.name }}">
+<link rel="canonical" href="{{ (routeKey | route(lang)) | abs }}">
+{%- for a in routeKey | alternates %}
+<link rel="alternate" hreflang="{{ a.lang }}" href="{{ a.url | abs }}">
+{%- endfor %}
+<link rel="alternate" hreflang="x-default" href="{{ (routeKey | route('en')) | abs }}">
+
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#1C3A2E">
+
+<meta name="robots" content="{{ robots or 'index, follow, max-snippet:-1, max-image-preview:large' }}">
+<meta name="geo.region" content="IT-RM">
+<meta name="geo.placename" content="Rome, Italy">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{{ site.name }}">
+<meta property="og:url" content="{{ (routeKey | route(lang)) | abs }}">
+<meta property="og:title" content="{{ title }}">
+<meta property="og:description" content="{{ description }}">
+<meta property="og:image" content="{{ ('/assets/' + (ogImage or 'victoriahero.jpg')) | abs }}">
+<meta property="og:image:alt" content="{{ ogAlt or site.name }}">
+<meta property="og:locale" content="{{ t.ogLocale }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ title }}">
+<meta name="twitter:description" content="{{ description }}">
+<meta name="twitter:image" content="{{ ('/assets/' + (ogImage or 'victoriahero.jpg')) | abs }}">
+
+{% include "partials/schema.njk" %}
+<link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body data-lang="{{ lang }}" data-route="{{ routeKey }}">
+<a class="skip" href="#main">{{ t.skip }}</a>
+{% include "partials/header.njk" %}
+<main id="main">
+{{ content | safe }}
+</main>
+{% include "partials/footer.njk" %}
+<script src="/assets/js/site.js" defer></script>
+</body>
+</html>
