@@ -40,6 +40,12 @@
 <meta name="twitter:image" content="{{ ('/assets/' + (ogImage or 'victoriahero.jpg')) | abs }}">
 
 {% include "partials/schema.njk" %}
+<script>
+  if ('IntersectionObserver' in window &&
+      !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.documentElement.classList.add('js-reveal');
+  }
+</script>
 <link rel="stylesheet" href="/assets/css/site.css">
 </head>
 <body data-lang="{{ L }}" data-route="{{ routeKey }}">

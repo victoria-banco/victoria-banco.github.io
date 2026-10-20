@@ -5,7 +5,7 @@
     "description": "Multilingual web designer and brand strategist in Rome. Websites, copy and SEO in German, English, Italian, Spanish and Danish.",
     "eyebrow": "Building brands designed to travel further",
     "h1": "Websites, brands and words that work in five languages.",
-    "intro": "I'm Victoria Swart. I design and build websites, shape how brands speak, and teach languages. I work in German, English, Italian, Spanish and Danish, so your site doesn't just get translated. It gets understood.",
+    "intro": "I'm Victoria Clara Swart. I design and build websites, shape how brands speak, and teach languages. I work in German, English, Italian, Spanish and Danish, so your site doesn't just get translated. It gets understood.",
     "proof": [
       {
         "n": "5",
@@ -218,7 +218,7 @@
       {
         "t": "Moderation and MC",
         "d": "Quoted per event.",
-        "p": "from €500"
+        "p": "from €400"
       }
     ],
     "reviewsTitle": "Reviews",
@@ -259,9 +259,18 @@
     ],
     "examplesTitle": "Examples",
     "examples": [
-      "Social media strategy and a pitch deck for a padel and pickleball club near Rome",
-      "SEO-led editorial content for an international air-travel company",
-      "Website copy, Google Business Profile and lead tracking for a home services company"
+      {
+        "t": "Website copy, Google Business Profile and lead tracking for a home services company",
+        "route": "homeserv"
+      },
+      {
+        "t": "Social media strategy and a pitch deck for a padel and pickleball club near Rome",
+        "route": null
+      },
+      {
+        "t": "SEO-led editorial content for an international air-travel company",
+        "route": null
+      }
     ],
     "faqTitle": "Questions",
     "faq": [
@@ -310,9 +319,9 @@
     "photoAlt": "Victoria Clara Swart in conversation with business owners at an event in Rome"
   },
   "work": {
-    "title": "Website & Brand Projects · Victoria Swart",
+    "title": "Portfolio · Website & Brand Projects · Victoria Swart",
     "description": "Websites and brand projects for a houseboat rental, an artisan saddlery, a saxophonist, a home services company and a luxury concierge.",
-    "h1": "Work",
+    "h1": "Portfolio",
     "intro": "Six projects, each written, designed and built from scratch. Every one is also a starting point for the next business in that sector."
   },
   "contact": {

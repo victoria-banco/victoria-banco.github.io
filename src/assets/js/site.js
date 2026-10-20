@@ -76,6 +76,26 @@
     });
   }
 
+  /* Scroll reveal */
+  (function () {
+    var items = document.querySelectorAll('.reveal');
+    if (!items.length) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || !('IntersectionObserver' in window)) {
+      items.forEach(function (el) { el.classList.add('in'); });
+      return;
+    }
+    // If anything goes wrong, show everything rather than leave a blank page.
+    var failsafe = setTimeout(function () {
+      items.forEach(function (el) { el.classList.add('in'); });
+    }, 2500);
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); clearTimeout(failsafe); }
+      });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+    items.forEach(function (el) { io.observe(el); });
+  })();
+
   /* Language suggestion: browser setting only, never an IP lookup */
   (function () {
     var ROUTES = window.__routes;

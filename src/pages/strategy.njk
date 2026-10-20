@@ -23,7 +23,11 @@ ogImage: victoria-swart-speaking.jpg
 
 <section>
   <h2>{{ c.examplesTitle }}</h2>
-  <ul class="tick-list">{% for e in c.examples %}<li>{{ e }}</li>{% endfor %}</ul>
+  <ul class="tick-list">
+  {%- for e in c.examples %}
+    <li>{% if e.route %}<a href="{{ e.route | route(L) }}">{{ e.t }}</a>{% else %}{{ e.t }}{% endif %}</li>
+  {%- endfor %}
+  </ul>
 </section>
 
 <section id="faq">
