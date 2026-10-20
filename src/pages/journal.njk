@@ -1,0 +1,13 @@
+---
+pagination: { data: site.locales, size: 1, alias: lang }
+permalink: "{{ routes.journal[lang] }}index.html"
+layout: layouts/base.njk
+routeKey: journal
+copyKey: journal
+---
+{% set c = copy.journal %}
+<section>
+  <h1>{{ c.h1 }}</h1>
+  <p class="lead">{{ c.intro }}</p>
+  <p><a class="btn btn-ghost" href="{{ site.social.substack }}" target="_blank" rel="noopener noreferrer">Substack</a></p>
+</section>

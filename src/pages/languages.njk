@@ -1,0 +1,62 @@
+---
+pagination: { data: site.locales, size: 1, alias: lang }
+permalink: "{{ routes.languages[lang] }}index.html"
+layout: layouts/base.njk
+routeKey: languages
+copyKey: languages
+ogImage: victoria-swart-speaking.jpg
+---
+{% set c = copy.languages %}
+<section>
+  <h1>{{ c.h1 }}</h1>
+  <p class="lead">{{ c.intro }}</p>
+</section>
+
+<section>
+  <h2>{{ c.mineTitle }}</h2>
+  <ul class="lang-list">
+  {%- for m in c.mine %}
+    <li><span class="lang-name" lang="{{ m.code }}">{{ m.name }}</span><span class="lang-line" lang="{{ m.code }}">{{ m.line }}</span><span class="lang-level">{{ m.level }}</span></li>
+  {%- endfor %}
+  </ul>
+</section>
+
+<section>
+  <h2>{{ c.teachTitle }}</h2>
+  <ul class="tick-list">{% for i in c.teach %}<li>{{ i }}</li>{% endfor %}</ul>
+  <div class="price-table">
+  {%- for p in c.teachPricing %}
+    <div class="price-row"><div><h3>{{ p.t }}</h3><p>{{ p.d }}</p></div><div class="price-val">{{ p.p }}</div></div>
+  {%- endfor %}
+  </div>
+  <p><a class="btn btn-primary" href="{{ 'contact' | route(lang) }}?topic=lessons">{{ t.cta.lesson }}</a></p>
+</section>
+
+<section>
+  <h2>{{ c.transTitle }}</h2>
+  <p>{{ c.transText }}</p>
+</section>
+
+<section id="stage">
+  <h2>{{ c.stageTitle }}</h2>
+  <p>{{ c.stageText }}</p>
+  <img src="/assets/victoria-swart-speaking.jpg" alt="{{ c.stageAlt }}" width="1068" height="1600" loading="lazy" decoding="async" style="max-width:520px">
+  <div class="price-table">
+  {%- for p in c.stagePricing %}
+    <div class="price-row"><div><h3>{{ p.t }}</h3><p>{{ p.d }}</p></div><div class="price-val">{{ p.p }}</div></div>
+  {%- endfor %}
+  </div>
+  <p><a class="btn btn-primary" href="{{ 'contact' | route(lang) }}?topic=mc">{{ t.cta.event }}</a></p>
+</section>
+
+<section>
+  <h2>{{ c.reviewsTitle }}</h2>
+  {%- for r in reviews.full %}
+  <div class="review-full">
+    <blockquote lang="it"><p>{{ r.original }}</p><cite>{{ r.who[lang] }}</cite></blockquote>
+    {%- if lang != 'it' %}
+    <details><summary>{{ t.review.toggle }}</summary><p class="review-tr"><em>{{ t.review.translated }}.</em> {{ r.translation[lang] }}</p></details>
+    {%- endif %}
+  </div>
+  {%- endfor %}
+</section>

@@ -1,0 +1,72 @@
+---
+pagination: { data: site.locales, size: 1, alias: lang }
+permalink: "{{ routes.webdesign[lang] }}index.html"
+layout: layouts/base.njk
+routeKey: webdesign
+copyKey: webdesign
+ogImage: case-seabreeze.jpg
+---
+{% set c = copy.webdesign %}
+<section>
+  <h1>{{ c.h1 }}</h1>
+  <p class="lead">{{ c.intro }}</p>
+</section>
+
+<section>
+  <h2>{{ c.recentTitle }}</h2>
+  <div class="card-grid">
+  {%- for key in ["seabreeze","eqm","graziano","homeserv","ladolcevita","thissite"] %}
+  {%- set cs = cases[key] %}{% set ct = cs[lang] %}
+  {%- set named = (not cs.flag) or flags[cs.flag] %}
+    <a class="case-card" href="{{ cs.route | route(lang) }}">
+      <img src="/assets/{{ cs.image }}" alt="{{ ct.sector }}" width="960" height="600" loading="lazy" decoding="async">
+      <h3>{{ ct.name if named else ct.nameFallback }}</h3>
+      <p>{{ ct.sector }}, {{ ct.location }} &middot; {{ cs.stack }}</p>
+    </a>
+  {%- endfor %}
+  </div>
+</section>
+
+<section>
+  <h2>{{ c.howTitle }}</h2>
+  <ol class="step-list">
+  {%- for s in c.how %}
+    <li><span class="step-n">{{ s.n }}</span><span><span class="step-t">{{ s.t }}</span><span class="step-d">{{ s.d }}</span></span></li>
+  {%- endfor %}
+  </ol>
+</section>
+
+<section>
+  <h2>{{ c.includedTitle }}</h2>
+  <ul class="tick-list">{% for i in c.included %}<li>{{ i }}</li>{% endfor %}</ul>
+</section>
+
+<section>
+  <h2>{{ c.toolsTitle }}</h2>
+  <ul class="tag-row">{% for i in c.tools %}<li>{{ i }}</li>{% endfor %}</ul>
+</section>
+
+<section>
+  <h2>{{ c.startersTitle }}</h2>
+  <p>{{ c.startersIntro }}</p>
+  <ul class="tick-list">
+  {%- for key in ["seabreeze","eqm","graziano","homeserv","ladolcevita"] %}
+    <li><a href="{{ cases[key].route | route(lang) }}">{{ cases[key][lang].starter }}</a></li>
+  {%- endfor %}
+  </ul>
+</section>
+
+<section>
+  <h2>{{ c.pricingTitle }}</h2>
+  <div class="price-table">
+  {%- for p in c.pricing %}
+    <div class="price-row"><div><h3>{{ p.t }}</h3><p>{{ p.d }}</p></div><div class="price-val">{{ p.p }}</div></div>
+  {%- endfor %}
+  </div>
+  <p class="price-note">{{ c.pricingNote }}</p>
+</section>
+
+<section class="closing-band">
+  <p class="closing-text">{{ t.case.cta }}</p>
+  <a class="btn btn-light" href="{{ 'contact' | route(lang) }}?topic=website">{{ c.cta }}</a>
+</section>

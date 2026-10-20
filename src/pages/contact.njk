@@ -1,0 +1,34 @@
+---
+pagination: { data: site.locales, size: 1, alias: lang }
+permalink: "{{ routes.contact[lang] }}index.html"
+layout: layouts/base.njk
+routeKey: contact
+copyKey: contact
+---
+{% set c = copy.contact %}
+<section>
+  <h1>{{ c.h1 }}</h1>
+  <p class="lead">{{ c.intro }}</p>
+
+  <form class="form" id="contactForm" action="{{ site.formspree }}" method="POST">
+    <input type="hidden" name="_subject" value="victoriaswart.com ({{ L | upper }})">
+    <input type="hidden" name="lang" value="{{ lang }}">
+    <input type="hidden" name="ref" id="refField" value="">
+    <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
+    <div class="field"><label for="f-name">{{ t.form.name }}</label><input id="f-name" name="name" type="text" required autocomplete="name"></div>
+    <div class="field"><label for="f-email">{{ t.form.email }}</label><input id="f-email" name="_replyto" type="email" required autocomplete="email"></div>
+    <div class="field"><label for="f-topic">{{ t.form.topic }}</label>
+      <select id="f-topic" name="topic">
+        <option value="website">{{ t.form.topicWebsite }}</option>
+        <option value="lessons">{{ t.form.topicLessons }}</option>
+        <option value="strategy">{{ t.form.topicStrategy }}</option>
+        <option value="mc">{{ t.form.topicMc }}</option>
+        <option value="other">{{ t.form.topicOther }}</option>
+      </select></div>
+    <div class="field"><label for="f-msg">{{ t.form.message }}</label><textarea id="f-msg" name="message" required></textarea></div>
+    <label class="consent"><input type="checkbox" name="consent" required>
+      <span>{{ t.form.consent }} <a href="{{ 'privacy' | route(lang) }}">{{ t.footer.privacy }}</a></span></label>
+    <div><button class="btn btn-primary" type="submit">{{ t.form.send }}</button></div>
+    <p class="form-status" id="formStatus" role="status" data-ok="{{ t.form.ok }}" data-err="{{ t.form.err }}"></p>
+  </form>
+</section>

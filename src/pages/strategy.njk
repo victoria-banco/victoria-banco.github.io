@@ -1,0 +1,41 @@
+---
+pagination: { data: site.locales, size: 1, alias: lang }
+permalink: "{{ routes.strategy[lang] }}index.html"
+layout: layouts/base.njk
+routeKey: strategy
+copyKey: strategy
+ogImage: victoria-swart-speaking.jpg
+---
+{% set c = copy.strategy %}
+<section>
+  <h1>{{ c.h1 }}</h1>
+  <p class="lead">{{ c.intro }}</p>
+</section>
+
+<section>
+  <h2>{{ c.servicesTitle }}</h2>
+  <div class="price-table">
+  {%- for s in c.services %}
+    <div class="price-row"><div><h3>{{ s.t }}</h3><p>{{ s.d }}</p></div><div class="price-val">{{ s.p }}</div></div>
+  {%- endfor %}
+  </div>
+</section>
+
+<section>
+  <h2>{{ c.examplesTitle }}</h2>
+  <ul class="tick-list">{% for e in c.examples %}<li>{{ e }}</li>{% endfor %}</ul>
+</section>
+
+<section id="faq">
+  <h2>{{ c.faqTitle }}</h2>
+  <div class="faq">
+  {%- for f in c.faq %}
+    <details><summary>{{ f.q }}</summary><div class="faq-a"><p>{{ f.a }}</p></div></details>
+  {%- endfor %}
+  </div>
+</section>
+
+<section class="closing-band">
+  <p class="closing-text">{{ c.cta }}</p>
+  <a class="btn btn-light" href="{{ 'contact' | route(lang) }}?topic=strategy">{{ t.cta.strategySession }}</a>
+</section>

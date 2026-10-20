@@ -1,0 +1,26 @@
+---
+pagination: { data: site.locales, size: 1, alias: lang }
+permalink: "{{ routes.work[lang] }}index.html"
+layout: layouts/base.njk
+routeKey: work
+copyKey: work
+ogImage: case-seabreeze.jpg
+---
+{% set c = copy.work %}
+<section>
+  <h1>{{ c.h1 }}</h1>
+  <p class="lead">{{ c.intro }}</p>
+</section>
+<section>
+  <div class="card-grid">
+  {%- for key in ["seabreeze","eqm","graziano","homeserv","ladolcevita","thissite"] %}
+  {%- set cs = cases[key] %}{% set ct = cs[lang] %}
+  {%- set named = (not cs.flag) or flags[cs.flag] %}
+    <a class="case-card" href="{{ cs.route | route(lang) }}">
+      <img src="/assets/{{ cs.image }}" alt="{{ ct.sector }}" width="960" height="600" loading="lazy" decoding="async">
+      <h3>{{ ct.name if named else ct.nameFallback }}</h3>
+      <p>{{ ct.sector }}, {{ ct.location }} &middot; {{ cs.year }}</p>
+    </a>
+  {%- endfor %}
+  </div>
+</section>

@@ -139,7 +139,8 @@
       }
     ],
     "pricingNote": "Fixed quote before we start. 30 to 50% upfront.",
-    "cta": "Tell me about your site"
+    "cta": "Tell me about your site",
+    "heroAlt": "Websites built by Victoria Clara Swart"
   },
   "languages": {
     "title": "Language Lessons, Translation & Event Moderation · Victoria Swart",
@@ -220,7 +221,8 @@
         "p": "from €500"
       }
     ],
-    "reviewsTitle": "Reviews"
+    "reviewsTitle": "Reviews",
+    "stageAlt": "Victoria Clara Swart hosting an international business event in Rome"
   },
   "strategy": {
     "title": "Brand Strategy & SEO for International Businesses · Victoria Swart",
@@ -304,7 +306,8 @@
       "Market and Management Anthropology, University of Southern Denmark"
     ],
     "goodTitle": "Good work, to me",
-    "good": "Good work is work that still makes sense once it's translated."
+    "good": "Good work is work that still makes sense once it's translated.",
+    "photoAlt": "Victoria Clara Swart in conversation with business owners at an event in Rome"
   },
   "work": {
     "title": "Website & Brand Projects · Victoria Swart",
@@ -327,12 +330,94 @@
   "privacy": {
     "title": "Privacy Policy · Victoria Clara Swart",
     "description": "How this site handles your data. No cookies, no analytics, no tracking.",
-    "h1": "Privacy policy"
+    "h1": "Privacy policy",
+    "sections": [
+      {
+        "h": "Who runs this site",
+        "p": [
+          "Victoria Clara Swart, independent professional, Rome, Italy. P.IVA 18420501001. Email: <a href=\"mailto:victoria.c.swart@icloud.com\">victoria.c.swart@icloud.com</a>."
+        ]
+      },
+      {
+        "h": "Cookies",
+        "p": [
+          "This site sets no cookies. It uses no analytics and no tracking of any kind."
+        ]
+      },
+      {
+        "h": "What the contact form collects",
+        "p": [
+          "When you send the form, your name, email address and message are processed by <a href=\"https://formspree.io/legal/privacy-policy\" target=\"_blank\" rel=\"noopener noreferrer\">Formspree</a> and forwarded to me by email. The form also records which language version of the site you used, and, if you arrived from a link on a client's website, which site sent you. That data is used only to answer you. It is not sold and not shared for marketing."
+        ]
+      },
+      {
+        "h": "Language preference",
+        "p": [
+          "If you are offered a different language version, that suggestion comes from your browser's own language setting. No location lookup is done on your IP address and nothing is sent to a third party. Your choice is stored in your browser's local storage, which is not a cookie and never leaves your device."
+        ]
+      },
+      {
+        "h": "Fonts",
+        "p": [
+          "Fonts are served from this site's own server. No request is made to Google Fonts or any other font service."
+        ]
+      },
+      {
+        "h": "Your rights under the GDPR",
+        "p": [
+          "If you are in the EU or EEA you can ask to see, correct or delete any personal data you have sent me. Write to <a href=\"mailto:victoria.c.swart@icloud.com\">victoria.c.swart@icloud.com</a> and I will answer within the period the law allows."
+        ]
+      },
+      {
+        "h": "How long it is kept",
+        "p": [
+          "Form messages are kept only as long as needed to answer you and to keep a record of the work that followed."
+        ]
+      },
+      {
+        "h": "Last updated",
+        "p": [
+          "October 2026."
+        ]
+      }
+    ]
   },
   "legal": {
     "title": "Legal Notice · Victoria Clara Swart",
     "description": "Legal notice and business details for victoriaswart.com.",
-    "h1": "Legal notice"
+    "h1": "Legal notice",
+    "sections": [
+      {
+        "h": "Site owner",
+        "p": [
+          "Victoria Clara Swart<br>Independent professional (libera professionista)<br>Rome, Italy"
+        ]
+      },
+      {
+        "h": "VAT number",
+        "p": [
+          "P.IVA 18420501001"
+        ]
+      },
+      {
+        "h": "Contact",
+        "p": [
+          "<a href=\"mailto:victoria.c.swart@icloud.com\">victoria.c.swart@icloud.com</a>"
+        ]
+      },
+      {
+        "h": "Responsible for content",
+        "p": [
+          "Victoria Clara Swart, at the details above."
+        ]
+      },
+      {
+        "h": "Copyright",
+        "p": [
+          "All content on this site, including written copy, brand concepts, case-study material, design and code, is the original work and intellectual property of Victoria Clara Swart, protected under Italian and EU copyright law. Work shown in the portfolio is not licensed for commercial use, reproduction or republication by any third party."
+        ]
+      }
+    ]
   },
   "e404": {
     "title": "Page not found · Victoria Swart",

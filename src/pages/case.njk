@@ -1,0 +1,65 @@
+---
+pagination: { data: casePages, size: 1, alias: cp }
+permalink: "{{ routes[cp.key][cp.lang] }}index.html"
+layout: layouts/base.njk
+---
+{%- set L = cp.lang %}{% set cs = cases[cp.key] %}{% set ct = cs[L] %}
+{%- set named = (not cs.flag) or flags[cs.flag] %}
+{%- set shownName = ct.name if named else ct.nameFallback %}
+<section>
+  <h1>{{ shownName }}</h1>
+  <dl class="case-head">
+    <div><dt>{{ t.case.sector }}</dt><dd>{{ ct.sector }}</dd></div>
+    <div><dt>{{ t.case.location }}</dt><dd>{{ ct.location }}</dd></div>
+    <div><dt>{{ t.case.year }}</dt><dd>{{ cs.year }}</dd></div>
+    <div><dt>{{ t.case.stack }}</dt><dd>{{ cs.stack }}</dd></div>
+    <div><dt>{{ t.case.status }}</dt><dd><span class="badge">{{ t.case[cs.status] }}</span></dd></div>
+  </dl>
+
+  {%- if cs.video %}
+  <div class="browser-frame"><div class="browser-bar"><span></span><span></span><span></span></div>
+    <video poster="/assets/{{ cs.image }}" preload="none" controls playsinline muted width="960" height="600" aria-label="{{ shownName }}"><source src="/assets/{{ cs.video }}" type="video/mp4"></video>
+  </div>
+  {%- elif named %}
+  <div class="browser-frame"><div class="browser-bar"><span></span><span></span><span></span></div>
+    <img src="/assets/{{ cs.image }}" alt="{{ shownName }}" width="960" height="600" loading="lazy" decoding="async">
+  </div>
+  {%- endif %}
+</section>
+
+<section>
+  <h2>{{ t.case.brief }}</h2>
+  <p>{{ ct.brief }}</p>
+</section>
+
+<section>
+  <h2>{{ t.case.did }}</h2>
+  <ul class="tick-list">{% for d in ct.did %}<li>{{ d }}</li>{% endfor %}</ul>
+</section>
+
+{%- if ct.details %}
+<section>
+  <h2>{{ t.case.details }}</h2>
+  <ul class="tick-list">{% for d in ct.details %}<li>{{ d }}</li>{% endfor %}</ul>
+</section>
+{%- endif %}
+
+<section>
+  <h2>{{ t.case.result }}</h2>
+  <p>{{ ct.result }}</p>
+  {%- if cs.live and ((not cs.liveFlag) or flags[cs.liveFlag]) %}
+  <p><a class="link-more" href="{{ cs.live }}" target="_blank" rel="noopener noreferrer">{{ t.case.visit }} &rarr;</a></p>
+  {%- endif %}
+</section>
+
+<section class="closing-band">
+  <p class="closing-text">{{ t.case.cta }}</p>
+  <p>{{ t.case.ctaPrice }}</p>
+  <a class="btn btn-light" href="{{ 'contact' | route(L) }}?topic=website">{{ copy.webdesign.cta }}</a>
+</section>
+
+<section>
+  <a class="link-more" href="{{ cases[cp.nextKey].route | route(L) }}">{{ t.case.next }}: {{ cases[cp.nextKey][L].name if ((not cases[cp.nextKey].flag) or flags[cases[cp.nextKey].flag]) else cases[cp.nextKey][L].nameFallback }} &rarr;</a>
+  &nbsp;&middot;&nbsp;
+  <a class="link-more" href="{{ 'webdesign' | route(L) }}">{{ t.nav.web }} &rarr;</a>
+</section>

@@ -1,0 +1,21 @@
+---
+pagination: { data: site.locales, size: 1, alias: lang }
+permalink: "{{ routes.about[lang] }}index.html"
+layout: layouts/base.njk
+routeKey: about
+copyKey: about
+ogImage: victoria-swart-networking.jpg
+---
+{% set c = copy.about %}
+<section>
+  <h1>{{ c.h1 }}</h1>
+  <p class="lead">{{ c.lead }}</p>
+  <img src="/assets/victoria-swart-networking.jpg" alt="{{ c.photoAlt }}" width="1068" height="1600" loading="lazy" decoding="async" style="max-width:520px;margin-top:28px">
+</section>
+<section><h2>{{ c.shapedTitle }}</h2><p>{{ c.shaped }}</p><p>{{ c.stage }}</p></section>
+<section><h2>{{ c.expTitle }}</h2><ul class="tick-list">{% for e in c.exp %}<li>{{ e }}</li>{% endfor %}</ul></section>
+<section><h2>{{ c.goodTitle }}</h2><p class="lead">{{ c.good }}</p></section>
+<section class="closing-band">
+  <p class="closing-text">{{ copy.home.closing }}</p>
+  <a class="btn btn-light" href="{{ 'contact' | route(lang) }}">{{ t.cta.write }}</a>
+</section>

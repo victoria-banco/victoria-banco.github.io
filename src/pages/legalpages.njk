@@ -1,0 +1,13 @@
+---
+pagination: { data: legalPages, size: 1, alias: lp }
+permalink: "{{ routes[lp.key][lp.lang] }}index.html"
+layout: layouts/base.njk
+---
+{%- set L = lp.lang %}{% set c = allCopy[L][lp.key] %}
+<section>
+  <h1>{{ c.h1 }}</h1>
+  {%- for s in c.sections %}
+  <h2>{{ s.h }}</h2>
+  {%- for p in s.p %}<p>{{ p | safe }}</p>{% endfor %}
+  {%- endfor %}
+</section>

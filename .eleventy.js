@@ -10,7 +10,7 @@ module.exports = function (eleventyConfig) {
     const r = routes[key];
     if (!r) throw new Error(`Unknown route key: ${key}`);
     const url = r[lang];
-    if (!url) throw new Error(`Route ${key} missing language ${lang}`);
+    if (!url) throw new Error(`Route ${key} missing language ${lang} (type ${typeof lang})`);
     return url;
   });
 
@@ -41,36 +41,63 @@ module.exports = function (eleventyConfig) {
   // pagination alias, so t and copy resolve to the right language on their own.
   // Every accessor is defensive: Eleventy probes these with partial data while
   // it works out computed-value ordering.
+  // The language of the page being rendered. Simple templates get it from their
+  // pagination alias; paginated-over-objects templates carry it on the item.
+  const langOf = (data) => {
+    if (!data) return null;
+    if (typeof data.lang === 'string' && data.lang) return data.lang;
+    if (data.cp && data.cp.lang) return data.cp.lang;
+    if (data.lp && data.lp.lang) return data.lp.lang;
+    return null;
+  };
+
+  // Case pages get their title and description from the case itself.
+  const caseOf = (data) => {
+    if (!data || !data.cp || !data.cases) return null;
+    const c = data.cases[data.cp.key];
+    if (!c) return null;
+    const ct = c[data.cp.lang];
+    if (!ct) return null;
+    const named = !c.flag || (data.flags && data.flags[c.flag]);
+    return { c, ct, shownName: named ? ct.name : ct.nameFallback };
+  };
+
   const copyBlock = (data) => {
     const all = data && data.allCopy;
-    const lang = data && data.lang;
-    const key = data && data.copyKey;
+    const lang = langOf(data);
+    const key = (data && data.copyKey) || (data && data.lp && data.lp.key);
     if (!all || !lang || !key) return null;
     const forLang = all[lang];
     return forLang ? forLang[key] || null : null;
   };
 
   eleventyConfig.addGlobalData('eleventyComputed', {
-    t:    (data) => (data && data.lang && data.i18n ? data.i18n[data.lang] : undefined),
-    copy: (data) => (data && data.lang && data.allCopy ? data.allCopy[data.lang] : undefined),
+    L:    (data) => langOf(data),
+    t:    (data) => { const l = langOf(data); return l && data.i18n ? data.i18n[l] : undefined; },
+    copy: (data) => { const l = langOf(data); return l && data.allCopy ? data.allCopy[l] : undefined; },
     // Taken straight from the copy object, never through a Nunjucks string, so
     // ampersands are escaped exactly once.
     title: (data) => {
       if (data && data.pageTitle) return data.pageTitle;
+      const cs = caseOf(data);
+      if (cs) return `${cs.shownName}: ${cs.c.stack} \u00b7 Victoria Swart`;
       const b = copyBlock(data);
       return b && b.title ? b.title : '';
     },
     description: (data) => {
       if (data && data.pageDescription) return data.pageDescription;
+      const cs = caseOf(data);
+      if (cs) return cs.ct.brief.slice(0, 155);
       const b = copyBlock(data);
       return b && b.description ? b.description : '';
     },
     schemaJobTitle: (data) => {
       const all = data && data.allCopy;
-      const lang = data && data.lang;
-      if (!all || !lang || !all[lang]) return '';
-      return all[lang].jobTitle || '';
+      const l = langOf(data);
+      if (!all || !l || !all[l]) return '';
+      return all[l].jobTitle || '';
     },
+    routeKey: (data) => (data && data.routeKey) || (data && data.cp && data.cp.key) || (data && data.lp && data.lp.key) || null,
   });
 
   return {

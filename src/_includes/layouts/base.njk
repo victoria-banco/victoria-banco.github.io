@@ -1,3 +1,7 @@
+{%- set L = L or (cp.lang if cp) or (lp.lang if lp) or lang %}
+{%- set routeKey = routeKey or (cp.key if cp) or (lp.key if lp) %}
+{%- set t = t or i18n[L] %}
+{%- set copy = copy or allCopy[L] %}
 <!DOCTYPE html>
 <html lang="{{ t.htmlLang }}">
 <head>
@@ -6,7 +10,7 @@
 <title>{{ title }}</title>
 <meta name="description" content="{{ description }}">
 <meta name="author" content="{{ site.name }}">
-<link rel="canonical" href="{{ (routeKey | route(lang)) | abs }}">
+<link rel="canonical" href="{{ (routeKey | route(L)) | abs }}">
 {%- for a in routeKey | alternates %}
 <link rel="alternate" hreflang="{{ a.lang }}" href="{{ a.url | abs }}">
 {%- endfor %}
@@ -24,7 +28,7 @@
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="{{ site.name }}">
-<meta property="og:url" content="{{ (routeKey | route(lang)) | abs }}">
+<meta property="og:url" content="{{ (routeKey | route(L)) | abs }}">
 <meta property="og:title" content="{{ title }}">
 <meta property="og:description" content="{{ description }}">
 <meta property="og:image" content="{{ ('/assets/' + (ogImage or 'victoriahero.jpg')) | abs }}">
@@ -38,13 +42,14 @@
 {% include "partials/schema.njk" %}
 <link rel="stylesheet" href="/assets/css/site.css">
 </head>
-<body data-lang="{{ lang }}" data-route="{{ routeKey }}">
+<body data-lang="{{ L }}" data-route="{{ routeKey }}">
 <a class="skip" href="#main">{{ t.skip }}</a>
 {% include "partials/header.njk" %}
 <main id="main">
 {{ content | safe }}
 </main>
 {% include "partials/footer.njk" %}
+<script>window.__routes={{ routes | dump | safe }};</script>
 <script src="/assets/js/site.js" defer></script>
 </body>
 </html>

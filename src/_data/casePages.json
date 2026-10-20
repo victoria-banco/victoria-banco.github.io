@@ -1,0 +1,122 @@
+[
+ {
+  "key": "seabreeze",
+  "lang": "en",
+  "nextKey": "eqm"
+ },
+ {
+  "key": "eqm",
+  "lang": "en",
+  "nextKey": "graziano"
+ },
+ {
+  "key": "graziano",
+  "lang": "en",
+  "nextKey": "homeserv"
+ },
+ {
+  "key": "homeserv",
+  "lang": "en",
+  "nextKey": "ladolcevita"
+ },
+ {
+  "key": "ladolcevita",
+  "lang": "en",
+  "nextKey": "thissite"
+ },
+ {
+  "key": "thissite",
+  "lang": "en",
+  "nextKey": "seabreeze"
+ },
+ {
+  "key": "seabreeze",
+  "lang": "de",
+  "nextKey": "eqm"
+ },
+ {
+  "key": "eqm",
+  "lang": "de",
+  "nextKey": "graziano"
+ },
+ {
+  "key": "graziano",
+  "lang": "de",
+  "nextKey": "homeserv"
+ },
+ {
+  "key": "homeserv",
+  "lang": "de",
+  "nextKey": "ladolcevita"
+ },
+ {
+  "key": "ladolcevita",
+  "lang": "de",
+  "nextKey": "thissite"
+ },
+ {
+  "key": "thissite",
+  "lang": "de",
+  "nextKey": "seabreeze"
+ },
+ {
+  "key": "seabreeze",
+  "lang": "it",
+  "nextKey": "eqm"
+ },
+ {
+  "key": "eqm",
+  "lang": "it",
+  "nextKey": "graziano"
+ },
+ {
+  "key": "graziano",
+  "lang": "it",
+  "nextKey": "homeserv"
+ },
+ {
+  "key": "homeserv",
+  "lang": "it",
+  "nextKey": "ladolcevita"
+ },
+ {
+  "key": "ladolcevita",
+  "lang": "it",
+  "nextKey": "thissite"
+ },
+ {
+  "key": "thissite",
+  "lang": "it",
+  "nextKey": "seabreeze"
+ },
+ {
+  "key": "seabreeze",
+  "lang": "es",
+  "nextKey": "eqm"
+ },
+ {
+  "key": "eqm",
+  "lang": "es",
+  "nextKey": "graziano"
+ },
+ {
+  "key": "graziano",
+  "lang": "es",
+  "nextKey": "homeserv"
+ },
+ {
+  "key": "homeserv",
+  "lang": "es",
+  "nextKey": "ladolcevita"
+ },
+ {
+  "key": "ladolcevita",
+  "lang": "es",
+  "nextKey": "thissite"
+ },
+ {
+  "key": "thissite",
+  "lang": "es",
+  "nextKey": "seabreeze"
+ }
+]
