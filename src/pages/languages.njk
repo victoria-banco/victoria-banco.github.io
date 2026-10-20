@@ -21,6 +21,11 @@ ogImage: victoria-swart-speaking.jpg
   </ul>
 </section>
 
+<section class="band-light">
+  <h2>{{ c.approachTitle }}</h2>
+  <p class="lead">{{ c.approach }}</p>
+</section>
+
 <section>
   <h2>{{ c.teachTitle }}</h2>
   <ul class="tick-list">{% for i in c.teach %}<li>{{ i }}</li>{% endfor %}</ul>
@@ -32,7 +37,29 @@ ogImage: victoria-swart-speaking.jpg
   <p><a class="btn btn-primary" href="{{ 'contact' | route(lang) }}?topic=lessons">{{ t.cta.lesson }}</a></p>
 </section>
 
+<section class="band-light">
+  <h2>{{ c.specialTitle }}</h2>
+  {%- for s in c.special %}
+  <div class="deep">
+    <h3>{{ s.t }}</h3>
+    <p>{{ s.d }}</p>
+  </div>
+  {%- endfor %}
+</section>
+
+{%- if flags.lesson_samples %}
 <section>
+  <h2>{{ c.sampleTitle }}</h2>
+  <p class="lead">{{ c.sampleText }}</p>
+  <ul class="tag-row">
+  {%- for s in c.samples %}
+    <li><a href="/assets/samples/{{ s.f }}">{{ s.t }}</a></li>
+  {%- endfor %}
+  </ul>
+</section>
+{%- endif %}
+
+<section class="band-light">
   <h2>{{ c.transTitle }}</h2>
   <p>{{ c.transText }}</p>
 </section>

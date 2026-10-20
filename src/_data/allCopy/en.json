@@ -183,15 +183,16 @@
     "teachTitle": "Teaching",
     "teach": [
       "English for children, teenagers and adults, since 2016",
-      "German as a foreign language (A1 to B1), including courses at inlingua Roma",
-      "English exam preparation",
-      "Aviation English for people working at and around Rome Fiumicino airport",
-      "Online one-to-one or small groups"
+      "German as a foreign language, A1 to B1, including courses at inlingua Roma",
+      "Exam preparation",
+      "Aviation English for pilots and aspiring pilots",
+      "Business English for people who work in English every day",
+      "Online, one to one or in small groups"
     ],
     "teachPricing": [
       {
-        "t": "One-to-one lesson",
-        "d": "60 minutes, online.",
+        "t": "One to one lesson",
+        "d": "Sixty minutes, online.",
         "p": "€35"
       },
       {
@@ -201,13 +202,8 @@
       },
       {
         "t": "Business or aviation English",
-        "d": "60 minutes, online.",
+        "d": "Sixty minutes, online. Specialist preparation.",
         "p": "€45"
-      },
-      {
-        "t": "Trial lesson",
-        "d": "20 minutes, to see if we fit.",
-        "p": "Free"
       }
     ],
     "transTitle": "Translation and cultural adaptation",
@@ -222,7 +218,48 @@
       }
     ],
     "reviewsTitle": "Reviews",
-    "stageAlt": "Victoria Clara Swart hosting an international business event in Rome"
+    "stageAlt": "Victoria Clara Swart hosting an international business event in Rome",
+    "approachTitle": "How I teach",
+    "approach": "The first lesson is not a lesson. It is a conversation. I want to know what you do, what you are interested in, and how you actually learn, because a person who learns by talking needs a different hour from a person who learns by writing things down. After that I build the course around you. Your work, your hobbies, the situations you will really be in.",
+    "specialTitle": "Two things I am asked for most",
+    "special": [
+      {
+        "t": "Aviation English",
+        "d": "For pilots and aspiring pilots, wherever you are. We work on the language of radio communication, on the physics and the mechanics of flight, and on the vocabulary you need to be precise under pressure. Grammar where grammar is the thing getting in the way. Then role plays, exercises and tasks, because in a cockpit you do not get to prepare your sentence first."
+      },
+      {
+        "t": "Business English",
+        "d": "British and American English for the situations your job actually puts you in. Speaking up in a weekly check-in without rehearsing it in your head first. Presenting to a room and keeping it. Holding a conversation at a conference when the small talk matters as much as the agenda. We work on the register, the filler phrases that buy you a second, and the difference between sounding fluent and sounding sure of yourself."
+      }
+    ],
+    "sampleTitle": "See a real lesson first",
+    "sampleText": "Take a look at how a class actually runs before you book anything. Each sample is a real lesson plan, not a brochure.",
+    "samples": [
+      {
+        "t": "Aviation English",
+        "f": "sample-aviation-english.pdf"
+      },
+      {
+        "t": "Business English",
+        "f": "sample-business-english.pdf"
+      },
+      {
+        "t": "English, A1",
+        "f": "sample-english-a1.pdf"
+      },
+      {
+        "t": "German, A1",
+        "f": "sample-german-a1.pdf"
+      },
+      {
+        "t": "Spanish, A1",
+        "f": "sample-spanish-a1.pdf"
+      },
+      {
+        "t": "Danish, A1",
+        "f": "sample-danish-a1.pdf"
+      }
+    ]
   },
   "strategy": {
     "title": "Brand Strategy & SEO for International Businesses · Victoria Swart",
