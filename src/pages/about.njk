@@ -13,6 +13,12 @@ ogImage: victoria-swart-networking.jpg
   <img src="/assets/victoria-swart-networking.jpg" alt="{{ c.photoAlt }}" width="1068" height="1600" loading="lazy" decoding="async" style="max-width:520px;margin-top:28px">
 </section>
 <section><h2>{{ c.shapedTitle }}</h2><p>{{ c.shaped }}</p><p>{{ c.stage }}</p></section>
+<figure class="band-photo reveal">
+  <img src="/assets/about-harbour-1600.jpg"
+       srcset="/assets/about-harbour-900.jpg 900w, /assets/about-harbour-1600.jpg 1600w"
+       sizes="100vw" width="1600" height="1066"
+       alt="{{ c.harbourAlt }}" loading="lazy" decoding="async">
+</figure>
 <section><h2>{{ c.expTitle }}</h2><ul class="tick-list">{% for e in c.exp %}<li>{{ e }}</li>{% endfor %}</ul></section>
 <section><h2>{{ c.goodTitle }}</h2><p class="lead">{{ c.good }}</p></section>
 <section class="closing-band">
