@@ -44,12 +44,15 @@ p{margin:0 0 1.1em;max-width:68ch}
 .eyebrow{font-size:11px;letter-spacing:.24em;text-transform:uppercase;
   color:var(--accent);font-weight:500;margin-bottom:14px}
 
-section{padding:clamp(60px,7.5vw,112px) var(--pad);background:var(--black);color:var(--bone)}
-section>*{max-width:var(--wrap);margin-inline:auto}
-/* Headings and the text under them share one left edge. Body copy may be inset
-   further right, never further left. */
-section>h1,section>h2,section>h3,section>p,section>.lead{margin-left:0}
-section>p,section>.lead{padding-left:0}
+section{padding:clamp(60px,7.5vw,112px) max(var(--pad),(100% - var(--wrap))/2);
+  background:var(--black);color:var(--bone)}
+section>*{max-width:100%;margin-inline:0}
+/* The closing call to action is the one deliberately centred block. */
+.closing-band>*{margin-inline:auto}
+/* Headings and the text under them already share one left edge: every direct
+   child of a section is the same centred measure. Do not set margin-left here.
+   A margin-left:0 overrides margin-inline:auto and drops the content out of
+   the centred column, so it no longer lines up with the nav or the footer. */
 
 /* The rhythm, applied automatically down every page. Dark is the default
    state; every third section lifts to light so the eye gets relief. */
@@ -145,9 +148,11 @@ main>section.proof{background:var(--black);color:var(--bone)}
 
 /* ── Header ──────────────────────────────────────────────────── */
 .site-header{position:sticky;top:0;z-index:100;background:var(--black);color:var(--bone);
-  border-bottom:1px solid var(--rule-dark)}
+  border-bottom:1px solid var(--rule-dark);padding-inline:var(--pad)}
+/* The wrap carries no inline padding of its own: the header supplies it, so
+   the wordmark lands on the same left edge as every heading below it. */
 .nav{max-width:var(--wrap);margin-inline:auto;display:flex;align-items:center;gap:20px;
-  padding:18px var(--pad)}
+  padding:18px 0}
 .nav-logo{font-family:var(--serif);font-size:clamp(19px,1.7vw,23px);font-weight:600;
   text-decoration:none;color:var(--bone);white-space:nowrap;letter-spacing:.01em}
 .nav-links{list-style:none;display:flex;gap:22px;margin:0 0 0 auto;padding:0}
@@ -195,9 +200,11 @@ main>section.proof{background:var(--black);color:var(--bone)}
 }
 
 /* ── Hero ────────────────────────────────────────────────────── */
-.hero{padding:0;position:relative;overflow:hidden}
+/* The hero carries the column padding itself, exactly as every other section
+   does, so the eyebrow and the h1 start on the wordmark's left edge. */
+.hero{padding:0 max(var(--pad),(100% - var(--wrap))/2);position:relative;overflow:hidden}
 .hero>*{max-width:none}
-.hero-inner{max-width:var(--wrap);margin-inline:auto;padding:0 var(--pad);
+.hero-inner{max-width:100%;margin-inline:0;padding:0;
   display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.78fr);
   gap:clamp(28px,4.5vw,64px);align-items:center;min-height:min(84vh,780px)}
 .hero-text{padding-block:clamp(48px,7vw,96px)}

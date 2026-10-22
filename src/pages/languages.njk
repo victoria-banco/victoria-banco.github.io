@@ -67,7 +67,7 @@ ogImage: victoria-swart-speaking.jpg
 <section id="stage">
   <h2>{{ c.stageTitle }}</h2>
   <p>{{ c.stageText }}</p>
-  <img src="/assets/victoria-swart-speaking.jpg" alt="{{ c.stageAlt }}" width="1068" height="1600" loading="lazy" decoding="async" style="max-width:520px">
+  <img src="/assets/victoria-swart-speaking.jpg" alt="{{ c.stageAlt }}" width="1068" height="1600" loading="lazy" decoding="async" style="max-width:min(520px,100%)">
   <div class="price-table">
   {%- for p in c.stagePricing %}
     <div class="price-row"><div><h3>{{ p.t }}</h3><p>{{ p.d }}</p></div><div class="price-val">{{ p.p }}</div></div>
