@@ -34,11 +34,11 @@ Italy. Works in German, English, Italian, Spanish and Danish. VAT: IT{{ site.vat
 ## Site structure
 
 {% for key, byLang in routes -%}
-- {{ site.url | safe }}{{ byLang.en | safe }} (de: {{ site.url | safe }}{{ byLang.de | safe }})
+- {{ site.url | safe }}{{ byLang.en | safe }} (de: {{ byLang.de | safe }} | it: {{ byLang.it | safe }} | es: {{ byLang.es | safe }})
 {% endfor %}
 ## Languages of this site
 
-English and German are complete. Italian and Spanish are in progress.
+English, German, Italian and Spanish. Every page exists in all four.
 
 ## Links
 

@@ -2,9 +2,8 @@
 permalink: /sitemap.xml
 eleventyExcludeFromCollections: true
 ---
-{%- set langs = ['en', 'de'] -%}
-{#- Only languages whose copy actually exists belong in the sitemap.
-    Italian and Spanish join this list when their copy lands. -#}
+{%- set langs = ['en', 'de', 'it', 'es'] -%}
+{#- Every language has real copy now, so all four belong here. -#}
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 {%- for key, byLang in routes %}

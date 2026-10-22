@@ -34,6 +34,32 @@
       ],
       "result": "Der Eigentümer hat beide Fassungen verglichen und sich für die neue entschieden. Sie zieht auf seine eigene Domain und seinen eigenen Netlify-Account um.",
       "starter": "Ferienvermietung und Gastgewerbe"
+    },
+    "it": {
+      "name": "Seabreeze",
+      "sector": "Noleggio di case galleggianti",
+      "location": "Alghero, Sardegna",
+      "brief": "Un noleggio di case galleggianti per vacanze aveva bisogno di un sito che trasformasse i visitatori in richieste di prenotazione, per ospiti in arrivo da tutta Europa.",
+      "did": [
+        "Prima versione costruita su Wix, consegnata a febbraio 2026 con una guida di 29 pagine.",
+        "Ricostruito a ottobre 2026 come sito veloce scritto a mano e collegato alle prenotazioni.",
+        "Testi, struttura, design, sviluppo e impostazione dell'hosting."
+      ],
+      "result": "Il proprietario ha confrontato le due versioni e ha scelto la nuova. Sta passando al suo dominio e al suo account Netlify.",
+      "starter": "Case vacanza e ospitalità"
+    },
+    "es": {
+      "name": "Seabreeze",
+      "sector": "Alquiler de casas flotantes",
+      "location": "Alghero, Cerdeña",
+      "brief": "Un alquiler vacacional de casas flotantes necesitaba una web que convirtiera visitas en solicitudes de reserva, para huéspedes que llegan de toda Europa.",
+      "did": [
+        "Primera versión hecha en Wix, entregada en febrero de 2026 con una guía de 29 páginas.",
+        "Reconstruida en octubre de 2026 como una web rápida escrita a mano y conectada con las reservas.",
+        "Textos, estructura, diseño, desarrollo y configuración del alojamiento."
+      ],
+      "result": "El propietario comparó las dos versiones y eligió la nueva. Está pasando a su propio dominio y a su propia cuenta de Netlify.",
+      "starter": "Alquiler vacacional y hostelería"
     }
   },
   "eqm": {
@@ -94,6 +120,56 @@
       ],
       "result": "Startbereit, wir warten noch auf die Fotos und die endgültigen Preise des Kunden.",
       "starter": "Handwerksshops und E-Commerce"
+    },
+    "it": {
+      "name": "EQM Sellier",
+      "nameFallback": "Selleria artigiana italiana",
+      "sector": "Selleria artigiana",
+      "location": "Adro, Franciacorta",
+      "ownerNote": "Laboratorio del mastro sellaio Ivan Persico",
+      "brief": "Un laboratorio che realizza a mano selle su misura, briglie e bauli da concorso doveva passare da un vecchio sito WordPress a uno shop vero, senza perdere il modo consulenziale con cui si vende una sella che costa diverse migliaia di euro.",
+      "did": [
+        "Un tema Shopify Online Store 2.0 interamente su misura, in italiano e in inglese.",
+        "Una pagina per la sella su misura con timeline visiva, campioni di pelle e un modulo di richiesta tracciato come funnel.",
+        "Un modulo per le richieste di riparazione del laboratorio.",
+        "Carrello a tendina, ricerca predittiva, filtri e pulsante d'acquisto fisso su mobile.",
+        "Pagine prodotto pronte per 3D e realtà aumentata con il model viewer nativo di Shopify.",
+        "Dati strutturati per prodotti, organizzazione, breadcrumb, articoli e FAQ.",
+        "Una mappa dei reindirizzamenti da WordPress a Shopify, una mappa delle parole chiave e un piano editoriale.",
+        "Flussi e-mail di recupero, impostazione delle statistiche e un documento di consegna in parole semplici."
+      ],
+      "details": [
+        "Il percorso consulenziale per prodotti su misura di fascia alta: l'obiettivo è una conversazione, non una cassa.",
+        "La realtà aumentata si carica solo sui prodotti che hanno un modello, così il resto dello shop resta veloce.",
+        "Un sistema di colori e caratteri nelle impostazioni del tema, così il cliente può cambiare l'aspetto senza toccare il codice."
+      ],
+      "result": "Pronto alla pubblicazione, in attesa delle fotografie e dei prezzi definitivi del cliente.",
+      "starter": "Negozi artigiani ed e-commerce"
+    },
+    "es": {
+      "name": "EQM Sellier",
+      "nameFallback": "Guarnicionería artesana italiana",
+      "sector": "Guarnicionería artesana",
+      "location": "Adro, Franciacorta",
+      "ownerNote": "Taller del maestro guarnicionero Ivan Persico",
+      "brief": "Un taller que hace a mano sillas de montar a medida, bridas y baúles de competición tenía que pasar de una web antigua en WordPress a una tienda de verdad, sin perder la forma consultiva con la que se vende una silla que cuesta varios miles de euros.",
+      "did": [
+        "Un tema de Shopify Online Store 2.0 enteramente a medida, en italiano e inglés.",
+        "Una página para la silla a medida con línea de tiempo visual, muestras de cuero y un formulario de solicitud medido como embudo.",
+        "Un formulario de solicitud de reparación para el taller.",
+        "Carrito lateral, búsqueda predictiva, filtros y botón de compra fijo en el móvil.",
+        "Fichas de producto preparadas para 3D y realidad aumentada con el visor de modelos nativo de Shopify.",
+        "Datos estructurados para productos, organización, migas de pan, artículos y preguntas frecuentes.",
+        "Un mapa de redirecciones de WordPress a Shopify, un mapa de palabras clave y un plan editorial.",
+        "Flujos de recuperación por correo, configuración de estadísticas y un documento de entrega en lenguaje claro."
+      ],
+      "details": [
+        "El recorrido consultivo para productos a medida de precio alto: el objetivo es una conversación, no una caja.",
+        "La realidad aumentada solo carga en los productos que tienen modelo, así el resto de la tienda sigue siendo rápida.",
+        "Un sistema de color y tipografía dentro de los ajustes del tema, para que el cliente cambie el aspecto sin tocar código."
+      ],
+      "result": "Listo para publicarse, a la espera de las fotografías y los precios definitivos del cliente.",
+      "starter": "Tiendas artesanas y comercio electrónico"
     }
   },
   "graziano": {
@@ -132,6 +208,34 @@
       ],
       "result": "Geliefert und übergeben.",
       "starter": "Musikerinnen und Musiker"
+    },
+    "it": {
+      "name": "Graziano Tumbarello",
+      "nameFallback": "Sassofonista, Sicilia",
+      "sector": "Sassofonista",
+      "location": "Marsala, Sicilia",
+      "brief": "Un sassofonista professionista, ingaggiato per matrimoni ed eventi, aveva bisogno di un sito che rispondesse alle domande di una coppia e li portasse a scrivergli.",
+      "did": [
+        "Sito di una sola pagina in italiano: hero, servizi, repertorio, recensioni, FAQ, galleria.",
+        "Un pulsante WhatsApp per le richieste, perché è così che i suoi clienti scrivono davvero.",
+        "Impostazione per la ricerca locale su matrimoni ed eventi nella Sicilia occidentale."
+      ],
+      "result": "Consegnato.",
+      "starter": "Musicisti e artisti"
+    },
+    "es": {
+      "name": "Graziano Tumbarello",
+      "nameFallback": "Saxofonista, Sicilia",
+      "sector": "Saxofonista",
+      "location": "Marsala, Sicilia",
+      "brief": "Un saxofonista profesional, contratado para bodas y eventos, necesitaba una web que respondiera a las preguntas de una pareja y les llevara a escribirle.",
+      "did": [
+        "Web de una sola página en italiano: portada, servicios, repertorio, reseñas, preguntas frecuentes y galería.",
+        "Un botón de WhatsApp para las solicitudes, porque es como escriben de verdad sus clientes.",
+        "Configuración de búsqueda local para bodas y eventos en el oeste de Sicilia."
+      ],
+      "result": "Entregada.",
+      "starter": "Músicos y artistas"
     }
   },
   "homeserv": {
@@ -171,6 +275,34 @@
       ],
       "result": "Geliefert. Name, Logo, Domain und Telefonnummer des Kunden werden hier nicht gezeigt.",
       "starter": "Handwerk und Notdienste"
+    },
+    "it": {
+      "name": "Pronto intervento casa",
+      "sector": "Pronto intervento idraulico, termico ed elettrico",
+      "location": "Roma, Fregene e Fiumicino",
+      "brief": "Un'impresa di pronto intervento attiva 24 ore su 24 doveva farsi trovare da chi cerca nel panico, e aveva bisogno di un modo per tenere traccia delle richieste in arrivo.",
+      "did": [
+        "Sito di quattro pagine con tutti i testi in italiano: home, servizi, chi siamo, contatti.",
+        "Profilo dell'attività su Google creato e compilato.",
+        "Un registro dei contatti, così le richieste smettono di perdersi.",
+        "Un piano per la pubblicità su Meta e Google Maps."
+      ],
+      "result": "Consegnato. Nome, logo, dominio e numero di telefono del cliente non sono mostrati qui.",
+      "starter": "Artigiani e servizi per la casa"
+    },
+    "es": {
+      "name": "Servicio de urgencias del hogar",
+      "sector": "Urgencias de fontanería, calefacción y electricidad",
+      "location": "Roma, Fregene y Fiumicino",
+      "brief": "Una empresa de urgencias del hogar con disponibilidad 24 horas tenía que aparecer ante quien busca presa del apuro, y necesitaba una forma de no perder las solicitudes que entraban.",
+      "did": [
+        "Web de cuatro páginas con todos los textos en italiano: inicio, servicios, quiénes somos y contacto.",
+        "Perfil de Empresa en Google creado y completado.",
+        "Un registro de contactos, para que las solicitudes dejen de perderse.",
+        "Un plan de publicidad en Meta y Google Maps."
+      ],
+      "result": "Entregada. El nombre, el logotipo, el dominio y el teléfono del cliente no se muestran aquí.",
+      "starter": "Oficios y servicios para el hogar"
     }
   },
   "ladolcevita": {
@@ -206,6 +338,30 @@
       "result": "Marke und Website fertiggestellt. Nie gestartet, nie genutzt, nie lizenziert.",
       "starter": "Luxusreisen und Concierge",
       "rights": "La Dolce Vita Luxury Experience existiert nicht. Das Unternehmen wurde nie gegründet, war nie geschäftlich tätig, hat weder Räume noch Mitarbeitende, Kundschaft oder Vertretung, und unter diesem Namen wurde nie ein Geschäft eröffnet. Das Vorhaben wurde vor dem Start aufgegeben. Alles auf dieser Seite, Markenidentität, Logo, Website, Texte und Gestaltung, stammt von Victoria Clara Swart und ist als eigenständiges Konzept entstanden. Es wurde nie vertraglich beauftragt, es wurden niemals Rechte daran übertragen und es wurde weder einer Person noch einem Unternehmen jemals eine Lizenz erteilt. Vervielfältigung, Veröffentlichung, Bearbeitung oder kommerzielle Nutzung durch Dritte sind nicht gestattet. Alle Rechte vorbehalten."
+    },
+    "it": {
+      "name": "La Dolce Vita Luxury Experience",
+      "sector": "Concierge di lusso italiano",
+      "location": "Italia",
+      "brief": "Un concept indipendente per un servizio di concierge di lusso, rivolto a viaggiatori che si aspettano accesso e non pacchetti. L'impresa non è mai nata.",
+      "did": [
+        "Identità di marca, logo, sito Webflow, testi e presenza digitale. Dal 2025 al 2026."
+      ],
+      "result": "Marca e sito completati. Mai avviati, mai usati, mai concessi in licenza.",
+      "starter": "Viaggi di lusso e concierge",
+      "rights": "La Dolce Vita Luxury Experience non esiste. Non è mai stata fondata, non ha mai svolto attività, non ha sedi, personale, clienti né rappresentanti, e sotto questo nome non è mai stata avviata alcuna impresa. Il progetto è stato abbandonato prima della partenza. Tutto ciò che si trova in questa pagina, identità di marca, logo, sito, testi e progettazione, è opera di Victoria Clara Swart ed è nato come concept indipendente. Non è mai stato commissionato con un contratto, non ne sono mai stati trasferiti i diritti a nessuno e non ne è mai stata concessa licenza ad alcuna persona o impresa. Riproduzione, pubblicazione, rielaborazione o uso commerciale da parte di terzi non sono consentiti. Tutti i diritti riservati."
+    },
+    "es": {
+      "name": "La Dolce Vita Luxury Experience",
+      "sector": "Concierge de lujo italiano",
+      "location": "Italia",
+      "brief": "Un concepto propio para un servicio de concierge de lujo, dirigido a viajeros que esperan acceso y no paquetes. La empresa nunca llegó a existir.",
+      "did": [
+        "Identidad de marca, logotipo, web en Webflow, textos y presencia digital. De 2025 a 2026."
+      ],
+      "result": "Marca y web terminadas. Nunca lanzadas, nunca usadas, nunca licenciadas.",
+      "starter": "Viajes de lujo y concierge",
+      "rights": "La Dolce Vita Luxury Experience no existe. Nunca se constituyó, nunca ha operado, no tiene sede, personal, clientes ni representantes, y jamás se puso en marcha ningún negocio con ese nombre. El proyecto se abandonó antes del lanzamiento. Todo lo que aparece en esta página, la identidad de marca, el logotipo, la web, los textos y el diseño, es obra de Victoria Clara Swart y nació como un concepto propio. Nunca se encargó mediante contrato, nunca se transfirieron sus derechos a nadie y nunca se concedió licencia a ninguna persona ni empresa. No se permite su reproducción, publicación, adaptación ni uso comercial por parte de terceros. Todos los derechos reservados."
     }
   },
   "thissite": {
@@ -244,6 +400,34 @@
       ],
       "result": "Live, und der Ausgangspunkt für jede Kundenwebsite, die ich baue.",
       "starter": "Mehrsprachige Websites für Selbstständige"
+    },
+    "it": {
+      "name": "victoriaswart.com",
+      "sector": "Il mio sito",
+      "location": "Roma",
+      "brief": "Il mio sito, ricostruito per mostrare quello che faccio invece di descriverlo.",
+      "did": [
+        "Quattro lingue con hreflang completo e un selettore che ti lascia sulla stessa pagina.",
+        "Caratteri serviti da qui, nessun cookie, nessuna statistica, nessuna richiesta a terzi.",
+        "Dati strutturati per una persona e i suoi servizi.",
+        "Ogni caso studio scritto da un progetto reale."
+      ],
+      "result": "Online, e il punto di partenza per ogni sito che costruisco per un cliente.",
+      "starter": "Siti multilingue per professionisti"
+    },
+    "es": {
+      "name": "victoriaswart.com",
+      "sector": "Mi propia web",
+      "location": "Roma",
+      "brief": "Mi propia web, reconstruida para enseñar lo que hago en lugar de describirlo.",
+      "did": [
+        "Cuatro idiomas con hreflang completo y un selector que te deja en la misma página.",
+        "Tipografías servidas desde aquí, sin cookies, sin estadísticas, sin peticiones a terceros.",
+        "Datos estructurados para una persona y sus servicios.",
+        "Cada caso escrito a partir de un proyecto real."
+      ],
+      "result": "En línea, y el punto de partida de cada web que construyo para un cliente.",
+      "starter": "Webs multilingües para profesionales"
     }
   }
 }
