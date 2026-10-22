@@ -33,10 +33,10 @@
     {
       "origLang": "en",
       "who": {
-        "en": "Leana, Golden Goose Events, Rome",
-        "de": "Leana, Golden Goose Events, Rom",
-        "it": "Leana, Golden Goose Events, Roma",
-        "es": "Leana, Golden Goose Events, Roma"
+        "en": "Leana, Event Director, Golden Goose Events, Rome",
+        "de": "Leana, Event Director, Golden Goose Events, Rom",
+        "it": "Leana, Event Director, Golden Goose Events, Roma",
+        "es": "Leana, Event Director, Golden Goose Events, Roma"
       },
       "original": "Victoria Swart worked as Master of Ceremonies at the Inception AI Impact Roadshow, organized by Golden Goose Events at the Anantara Palazzo Naiadi, Rome. She hosted the program, introduced speakers, and guided the audience through a high-level executive event on artificial intelligence and enterprise innovation. Victoria adapted to last-minute agenda changes with professionalism and ease, and her warm, confident style contributed to the success of the event. We would be happy to work with her again and recommend her without hesitation.",
       "translation": {
@@ -58,7 +58,7 @@
       },
       {
         "quote": "Victoria adapted to last-minute agenda changes with professionalism and ease, and her warm, confident style contributed to the success of the event.",
-        "who": "Leana, Golden Goose Events, Rome"
+        "who": "Leana, Event Director, Golden Goose Events, Rome"
       }
     ],
     "de": [
@@ -72,7 +72,7 @@
       },
       {
         "quote": "Victoria stellte sich mit Professionalität und Leichtigkeit auf kurzfristige Programmänderungen ein, und ihre herzliche, souveräne Art trug zum Erfolg der Veranstaltung bei.",
-        "who": "Leana, Golden Goose Events, Rom"
+        "who": "Leana, Event Director, Golden Goose Events, Rom"
       }
     ],
     "it": [
@@ -86,7 +86,7 @@
       },
       {
         "quote": "Victoria si è adattata con professionalità e naturalezza ai cambi di programma dell'ultimo minuto, e il suo stile caloroso e sicuro ha contribuito al successo dell'evento.",
-        "who": "Leana, Golden Goose Events, Roma"
+        "who": "Leana, Event Director, Golden Goose Events, Roma"
       }
     ],
     "es": [
@@ -100,7 +100,7 @@
       },
       {
         "quote": "Victoria se adaptó con profesionalidad y naturalidad a los cambios de programa de última hora, y su estilo cálido y seguro contribuyó al éxito del evento.",
-        "who": "Leana, Golden Goose Events, Roma"
+        "who": "Leana, Event Director, Golden Goose Events, Roma"
       }
     ]
   },

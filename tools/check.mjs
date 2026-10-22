@@ -6,10 +6,14 @@ const files = walk('_site');
 const routes = JSON.parse(readFileSync('src/_data/routes.json', 'utf8'));
 const valid = new Set(Object.values(routes).flatMap(r => Object.values(r)));
 let problems = [];
+// Redirect stubs are not content pages: no h1, no hreflang set, by design.
+const isRedirect = (h) => /http-equiv="refresh"/.test(h) && /name="robots" content="noindex/.test(h);
+
 for (const f of files) {
   const h = readFileSync(f, 'utf8');
   const url = '/' + f.replace(/^_site\//, '').replace(/index\.html$/, '');
   const h1 = (h.match(/<h1[\s>]/g) || []).length;
+  if (isRedirect(h)) continue;
   if (h1 !== 1) problems.push(`${url} h1=${h1}`);
   if (!/<link rel="canonical"/.test(h)) problems.push(`${url} no canonical`);
   if ((h.match(/rel="alternate"/g) || []).length !== 5) problems.push(`${url} hreflang!=5`);

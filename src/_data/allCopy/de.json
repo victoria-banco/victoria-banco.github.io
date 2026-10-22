@@ -1,0 +1,473 @@
+{
+  "ipNotice": "Sämtliche Inhalte dieser Website, einschließlich Texte, Markenkonzepte, Fallstudien, Gestaltung und Code, sind das Werk und geistiges Eigentum von Victoria Clara Swart und nach italienischem und EU-Urheberrecht geschützt. Die im Portfolio gezeigten Arbeiten sind nicht zur kommerziellen Nutzung, Vervielfältigung oder Weiterveröffentlichung durch Dritte freigegeben.",
+  "home": {
+    "title": "Victoria Clara Swart · Webdesign, Strategie & Sprachen",
+    "description": "Mehrsprachiges Webdesign und Markenstrategie in Rom. Websites, Texte und SEO auf Deutsch, Englisch, Italienisch, Spanisch und Dänisch.",
+    "eyebrow": "Marken, die über Grenzen hinweg funktionieren",
+    "h1": "Websites, Marken und Worte, die in fünf Sprachen funktionieren.",
+    "intro": "Ich bin Victoria Clara Swart. Ich gestalte und baue Websites, gebe Marken ihre Sprache und unterrichte Sprachen. Ich arbeite auf Deutsch, Englisch, Italienisch, Spanisch und Dänisch. Ihre Website wird also nicht einfach übersetzt. Sie wird verstanden.",
+    "proof": [
+      {
+        "n": "5",
+        "label": "Sprachen"
+      },
+      {
+        "n": "10",
+        "label": "Jahre Unterricht, seit 2016"
+      },
+      {
+        "n": "5",
+        "label": "Länder, in denen ich gelebt und gearbeitet habe"
+      }
+    ],
+    "doorsTitle": "Was ich mache",
+    "doors": [
+      {
+        "route": "webdesign",
+        "title": "Webdesign & Entwicklung",
+        "text": "Schnelle, mehrsprachige Websites und Shops. Gestaltet, getextet und programmiert von einer Person. Ab 900 €."
+      },
+      {
+        "route": "strategy",
+        "title": "Strategie & SEO",
+        "text": "Positionierung, Botschaft und Sichtbarkeit für Unternehmen, die über Grenzen hinweg verkaufen."
+      },
+      {
+        "route": "languages",
+        "title": "Sprachen",
+        "text": "Unterricht, Übersetzung und kulturelle Anpassung sowie Moderation internationaler Veranstaltungen."
+      }
+    ],
+    "workTitle": "Ausgewählte Arbeiten",
+    "saidTitle": "Was andere sagen",
+    "stageTitle": "Auf der Bühne",
+    "stageText": "Ich moderiere Konferenzen und Pitch-Events in fünf Sprachen, von Pitch-Abenden im dänischen Startup-Accelerator in Kopenhagen bis zu einem B2B-Marketingabend für Führungskräfte im Anantara Palazzo Naiadi in Rom.",
+    "closing": "Ein Projekt, ein Sprachziel oder eine Veranstaltung? Schreiben Sie mir.",
+    "heroAlt": "Victoria Clara Swart, Webdesignerin und Markenstrategin in Rom"
+  },
+  "webdesign": {
+    "title": "Mehrsprachiges Webdesign in Rom · Victoria Swart",
+    "description": "Websites für kleine Unternehmen, Handwerk und Gastgewerbe. Von einer Person gestaltet, getextet und programmiert, in bis zu fünf Sprachen. Ab 900 €.",
+    "h1": "Websites, die in jeder Sprache funktionieren, die Ihre Kunden sprechen.",
+    "intro": "Ich gestalte, texte und programmiere Websites für kleine Unternehmen, Handwerksbetriebe, Gastgewerbe und Selbstständige. Eine Person vom ersten Gespräch bis zum Start: Struktur, Texte in bis zu fünf Sprachen, Gestaltung, Umsetzung und Suchmaschinen. Am Ende haben Sie eine schnelle Website, die Ihnen vollständig gehört.",
+    "recentTitle": "Aktuelle Websites",
+    "howTitle": "So läuft es ab",
+    "how": [
+      {
+        "n": "1",
+        "t": "Gespräch",
+        "d": "30 Minuten. Was die Website leisten soll, für wen und in welchen Sprachen."
+      },
+      {
+        "n": "2",
+        "t": "Struktur und Text",
+        "d": "Erst der Aufbau und die tatsächlichen Worte, damit die Gestaltung der Botschaft dient."
+      },
+      {
+        "n": "3",
+        "t": "Gestaltung",
+        "d": "Eine Richtung, gemeinsam mit Ihnen verfeinert. Kein Baukastenlook."
+      },
+      {
+        "n": "4",
+        "t": "Umsetzung",
+        "d": "Handgeschrieben im Code, oder Shopify, Webflow oder Wix, wenn Sie lieber selbst bearbeiten."
+      },
+      {
+        "n": "5",
+        "t": "Start und Übergabe",
+        "d": "Domain, Search Console, Statistik und eine schriftliche Anleitung. Die Zugänge laufen auf Ihren Namen."
+      }
+    ],
+    "includedTitle": "In jeder Website enthalten",
+    "included": [
+      "Responsives Design, das auf dem Handy schnell lädt",
+      "Texte in Ihren Sprachen, nicht maschinell übersetzt",
+      "Technisches SEO: Titel, strukturierte Daten, Sitemap, hreflang für mehrsprachige Websites",
+      "Kontakt- oder Buchungsstrecke, WhatsApp-Button wo er hilft",
+      "Datensparsame Einrichtung und die Rechtstexte, die Ihr Land verlangt",
+      "Eine Übergabeanleitung, damit Sie nie von mir abhängig sind"
+    ],
+    "toolsTitle": "Werkzeuge",
+    "tools": [
+      "HTML, CSS und JavaScript",
+      "Shopify (Liquid, Online Store 2.0)",
+      "Webflow",
+      "Wix",
+      "Figma",
+      "Netlify",
+      "KI-gestützte Entwicklung"
+    ],
+    "startersTitle": "Ausgangspunkte",
+    "startersIntro": "Jedes Projekt ist zugleich ein wiederverwendbarer Ausgangspunkt für seine Branche.",
+    "pricingTitle": "Was es kostet",
+    "pricing": [
+      {
+        "t": "Onepager",
+        "d": "Ein Musiker, ein Handwerksbetrieb, eine kleine Pension.",
+        "p": "ab 900 €"
+      },
+      {
+        "t": "Mehrseitige Website",
+        "d": "Mehrere Seiten, klarer Aufbau, Raum zum Wachsen.",
+        "p": "1.500 bis 2.500 €"
+      },
+      {
+        "t": "Shop mit Shopify",
+        "d": "Ein echter Shop auf einem eigenen Theme.",
+        "p": "ab 3.000 €"
+      },
+      {
+        "t": "Jede weitere Sprache",
+        "d": "Von mir geschrieben, nicht maschinell übersetzt.",
+        "p": "+300 €"
+      },
+      {
+        "t": "Betreuung",
+        "d": "Hosting-Kontrollen, Updates und kleine Änderungen pro Monat.",
+        "p": "60 € pro Monat"
+      },
+      {
+        "t": "Kleine Änderungen ohne Vertrag",
+        "d": "Für alles, was später dazukommt.",
+        "p": "50 € pro Stunde"
+      },
+      {
+        "t": "Lokale Sichtbarkeit einrichten",
+        "d": "Google-Unternehmensprofil, Basis-SEO, Bewertungen.",
+        "p": "450 € einmalig"
+      }
+    ],
+    "pricingNote": "Festpreis, bevor wir anfangen. 30 bis 50 % im Voraus.",
+    "cta": "Erzählen Sie mir von Ihrer Website",
+    "heroAlt": "Websites von Victoria Clara Swart"
+  },
+  "languages": {
+    "title": "Sprachunterricht & Moderation · Victoria Swart",
+    "description": "Unterricht in Englisch und Deutsch, Übersetzung und kulturelle Anpassung sowie Konferenzmoderation in fünf Sprachen. Unterricht seit 2016.",
+    "h1": "Fünf Sprachen. Zehn Jahre Unterricht. Eine Person auf der Bühne.",
+    "intro": "Mit Sprachen hat meine Arbeit angefangen. Meine erste Englischstunde habe ich 2016 in Kolumbien gegeben und seitdem nie aufgehört zu unterrichten. Heute unterrichte ich, übersetze, passe Texte zwischen Märkten an und moderiere internationale Veranstaltungen.",
+    "mineTitle": "Meine Sprachen",
+    "mine": [
+      {
+        "name": "Deutsch",
+        "line": "Meine Muttersprache.",
+        "level": "Muttersprache",
+        "code": "de"
+      },
+      {
+        "name": "English",
+        "line": "The language I first taught in.",
+        "level": "Muttersprachliches Niveau",
+        "code": "en"
+      },
+      {
+        "name": "Italiano",
+        "line": "La lingua in cui ho vissuto e lavorato a Roma.",
+        "level": "Fließend",
+        "code": "it"
+      },
+      {
+        "name": "Español",
+        "line": "El idioma que aprendí en Colombia.",
+        "level": "Fließend",
+        "code": "es"
+      },
+      {
+        "name": "Dansk",
+        "line": "Sproget fra min tid i Danmark.",
+        "level": "Fließend",
+        "code": "da"
+      }
+    ],
+    "teachTitle": "Unterricht",
+    "teach": [
+      "Englisch für Kinder, Jugendliche und Erwachsene, seit 2016",
+      "Deutsch als Fremdsprache, A1 bis B1, unter anderem bei inlingua Roma",
+      "Prüfungsvorbereitung",
+      "Aviation English für Pilotinnen, Piloten und angehende Piloten",
+      "Business-Englisch für alle, die täglich auf Englisch arbeiten",
+      "Online, einzeln oder in kleinen Gruppen"
+    ],
+    "teachPricing": [
+      {
+        "t": "Einzelstunde",
+        "d": "60 Minuten, online.",
+        "p": "35 €"
+      },
+      {
+        "t": "Zehn Stunden",
+        "d": "Zusammen gebucht.",
+        "p": "320 €"
+      },
+      {
+        "t": "Business- oder Aviation English",
+        "d": "60 Minuten, online. Fachliche Vorbereitung.",
+        "p": "45 €"
+      }
+    ],
+    "transTitle": "Übersetzung und kulturelle Anpassung",
+    "transText": "Eine Übersetzung bringt Worte hinüber. Eine Anpassung bringt die Bedeutung mit. Ich schreibe Websites, Markenbotschaften und Kampagnentexte für den deutschen, italienischen, spanischen, dänischen und englischsprachigen Markt neu, damit sie dort so ankommen, wie das Original es sollte.",
+    "stageTitle": "Vortrag und Moderation",
+    "stageText": "Ich moderiere Konferenzen, Panels und Pitch-Events in allen fünf Sprachen. Zuletzt: Moderation von Startup-Pitches im dänischen Startup-Accelerator in Kopenhagen und Moderation eines BuyerForesight-Abends für B2B-Marketingverantwortliche im Anantara Palazzo Naiadi in Rom, gebucht über Golden Goose Events.",
+    "stagePricing": [
+      {
+        "t": "Moderation und Bühne",
+        "d": "Angebot pro Veranstaltung.",
+        "p": "ab 400 €"
+      }
+    ],
+    "reviewsTitle": "Bewertungen",
+    "stageAlt": "Victoria Clara Swart moderiert eine internationale Wirtschaftsveranstaltung in Rom",
+    "approachTitle": "Wie ich unterrichte",
+    "approach": "Die erste Stunde ist keine Stunde. Sie ist ein Gespräch. Ich möchte wissen, was Sie beruflich machen, was Sie interessiert und wie Sie tatsächlich lernen, denn wer über das Sprechen lernt, braucht eine andere Stunde als jemand, der über das Aufschreiben lernt. Danach baue ich den Kurs um Sie herum auf. Ihre Arbeit, Ihre Interessen, die Situationen, in denen Sie wirklich stehen werden.",
+    "specialTitle": "Zwei Dinge, nach denen am häufigsten gefragt wird",
+    "special": [
+      {
+        "t": "Aviation English",
+        "d": "Für Pilotinnen, Piloten und alle, die es werden wollen, wo immer Sie sind. Wir arbeiten an der Sprache des Funkverkehrs, an der Physik und Mechanik des Fliegens und an dem Wortschatz, den Sie brauchen, um unter Druck präzise zu bleiben. Grammatik dort, wo die Grammatik im Weg steht. Dann Rollenspiele, Übungen und Aufgaben, denn im Cockpit können Sie Ihren Satz nicht vorher zurechtlegen."
+      },
+      {
+        "t": "Business-Englisch",
+        "d": "Britisches und amerikanisches Englisch für die Situationen, in die Ihr Beruf Sie tatsächlich bringt. Im wöchentlichen Jour fixe etwas sagen, ohne es vorher im Kopf zu proben. Vor einem Raum präsentieren und ihn halten. Auf einer Konferenz ein Gespräch führen, in dem der Small Talk genauso zählt wie die Agenda. Wir arbeiten an der Sprachebene, an den Füllwendungen, die Ihnen eine Sekunde verschaffen, und an dem Unterschied zwischen flüssig klingen und sicher klingen."
+      }
+    ],
+    "sampleTitle": "Sehen Sie sich zuerst eine echte Stunde an",
+    "sampleText": "Schauen Sie sich an, wie eine Stunde wirklich abläuft, bevor Sie etwas buchen. Jedes Beispiel ist ein echter Stundenplan, keine Broschüre.",
+    "samples": [
+      {
+        "t": "Aviation English",
+        "f": "sample-aviation-english.pdf"
+      },
+      {
+        "t": "Business-Englisch",
+        "f": "sample-business-english.pdf"
+      },
+      {
+        "t": "Englisch, A1",
+        "f": "sample-english-a1.pdf"
+      },
+      {
+        "t": "Deutsch, A1",
+        "f": "sample-german-a1.pdf"
+      },
+      {
+        "t": "Spanisch, A1",
+        "f": "sample-spanish-a1.pdf"
+      },
+      {
+        "t": "Dänisch, A1",
+        "f": "sample-danish-a1.pdf"
+      }
+    ]
+  },
+  "strategy": {
+    "title": "Markenstrategie & SEO · Victoria Clara Swart",
+    "description": "Positionierung, Botschaft und Sichtbarkeit für Unternehmen, die über Grenzen hinweg verkaufen. Website- und Sichtbarkeitscheck, 150 €.",
+    "h1": "Positionierung, Botschaft und Sichtbarkeit für Unternehmen, die über Grenzen hinweg verkaufen.",
+    "intro": "Vor einer Website oder einer Kampagne muss ein Unternehmen wissen, wofür es steht und wie es das in jedem Markt sagt. Mein Studium der Market and Management Anthropology heißt: Ich fange damit an, wie Ihre Kundinnen und Kunden tatsächlich denken und suchen, und baue die Botschaft von dort aus auf.",
+    "servicesTitle": "Was ich anbiete",
+    "services": [
+      {
+        "t": "Website- und Sichtbarkeitscheck",
+        "d": "90 Minuten auf Ihrer Website und ihrer Auffindbarkeit, mit einer schriftlichen Liste, was zuerst zu ändern ist.",
+        "p": "150 €"
+      },
+      {
+        "t": "Lokale Sichtbarkeit einrichten",
+        "d": "Google-Unternehmensprofil, Basis-SEO und eine Routine für Bewertungen. Einmal eingerichtet und Ihres.",
+        "p": "450 €"
+      },
+      {
+        "t": "Markenstrategie und Positionierung",
+        "d": "Was Sie unterscheidbar macht, zu wem Sie sprechen, Ihre Kernbotschaft und Ihr Ton.",
+        "p": "Auf Anfrage"
+      },
+      {
+        "t": "Mehrsprachige Kommunikationsstrategie",
+        "d": "Wie sich Ihre Botschaft für jede Sprache und jeden Markt verändert.",
+        "p": "Auf Anfrage"
+      },
+      {
+        "t": "Laufende strategische Begleitung",
+        "d": "Jeden Monat jemand zum Mitdenken, für Unternehmen, die das wollen.",
+        "p": "Auf Anfrage"
+      }
+    ],
+    "examplesTitle": "Beispiele",
+    "examples": [
+      {
+        "t": "Website-Texte, Google-Unternehmensprofil und Lead-Erfassung für einen Notdienst rund ums Haus",
+        "route": "homeserv"
+      },
+      {
+        "t": "Social-Media-Strategie und Pitch Deck für einen Padel- und Pickleball-Club bei Rom",
+        "route": null
+      },
+      {
+        "t": "SEO-geführte redaktionelle Inhalte für ein internationales Flugreiseunternehmen",
+        "route": null
+      }
+    ],
+    "faqTitle": "Fragen",
+    "faq": [
+      {
+        "q": "Was macht eine Markenstrategin eigentlich?",
+        "a": "Eine Markenstrategin legt fest, wofür ein Unternehmen stehen soll, zu wem es spricht und wie es das sagt, bevor Gestaltung oder Werbung beginnen. In der Praxis heißt das: Positionierung, ein Aufbau für die Botschaften und ein Ton. Gestaltung sorgt dafür, dass eine Marke einheitlich aussieht. Strategie sorgt dafür, dass sie einheitlich etwas bedeutet."
+      },
+      {
+        "q": "Was ist der Unterschied zwischen Übersetzung und kultureller Anpassung?",
+        "a": "Eine Übersetzung bringt Worte von einer Sprache in die andere. Eine Anpassung bringt die Bedeutung von einem Markt in den anderen. Dieselbe Aussage leistet an verschiedenen Orten Verschiedenes: Qualität klingt im Deutschen nach Technik und Verlässlichkeit, im Italienischen eher nach Sorgfalt und Handwerk. Ein übersetzter Slogan kann richtig sein und trotzdem nicht ankommen. Eine Anpassung schreibt auf die Wirkung hin neu, die das Original haben sollte, und das heißt meistens: andere Worte."
+      },
+      {
+        "q": "Was kostet das?",
+        "a": "Ein Website- und Sichtbarkeitscheck kostet 150 €. Das Einrichten der lokalen Sichtbarkeit kostet 450 €. Markenstrategie und laufende Begleitung werden auf Anfrage angeboten, weil der Umfang sehr viel stärker schwankt als bei einer Website. Websites beginnen bei 900 €."
+      },
+      {
+        "q": "Arbeiten Sie auch mit Kunden außerhalb Italiens?",
+        "a": "Ja. Ich arbeite grundsätzlich remote und reise für Arbeit vor Ort und für Veranstaltungen durch Europa."
+      },
+      {
+        "q": "Was hat SEO mit Markenstrategie zu tun?",
+        "a": "In der Suche wird die Positionierung geprüft. Eine Keyword-Recherche zeigt, welche Worte Ihr Markt tatsächlich für sein Problem benutzt, und das sind oft nicht die Worte, die ein Unternehmen für seine Lösung benutzt. Diese Lücke zu schließen verbessert das Ranking und schärft gleichzeitig die Marke."
+      }
+    ],
+    "cta": "Website- und Sichtbarkeitscheck buchen"
+  },
+  "about": {
+    "title": "Über Victoria Clara Swart",
+    "description": "Webdesignerin, Markenstrategin und Sprachlehrerin in Rom. Market and Management Anthropology, fünf Sprachen, Websites von einer Person gebaut.",
+    "h1": "Victoria Clara Swart",
+    "lead": "Ich bin in Ostfriesland aufgewachsen, im Norden Deutschlands, zwischen einer friesischen Familie väterlicherseits und einer wolgadeutschen mütterlicherseits. Es war also immer mehr als eine Sprache im Raum. Mit sechzehn war ich ein Jahr in Kolumbien und habe dort meine erste Englischstunde gegeben. Seitdem habe ich in Dänemark, Spanien und Italien gelebt und gearbeitet, Market and Management Anthropology studiert und gelernt, Websites im Code zu bauen.",
+    "shapedTitle": "Was die Arbeit geprägt hat",
+    "shaped": "Die Anthropologie hat mir beigebracht, erst zu beobachten, wie Menschen sich tatsächlich verhalten, bevor man entscheidet, was man ihnen sagt. Der Code erlaubt mir, die Sache selbst zu bauen, statt sie jemand anderem zu beschreiben. Die Sprachen erlauben mir beides, für Menschen in fünf Ländern gleichzeitig. Ich baue Brücken zwischen Sprachen, Kulturen, Wirtschaft und Technik.",
+    "stage": "Sie finden mich außerdem auf der Bühne, als Moderatorin internationaler Konferenzen und Pitch-Events.",
+    "expTitle": "Erfahrung",
+    "exp": [
+      "Web- und Markenprojekte für Kunden in Italien, auf Sardinien, auf Sizilien und in Deutschland",
+      "Projektassistenz bei Beyond Beta, Erhvervshus, dem dänischen Startup-Accelerator in Kopenhagen: Webflow-Entwicklung, interne Systeme, Moderation von Pitch-Events",
+      "Europäisches Solidaritätskorps, ein Jahr in Neapel",
+      "Sprachunterricht seit 2016: Kolumbien, inlingua Roma, Aviation English in Fiumicino",
+      "Moderatorin und Gastgeberin, Rom und Kopenhagen",
+      "Market and Management Anthropology, Universität Süddänemark"
+    ],
+    "goodTitle": "Gute Arbeit, für mich",
+    "good": "Gute Arbeit ist Arbeit, die auch übersetzt noch Sinn ergibt.",
+    "photoAlt": "Victoria Clara Swart im Gespräch mit Unternehmerinnen und Unternehmern bei einer Veranstaltung in Rom"
+  },
+  "work": {
+    "title": "Portfolio · Web- und Markenprojekte · V. Swart",
+    "description": "Websites und Markenprojekte für eine Hausbootvermietung, eine Sattlerei, einen Saxofonisten, einen Notdienst rund ums Haus und einen Luxus-Concierge.",
+    "h1": "Portfolio",
+    "intro": "Sechs Projekte, jedes von Grund auf getextet, gestaltet und gebaut. Jedes ist zugleich ein Ausgangspunkt für das nächste Unternehmen derselben Branche."
+  },
+  "contact": {
+    "title": "Kontakt · Victoria Clara Swart",
+    "description": "Schreiben Sie mir über eine Website, Sprachunterricht, Strategie und SEO oder die Moderation Ihrer Veranstaltung. Sitz in Rom, tätig in ganz Europa.",
+    "h1": "Schreiben Sie mir",
+    "intro": "Erzählen Sie mir, was Sie vorhaben, in welcher Sprache es funktionieren muss und ungefähr wann. Ich antworte innerhalb von zwei Werktagen."
+  },
+  "journal": {
+    "title": "Journal · Victoria Swart",
+    "description": "Essays über Marke, Sprache und Kultur und über die Frage, wie Unternehmen gesehen und erinnert werden.",
+    "h1": "Journal",
+    "intro": "Essays über Marke, Sprache und Kultur. Neue Texte erscheinen zuerst auf Substack."
+  },
+  "privacy": {
+    "title": "Datenschutz · Victoria Clara Swart",
+    "description": "Wie diese Website mit Ihren Daten umgeht. Keine Cookies, keine Statistik, kein Tracking.",
+    "h1": "Datenschutzerklärung",
+    "sections": [
+      {
+        "h": "Wer diese Website betreibt",
+        "p": [
+          "Victoria Clara Swart, selbstständig tätig, Rom, Italien. P.IVA 18420501001. E-Mail: <a href=\"mailto:victoria.c.swart@icloud.com\">victoria.c.swart@icloud.com</a>."
+        ]
+      },
+      {
+        "h": "Cookies",
+        "p": [
+          "Diese Website setzt keine Cookies. Sie verwendet keine Statistikdienste und kein Tracking jeglicher Art."
+        ]
+      },
+      {
+        "h": "Was das Kontaktformular erhebt",
+        "p": [
+          "Wenn Sie das Formular absenden, werden Ihr Name, Ihre E-Mail-Adresse und Ihre Nachricht von <a href=\"https://formspree.io/legal/privacy-policy\" target=\"_blank\" rel=\"noopener noreferrer\">Formspree</a> verarbeitet und mir per E-Mail zugestellt. Das Formular hält außerdem fest, welche Sprachfassung der Website Sie genutzt haben, und, falls Sie über einen Link auf der Website eines Kunden gekommen sind, welche Website Sie geschickt hat. Diese Daten dienen ausschließlich dazu, Ihnen zu antworten. Sie werden nicht verkauft und nicht zu Werbezwecken weitergegeben."
+        ]
+      },
+      {
+        "h": "Spracheinstellung",
+        "p": [
+          "Wenn Ihnen eine andere Sprachfassung angeboten wird, stammt dieser Vorschlag aus der Spracheinstellung Ihres eigenen Browsers. Es findet keine Standortabfrage über Ihre IP-Adresse statt und es wird nichts an Dritte übermittelt. Ihre Wahl wird im lokalen Speicher Ihres Browsers abgelegt. Das ist kein Cookie und verlässt Ihr Gerät nie."
+        ]
+      },
+      {
+        "h": "Schriftarten",
+        "p": [
+          "Die Schriftarten werden vom Server dieser Website selbst ausgeliefert. Es wird keine Anfrage an Google Fonts oder einen anderen Schriftdienst gestellt."
+        ]
+      },
+      {
+        "h": "Ihre Rechte nach der DSGVO",
+        "p": [
+          "Wenn Sie sich in der EU oder im EWR befinden, können Sie Auskunft über Ihre übermittelten personenbezogenen Daten verlangen sowie deren Berichtigung oder Löschung. Schreiben Sie an <a href=\"mailto:victoria.c.swart@icloud.com\">victoria.c.swart@icloud.com</a> und ich antworte innerhalb der gesetzlichen Frist."
+        ]
+      },
+      {
+        "h": "Wie lange sie gespeichert werden",
+        "p": [
+          "Nachrichten aus dem Formular werden nur so lange aufbewahrt, wie es nötig ist, um Ihnen zu antworten und die daraus entstandene Arbeit zu dokumentieren."
+        ]
+      },
+      {
+        "h": "Stand",
+        "p": [
+          "Oktober 2026."
+        ]
+      }
+    ]
+  },
+  "legal": {
+    "title": "Impressum · Victoria Clara Swart",
+    "description": "Impressum und Unternehmensangaben für victoriaswart.com.",
+    "h1": "Impressum",
+    "sections": [
+      {
+        "h": "Betreiberin der Website",
+        "p": [
+          "Victoria Clara Swart<br>Selbstständig tätig (libera professionista)<br>Rom, Italien"
+        ]
+      },
+      {
+        "h": "Umsatzsteuer-Identifikationsnummer",
+        "p": [
+          "P.IVA 18420501001"
+        ]
+      },
+      {
+        "h": "Kontakt",
+        "p": [
+          "<a href=\"mailto:victoria.c.swart@icloud.com\">victoria.c.swart@icloud.com</a>"
+        ]
+      },
+      {
+        "h": "Verantwortlich für den Inhalt",
+        "p": [
+          "Victoria Clara Swart, Anschrift wie oben."
+        ]
+      },
+      {
+        "h": "Urheberrecht",
+        "p": [
+          "Sämtliche Inhalte dieser Website, einschließlich Texte, Markenkonzepte, Fallstudien, Gestaltung und Code, sind das Werk und geistiges Eigentum von Victoria Clara Swart und nach italienischem und EU-Urheberrecht geschützt. Die im Portfolio gezeigten Arbeiten sind nicht zur kommerziellen Nutzung, Vervielfältigung oder Weiterveröffentlichung durch Dritte freigegeben."
+        ]
+      }
+    ]
+  },
+  "e404": {
+    "title": "Seite nicht gefunden · Victoria Swart",
+    "description": "Diese Seite gibt es nicht."
+  },
+  "jobTitle": "Webdesignerin und Markenstrategin"
+}

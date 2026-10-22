@@ -21,6 +21,19 @@
       ],
       "result": "The owner compared both versions and chose the new one. It is moving to his own domain and his own Netlify account.",
       "starter": "Holiday rentals and hospitality"
+    },
+    "de": {
+      "name": "Seabreeze",
+      "sector": "Hausboot-Ferienvermietung",
+      "location": "Alghero, Sardinien",
+      "brief": "Eine Hausboot-Ferienvermietung brauchte eine Website, die Besucher in Buchungsanfragen verwandelt, für Gäste aus ganz Europa.",
+      "did": [
+        "Erste Fassung mit Wix gebaut und im Februar 2026 mit einer 29-seitigen Anleitung übergeben.",
+        "Im Oktober 2026 als schnelle, handgeschriebene Website mit Buchungsanbindung neu gebaut.",
+        "Text, Struktur, Gestaltung, Umsetzung und Hosting-Einrichtung."
+      ],
+      "result": "Der Eigentümer hat beide Fassungen verglichen und sich für die neue entschieden. Sie zieht auf seine eigene Domain und seinen eigenen Netlify-Account um.",
+      "starter": "Ferienvermietung und Gastgewerbe"
     }
   },
   "eqm": {
@@ -56,6 +69,31 @@
       ],
       "result": "Ready to launch, waiting on the client's photography and final prices.",
       "starter": "Artisan shops and e-commerce"
+    },
+    "de": {
+      "name": "EQM Sellier",
+      "nameFallback": "Italienische Sattlerei",
+      "sector": "Handwerkliche Sattlerei",
+      "location": "Adro, Franciacorta",
+      "ownerNote": "Werkstatt von Sattlermeister Ivan Persico",
+      "brief": "Eine Werkstatt, die Maßsättel, Trensen und Turnierkoffer von Hand fertigt, musste von einer alten WordPress-Seite zu einem echten Shop wechseln, ohne die beratungsgeführte Art zu verlieren, auf die ein Sattel für mehrere tausend Euro verkauft wird.",
+      "did": [
+        "Ein vollständig eigenes Shopify-Theme (Online Store 2.0), auf Italienisch und Englisch.",
+        "Eine Seite für den Maßsattel mit visuellem Zeitstrahl, Ledermustern und einem Anfrageformular, das als Funnel ausgewertet wird.",
+        "Ein Formular für Reparaturanfragen der Werkstatt.",
+        "Warenkorb-Drawer, vorausschauende Suche, Filter und ein fixierter Kaufen-Button auf dem Handy.",
+        "Produktseiten, vorbereitet für 3D und Augmented Reality über den nativen Model Viewer von Shopify.",
+        "Strukturierte Daten für Produkte, Unternehmen, Breadcrumbs, Artikel und FAQ.",
+        "Eine Weiterleitungskarte von WordPress zu Shopify, eine Keyword-Karte und ein Journal-Konzept.",
+        "E-Mail-Strecken zur Warenkorb-Rückgewinnung, Statistik-Einrichtung und eine verständliche Übergabedokumentation."
+      ],
+      "details": [
+        "Die beratungsgeführte Strecke für hochpreisige Maßanfertigungen: Ziel ist ein Gespräch, keine Kasse.",
+        "Augmented Reality lädt nur bei Produkten, zu denen es ein Modell gibt, damit der übrige Shop schnell bleibt.",
+        "Ein Farb- und Schriftsystem in den Theme-Einstellungen, damit der Kunde das Aussehen ändern kann, ohne Code anzufassen."
+      ],
+      "result": "Startbereit, wir warten noch auf die Fotos und die endgültigen Preise des Kunden.",
+      "starter": "Handwerksshops und E-Commerce"
     }
   },
   "graziano": {
@@ -80,6 +118,20 @@
       ],
       "result": "Delivered and handed over.",
       "starter": "Musicians and artists"
+    },
+    "de": {
+      "name": "Graziano Tumbarello",
+      "nameFallback": "Saxofonist, Sizilien",
+      "sector": "Saxofonist",
+      "location": "Marsala, Sizilien",
+      "brief": "Ein professioneller Saxofonist, der für Hochzeiten und Veranstaltungen gebucht wird, brauchte eine Website, die die Fragen eines Paares beantwortet und sie dazu bringt, ihm zu schreiben.",
+      "did": [
+        "Einseitige Website auf Italienisch: Hero, Leistungen, Repertoire, Bewertungen, FAQ, Galerie.",
+        "Ein WhatsApp-Button für Anfragen, weil seine Kunden tatsächlich so schreiben.",
+        "Lokale Suche für Hochzeiten und Veranstaltungen in Westsizilien."
+      ],
+      "result": "Geliefert und übergeben.",
+      "starter": "Musikerinnen und Musiker"
     }
   },
   "homeserv": {
@@ -105,6 +157,20 @@
       ],
       "result": "Delivered. The client's name, logo, domain and phone number are not shown here.",
       "starter": "Trades and home services"
+    },
+    "de": {
+      "name": "Notdienst rund ums Haus",
+      "sector": "Notdienst für Sanitär, Heizung und Elektrik",
+      "location": "Rom, Fregene und Fiumicino",
+      "brief": "Ein Notdienst mit 24-Stunden-Bereitschaft musste von Menschen gefunden werden, die in Panik suchen, und brauchte eine Möglichkeit, eingehende Anfragen nachzuhalten.",
+      "did": [
+        "Vierseitige Website mit allen Texten auf Italienisch: Start, Leistungen, Über uns, Kontakt.",
+        "Google-Unternehmensprofil eingerichtet und ausgefüllt.",
+        "Eine Lead-Erfassung, damit keine Anfrage mehr verloren geht.",
+        "Ein Konzept für Werbung bei Meta und Google Maps."
+      ],
+      "result": "Geliefert. Name, Logo, Domain und Telefonnummer des Kunden werden hier nicht gezeigt.",
+      "starter": "Handwerk und Notdienste"
     }
   },
   "ladolcevita": {
@@ -127,6 +193,17 @@
       ],
       "result": "Brand and website delivered.",
       "starter": "Luxury travel and concierge"
+    },
+    "de": {
+      "name": "La Dolce Vita Luxury Experience",
+      "sector": "Luxus-Concierge und Reisen",
+      "location": "Italien",
+      "brief": "Ein Luxus-Concierge-Service brauchte eine Marke und eine Website, die Reisende anspricht, die Zugang erwarten statt Pauschalangebote.",
+      "did": [
+        "Markenidentität, Logo, Webflow-Website, Texte und digitale Präsenz. 2025 bis 2026."
+      ],
+      "result": "Marke und Website geliefert.",
+      "starter": "Luxusreisen und Concierge"
     }
   },
   "thissite": {
@@ -151,6 +228,20 @@
       ],
       "result": "Live, and the starting point for every client site I build.",
       "starter": "Multilingual professional sites"
+    },
+    "de": {
+      "name": "victoriaswart.com",
+      "sector": "Meine eigene Website",
+      "location": "Rom",
+      "brief": "Meine eigene Website, neu gebaut, um zu zeigen, was ich tue, statt es zu beschreiben.",
+      "did": [
+        "Vier Sprachen mit vollständigem hreflang und einem Umschalter, der Sie auf derselben Seite hält.",
+        "Selbst gehostete Schriften, keine Cookies, keine Statistik, keine Anfragen an Dritte.",
+        "Strukturierte Daten für eine Person und ihre Leistungen.",
+        "Jede Fallstudie aus einem echten Projekt geschrieben."
+      ],
+      "result": "Live, und der Ausgangspunkt für jede Kundenwebsite, die ich baue.",
+      "starter": "Mehrsprachige Websites für Selbstständige"
     }
   }
 }
