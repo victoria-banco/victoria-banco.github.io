@@ -246,7 +246,7 @@ main>section.proof{background:var(--black);color:var(--bone)}
   border-top:2px solid transparent;transition:border-color .3s,transform .3s}
 .case-card:hover{border-top-color:var(--accent);transform:translateY(-3px)}
 .case-card img{aspect-ratio:16/10;object-fit:cover}
-.case-card h3{margin:18px 22px 4px}
+.case-card h3,.case-card .cs-title{margin:18px 22px 4px;font-size:clamp(19px,2vw,24px)}
 .case-card p{margin:0 22px 22px;font-size:14px;color:var(--ink-70)}
 
 /* ── Quotes ──────────────────────────────────────────────────── */
@@ -389,3 +389,11 @@ main>section.band-light .deep{border-top-color:var(--rule)}
 .rights-note{background:var(--plum);border:1px solid var(--plum-2);border-radius:2px;
   padding:clamp(20px,2.4vw,30px);max-width:72ch}
 .rights-note p{margin:0;color:var(--bone);font-size:14.5px;line-height:1.75;max-width:none}
+
+.case-next{margin:0;display:flex;flex-wrap:wrap;align-items:baseline;gap:0}
+/* Below 380px a two-column price row cannot hold a long label and a price on
+   one line: stack them instead of letting the price leave the page. */
+@media (max-width:380px){
+  .price-row{grid-template-columns:1fr;gap:6px}
+  .price-val{white-space:normal}
+}

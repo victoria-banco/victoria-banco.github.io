@@ -67,7 +67,9 @@ layout: layouts/base.njk
 </section>
 
 <section>
-  <a class="link-more" href="{{ cases[cp.nextKey].route | route(L) }}">{{ t.case.next }}: {{ cases[cp.nextKey][L].name if ((not cases[cp.nextKey].flag) or flags[cases[cp.nextKey].flag]) else cases[cp.nextKey][L].nameFallback }} &rarr;</a>
-  &nbsp;&middot;&nbsp;
-  <a class="link-more" href="{{ 'webdesign' | route(L) }}">{{ t.nav.web }} &rarr;</a>
+  <p class="case-next">
+    <a class="link-more" href="{{ cases[cp.nextKey].route | route(L) }}">{{ t.case.next }}: {{ cases[cp.nextKey][L].name if ((not cases[cp.nextKey].flag) or flags[cases[cp.nextKey].flag]) else cases[cp.nextKey][L].nameFallback }} &rarr;</a>
+    <span aria-hidden="true">&nbsp;&middot;&nbsp;</span>
+    <a class="link-more" href="{{ 'webdesign' | route(L) }}">{{ t.nav.web }} &rarr;</a>
+  </p>
 </section>

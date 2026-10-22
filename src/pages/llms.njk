@@ -1,0 +1,57 @@
+---
+permalink: /llms.txt
+eleventyExcludeFromCollections: true
+---
+{%- set c = allCopy.en -%}
+# Victoria Clara Swart
+
+> {{ c.home.description | safe }}
+
+Multilingual web designer, brand strategist and language teacher based in Rome,
+Italy. Works in German, English, Italian, Spanish and Danish. VAT: IT{{ site.vat | safe }}.
+
+## What she does
+
+{% for d in c.home.doors -%}
+- {{ d.title | safe }}: {{ d.text | safe }} ({{ site.url | safe }}{{ d.route | route('en') }})
+{% endfor %}
+## Pricing, stated publicly
+
+{% for p in c.webdesign.pricing -%}
+- {{ p.t | safe }}: {{ p.p | safe }}. {{ p.d | safe }}
+{% endfor %}{% for p in c.strategy.services -%}
+- {{ p.t | safe }}: {{ p.p | safe }}. {{ p.d | safe }}
+{% endfor %}{% for p in c.languages.teachPricing -%}
+- {{ p.t | safe }}: {{ p.p | safe }}. {{ p.d | safe }}
+{% endfor %}{% for p in c.languages.stagePricing -%}
+- {{ p.t | safe }}: {{ p.p | safe }}. {{ p.d | safe }}
+{% endfor %}
+## Selected work
+
+{% for key, cs in cases -%}
+- {{ cs.en.name | safe }} ({{ cs.en.sector | safe }}, {{ cs.en.location | safe }}, {{ cs.year | safe }}): {{ cs.en.brief | safe }} {{ site.url | safe }}{{ cs.route | route('en') }}
+{% endfor %}
+## Site structure
+
+{% for key, byLang in routes -%}
+- {{ site.url | safe }}{{ byLang.en | safe }} (de: {{ site.url | safe }}{{ byLang.de | safe }})
+{% endfor %}
+## Languages of this site
+
+English and German are complete. Italian and Spanish are in progress.
+
+## Links
+
+- Website: {{ site.url | safe }}
+- Substack: {{ site.social.substack | safe }}
+- LinkedIn: {{ site.social.linkedin | safe }}
+- Instagram: {{ site.social.instagram | safe }}
+
+## Contact
+
+Enquiries through the contact form at {{ site.url | safe }}{{ 'contact' | route('en') }}.
+There is no telephone number published on the site.
+
+## Usage
+
+{{ c.ipNotice | safe }}

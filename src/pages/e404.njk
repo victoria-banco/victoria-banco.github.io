@@ -1,0 +1,19 @@
+---
+permalink: /404.html
+layout: layouts/base.njk
+routeKey: home
+lang: en
+eleventyExcludeFromCollections: true
+---
+{% set c = allCopy.en.e404 %}
+<section>
+  <h1>{{ c.h1 | default('Page not found') }}</h1>
+  <p class="lead">{{ c.description }}</p>
+  <p class="case-next">
+    <a class="link-more" href="/">Home &rarr;</a>
+    <span aria-hidden="true">&nbsp;&middot;&nbsp;</span>
+    <a class="link-more" href="/work/">Portfolio &rarr;</a>
+    <span aria-hidden="true">&nbsp;&middot;&nbsp;</span>
+    <a class="link-more" href="/contact/">Contact &rarr;</a>
+  </p>
+</section>

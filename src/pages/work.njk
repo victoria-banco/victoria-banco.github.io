@@ -18,7 +18,7 @@ ogImage: case-seabreeze.jpg
   {%- set named = (not cs.flag) or flags[cs.flag] %}
     <a class="case-card" href="{{ cs.route | route(lang) }}">
       <img src="/assets/{{ cs.image }}" alt="{{ ct.sector }}" width="960" height="600" loading="lazy" decoding="async">
-      <h3>{{ ct.name if named else ct.nameFallback }}</h3>
+      <h2 class="cs-title">{{ ct.name if named else ct.nameFallback }}</h2>
       <p>{{ ct.sector }}, {{ ct.location }} &middot; {{ cs.year }}</p>
     </a>
   {%- endfor %}

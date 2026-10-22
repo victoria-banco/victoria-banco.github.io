@@ -35,3 +35,56 @@
 {{ extraSchema | safe }}
 </script>
 {%- endif %}
+
+{%- if routeKey == 'home' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Victoria Clara Swart",
+  "url": {{ ('home' | route(L) | abs) | dump | safe }},
+  "image": {{ ('/assets/victoriahero.jpg' | abs) | dump | safe }},
+  "email": {{ site.email | dump | safe }},
+  "description": {{ copy.home.description | dump | safe }},
+  "priceRange": "\u20ac\u20ac",
+  "address": { "@type": "PostalAddress", "addressLocality": "Rome", "addressCountry": "IT" },
+  "areaServed": { "@type": "Place", "name": "Europe" },
+  "availableLanguage": ["de", "en", "it", "es", "da"],
+  "founder": { "@type": "Person", "name": "Victoria Clara Swart" },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": {{ copy.home.doorsTitle | dump | safe }},
+    "itemListElement": [
+      {%- for d in copy.home.doors %}
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": {{ d.title | dump | safe }},
+          "description": {{ d.text | dump | safe }},
+          "url": {{ (d.route | route(L) | abs) | dump | safe }}
+        }
+      }{% if not loop.last %},{% endif %}
+      {%- endfor %}
+    ]
+  }
+}
+</script>
+{%- endif %}
+{%- if routeKey == 'strategy' and copy.strategy.faq %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {%- for f in copy.strategy.faq %}
+    {
+      "@type": "Question",
+      "name": {{ f.q | dump | safe }},
+      "acceptedAnswer": { "@type": "Answer", "text": {{ f.a | dump | safe }} }
+    }{% if not loop.last %},{% endif %}
+    {%- endfor %}
+  ]
+}
+</script>
+{%- endif %}
