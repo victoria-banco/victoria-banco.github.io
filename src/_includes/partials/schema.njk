@@ -36,7 +36,7 @@
 </script>
 {%- endif %}
 
-{%- if routeKey == 'home' %}
+{%- if routeKey == 'home' and copy.home and copy.home.doors %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -71,7 +71,7 @@
 }
 </script>
 {%- endif %}
-{%- if routeKey == 'strategy' and copy.strategy.faq %}
+{%- if routeKey == 'strategy' and copy.strategy and copy.strategy.faq %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
