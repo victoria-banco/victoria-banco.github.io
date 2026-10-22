@@ -80,8 +80,8 @@ ogImage: victoria-swart-speaking.jpg
   <h2>{{ c.reviewsTitle }}</h2>
   {%- for r in reviews.full %}
   <div class="review-full">
-    <blockquote lang="it"><p>{{ r.original }}</p><cite>{{ r.who[lang] }}</cite></blockquote>
-    {%- if lang != 'it' %}
+    <blockquote lang="{{ r.origLang }}"><p>{{ r.original }}</p><cite>{{ r.who[lang] }}</cite></blockquote>
+    {%- if lang != r.origLang %}
     <details><summary>{{ t.review.toggle }}</summary><p class="review-tr"><em>{{ t.review.translated }}.</em> {{ r.translation[lang] }}</p></details>
     {%- endif %}
   </div>

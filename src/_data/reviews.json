@@ -12,7 +12,8 @@
         "en": "Victoria was my son's teacher for a year. I absolutely loved how she made the lessons stimulating and fun for him, and his English improved remarkably. She is very empathetic and passionate about English, being a native speaker, and I warmly recommend her to anyone who wants to learn the language fluently and in a truly engaging way!",
         "de": "Victoria war ein Jahr lang die Lehrerin meines Sohnes. Ich habe es geliebt, wie sie den Unterricht für ihn anregend und unterhaltsam gestaltet hat, und sein Englisch hat sich deutlich verbessert. Sie ist sehr empathisch und als Muttersprachlerin mit Leidenschaft bei der Sache. Ich empfehle sie allen wärmstens, die diese Sprache fließend und auf wirklich mitreißende Weise lernen wollen!",
         "es": "Victoria fue la profesora de mi hijo durante un año. Me encantó su capacidad de hacer las clases estimulantes y divertidas para él, y su nivel de inglés mejoró notablemente. Es muy empática y apasionada del inglés, al ser hablante nativa, y la recomiendo de corazón a todos los que quieran aprender este idioma con fluidez y de una forma realmente atractiva."
-      }
+      },
+      "origLang": "it"
     },
     {
       "who": {
@@ -26,6 +27,22 @@
         "en": "Victoria was my first German teacher. Her lessons were very useful to me and I appreciated her professionalism. She also knows how to create a pleasant atmosphere in class and a real sense of group, another quality that put me at ease.",
         "de": "Victoria war meine erste Deutschlehrerin. Ihr Unterricht war für mich sehr hilfreich, und ich habe ihre Professionalität geschätzt. Sie schafft außerdem eine angenehme Atmosphäre und echten Zusammenhalt in der Gruppe, eine weitere Eigenschaft, durch die ich mich wohlgefühlt habe.",
         "es": "Victoria fue mi primera profesora de alemán. Sus clases me resultaron muy útiles y valoré su profesionalidad. También sabe crear un clima agradable en clase y cohesión en el grupo, otra cualidad que me hizo sentir cómoda."
+      },
+      "origLang": "it"
+    },
+    {
+      "origLang": "en",
+      "who": {
+        "en": "Leana, Golden Goose Events, Rome",
+        "de": "Leana, Golden Goose Events, Rom",
+        "it": "Leana, Golden Goose Events, Roma",
+        "es": "Leana, Golden Goose Events, Roma"
+      },
+      "original": "Victoria Swart worked as Master of Ceremonies at the Inception AI Impact Roadshow, organized by Golden Goose Events at the Anantara Palazzo Naiadi, Rome. She hosted the program, introduced speakers, and guided the audience through a high-level executive event on artificial intelligence and enterprise innovation. Victoria adapted to last-minute agenda changes with professionalism and ease, and her warm, confident style contributed to the success of the event. We would be happy to work with her again and recommend her without hesitation.",
+      "translation": {
+        "de": "Victoria Swart war Moderatorin der Inception AI Impact Roadshow, die von Golden Goose Events im Anantara Palazzo Naiadi in Rom veranstaltet wurde. Sie führte durch das Programm, stellte die Sprecher vor und begleitete das Publikum durch eine hochkarätige Veranstaltung für Führungskräfte zu künstlicher Intelligenz und Unternehmensinnovation. Victoria stellte sich mit Professionalität und Leichtigkeit auf kurzfristige Programmänderungen ein, und ihre herzliche, souveräne Art trug zum Erfolg der Veranstaltung bei. Wir würden jederzeit wieder mit ihr arbeiten und empfehlen sie ohne Vorbehalt.",
+        "it": "Victoria Swart è stata Master of Ceremonies dell'Inception AI Impact Roadshow, organizzata da Golden Goose Events presso l'Anantara Palazzo Naiadi di Roma. Ha condotto il programma, presentato i relatori e accompagnato il pubblico in un evento executive di alto livello dedicato all'intelligenza artificiale e all'innovazione d'impresa. Victoria si è adattata con professionalità e naturalezza ai cambi di programma dell'ultimo minuto, e il suo stile caloroso e sicuro ha contribuito al successo dell'evento. Saremmo felici di lavorare di nuovo con lei e la raccomandiamo senza riserve.",
+        "es": "Victoria Swart fue maestra de ceremonias del Inception AI Impact Roadshow, organizado por Golden Goose Events en el Anantara Palazzo Naiadi de Roma. Condujo el programa, presentó a los ponentes y acompañó al público en un evento ejecutivo de alto nivel sobre inteligencia artificial e innovación empresarial. Victoria se adaptó con profesionalidad y naturalidad a los cambios de programa de última hora, y su estilo cálido y seguro contribuyó al éxito del evento. Estaríamos encantados de volver a trabajar con ella y la recomendamos sin reservas."
       }
     }
   ],
@@ -38,6 +55,10 @@
       {
         "quote": "Her lessons were very useful to me and I appreciated her professionalism.",
         "who": "Margherita Cardinalini, German student"
+      },
+      {
+        "quote": "Victoria adapted to last-minute agenda changes with professionalism and ease, and her warm, confident style contributed to the success of the event.",
+        "who": "Leana, Golden Goose Events, Rome"
       }
     ],
     "de": [
@@ -48,6 +69,10 @@
       {
         "quote": "Ihr Unterricht war sehr hilfreich, und ich habe ihre Professionalität geschätzt.",
         "who": "Margherita Cardinalini, Deutschlernende"
+      },
+      {
+        "quote": "Victoria stellte sich mit Professionalität und Leichtigkeit auf kurzfristige Programmänderungen ein, und ihre herzliche, souveräne Art trug zum Erfolg der Veranstaltung bei.",
+        "who": "Leana, Golden Goose Events, Rom"
       }
     ],
     "it": [
@@ -58,6 +83,10 @@
       {
         "quote": "Le sue lezioni sono state molto utili per me e ho apprezzato la sua professionalità.",
         "who": "Margherita Cardinalini, studentessa di tedesco"
+      },
+      {
+        "quote": "Victoria si è adattata con professionalità e naturalezza ai cambi di programma dell'ultimo minuto, e il suo stile caloroso e sicuro ha contribuito al successo dell'evento.",
+        "who": "Leana, Golden Goose Events, Roma"
       }
     ],
     "es": [
@@ -68,6 +97,10 @@
       {
         "quote": "Sus clases me resultaron muy útiles y valoré su profesionalidad.",
         "who": "Margherita Cardinalini, estudiante de alemán"
+      },
+      {
+        "quote": "Victoria se adaptó con profesionalidad y naturalidad a los cambios de programa de última hora, y su estilo cálido y seguro contribuyó al éxito del evento.",
+        "who": "Leana, Golden Goose Events, Roma"
       }
     ]
   },
