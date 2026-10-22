@@ -32,6 +32,14 @@ layout: layouts/base.njk
   <p>{{ ct.brief }}</p>
 </section>
 
+{%- if ct.rights %}
+<section>
+  <aside class="rights-note">
+    <p>{{ ct.rights }}</p>
+  </aside>
+</section>
+{%- endif %}
+
 <section>
   <h2>{{ t.case.did }}</h2>
   <ul class="tick-list">{% for d in ct.did %}<li>{{ d }}</li>{% endfor %}</ul>

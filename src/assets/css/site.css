@@ -383,3 +383,9 @@ main>section.band-light .deep{border-top-color:var(--rule)}
 .band-photo img{width:100%;height:clamp(240px,38vw,420px);object-fit:cover;
   object-position:center 42%}
 @media (max-width:860px){.band-photo img{height:min(46vh,340px);object-position:center 40%}}
+
+/* Rights notice on an unused concept. Deliberately plain and prominent:
+   it is a statement of ownership, not decoration. */
+.rights-note{background:var(--plum);border:1px solid var(--plum-2);border-radius:2px;
+  padding:clamp(20px,2.4vw,30px);max-width:72ch}
+.rights-note p{margin:0;color:var(--bone);font-size:14.5px;line-height:1.75;max-width:none}
