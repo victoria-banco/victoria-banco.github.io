@@ -10,8 +10,11 @@ ogImage: victoria-swart-networking.jpg
 <section>
   <h1>{{ c.h1 }}</h1>
   <p class="lead">{{ c.lead }}</p>
-  <img src="/assets/victoria-swart-networking.jpg" alt="{{ c.photoAlt }}" width="1068" height="1600" loading="lazy" decoding="async" style="max-width:min(520px,100%);margin-top:28px">
 </section>
+<figure class="figure-inset figure-inset--narrow reveal">
+  <img src="/assets/about-portrait.jpg" alt="{{ c.portraitAlt }}"
+       width="1084" height="724" loading="lazy" decoding="async">
+</figure>
 <section><h2>{{ c.shapedTitle }}</h2><p>{{ c.shaped }}</p><p>{{ c.stage }}</p></section>
 <figure class="band-photo reveal">
   <img src="/assets/about-harbour-1600.jpg"
@@ -20,7 +23,16 @@ ogImage: victoria-swart-networking.jpg
        alt="{{ c.harbourAlt }}" loading="lazy" decoding="async">
 </figure>
 <section><h2>{{ c.expTitle }}</h2><ul class="tick-list">{% for e in c.exp %}<li>{{ e }}</li>{% endfor %}</ul></section>
-<section><h2>{{ c.goodTitle }}</h2><p class="lead">{{ c.good }}</p></section>
+<section>
+  <div class="media-split media-split--centre">
+    <div>
+      <h2>{{ c.goodTitle }}</h2>
+      <p class="lead">{{ c.good }}</p>
+    </div>
+    <img src="/assets/about-conversation.jpg" alt="{{ c.conversationAlt }}"
+         width="768" height="1024" loading="lazy" decoding="async">
+  </div>
+</section>
 <section class="closing-band">
   <p class="closing-text">{{ copy.home.closing }}</p>
   <a class="btn btn-light" href="{{ 'contact' | route(lang) }}">{{ t.cta.write }}</a>

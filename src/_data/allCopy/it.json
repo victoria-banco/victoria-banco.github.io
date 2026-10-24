@@ -259,7 +259,10 @@
         "t": "Danese, A1",
         "f": "sample-danish-a1.pdf"
       }
-    ]
+    ],
+    "roundtableAlt": "Victoria Clara Swart in conversazione a una tavola rotonda",
+    "readingAlt": "Victoria Clara Swart legge a un’installazione di libri a Milano",
+    "naplesAlt": "Victoria Clara Swart in riva al mare a Napoli"
   },
   "strategy": {
     "title": "Strategia di marca e SEO · Victoria Clara Swart",
@@ -332,7 +335,9 @@
         "a": "È nella ricerca che il posizionamento viene messo alla prova. Una ricerca di parole chiave mostra quali parole il tuo mercato usa davvero per il proprio problema, e spesso non sono le parole che un'impresa usa per la propria soluzione. Colmare questa distanza migliora il posizionamento e insieme affina la marca."
       }
     ],
-    "cta": "Prenota un'analisi del sito e della visibilità"
+    "cta": "Prenota un'analisi del sito e della visibilità",
+    "perspectiveAlt": "Victoria Clara Swart ripresa di spalle su una terrazza, in bianco e nero",
+    "lightAlt": "Una baia nella luce dorata della sera, la costa in controluce"
   },
   "about": {
     "title": "Chi è Victoria Clara Swart",
@@ -354,7 +359,9 @@
     "goodTitle": "Il buon lavoro, per me",
     "good": "Il buon lavoro è quello che ha ancora senso una volta tradotto.",
     "photoAlt": "Victoria Clara Swart in conversazione con imprenditori a un evento a Roma",
-    "harbourAlt": "Victoria Clara Swart al porto di Odense, in Danimarca"
+    "harbourAlt": "Victoria Clara Swart al porto di Odense, in Danimarca",
+    "portraitAlt": "Victoria Clara Swart, ritratto",
+    "conversationAlt": "Victoria Clara Swart su una terrazza a Copenaghen, al tramonto"
   },
   "work": {
     "title": "Portfolio · Progetti web e di marca · V. Swart",
@@ -366,7 +373,9 @@
     "title": "Contatti · Victoria Clara Swart",
     "description": "Scrivimi per un sito, lezioni di lingua, strategia e SEO o la conduzione del tuo evento. Con base a Roma, lavoro in tutta Europa.",
     "h1": "Scrivimi",
-    "intro": "Raccontami cosa stai costruendo, in che lingua deve funzionare e più o meno quando. Rispondo entro due giorni lavorativi."
+    "intro": "Raccontami cosa stai costruendo, in che lingua deve funzionare e più o meno quando. Rispondo entro due giorni lavorativi.",
+    "windowAlt": "Victoria Clara Swart seduta in una finestra rotonda, in bianco e nero",
+    "seaAlt": "Barche alla fonda in una baia azzurra"
   },
   "journal": {
     "title": "Journal · Victoria Swart",

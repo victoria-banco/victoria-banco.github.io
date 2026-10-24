@@ -21,9 +21,18 @@ ogImage: victoria-swart-speaking.jpg
   </ul>
 </section>
 
+<figure class="figure-inset reveal">
+  <img src="/assets/languages-naples.jpg" alt="{{ c.naplesAlt }}"
+       width="1086" height="724" loading="lazy" decoding="async">
+</figure>
+
 <section class="band-light">
   <h2>{{ c.approachTitle }}</h2>
-  <p class="lead">{{ c.approach }}</p>
+  <div class="media-split">
+    <p class="lead">{{ c.approach }}</p>
+    <img src="/assets/languages-roundtable.jpg" alt="{{ c.roundtableAlt }}"
+         width="906" height="1297" loading="lazy" decoding="async">
+  </div>
 </section>
 
 <section>
@@ -36,6 +45,11 @@ ogImage: victoria-swart-speaking.jpg
   </div>
   <p><a class="btn btn-primary" href="{{ 'contact' | route(lang) }}?topic=lessons">{{ t.cta.lesson }}</a></p>
 </section>
+
+<figure class="figure-inset figure-inset--square reveal">
+  <img src="/assets/languages-reading.jpg" alt="{{ c.readingAlt }}"
+       width="886" height="886" loading="lazy" decoding="async">
+</figure>
 
 <section class="band-light">
   <h2>{{ c.specialTitle }}</h2>

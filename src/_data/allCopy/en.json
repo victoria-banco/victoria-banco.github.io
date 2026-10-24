@@ -259,7 +259,10 @@
         "t": "Danish, A1",
         "f": "sample-danish-a1.pdf"
       }
-    ]
+    ],
+    "roundtableAlt": "Victoria Clara Swart in conversation at a roundtable event",
+    "readingAlt": "Victoria Clara Swart reading at a book installation in Milan",
+    "naplesAlt": "Victoria Clara Swart by the sea at Naples"
   },
   "strategy": {
     "title": "Brand Strategy & SEO for International Businesses · Victoria Swart",
@@ -332,7 +335,9 @@
         "a": "Search is where positioning gets tested. Keyword research shows the words your market actually uses for its problem, and those are often not the words a business uses for its solution. Closing that gap improves rankings and sharpens the brand at the same time."
       }
     ],
-    "cta": "Book a website and visibility check"
+    "cta": "Book a website and visibility check",
+    "perspectiveAlt": "Victoria Clara Swart photographed from behind on a rooftop, black and white",
+    "lightAlt": "A bay at golden hour, the shoreline in silhouette"
   },
   "about": {
     "title": "About Victoria Clara Swart",
@@ -354,7 +359,9 @@
     "goodTitle": "Good work, to me",
     "good": "Good work is work that still makes sense once it's translated.",
     "photoAlt": "Victoria Clara Swart in conversation with business owners at an event in Rome",
-    "harbourAlt": "Victoria Clara Swart at the harbour in Odense, Denmark"
+    "harbourAlt": "Victoria Clara Swart at the harbour in Odense, Denmark",
+    "portraitAlt": "Victoria Clara Swart, portrait",
+    "conversationAlt": "Victoria Clara Swart on a rooftop terrace in Copenhagen at dusk"
   },
   "work": {
     "title": "Portfolio · Website & Brand Projects · Victoria Swart",
@@ -366,7 +373,9 @@
     "title": "Contact · Victoria Clara Swart",
     "description": "Write to me about a website, language lessons, strategy and SEO, or hosting your event. Based in Rome, working across Europe.",
     "h1": "Write to me",
-    "intro": "Tell me what you're building, what language it needs to work in, and roughly when. I reply within two working days."
+    "intro": "Tell me what you're building, what language it needs to work in, and roughly when. I reply within two working days.",
+    "windowAlt": "Victoria Clara Swart seated in a round window, black and white",
+    "seaAlt": "Boats anchored in a calm blue bay"
   },
   "journal": {
     "title": "Journal · Victoria Swart",

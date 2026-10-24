@@ -384,6 +384,33 @@ main>section.band-light .deep{border-top-color:var(--rule)}
   object-position:center 42%}
 @media (max-width:860px){.band-photo img{height:min(46vh,340px);object-position:center 40%}}
 
+/* Inset photograph, sitting between sections. These sources are about 1100px
+   wide, so running them full-bleed would upscale them on a desktop screen:
+   holding them to the wrap keeps every one at native resolution. Horizontal
+   padding matches section so the edges line up with the text above. */
+.figure-inset{margin:0;background:var(--black);
+  padding:clamp(8px,1.5vw,20px) max(var(--pad),(100% - var(--wrap))/2)}
+.figure-inset img{display:block;width:100%;max-width:var(--fig-max,1086px);
+  height:auto;border-radius:2px}
+.figure-inset--narrow{--fig-max:760px}
+.figure-inset--square{--fig-max:560px}
+
+/* Photograph beside prose. One column on phones; from 861px the image takes a
+   fixed-range column so the text beside it keeps a readable measure. */
+.media-split{display:grid;gap:clamp(24px,3.5vw,48px);align-items:start}
+/* For a short statement beside a tall portrait, top-aligning strands the text
+   at the top of a deep column: centre it so the whitespace reads as chosen. */
+.media-split--centre{align-items:center}
+.media-split>*{min-width:0}
+.media-split img{display:block;width:100%;height:auto;border-radius:2px}
+@media (min-width:861px){
+  .media-split{grid-template-columns:minmax(0,1fr) minmax(240px,340px)}
+  .media-split--image-first{grid-template-columns:minmax(240px,340px) minmax(0,1fr)}
+}
+/* Stacked, the portrait would otherwise run the full phone width and push the
+   text far down the page. */
+@media (max-width:860px){.media-split img{max-width:min(420px,100%)}}
+
 /* Rights notice on an unused concept. Deliberately plain and prominent:
    it is a statement of ownership, not decoration. */
 .rights-note{background:var(--plum);border:1px solid var(--plum-2);border-radius:2px;

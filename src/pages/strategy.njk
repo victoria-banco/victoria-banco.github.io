@@ -9,7 +9,11 @@ ogImage: victoria-swart-speaking.jpg
 {% set c = copy.strategy %}
 <section>
   <h1>{{ c.h1 }}</h1>
-  <p class="lead">{{ c.intro }}</p>
+  <div class="media-split">
+    <p class="lead">{{ c.intro }}</p>
+    <img src="/assets/strategy-perspective.jpg" alt="{{ c.perspectiveAlt }}"
+         width="768" height="1024" loading="lazy" decoding="async">
+  </div>
 </section>
 
 <section>
@@ -29,6 +33,11 @@ ogImage: victoria-swart-speaking.jpg
   {%- endfor %}
   </ul>
 </section>
+
+<figure class="figure-inset reveal">
+  <img src="/assets/strategy-light.jpg" alt="{{ c.lightAlt }}"
+       width="1086" height="724" loading="lazy" decoding="async">
+</figure>
 
 <section id="faq" class="band-light">
   <h2>{{ c.faqTitle }}</h2>

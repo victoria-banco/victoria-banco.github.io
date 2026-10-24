@@ -10,6 +10,7 @@ copyKey: contact
   <h1>{{ c.h1 }}</h1>
   <p class="lead">{{ c.intro }}</p>
 
+  <div class="media-split">
   <form class="form" id="contactForm" action="{{ site.formspree }}" method="POST">
     <input type="hidden" name="_subject" value="victoriaswart.com ({{ L | upper }})">
     <input type="hidden" name="lang" value="{{ lang }}">
@@ -31,4 +32,11 @@ copyKey: contact
     <div><button class="btn btn-primary" type="submit">{{ t.form.send }}</button></div>
     <p class="form-status" id="formStatus" role="status" data-ok="{{ t.form.ok }}" data-err="{{ t.form.err }}"></p>
   </form>
+  <img src="/assets/contact-window.jpg" alt="{{ c.windowAlt }}"
+       width="768" height="1024" loading="lazy" decoding="async">
+  </div>
 </section>
+<figure class="figure-inset reveal">
+  <img src="/assets/contact-sea.jpg" alt="{{ c.seaAlt }}"
+       width="1086" height="724" loading="lazy" decoding="async">
+</figure>
