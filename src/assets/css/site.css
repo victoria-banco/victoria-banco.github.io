@@ -221,32 +221,20 @@ main>section.proof{background:var(--black);color:var(--bone)}
 .hero .hero-media{position:absolute;inset:0;z-index:0;
   margin:0;height:auto;max-height:none;align-self:auto}
 
-/* A scrim, not a flat wash. The bottom carries the text and needs real
-   density; the middle stays clear so the picture is still a picture; the top
-   darkens again just enough to hold the fixed header. */
+/* Barely a scrim: a whisper at the very bottom edge, gone by halfway up.
+   The contrast the text needs is carried around the letters themselves, not
+   by darkening the picture. Nothing is needed at the top either, since the
+   header is a solid bar in its own band rather than an overlay. */
 .hero::after{content:"";position:absolute;inset:0;z-index:2;pointer-events:none;
   background:linear-gradient(to top,
-    rgba(11,11,11,.93) 0%,
-    rgba(11,11,11,.86) 18%,
-    rgba(11,11,11,.66) 34%,
-    rgba(11,11,11,.32) 50%,
-    rgba(11,11,11,.06) 68%,
-    rgba(11,11,11,.10) 84%,
-    rgba(11,11,11,.44) 100%)}
+    rgba(11,11,11,.46) 0%,
+    rgba(11,11,11,.36) 18%,
+    rgba(11,11,11,.24) 34%,
+    rgba(11,11,11,.13) 50%,
+    rgba(11,11,11,.05) 66%,
+    rgba(11,11,11,0) 82%)}
 
 /* The text keeps the same left edge as every other section on the site. */
-/* A second, horizontal wash behind the words only. Darkening the whole frame
-   enough to carry 11px type would have cost the picture its light; this keeps
-   the right-hand side of the shot bright and puts the density where the text
-   actually is. Measured, not guessed: the eyebrow sits at 3.0:1 against the
-   lit side of her face without it, and 11px type needs 4.5:1. */
-.hero-inner::before{content:"";position:absolute;z-index:-1;pointer-events:none;
-  left:0;right:0;bottom:0;top:-8%;
-  background:linear-gradient(to right,
-    rgba(11,11,11,.62) 0%,
-    rgba(11,11,11,.46) 34%,
-    rgba(11,11,11,.12) 62%,
-    rgba(11,11,11,0) 78%)}
 .hero-inner{position:relative;z-index:3;grid-row:2;
   display:block;grid-template-columns:none;min-height:0;
   max-width:100%;margin-inline:0;
@@ -256,16 +244,42 @@ main>section.proof{background:var(--black);color:var(--bone)}
    which pushed the block past the bottom of the screen on a 700px-tall
    window. On phones the column is narrower than this anyway. */
 .hero-text{padding-block:0 clamp(36px,6vh,76px);max-width:min(46ch,660px)}
-/* Over moving footage a shadow does the work a solid panel would otherwise
-   have to, and keeps the footage visible. Only the type: the buttons have
-   their own fill, and a shadow on a filled button reads as a smudge. */
-.hero-text .eyebrow,.hero-text h1,.hero-text .lead{
-  text-shadow:0 1px 3px rgba(11,11,11,.5),0 2px 28px rgba(11,11,11,.7)}
+/* The footage runs from a dark portrait to a bright kitchen, so the words
+   have to survive a near-white frame without a panel behind them. Each layer
+   has a job: the first sits tight on the letter edge and does the real
+   legibility work, the second gives the glyph a body, the third lifts the
+   line off a busy background. Measured across the full 18s loop rather than
+   one frame, which is how an earlier, far heavier treatment got signed off
+   on a frame that happened to be dark.
+
+   Worth being straight about: WCAG's contrast maths reads a single flat
+   background colour and gives shadows no credit at all, so the bright frames
+   do not have a passing ratio on paper, whatever they look like. Keeping the
+   type legible there without a wash is a deliberate trade. */
+.hero-text .eyebrow{
+  text-shadow:0 1px 2px rgba(11,11,11,.8),0 0 10px rgba(11,11,11,.6)}
+/* Cormorant is a high-contrast serif whose hairlines are about a pixel wide.
+   A tight dark halo bleeds straight across a stroke that thin and the letter
+   reads grey, so the heading gets soft wide layers only. The separation it
+   needs comes from the grade on the footage instead. */
+.hero-text h1{
+  text-shadow:0 1px 4px rgba(11,11,11,.55),0 3px 22px rgba(11,11,11,.5)}
+.hero-text .lead{
+  text-shadow:0 1px 2px rgba(11,11,11,.75),0 0 14px rgba(11,11,11,.55)}
 /* The shared hero rule puts body copy at .74, which is comfortable over a
    flat black panel and too thin over footage that moves under it. */
 main>section.hero .hero-text .lead{color:rgba(241,240,236,.94)}
-main>section.hero .hero-text .eyebrow{color:#E4D9E1}
+/* Brightened as far as it goes while keeping the plum in it. At 11px this
+   line needs 4.5:1 and reaches about 3.2 on the brightest frame of the loop;
+   only setting it much larger, or darkening the footage past where it still
+   looks like a photograph, would close that gap. */
+main>section.hero .hero-text .eyebrow{color:#EFE6EC}
 .hero-ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+main>section.hero .btn-ghost{background:rgba(11,11,11,.34);
+  backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px)}
+main>section.hero .btn-ghost:hover{background:var(--bone)}
+/* Same problem, same scale: a hairline chevron over a pale frame. */
+.hero-cue{filter:drop-shadow(0 1px 4px rgba(11,11,11,.8))}
 
 /* Scroll cue: decorative and aria-hidden. A full-screen hero gives no edge to
    hint that the page continues, so this supplies one. */
@@ -304,7 +318,11 @@ main>section.hero .hero-text .eyebrow{color:#E4D9E1}
 .hero-media--video .hero-media__video{
   position:absolute;inset:0;width:100%;height:100%;
   object-fit:cover;object-position:center center;
-  transform:none;max-width:none}
+  transform:none;max-width:none;
+  /* The loop runs from a dark portrait to a bright kitchen worktop. Ungraded,
+     the bright end leaves white text on a near-white wall. Applied to poster
+     and video alike so the grade cannot change as one fades into the other. */
+  filter:brightness(.58) contrast(1.06) saturate(1.06)}
 .hero-media__poster{position:absolute;inset:0;z-index:1;
   opacity:1;transition:opacity .9s ease}
 .hero-media__video{z-index:0}
