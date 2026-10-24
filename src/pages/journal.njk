@@ -4,6 +4,9 @@ permalink: "{{ routes.journal[lang] }}index.html"
 layout: layouts/base.njk
 routeKey: journal
 copyKey: journal
+# Nothing is published here yet, so the page should not be indexed. Remove
+# this line when the first essay goes up.
+robots: "noindex, follow"
 ---
 {% set c = copy.journal %}
 <section>

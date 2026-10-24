@@ -8,7 +8,7 @@
     "status": "live",
     "live": "https://seabreeze-alghero.netlify.app",
     "liveFlag": "seabreeze_own_domain",
-    "image": "case-seabreeze.jpg",
+    "image": "cases/seabreeze.svg",
     "en": {
       "name": "Seabreeze",
       "sector": "Houseboat holiday rental",
@@ -70,7 +70,7 @@
     "stack": "Custom Shopify theme",
     "status": "pending",
     "live": null,
-    "image": "case-eqm.jpg",
+    "image": "cases/eqm.svg",
     "en": {
       "name": "EQM Sellier",
       "nameFallback": "Italian artisan saddlery",
@@ -180,7 +180,7 @@
     "stack": "Hand-coded single page",
     "status": "delivered",
     "live": null,
-    "image": "case-graziano.jpg",
+    "image": "cases/graziano.svg",
     "en": {
       "name": "Graziano Tumbarello",
       "nameFallback": "Saxophonist, Sicily",
@@ -247,7 +247,7 @@
     "stack": "Wix",
     "status": "delivered",
     "live": null,
-    "image": "case-homeservices.jpg",
+    "image": "cases/homeserv.svg",
     "en": {
       "name": "Emergency home services company",
       "sector": "Emergency plumbing, heating and electrical",
@@ -372,7 +372,7 @@
     "stack": "Hand-coded, Eleventy",
     "status": "live",
     "live": "https://victoriaswart.com",
-    "image": "case-thissite.jpg",
+    "image": "cases/thissite.svg",
     "en": {
       "name": "victoriaswart.com",
       "sector": "My own site",
