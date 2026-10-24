@@ -1,0 +1,79 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Hero video diagnostic</title>
+<style>
+  body{background:#0B0B0C;color:#F1F0EC;font:16px/1.5 -apple-system,system-ui,sans-serif;margin:0;padding:20px}
+  h1{font-size:19px;margin:0 0 4px}
+  p.sub{color:rgba(241,240,236,.6);margin:0 0 18px;font-size:14px}
+  table{border-collapse:collapse;width:100%}
+  td{padding:7px 6px;border-bottom:1px solid rgba(241,240,236,.14);vertical-align:top;font-size:14px}
+  td:first-child{color:rgba(241,240,236,.62);width:46%}
+  .ok{color:#8FD6A9}.bad{color:#F2A2A2}.warn{color:#EBD28B}
+  video{width:100%;max-width:320px;margin-top:16px;background:#141417;border-radius:2px}
+</style>
+<h1>Hero video diagnostic</h1>
+<p class="sub">Open this on the iPhone, wait about ten seconds, then screenshot the whole list.</p>
+<table id="out"></table>
+<video id="v" muted loop playsinline preload="none"></video>
+<script>
+(function () {
+  var rows = [], t = document.getElementById('out');
+  function add(k, v, cls) {
+    rows.push(1);
+    var tr = t.insertRow();
+    tr.insertCell().textContent = k;
+    var c = tr.insertCell();
+    c.textContent = v;
+    if (cls) c.className = cls;
+  }
+  var mq = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  add('Reduce Motion', mq ? 'ON  <- this alone stops the video' : 'off', mq ? 'bad' : 'ok');
+
+  var conn = navigator.connection;
+  add('Low Data / Save-Data', !conn ? 'not reported by this browser'
+      : (conn.saveData ? 'ON  <- this alone stops the video' : 'off'),
+      conn && conn.saveData ? 'bad' : 'ok');
+
+  var v = document.getElementById('v');
+  add('Can play WebM', v.canPlayType('video/webm') || 'no');
+  add('Can play MP4', v.canPlayType('video/mp4') || 'no');
+
+  var r = innerWidth / innerHeight;
+  var cut = r < 0.68 ? 'mobile' : (r <= 1.20 ? 'panel' : 'desktop');
+  add('Screen', innerWidth + ' x ' + innerHeight + '  (ratio ' + r.toFixed(2) + ')');
+  add('Cut it should use', cut);
+
+  var base = '/assets/video/hero/hero-' + cut;
+  ['webm', 'mp4'].forEach(function (ext) {
+    var s = document.createElement('source');
+    s.src = base + '.' + ext; s.type = 'video/' + ext;
+    s.addEventListener('error', function () { add('SOURCE FAILED', ext.toUpperCase(), 'warn'); });
+    v.appendChild(s);
+  });
+
+  ['loadedmetadata', 'canplay', 'playing', 'stalled', 'suspend', 'waiting', 'error']
+    .forEach(function (ev) {
+      v.addEventListener(ev, function () { add('event: ' + ev, 'fired'); }, true);
+    });
+
+  v.load();
+  var p = v.play();
+  if (p && p.then) {
+    p.then(function () { add('play() promise', 'resolved', 'ok'); })
+     .catch(function (e) { add('play() promise', 'REJECTED: ' + e.name + ' - ' + e.message, 'bad'); });
+  } else {
+    add('play() promise', 'not returned (older browser)');
+  }
+
+  setTimeout(function () {
+    add('--- after 8 seconds ---', '');
+    add('readyState', v.readyState + ' (4 = ready)', v.readyState === 4 ? 'ok' : 'bad');
+    add('paused', String(v.paused), v.paused ? 'bad' : 'ok');
+    add('currentTime', v.currentTime.toFixed(2) + 's', v.currentTime > 0 ? 'ok' : 'bad');
+    add('file it chose', (v.currentSrc || '(none)').split('/').pop());
+    add('video error', v.error ? ('code ' + v.error.code) : 'none', v.error ? 'bad' : 'ok');
+  }, 8000);
+})();
+</script>

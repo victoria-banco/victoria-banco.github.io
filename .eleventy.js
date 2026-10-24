@@ -4,6 +4,11 @@ const site   = require('./src/_data/site.json');
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ 'src/assets': 'assets' });
   eleventyConfig.addPassthroughCopy({ 'src/static': '.' });
+  // src/static is copied verbatim. Without this, Eleventy ALSO treats the
+  // .html files in there as templates and builds a second, stray page for
+  // each one (/static/hero-check/ and so on), which then fails the hreflang
+  // check because it has no language siblings.
+  eleventyConfig.ignores.add('src/static/**/*.html');
 
   // URL for a route key in a given language
   eleventyConfig.addFilter('route', (key, lang) => {
