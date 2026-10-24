@@ -21,6 +21,10 @@
   --serif:'Cormorant Garamond',Georgia,'Times New Roman',serif;
   --sans:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
   --wrap:1180px; --pad:clamp(20px,5vw,64px);
+  /* Fixed, because the full-viewport hero subtracts it. Left to itself the
+     header breathed between 68px and 75px as the wordmark's clamp moved,
+     and the hero was that much too tall. */
+  --header-h:72px;
 }
 *,*::before,*::after{box-sizing:border-box}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
@@ -148,11 +152,12 @@ main>section.proof{background:var(--black);color:var(--bone)}
 
 /* ── Header ──────────────────────────────────────────────────── */
 .site-header{position:sticky;top:0;z-index:100;background:var(--black);color:var(--bone);
-  border-bottom:1px solid var(--rule-dark);padding-inline:var(--pad)}
+  border-bottom:1px solid var(--rule-dark);padding-inline:var(--pad);
+  height:var(--header-h)}
 /* The wrap carries no inline padding of its own: the header supplies it, so
    the wordmark lands on the same left edge as every heading below it. */
 .nav{max-width:var(--wrap);margin-inline:auto;display:flex;align-items:center;gap:20px;
-  padding:18px 0}
+  height:100%;padding:0}
 .nav-logo{font-family:var(--serif);font-size:clamp(19px,1.7vw,23px);font-weight:600;
   text-decoration:none;color:var(--bone);white-space:nowrap;letter-spacing:.01em}
 .nav-links{list-style:none;display:flex;gap:22px;margin:0 0 0 auto;padding:0}
@@ -199,33 +204,123 @@ main>section.proof{background:var(--black);color:var(--bone)}
   .lang-current::before{content:attr(data-short)}
 }
 
-/* ── Hero ────────────────────────────────────────────────────── */
-/* The hero carries the column padding itself, exactly as every other section
-   does, so the eyebrow and the h1 start on the wordmark's left edge. */
-.hero{padding:0 max(var(--pad),(100% - var(--wrap))/2);position:relative;overflow:hidden}
+/* ── Hero: full-viewport video, words laid over it ───── */
+/* The video is the point of this page, so it gets the whole first screen and
+   the text sits on top of it rather than beside it. One consequence worth
+   naming: because the section fills the viewport, the media box and the
+   viewport are the same shape, which is what lets the poster and the video
+   cut be chosen from the same number. See hero-media.njk. */
+.hero{position:relative;overflow:hidden;padding:0;
+  min-height:calc(100vh - var(--header-h));
+  min-height:calc(100svh - var(--header-h));
+  display:grid;grid-template-rows:1fr auto;align-items:end}
 .hero>*{max-width:none}
-.hero-inner{max-width:100%;margin-inline:0;padding:0;
-  display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.78fr);
-  gap:clamp(28px,4.5vw,64px);align-items:center;min-height:min(84vh,780px)}
-.hero-text{padding-block:clamp(48px,7vw,96px)}
-.hero-media{align-self:stretch;position:relative;overflow:hidden;
-  margin-right:calc(50% - 50vw);max-height:min(84vh,780px)}
-.hero-media img{width:100%;height:100%;object-fit:cover;
-  object-position:center 10%;transform:scale(1.2);transform-origin:center 8%}
+
+/* The media fills the section and sits behind everything else. These undo the
+   side-by-side geometry the shared .hero-media rules set up for inline use. */
+.hero .hero-media{position:absolute;inset:0;z-index:0;
+  margin:0;height:auto;max-height:none;align-self:auto}
+
+/* A scrim, not a flat wash. The bottom carries the text and needs real
+   density; the middle stays clear so the picture is still a picture; the top
+   darkens again just enough to hold the fixed header. */
+.hero::after{content:"";position:absolute;inset:0;z-index:2;pointer-events:none;
+  background:linear-gradient(to top,
+    rgba(11,11,11,.93) 0%,
+    rgba(11,11,11,.86) 18%,
+    rgba(11,11,11,.66) 34%,
+    rgba(11,11,11,.32) 50%,
+    rgba(11,11,11,.06) 68%,
+    rgba(11,11,11,.10) 84%,
+    rgba(11,11,11,.44) 100%)}
+
+/* The text keeps the same left edge as every other section on the site. */
+/* A second, horizontal wash behind the words only. Darkening the whole frame
+   enough to carry 11px type would have cost the picture its light; this keeps
+   the right-hand side of the shot bright and puts the density where the text
+   actually is. Measured, not guessed: the eyebrow sits at 3.0:1 against the
+   lit side of her face without it, and 11px type needs 4.5:1. */
+.hero-inner::before{content:"";position:absolute;z-index:-1;pointer-events:none;
+  left:0;right:0;bottom:0;top:-8%;
+  background:linear-gradient(to right,
+    rgba(11,11,11,.62) 0%,
+    rgba(11,11,11,.46) 34%,
+    rgba(11,11,11,.12) 62%,
+    rgba(11,11,11,0) 78%)}
+.hero-inner{position:relative;z-index:3;grid-row:2;
+  display:block;grid-template-columns:none;min-height:0;
+  max-width:100%;margin-inline:0;
+  padding:0 max(var(--pad),(100% - var(--wrap))/2)}
+/* Wide enough that the heading sets in three lines and the two buttons stay
+   on one row. At 34ch the heading ran to five lines and the buttons wrapped,
+   which pushed the block past the bottom of the screen on a 700px-tall
+   window. On phones the column is narrower than this anyway. */
+.hero-text{padding-block:0 clamp(36px,6vh,76px);max-width:min(46ch,660px)}
+/* Over moving footage a shadow does the work a solid panel would otherwise
+   have to, and keeps the footage visible. Only the type: the buttons have
+   their own fill, and a shadow on a filled button reads as a smudge. */
+.hero-text .eyebrow,.hero-text h1,.hero-text .lead{
+  text-shadow:0 1px 3px rgba(11,11,11,.5),0 2px 28px rgba(11,11,11,.7)}
+/* The shared hero rule puts body copy at .74, which is comfortable over a
+   flat black panel and too thin over footage that moves under it. */
+main>section.hero .hero-text .lead{color:rgba(241,240,236,.94)}
+main>section.hero .hero-text .eyebrow{color:#E4D9E1}
 .hero-ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
-@media (max-width:860px){
-  .hero-inner{grid-template-columns:1fr;min-height:0;gap:0}
-  .hero-text{order:2;padding-block:36px 48px}
-  .hero-media{order:1;margin-inline:calc(50% - 50vw);height:min(54vh,460px)}
-  /* Tighter crop on narrow screens: the frame must end above the hands. */
-  .hero-media img{object-position:center 6%;transform:scale(1.34);transform-origin:center 6%}
+
+/* Scroll cue: decorative and aria-hidden. A full-screen hero gives no edge to
+   hint that the page continues, so this supplies one. */
+.hero-cue{position:absolute;z-index:3;left:50%;bottom:14px;translate:-50% 0;
+  width:26px;height:26px;opacity:.5;pointer-events:none;
+  border-left:1.5px solid var(--bone);border-bottom:1.5px solid var(--bone);
+  rotate:-45deg;animation:heroCue 2.4s ease-in-out infinite}
+@keyframes heroCue{
+  0%,100%{translate:-50% 0;opacity:.22}
+  50%{translate:-50% 5px;opacity:.6}
 }
-/* Between phone and desktop the frame is wider, so cover crops more off the
-   top. Ease the zoom back or the top of her head is cut. */
-@media (min-width:601px) and (max-width:860px){
-  .hero-media{height:min(50vh,430px)}
-  .hero-media img{object-position:center 10%;transform:scale(1.1);transform-origin:center 10%}
+@media (prefers-reduced-motion:reduce){
+  .hero-cue{animation:none;opacity:.35}
 }
+/* Short windows: the cue would crowd the buttons, and the arrow matters less
+   than the call to action. */
+@media (max-height:620px){
+  .hero-cue{display:none}
+}
+/* A phone on its side leaves about 320px under the header, which will not
+   hold a three-line heading, a lead and two buttons. Tighten the heading and
+   drop the lead: the intro section directly below says the same thing at
+   more length, so nothing is lost. */
+@media (orientation:landscape) and (max-height:460px){
+  .hero-text h1{font-size:clamp(23px,4.2vw,32px)}
+  .hero-text .lead{display:none}
+  .hero-text{padding-block:0 18px}
+  .hero-ctas{margin-top:16px}
+}
+
+/* ── Hero media: poster over video ──────────────────── */
+/* The cuts are already framed for their shape, so the zoom and offset the
+   still portrait needs would crop them wrongly. Reset both here. */
+.hero-media--video{background:var(--black)}
+.hero-media--video .hero-media__poster img,
+.hero-media--video .hero-media__video{
+  position:absolute;inset:0;width:100%;height:100%;
+  object-fit:cover;object-position:center center;
+  transform:none;max-width:none}
+.hero-media__poster{position:absolute;inset:0;z-index:1;
+  opacity:1;transition:opacity .9s ease}
+.hero-media__video{z-index:0}
+/* Only once the video is genuinely playing — not merely loaded — does the
+   poster go. A poster that fades on `canplay` reveals a frozen first frame. */
+.hero-media--video.is-playing .hero-media__poster{opacity:0}
+@media (prefers-reduced-motion:reduce){
+  .hero-media__poster{transition:none}
+}
+
+/* ── Intro: the paragraph the hero no longer carries ─── */
+.intro{padding-block:clamp(56px,8vw,104px)}
+.intro-lead{font-family:var(--serif);font-size:clamp(23px,2.5vw,33px);
+  line-height:1.32;margin:0 0 22px;max-width:30ch}
+.intro-body{font-size:clamp(16px,1.25vw,18px);line-height:1.68;
+  max-width:62ch;margin:0}
 
 /* ── Proof strip ─────────────────────────────────────────────── */
 .proof{background:var(--forest);color:var(--bone);padding-block:clamp(28px,4vw,44px)}

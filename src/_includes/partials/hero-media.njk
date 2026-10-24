@@ -1,0 +1,57 @@
+{#-
+  HeroMedia — a poster that paints immediately with a silent, looping video
+  that fades in over it once it is genuinely playing.
+
+  The poster is the LCP element, so it is a real <picture> with
+  fetchpriority="high"; the <video> carries no sources and no autoplay
+  attribute. site.js attaches after load, picks the cut that matches the
+  shape of the box, and calls play(). If anything says no — reduced motion,
+  Save-Data, a rejected play(), a decode error — the poster simply stays and
+  the page is a photograph, which is a perfectly good outcome.
+
+  Parameters (all optional except alt):
+    base    directory holding the files        default /assets/video/hero
+    name    file-name stem                     default hero
+    alt     poster alt text, already localised  REQUIRED
+    class   extra class on the wrapper
+
+  Choosing the crop: the hero fills the viewport, so the box IS the viewport
+  and the crop can be switched on the viewport's own aspect ratio. That is
+  what makes poster and video agree by construction rather than by estimate:
+  both read the same number, and no window height can put them out of step.
+
+    < 0.68        9:16 cut  -> mobile poster   (phones held upright)
+    0.68 - 1.20   4:5 cut   -> panel poster    (tablets upright, square-ish)
+    > 1.20        16:9 cut  -> desktop poster  (laptops, tablets on their side)
+
+  The two boundaries are repeated in three places and must stay in step: the
+  media queries below, cutFor() in site.js, and the preload hints in base.njk.
+-#}
+{%- macro heroMedia(opts) -%}
+{%- set base = opts.base | default('/assets/video/hero') -%}
+{%- set name = opts.name | default('hero') -%}
+<div class="hero-media hero-media--video{{ ' ' ~ opts.class if opts.class }}"
+     data-hero-media
+     data-base="{{ base }}"
+     data-name="{{ name }}">
+  {#- First match wins, so these run narrowest first and the last pair is the
+      catch-all for everything wider than 1.20. -#}
+  <picture class="hero-media__poster">
+    <source media="(max-aspect-ratio:68/100)" srcset="{{ base }}/{{ name }}-poster-mobile.webp" type="image/webp">
+    <source media="(max-aspect-ratio:68/100)" srcset="{{ base }}/{{ name }}-poster-mobile.jpg">
+    <source media="(max-aspect-ratio:120/100)" srcset="{{ base }}/{{ name }}-poster-panel.webp" type="image/webp">
+    <source media="(max-aspect-ratio:120/100)" srcset="{{ base }}/{{ name }}-poster-panel.jpg">
+    <source srcset="{{ base }}/{{ name }}-poster-desktop.webp" type="image/webp">
+    <img src="{{ base }}/{{ name }}-poster-desktop.jpg"
+         alt="{{ opts.alt }}"
+         width="1920" height="1080"
+         fetchpriority="high" decoding="async">
+  </picture>
+  {#- No src, no autoplay: the script owns loading so the poster never
+      competes with it for bandwidth. aria-hidden because the poster's alt
+      already describes the content; the video adds nothing for a screen
+      reader and is purely decorative. -#}
+  <video class="hero-media__video" muted loop playsinline
+         preload="none" aria-hidden="true" tabindex="-1"></video>
+</div>
+{%- endmacro -%}

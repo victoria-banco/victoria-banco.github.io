@@ -6,6 +6,9 @@
     "eyebrow": "Building brands designed to travel further",
     "h1": "Websites, brands and words that work in five languages.",
     "intro": "I'm Victoria Clara Swart. I design and build websites, shape how brands speak, and teach languages. I work in German, English, Italian, Spanish and Danish, so your site doesn't just get translated. It gets understood.",
+    "heroLead": "Design, brand language and teaching. Five languages, from Rome.",
+    "introTitle": "Not translated. Understood.",
+    "introText": "I'm Victoria Clara Swart. I design and build websites, shape how brands speak, and teach languages. I work in German, English, Italian, Spanish and Danish, which means your site is written in the language your clients actually think in, rather than run through a translation of it.",
     "proof": [
       {
         "n": "5",
@@ -43,7 +46,8 @@
     "stageTitle": "On stage",
     "stageText": "I host and moderate conferences and pitch events in five languages, from startup pitch nights at Denmark's national startup accelerator in Copenhagen to a senior B2B marketing evening at the Anantara Palazzo Naiadi in Rome.",
     "closing": "Have a project, a language goal or an event? Write to me.",
-    "heroAlt": "Victoria Clara Swart, web designer and brand strategist based in Rome"
+    "heroAlt": "Victoria Clara Swart, web designer and brand strategist based in Rome",
+    "heroPosterAlt": "Portrait of Victoria Clara Swart"
   },
   "webdesign": {
     "title": "Multilingual Web Design in Rome · Victoria Swart",

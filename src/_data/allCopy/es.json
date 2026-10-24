@@ -6,6 +6,9 @@
     "eyebrow": "Marcas hechas para cruzar fronteras",
     "h1": "Webs, marcas y palabras que funcionan en cinco idiomas.",
     "intro": "Soy Victoria Clara Swart. Diseño y programo webs, doy voz a las marcas y enseño idiomas. Trabajo en alemán, inglés, italiano, español y danés. Tu web no se traduce sin más. Se entiende.",
+    "heroLead": "Diseño, lenguaje de marca y enseñanza. Cinco idiomas, desde Roma.",
+    "introTitle": "No traducido. Entendido.",
+    "introText": "Soy Victoria Clara Swart. Diseño y programo webs, doy voz a las marcas y enseño idiomas. Trabajo en alemán, inglés, italiano, español y danés. Así tu web nace en el idioma en el que tus clientes piensan de verdad, y no en una traducción de él.",
     "proof": [
       {
         "n": "5",
@@ -43,7 +46,8 @@
     "stageTitle": "En el escenario",
     "stageText": "Presento y modero conferencias y eventos de pitch en cinco idiomas, desde noches de pitch en la aceleradora nacional danesa de startups en Copenhague hasta una velada B2B para perfiles senior en el Anantara Palazzo Naiadi de Roma.",
     "closing": "¿Un proyecto, un objetivo con un idioma o un evento? Escríbeme.",
-    "heroAlt": "Victoria Clara Swart, diseñadora web y estratega de marca en Roma"
+    "heroAlt": "Victoria Clara Swart, diseñadora web y estratega de marca en Roma",
+    "heroPosterAlt": "Retrato de Victoria Clara Swart"
   },
   "webdesign": {
     "title": "Diseño web multilingüe en Roma · Victoria Swart",

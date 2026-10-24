@@ -4,24 +4,36 @@ permalink: "{{ routes.home[lang] }}index.html"
 layout: layouts/base.njk
 routeKey: home
 copyKey: home
+heroPoster: true
+ogImage: video/hero/hero-poster-desktop.jpg
 ---
+{% from "partials/hero-media.njk" import heroMedia %}
 {% set c = copy.home %}
 
+{#- The media comes first in the source so it is behind the words without
+    either one needing a stacking hack, and so the poster — the LCP element
+    — is discovered as early as possible. -#}
 <section class="hero">
- <div class="hero-inner">
-  <div class="hero-text reveal">
-    <p class="eyebrow">{{ c.eyebrow }}</p>
-    <h1>{{ c.h1 }}</h1>
-    <p class="lead">{{ c.intro }}</p>
-    <p class="hero-ctas">
-      <a class="btn btn-primary" href="{{ 'work' | route(lang) }}">{{ t.cta.work }}</a>
-      <a class="btn btn-ghost" href="{{ 'contact' | route(lang) }}">{{ t.cta.project }}</a>
-    </p>
+  {{ heroMedia({ alt: c.heroPosterAlt }) }}
+  <div class="hero-inner">
+    <div class="hero-text reveal">
+      <p class="eyebrow">{{ c.eyebrow }}</p>
+      <h1>{{ c.h1 }}</h1>
+      <p class="lead">{{ c.heroLead }}</p>
+      <p class="hero-ctas">
+        <a class="btn btn-primary" href="{{ 'work' | route(lang) }}">{{ t.cta.work }}</a>
+        <a class="btn btn-ghost" href="{{ 'contact' | route(lang) }}">{{ t.cta.project }}</a>
+      </p>
+    </div>
   </div>
-  <div class="hero-media">
-    <img src="/assets/victoriahero.jpg" alt="{{ c.heroAlt }}" width="1023" height="1537" fetchpriority="high" decoding="async">
-  </div>
- </div>
+  <div class="hero-cue" aria-hidden="true"></div>
+</section>
+
+{#- The introduction the hero used to carry. It reads better here, at a length
+    that would have buried the video. -#}
+<section class="intro reveal">
+  <p class="intro-lead">{{ c.introTitle }}</p>
+  <p class="intro-body">{{ c.introText }}</p>
 </section>
 
 <section class="proof">

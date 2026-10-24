@@ -16,6 +16,20 @@
 {%- endfor %}
 <link rel="alternate" hreflang="x-default" href="{{ (routeKey | route('en')) | abs }}">
 
+{#- The hero poster is the LCP element on pages that carry one. Preloading it
+    with the same media queries the <picture> uses means the browser fetches
+    exactly the crop it will paint, and starts before the CSS has parsed. -#}
+{%- if heroPoster %}
+{#- One of these three matches, on the same aspect-ratio boundaries the
+    <picture> and cutFor() use. Keep all three in step. -#}
+<link rel="preload" as="image" media="(max-aspect-ratio:68/100)"
+      href="/assets/video/hero/hero-poster-mobile.webp" type="image/webp" fetchpriority="high">
+<link rel="preload" as="image" media="(min-aspect-ratio:68/100) and (max-aspect-ratio:120/100)"
+      href="/assets/video/hero/hero-poster-panel.webp" type="image/webp" fetchpriority="high">
+<link rel="preload" as="image" media="(min-aspect-ratio:120/100)"
+      href="/assets/video/hero/hero-poster-desktop.webp" type="image/webp" fetchpriority="high">
+{%- endif %}
+
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">

@@ -138,4 +138,109 @@
     document.body.appendChild(bar);
     setTimeout(function () { bar.classList.add('show'); }, 1000);
   })();
+
+  /* Hero media: a silent looping video that fades in over its poster.
+     The poster is the LCP element and is already on screen; nothing here
+     runs until the page has finished loading, so the video never competes
+     with it, the fonts or the CSS for bandwidth. Every failure path ends
+     the same way: the poster stays and the hero is a photograph. */
+  (function () {
+    var boxes = document.querySelectorAll('[data-hero-media]');
+    if (!boxes.length) return;
+
+    /* Asked for less motion, or for less data: do not fetch the video at all. */
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var conn = navigator.connection;
+    if (reduce || (conn && conn.saveData)) return;
+
+    /* The cut is chosen by the shape of the box, not by the device: the same
+       page can show the 4:5 panel on a tablet held upright and the 16:9 cut
+       the moment it is turned on its side.
+
+       These two boundaries are also written as media queries in
+       hero-media.njk (which poster) and base.njk (which poster to preload).
+       The hero fills the viewport, so all three read the same ratio and agree
+       by construction — but they only stay in step if they are changed
+       together. */
+    function cutFor(ratio) {
+      if (ratio < 0.68) return 'mobile';
+      if (ratio <= 1.20) return 'panel';
+      return 'desktop';
+    }
+
+    function setUp(box) {
+      var video = box.querySelector('.hero-media__video');
+      if (!video || !video.canPlayType) return;
+      var base = box.getAttribute('data-base') || '/assets/video/hero';
+      var name = box.getAttribute('data-name') || 'hero';
+      var current = null;
+      var dead = false;
+
+      function play() {
+        if (dead) return;
+        var p = video.play();
+        /* Rejected on iOS Low Power Mode and wherever autoplay is refused.
+           Not an error worth surfacing: the poster is the fallback. */
+        if (p && p.catch) p.catch(function () {});
+      }
+
+      function choose() {
+        if (dead) return;
+        var r = video.getBoundingClientRect();
+        if (!r.width || !r.height) return;
+        var want = cutFor(r.width / r.height);
+        if (want === current) return;
+        current = want;
+        box.classList.remove('is-playing');
+        while (video.firstChild) video.removeChild(video.firstChild);
+        /* WebM first because it is roughly a third smaller; MP4 for Safari. */
+        var types = [['webm', 'video/webm'], ['mp4', 'video/mp4']];
+        for (var i = 0; i < types.length; i++) {
+          var s = document.createElement('source');
+          s.src = base + '/' + name + '-' + want + '.' + types[i][0];
+          s.type = types[i][1];
+          video.appendChild(s);
+        }
+        video.load();
+        play();
+      }
+
+      video.addEventListener('playing', function () { box.classList.add('is-playing'); });
+      /* Capture: a failing <source> fires error on the child, not the video. */
+      video.addEventListener('error', function () {
+        dead = true;
+        box.classList.remove('is-playing');
+      }, true);
+
+      /* Off screen or tab in the background: stop decoding frames. */
+      if (window.IntersectionObserver) {
+        new IntersectionObserver(function (entries) {
+          if (entries[0].isIntersecting) play(); else video.pause();
+        }).observe(box);
+      }
+      document.addEventListener('visibilitychange', function () {
+        if (document.hidden) video.pause(); else play();
+      });
+
+      /* Only a change of category reloads anything; plain resizes do not. */
+      var t;
+      function recheck() { clearTimeout(t); t = setTimeout(choose, 250); }
+      window.addEventListener('resize', recheck);
+      window.addEventListener('orientationchange', recheck);
+
+      choose();
+    }
+
+    function start() {
+      for (var i = 0; i < boxes.length; i++) setUp(boxes[i]);
+    }
+
+    /* After load, and idle if the browser will tell us when that is. */
+    function afterLoad() {
+      if (window.requestIdleCallback) requestIdleCallback(start, { timeout: 2000 });
+      else setTimeout(start, 200);
+    }
+    if (document.readyState === 'complete') afterLoad();
+    else window.addEventListener('load', afterLoad);
+  })();
 })();
