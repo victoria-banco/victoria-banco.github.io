@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 674" width="760" height="674" role="img" aria-labelledby="t d">
+<title id="t">Sitemap: EQM Sellier</title>
+<desc id="d">Custom Shopify theme · Italian and English. 12 pages or sections.</desc>
+<rect width="760" height="674" rx="3" fill="#0B0B0C" stroke="rgba(241,240,236,0.16)"/>
+<text x="36" y="44" font-family="'Cormorant Garamond', Georgia, 'Times New Roman', serif" font-size="25" fill="#F1F0EC">EQM Sellier</text>
+<text x="36" y="68" font-family="'Inter', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" letter-spacing="1.6" fill="#B9A8B4">CUSTOM SHOPIFY THEME · ITALIAN AND ENGLISH</text>
+<line x1="36" y1="82" x2="724" y2="82" stroke="rgba(241,240,236,0.16)"/>
+<path d="M52 130 V157 H66" fill="none" stroke="rgba(241,240,236,0.16)"/>
+<path d="M82 176 V203 H96" fill="none" stroke="rgba(241,240,236,0.16)"/>
+<path d="M82 176 V249 H96" fill="none" stroke="rgba(241,240,236,0.16)"/>
+<path d="M52 130 V295 H66" fill="none" stroke="rgba(241,240,236,0.16)"/>
+<path d="M52 130 V341 H66" fill="none" stroke="rgba(241,240,236,0.16)"/>
+<path d="M52 130 V387 H66" fill="none" stroke="rgba(241,240,236,0.16)"/>
+<path d="M52 130 V433 H66" fill="none" stroke="rgba(241,240,236,0.16)"/>
+<path d="M82 452 V479 H96" fill="none" stroke="rgba(241,240,236,0.16)"/>
+<path d="M52 130 V525 H66" fill="none" stroke="rgba(241,240,236,0.16)"/>
+<path d="M52 130 V571 H66" fill="none" stroke="rgba(241,240,236,0.16)"/>
+<path d="M52 130 V617 H66" fill="none" stroke="rgba(241,240,236,0.16)"/>
+<rect x="36" y="92" width="688" height="38" rx="2" fill="#33212F" stroke="#412A3C"/>
+<text x="52" y="116" font-family="'Inter', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#F1F0EC" font-weight="500">Home</text>
+<rect x="66" y="138" width="658" height="38" rx="2" fill="#141417" stroke="rgba(241,240,236,0.16)"/>
+<text x="82" y="162" font-family="'Inter', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#F1F0EC" font-weight="400">Collections</text>
+<text x="708" y="162" text-anchor="end" font-family="'Inter', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="rgba(241,240,236,0.62)">filters, predictive search</text>
+<rect x="96" y="184" width="628" height="38" rx="2" fill="#141417" stroke="rgba(241,240,236,0.16)"/>
+<text x="112" y="208" font-family="'Inter', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#F1F0EC" font-weight="400">Product</text>
+<rect x="96" y="230" width="628" height="38" rx="2" fill="#141417" stroke="rgba(241,240,236,0.16)"/>
+<text x="112" y="254" font-family="'Inter', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#F1F0EC" font-weight="400">Saddle product</text>
+<text x="708" y="254" text-anchor="end" font-family="'Inter', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="rgba(241,240,236,0.62)">own template</text>
+<rect x="66" y="276" width="658" height="38" rx="2" fill="#141417" stroke="rgba(241,240,236,0.16)"/>
+<text x="82" y="300" font-family="'Inter', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#F1F0EC" font-weight="400">Su misura</text>
+<text x="708" y="300" text-anchor="end" font-family="'Inter', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="rgba(241,240,236,0.62)">bespoke journey, quote form</text>
+<rect x="66" y="322" width="658" height="38" rx="2" fill="#141417" stroke="rgba(241,240,236,0.16)"/>
+<text x="82" y="346" font-family="'Inter', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#F1F0EC" font-weight="400">Atelier</text>
+<rect x="66" y="368" width="658" height="38" rx="2" fill="#141417" stroke="rgba(241,240,236,0.16)"/>
+<text x="82" y="392" font-family="'Inter', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#F1F0EC" font-weight="400">Laboratorio</text>
+<text x="708" y="392" text-anchor="end" font-family="'Inter', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="rgba(241,240,236,0.62)">repair request form</text>
+<rect x="66" y="414" width="658" height="38" rx="2" fill="#141417" stroke="rgba(241,240,236,0.16)"/>
+<text x="82" y="438" font-family="'Inter', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#F1F0EC" font-weight="400">Journal</text>
+<rect x="96" y="460" width="628" height="38" rx="2" fill="#141417" stroke="rgba(241,240,236,0.16)"/>
+<text x="112" y="484" font-family="'Inter', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#F1F0EC" font-weight="400">Article</text>
+<rect x="66" y="506" width="658" height="38" rx="2" fill="#141417" stroke="rgba(241,240,236,0.16)"/>
+<text x="82" y="530" font-family="'Inter', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#F1F0EC" font-weight="400">FAQ</text>
+<text x="708" y="530" text-anchor="end" font-family="'Inter', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="rgba(241,240,236,0.62)">structured data</text>
+<rect x="66" y="552" width="658" height="38" rx="2" fill="#141417" stroke="rgba(241,240,236,0.16)"/>
+<text x="82" y="576" font-family="'Inter', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#F1F0EC" font-weight="400">Contact</text>
+<rect x="66" y="598" width="658" height="38" rx="2" fill="#141417" stroke="rgba(241,240,236,0.16)"/>
+<text x="82" y="622" font-family="'Inter', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#F1F0EC" font-weight="400">Cart · Search · 404</text>
+</svg>

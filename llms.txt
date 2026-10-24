@@ -1,63 +1,79 @@
 # Victoria Clara Swart
 
-> Multilingual brand strategist and SEO copywriter based in Rome, Italy. Works in five languages — English and German at native level, plus Italian, Spanish and Danish — on brand positioning, content strategy, SEO, and creative direction for international clients.
+> Multilingual web designer and brand strategist in Rome. Websites, copy and SEO in German, English, Italian, Spanish and Danish.
 
-## Summary
+Multilingual web designer, brand strategist and language teacher based in Rome,
+Italy. Works in German, English, Italian, Spanish and Danish. VAT: IT18420501001.
 
-Victoria Clara Swart (also written Victoria Swart) is an independent brand strategist and consultant based in Rome. Her practice covers brand positioning, multilingual copywriting, SEO and content strategy, social media strategy, web design direction, and creative direction. She also works as a speaker, panel moderator, and event MC in five languages.
+## What she does
 
-She works across more than fifteen markets, with clients in Italy, Germany, Denmark, Spain, the United Kingdom and the United States. Engagements are delivered remotely by default, with on-site work and event hosting available across Europe.
+- Web design & development: Fast, multilingual websites and shops, designed, written and coded by one person. From €900. (https://victoriaswart.com/web-design/)
+- Strategy & SEO: Positioning, messaging and search visibility for businesses that sell across borders. (https://victoriaswart.com/strategy/)
+- Languages: Lessons, translation and cultural adaptation, and moderation for international events. (https://victoriaswart.com/languages/)
 
-Her distinguishing capability is cultural adaptation rather than translation: brand messaging is written natively in each target language so that positioning and intent survive the move between markets.
+## Pricing, stated publicly
 
-## Services
+- One-page site: from €900. A musician, a tradesperson, a small B&B.
+- Multi-page site: €1,500 to €2,500. Several pages, a clear structure, room to grow.
+- Shop on Shopify: from €3,000. A real shop, built on a custom theme.
+- Each extra language: +€300. Written by me, not machine-translated.
+- Care plan: €60 per month. Hosting checks, updates and small edits each month.
+- Small changes outside a plan: €50 per hour. For anything that comes up later.
+- Local visibility setup: €450 one-off. Google Business Profile, basic SEO, reviews.
+- Website and visibility check: €150. Ninety minutes on your site and how findable it is, with a written list of what to fix first.
+- Local visibility setup: €450. Google Business Profile, basic SEO and a reviews routine, set up once and yours to keep.
+- Brand strategy and positioning: On request. What makes you distinct, who you speak to, your core message and tone.
+- Multilingual communication strategy: On request. How your message adapts for each language and market.
+- Ongoing strategic support: On request. A thinking partner every month, for businesses that want one.
+- One to one lesson: €35. Sixty minutes, online.
+- Ten lessons: €320. Booked together.
+- Business or aviation English: €45. Sixty minutes, online. Specialist preparation.
+- Moderation and MC: from €400. Quoted per event.
 
-- **Branding & Positioning** — brand strategy and positioning for international businesses
-- **Copywriting, Speaking & MC** — multilingual copywriting and event hosting in five languages
-- **Social Media Strategy** — platform strategy and content direction for European markets
-- **SEO & Digital Strategy** — SEO strategy, technical audits, schema markup, and organic content for multilingual audiences
-- **Web Design & Development** — website design and build for consultants and independent brands
-- **Creative Direction** — visual and creative direction for brand campaigns, including UGC and lifestyle content for hospitality brands
+## Selected work
 
-## Pricing
-
-- Pick My Brain — one 60-minute strategy session: €150
-- Private Consulting — project-based rebrand, launch, or communication overhaul: from €800, quoted by scope
-- Long-Term Strategic Support — ongoing strategic partnership: €2,000 per month
-
-## Languages
-
-English (native), German (native), Italian (fluent), Spanish (fluent), Danish (fluent).
-
-## Writing
-
-Essays on brand strategy, language, psychology and culture, published at https://victoriaclaraswart.substack.com
-
-- The Psychology of Positioning — https://victoriaclaraswart.substack.com/p/the-psychology-of-positioning
-- Why Good Brands Sound Clear Before They Look Expensive — https://victoriaclaraswart.substack.com/p/why-good-brands-sound-clear-before
-- What International Living Teaches You About Communication — https://victoriaclaraswart.substack.com/p/what-international-living-teaches
-- Taste, Trust, and Digital Presence — https://victoriaclaraswart.substack.com/p/taste-trust-and-digital-presence
-- What Aviation Taught Me About Communication — https://victoriaclaraswart.substack.com/p/what-aviation-taught-me-about-communication
-- Storytelling Beyond Marketing — https://victoriaclaraswart.substack.com/p/storytelling-beyond-marketing
+- Seabreeze (Houseboat holiday rental, Alghero, Sardinia, 2026): A houseboat holiday rental needed a site that turns visitors into booking enquiries, for guests arriving from across Europe. https://victoriaswart.com/work/seabreeze/
+- EQM Sellier (Artisan saddlery, Adro, Franciacorta, 2026): A workshop making bespoke saddles, bridles and competition trunks by hand needed to move from an old WordPress site to a real shop, without losing the consultation-first way it sells a saddle that costs several thousand euros. https://victoriaswart.com/work/eqm-sellier/
+- Graziano Tumbarello (Saxophonist, Marsala, Sicily, 2026): A professional saxophonist booked for weddings and events needed a site that answers a couple's questions and gets them to message him. https://victoriaswart.com/work/graziano-tumbarello/
+- Emergency home services company (Emergency plumbing, heating and electrical, Rome, Fregene and Fiumicino, 2026): A home services company offering 24-hour emergency call-outs needed to be found by people searching in a panic, and needed a way to track the leads that came in. https://victoriaswart.com/work/home-services/
+- La Dolce Vita Luxury Experience (Italian luxury concierge, Italy, 2025 to 2026): A speculative concept for a luxury concierge service, aimed at travellers who expect access rather than packages. The business was never launched. https://victoriaswart.com/work/la-dolce-vita/
+- victoriaswart.com (My own site, Rome, 2026): My own site, rebuilt to show what I actually do instead of describing it. https://victoriaswart.com/work/victoriaswart-com/
 
 ## Site structure
 
-- Home — https://victoriaswart.com/
-- Services — https://victoriaswart.com/services/ (also carries the FAQ)
-- About — https://victoriaswart.com/about/
-- Work — https://victoriaswart.com/work/
-- Case study: Italian Luxury Concierge concept — https://victoriaswart.com/work/la-dolce-vita/
-- Consulting & pricing — https://victoriaswart.com/consulting/
-- Journal — https://victoriaswart.com/journal/
-- Contact — https://victoriaswart.com/contact/
+- https://victoriaswart.com/ (de: /de/ | it: /it/ | es: /es/)
+- https://victoriaswart.com/web-design/ (de: /de/webdesign/ | it: /it/web-design/ | es: /es/diseno-web/)
+- https://victoriaswart.com/languages/ (de: /de/sprachen/ | it: /it/lingue/ | es: /es/idiomas/)
+- https://victoriaswart.com/strategy/ (de: /de/strategie/ | it: /it/strategia/ | es: /es/estrategia/)
+- https://victoriaswart.com/work/ (de: /de/arbeiten/ | it: /it/lavori/ | es: /es/proyectos/)
+- https://victoriaswart.com/work/seabreeze/ (de: /de/arbeiten/seabreeze/ | it: /it/lavori/seabreeze/ | es: /es/proyectos/seabreeze/)
+- https://victoriaswart.com/work/eqm-sellier/ (de: /de/arbeiten/eqm-sellier/ | it: /it/lavori/eqm-sellier/ | es: /es/proyectos/eqm-sellier/)
+- https://victoriaswart.com/work/graziano-tumbarello/ (de: /de/arbeiten/graziano-tumbarello/ | it: /it/lavori/graziano-tumbarello/ | es: /es/proyectos/graziano-tumbarello/)
+- https://victoriaswart.com/work/home-services/ (de: /de/arbeiten/handwerk/ | it: /it/lavori/servizi-casa/ | es: /es/proyectos/servicios-hogar/)
+- https://victoriaswart.com/work/la-dolce-vita/ (de: /de/arbeiten/la-dolce-vita/ | it: /it/lavori/la-dolce-vita/ | es: /es/proyectos/la-dolce-vita/)
+- https://victoriaswart.com/work/victoriaswart-com/ (de: /de/arbeiten/victoriaswart-com/ | it: /it/lavori/victoriaswart-com/ | es: /es/proyectos/victoriaswart-com/)
+- https://victoriaswart.com/about/ (de: /de/ueber-mich/ | it: /it/chi-sono/ | es: /es/sobre-mi/)
+- https://victoriaswart.com/journal/ (de: /de/journal/ | it: /it/journal/ | es: /es/journal/)
+- https://victoriaswart.com/contact/ (de: /de/kontakt/ | it: /it/contatti/ | es: /es/contacto/)
+- https://victoriaswart.com/privacy/ (de: /de/datenschutz/ | it: /it/privacy/ | es: /es/privacidad/)
+- https://victoriaswart.com/legal/ (de: /de/impressum/ | it: /it/note-legali/ | es: /es/aviso-legal/)
+
+## Languages of this site
+
+English, German, Italian and Spanish. Every page exists in all four.
 
 ## Links
 
 - Website: https://victoriaswart.com
 - Substack: https://substack.com/@victoriaclaraswart
-- LinkedIn: https://it.linkedin.com/in/victoriaswart
-- Instagram: https://www.instagram.com/imma__victoria
+- LinkedIn: https://www.linkedin.com/in/victoriaswart
+- Instagram: https://www.instagram.com/victoriaclara.css
 
 ## Contact
 
-Enquiries via the contact form at https://victoriaswart.com/contact/
+Enquiries through the contact form at https://victoriaswart.com/contact/.
+There is no telephone number published on the site.
+
+## Usage
+
+All content on this site, including written copy, brand concepts, case-study material, design and code, is the original work and intellectual property of Victoria Clara Swart, protected under Italian and EU copyright law. Work shown in the portfolio is not licensed for commercial use, reproduction or republication by any third party.

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 536" width="760" height="536" role="img" aria-labelledby="t d">
+<title id="t">Sitemap: Seabreeze</title>
+<desc id="d">Hand-coded single page · Netlify. 9 pages or sections.</desc>
+<rect width="760" height="536" rx="3" fill="#0B0B0C" stroke="rgba(241,240,236,0.16)"/>
+<text x="36" y="44" font-family="'Cormorant Garamond', Georgia, 'Times New Roman', serif" font-size="25" fill="#F1F0EC">Seabreeze</text>
+<text x="36" y="68" font-family="'Inter', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" letter-spacing="1.6" fill="#B9A8B4">HAND-CODED SINGLE PAGE · NETLIFY</text>
+<line x1="36" y1="82" x2="724" y2="82" stroke="rgba(241,240,236,0.16)"/>
+<path d="M52 130 V157 H66" fill="none" stroke="rgba(241,240,236,0.16)"/>
+<path d="M52 130 V203 H66" fill="none" stroke="rgba(241,240,236,0.16)"/>
+<path d="M52 130 V249 H66" fill="none" stroke="rgba(241,240,236,0.16)"/>
+<path d="M52 130 V295 H66" fill="none" stroke="rgba(241,240,236,0.16)"/>
+<path d="M52 130 V341 H66" fill="none" stroke="rgba(241,240,236,0.16)"/>
+<path d="M52 130 V387 H66" fill="none" stroke="rgba(241,240,236,0.16)"/>
+<path d="M52 130 V433 H66" fill="none" stroke="rgba(241,240,236,0.16)"/>
+<path d="M52 130 V479 H66" fill="none" stroke="rgba(241,240,236,0.16)"/>
+<rect x="36" y="92" width="688" height="38" rx="2" fill="#33212F" stroke="#412A3C"/>
+<text x="52" y="116" font-family="'Inter', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#F1F0EC" font-weight="500">One page</text>
+<text x="708" y="116" text-anchor="end" font-family="'Inter', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="rgba(241,240,236,0.62)">seabreeze-alghero</text>
+<rect x="66" y="138" width="658" height="38" rx="2" fill="#141417" stroke="rgba(241,240,236,0.16)"/>
+<text x="82" y="162" font-family="'Inter', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#F1F0EC" font-weight="400">Boats</text>
+<rect x="66" y="184" width="658" height="38" rx="2" fill="#141417" stroke="rgba(241,240,236,0.16)"/>
+<text x="82" y="208" font-family="'Inter', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#F1F0EC" font-weight="400">Experience</text>
+<rect x="66" y="230" width="658" height="38" rx="2" fill="#141417" stroke="rgba(241,240,236,0.16)"/>
+<text x="82" y="254" font-family="'Inter', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#F1F0EC" font-weight="400">Amenities</text>
+<rect x="66" y="276" width="658" height="38" rx="2" fill="#141417" stroke="rgba(241,240,236,0.16)"/>
+<text x="82" y="300" font-family="'Inter', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#F1F0EC" font-weight="400">Location</text>
+<rect x="66" y="322" width="658" height="38" rx="2" fill="#141417" stroke="rgba(241,240,236,0.16)"/>
+<text x="82" y="346" font-family="'Inter', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#F1F0EC" font-weight="400">Tips</text>
+<rect x="66" y="368" width="658" height="38" rx="2" fill="#141417" stroke="rgba(241,240,236,0.16)"/>
+<text x="82" y="392" font-family="'Inter', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#F1F0EC" font-weight="400">Gallery</text>
+<rect x="66" y="414" width="658" height="38" rx="2" fill="#141417" stroke="rgba(241,240,236,0.16)"/>
+<text x="82" y="438" font-family="'Inter', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#F1F0EC" font-weight="400">FAQ</text>
+<rect x="66" y="460" width="658" height="38" rx="2" fill="#141417" stroke="rgba(241,240,236,0.16)"/>
+<text x="82" y="484" font-family="'Inter', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#F1F0EC" font-weight="400">Booking</text>
+<text x="708" y="484" text-anchor="end" font-family="'Inter', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="rgba(241,240,236,0.62)">enquiry form</text>
+</svg>
