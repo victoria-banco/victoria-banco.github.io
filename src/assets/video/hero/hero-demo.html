@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hero video demo</title>
+<!-- Preload the poster so the first paint is the portrait, never an empty box -->
+<link rel="preload" as="image" href="hero-poster-desktop.webp" media="(min-aspect-ratio: 1/1)">
+<link rel="preload" as="image" href="hero-poster-mobile.webp" media="(max-aspect-ratio: 1/1)">
+<style>
+  :root { --page: #1A1A1A; --bone: #F5F0E8; }
+  html, body { margin: 0; background: var(--page); color: var(--bone); font-family: system-ui, sans-serif; }
+
+  /* ===== HERO ===== */
+  .hero {
+    position: relative;
+    height: 100vh;            /* fallback */
+    height: 100svh;           /* phones: respects the browser bars */
+    min-height: 520px;
+    overflow: hidden;
+    background: var(--page);
+    isolation: isolate;
+  }
+  .hero__poster img,
+  .hero__video {
+    position: absolute; inset: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;        /* fills any screen size, crops the overflow */
+    object-position: 50% 45%;
+  }
+  .hero__poster { position: absolute; inset: 0; z-index: 1; transition: opacity .9s ease; }
+  .hero__video  { z-index: 0; }
+  .hero.is-playing .hero__poster { opacity: 0; }
+
+  /* soft dark edge so the video melts into the page and text stays readable */
+  .hero::after {
+    content: ""; position: absolute; inset: 0; z-index: 2; pointer-events: none;
+    background:
+      linear-gradient(to top, var(--page) 0%, rgba(26,26,26,0) 28%),
+      linear-gradient(to right, rgba(26,26,26,.55) 0%, rgba(26,26,26,0) 45%);
+  }
+  .hero__content {
+    position: absolute; z-index: 3; left: clamp(16px, 6vw, 96px); bottom: clamp(32px, 9vh, 120px);
+    max-width: min(560px, calc(100% - 32px));
+  }
+  .hero__content h1 { font-weight: 400; font-size: clamp(32px, 5vw, 64px); line-height: 1.05; margin: 0 0 12px; }
+  .hero__content p { margin: 0; opacity: .85; font-size: clamp(15px, 1.4vw, 18px); }
+</style>
+</head>
+<body>
+
+<section class="hero" id="hero" aria-label="Victoria Swart">
+  <!-- Fallback + first paint: portrait still. Shown when video is slow, blocked, reduced-motion or save-data -->
+  <picture class="hero__poster">
+    <source media="(max-aspect-ratio: 1/1)" srcset="hero-poster-mobile.webp" type="image/webp">
+    <source media="(max-aspect-ratio: 1/1)" srcset="hero-poster-mobile.jpg">
+    <source srcset="hero-poster-desktop.webp" type="image/webp">
+    <img src="hero-poster-desktop.jpg" alt="Portrait of Victoria Swart" fetchpriority="high" decoding="async">
+  </picture>
+
+  <video class="hero__video" muted loop playsinline preload="none" aria-hidden="true" tabindex="-1"></video>
+
+  <div class="hero__content">
+    <h1>Victoria Swart</h1>
+    <p>Multilingual Brand Strategist · Building brands designed to travel further</p>
+  </div>
+</section>
+
+<script>
+(() => {
+  const hero  = document.getElementById('hero');
+  const video = hero.querySelector('.hero__video');
+
+  // No video for people who asked for less motion or less data: the portrait stays.
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const saveData = navigator.connection && navigator.connection.saveData;
+  if (reduce || saveData) return;
+
+  // Pick the cut by the shape of the box the video fills, not the device name:
+  // ratio < 0.68 -> 9:16, 0.68-1.25 -> 4:5 (e.g. the split-layout panel), wider -> 16:9.
+  const files = {
+    mobile:  [['hero-mobile.webm', 'video/webm'],  ['hero-mobile.mp4', 'video/mp4']],   // 9:16
+    panel:   [['hero-panel.webm', 'video/webm'],   ['hero-panel.mp4', 'video/mp4']],    // 4:5
+    desktop: [['hero-desktop.webm', 'video/webm'], ['hero-desktop.mp4', 'video/mp4']],  // 16:9
+  };
+  let current = null;
+
+  function choose() {
+    const r = video.getBoundingClientRect();
+    const ratio = r.width / r.height;
+    const want = ratio < 0.68 ? 'mobile' : ratio <= 1.25 ? 'panel' : 'desktop';
+    if (want === current) return;
+    current = want;
+    hero.classList.remove('is-playing');
+    video.innerHTML = '';
+    for (const [src, type] of files[want]) {
+      const s = document.createElement('source'); s.src = src; s.type = type; video.appendChild(s);
+    }
+    video.load();
+    const p = video.play();
+    if (p && p.catch) p.catch(() => { /* autoplay blocked (e.g. iOS low power): portrait stays */ });
+  }
+
+  video.addEventListener('playing', () => hero.classList.add('is-playing'));
+  video.addEventListener('error', () => hero.classList.remove('is-playing'), true);
+
+  // Pause when off screen or the tab is hidden: saves battery, restarts smoothly.
+  new IntersectionObserver(([e]) => { e.isIntersecting ? video.play().catch(() => {}) : video.pause(); }).observe(hero);
+  document.addEventListener('visibilitychange', () => { document.hidden ? video.pause() : video.play().catch(() => {}); });
+
+  let t; window.addEventListener('resize', () => { clearTimeout(t); t = setTimeout(choose, 250); });
+  choose();
+})();
+</script>
+</body>
+</html>
