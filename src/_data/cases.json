@@ -80,7 +80,7 @@
     },
     "status": "pending",
     "live": null,
-    "image": "cases/eqm.svg",
+    "image": "cases/eqm-poster.jpg",
     "en": {
       "name": "EQM Sellier",
       "nameFallback": "Italian artisan saddlery",
@@ -180,7 +180,8 @@
       ],
       "result": "Listo para publicarse, a la espera de las fotografías y los precios definitivos del cliente.",
       "starter": "Tiendas artesanas y comercio electrónico"
-    }
+    },
+    "video": "cases/eqm-showcase.mp4"
   },
   "graziano": {
     "order": 3,

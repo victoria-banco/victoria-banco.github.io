@@ -4,13 +4,35 @@ permalink: "{{ routes.journal[lang] }}index.html"
 layout: layouts/base.njk
 routeKey: journal
 copyKey: journal
-# Nothing is published here yet, so the page should not be indexed. Remove
-# this line when the first essay goes up.
-robots: "noindex, follow"
 ---
 {% set c = copy.journal %}
 <section>
   <h1>{{ c.h1 }}</h1>
   <p class="lead">{{ c.intro }}</p>
+</section>
+
+{#- The list is baked in at build time from src/_data/journalPosts.json, which
+    tools/fetch-substack.mjs writes. Nothing is fetched by the reader's
+    browser: Substack's feed sends no CORS headers, so a client-side fetch
+    would need a third-party proxy, and the privacy page promises there is
+    none. Re-run the script when something new is published. -#}
+{%- if journalPosts and journalPosts.length %}
+<section class="journal-list">
+  <ol>
+    {%- for p in journalPosts %}
+    <li>
+      <a href="{{ p.url }}" target="_blank" rel="noopener noreferrer">
+        <h2>{{ p.title }}</h2>
+        {%- if p.summary %}<p>{{ p.summary }}</p>{% endif %}
+      </a>
+      {%- if p.date %}<p class="journal-date"><time datetime="{{ p.date }}">{{ p.date }}</time> &middot; {{ t.journal.on }} Substack</p>{% endif %}
+    </li>
+    {%- endfor %}
+  </ol>
+  <p><a class="link-more" href="{{ site.social.substack }}" target="_blank" rel="noopener noreferrer">{{ t.journal.all }} &rarr;</a></p>
+</section>
+{%- else %}
+<section>
   <p><a class="btn btn-ghost" href="{{ site.social.substack }}" target="_blank" rel="noopener noreferrer">Substack</a></p>
 </section>
+{%- endif %}

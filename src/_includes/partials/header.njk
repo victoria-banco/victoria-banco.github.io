@@ -3,7 +3,7 @@
     <a class="nav-logo" href="{{ 'home' | route(L) }}">{{ site.name }}</a>
 
     <ul class="nav-links">
-      {%- for key, label in [["webdesign", t.nav.web], ["strategy", t.nav.strategy], ["languages", t.nav.languages], ["work", t.nav.work], ["about", t.nav.about], ["contact", t.nav.contact]] %}
+      {%- for key, label in [["webdesign", t.nav.web], ["strategy", t.nav.strategy], ["languages", t.nav.languages], ["work", t.nav.work], ["journal", t.nav.journal], ["about", t.nav.about], ["contact", t.nav.contact]] %}
       <li><a href="{{ key | route(L) }}"{% if key == routeKey %} aria-current="page"{% endif %}>{{ label }}</a></li>
       {%- endfor %}
     </ul>
@@ -31,7 +31,7 @@
     <svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><path d="M3 3l16 16M19 3L3 19" stroke="currentColor" stroke-width="1.4" fill="none"/></svg>
   </button>
   <a class="mobile-home" href="{{ 'home' | route(L) }}">{{ t.nav.home }}</a>
-  {%- for key, label in [["webdesign", t.nav.web], ["strategy", t.nav.strategy], ["languages", t.nav.languages], ["work", t.nav.work], ["about", t.nav.about], ["contact", t.nav.contact]] %}
+  {%- for key, label in [["webdesign", t.nav.web], ["strategy", t.nav.strategy], ["languages", t.nav.languages], ["work", t.nav.work], ["journal", t.nav.journal], ["about", t.nav.about], ["contact", t.nav.contact]] %}
   <a href="{{ key | route(L) }}">{{ label }}</a>
   {%- endfor %}
   <p class="mobile-foot">{{ t.location }}</p>

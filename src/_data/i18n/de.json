@@ -87,5 +87,9 @@
   "priceFrom": "Ab",
   "priceOnRequest": "Auf Anfrage",
   "perMonth": "im Monat",
-  "perHour": "pro Stunde"
+  "perHour": "pro Stunde",
+  "journal": {
+    "on": "auf",
+    "all": "Alle Essays auf Substack"
+  }
 }

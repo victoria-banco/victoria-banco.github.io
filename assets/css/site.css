@@ -383,6 +383,17 @@ main>section.hero .btn-ghost:hover{background:var(--bone)}
   .banner-media>video{transition:none}
 }
 
+/* ── Journal list ─────────────────────── */
+.journal-list ol{list-style:none;margin:0;padding:0}
+.journal-list li{border-top:1px solid var(--rule-dark);padding:clamp(20px,2.6vw,30px) 0}
+.journal-list li:last-of-type{border-bottom:1px solid var(--rule-dark)}
+.journal-list a{text-decoration:none;display:block}
+.journal-list h2{font-size:clamp(21px,2.1vw,28px);margin:0 0 7px}
+.journal-list a:hover h2{color:var(--accent)}
+.journal-list p{margin:0;max-width:66ch}
+.journal-date{margin-top:9px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+  color:rgba(241,240,236,.5)}
+
 /* ── Proof strip ─────────────────────────────────────────────── */
 .proof{background:var(--forest);color:var(--bone);padding-block:clamp(28px,4vw,44px)}
 .proof ul{list-style:none;margin:0 auto;padding:0;display:flex;justify-content:center;

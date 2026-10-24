@@ -85,7 +85,18 @@ module.exports = function (eleventyConfig) {
     title: (data) => {
       if (data && data.pageTitle) return data.pageTitle;
       const cs = caseOf(data);
-      if (cs) return `${cs.shownName}: ${cs.c.stack} \u00b7 Victoria Swart`;
+      // The sector, not the platform. "Hand-coded, Netlify" means nothing
+      // to anyone searching, and since stack became per-language it would
+      // also interpolate as [object Object]. ct.sector is already localised.
+      if (cs) {
+        // Titles want to stay under about 60 characters. Where the name and
+        // the sector together are already long, or just repeat each other
+        // ("Emergency home services company: Emergency plumbing, heating
+        // and electrical"), the name alone says it.
+        const withSector = `${cs.shownName}: ${cs.ct.sector}`;
+        const stem = withSector.length <= 45 ? withSector : cs.shownName;
+        return `${stem} \u00b7 Victoria Swart`;
+      }
       const b = copyBlock(data);
       return b && b.title ? b.title : '';
     },

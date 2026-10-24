@@ -28,6 +28,9 @@ for (const f of files) {
   }
   if (/—/.test(h.replace(/<!--[\s\S]*?-->/g, ''))) problems.push(`${url} em dash`);
   if (/href="#"/.test(h)) problems.push(`${url} href-hash`);
+  // A template interpolating an object instead of a string. Cheap to check,
+  // and it reached a page title once already.
+  if (/\[object Object\]/.test(h)) problems.push(`${url} [object Object]`);
   if (/imma__victoria/.test(h)) problems.push(`${url} old instagram`);
   if (/fonts\.googleapis/.test(h)) problems.push(`${url} google fonts`);
   if (/<title>\s*<\/title>/.test(h)) problems.push(`${url} empty title`);
