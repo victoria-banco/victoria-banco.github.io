@@ -12,7 +12,7 @@ layout: layouts/base.njk
     <div><dt>{{ t.case.sector }}</dt><dd>{{ ct.sector }}</dd></div>
     <div><dt>{{ t.case.location }}</dt><dd>{{ ct.location }}</dd></div>
     <div><dt>{{ t.case.year }}</dt><dd>{{ cs.year }}</dd></div>
-    <div><dt>{{ t.case.stack }}</dt><dd>{{ cs.stack }}</dd></div>
+    <div><dt>{{ t.case.stack }}</dt><dd>{{ cs.stack[L] }}</dd></div>
     <div><dt>{{ t.case.status }}</dt><dd><span class="badge">{{ t.case[cs.status] }}</span></dd></div>
   </dl>
 

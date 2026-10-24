@@ -4,7 +4,7 @@ permalink: "{{ routes.webdesign[lang] }}index.html"
 layout: layouts/base.njk
 routeKey: webdesign
 copyKey: webdesign
-ogImage: case-seabreeze.jpg
+ogImage: video/hero/hero-poster-desktop.jpg
 ---
 {% set c = copy.webdesign %}
 <section>
@@ -21,7 +21,7 @@ ogImage: case-seabreeze.jpg
     <a class="case-card" href="{{ cs.route | route(lang) }}">
       <img src="/assets/{{ cs.image }}" alt="{{ ct.sector }}" width="960" height="600" loading="lazy" decoding="async">
       <h3>{{ ct.name if named else ct.nameFallback }}</h3>
-      <p>{{ ct.sector }}, {{ ct.location }} &middot; {{ cs.stack }}</p>
+      <p>{{ ct.sector }}, {{ ct.location }} &middot; {{ cs.stack[lang] }}</p>
     </a>
   {%- endfor %}
   </div>

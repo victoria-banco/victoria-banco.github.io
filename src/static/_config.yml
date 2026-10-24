@@ -25,3 +25,4 @@ exclude:
   # Already unserved by Jekyll's underscore rule; named so the intent survives.
   - _archive
   - _originals
+  - _review

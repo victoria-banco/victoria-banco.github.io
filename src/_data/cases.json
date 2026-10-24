@@ -4,7 +4,12 @@
     "route": "seabreeze",
     "flag": null,
     "year": "2026",
-    "stack": "Hand-coded, Netlify",
+    "stack": {
+      "en": "Hand-coded, Netlify",
+      "de": "Handprogrammiert, Netlify",
+      "it": "Scritto a mano in codice, Netlify",
+      "es": "Programado a mano, Netlify"
+    },
     "status": "live",
     "live": "https://seabreeze-alghero.netlify.app",
     "liveFlag": "seabreeze_own_domain",
@@ -67,7 +72,12 @@
     "route": "eqm",
     "flag": "case_eqm_named",
     "year": "2026",
-    "stack": "Custom Shopify theme",
+    "stack": {
+      "en": "Custom Shopify theme",
+      "de": "Individuelles Shopify-Theme",
+      "it": "Tema Shopify su misura",
+      "es": "Tema de Shopify a medida"
+    },
     "status": "pending",
     "live": null,
     "image": "cases/eqm.svg",
@@ -177,7 +187,12 @@
     "route": "graziano",
     "flag": "case_graziano_named",
     "year": "2026",
-    "stack": "Hand-coded single page",
+    "stack": {
+      "en": "Hand-coded single page",
+      "de": "Handprogrammierte Onepage-Website",
+      "it": "Pagina singola scritta a mano in codice",
+      "es": "Página única programada a mano"
+    },
     "status": "delivered",
     "live": null,
     "image": "cases/graziano.svg",
@@ -244,7 +259,12 @@
     "flag": null,
     "anonymous": true,
     "year": "2026",
-    "stack": "Wix",
+    "stack": {
+      "en": "Wix",
+      "de": "Wix",
+      "it": "Wix",
+      "es": "Wix"
+    },
     "status": "delivered",
     "live": null,
     "image": "cases/homeserv.svg",
@@ -310,7 +330,12 @@
     "route": "ladolcevita",
     "flag": null,
     "year": "2025 to 2026",
-    "stack": "Webflow",
+    "stack": {
+      "en": "Webflow",
+      "de": "Webflow",
+      "it": "Webflow",
+      "es": "Webflow"
+    },
     "status": "brandsite",
     "live": null,
     "image": "ladolcevita-poster.jpg",
@@ -369,7 +394,12 @@
     "route": "thissite",
     "flag": null,
     "year": "2026",
-    "stack": "Hand-coded, Eleventy",
+    "stack": {
+      "en": "Hand-coded, Eleventy",
+      "de": "Handprogrammiert, Eleventy",
+      "it": "Scritto a mano in codice, Eleventy",
+      "es": "Programado a mano, Eleventy"
+    },
     "status": "live",
     "live": "https://victoriaswart.com",
     "image": "cases/thissite.svg",
