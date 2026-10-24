@@ -18,25 +18,5 @@
     "from": "/de/beratung/",
     "to": "/de/strategie/",
     "lang": "de"
-  },
-  {
-    "from": "/work/graziano-tumbarello/",
-    "to": "/work/saxophonist-sicily/",
-    "lang": "en"
-  },
-  {
-    "from": "/de/arbeiten/graziano-tumbarello/",
-    "to": "/de/arbeiten/saxophonist-sizilien/",
-    "lang": "de"
-  },
-  {
-    "from": "/it/lavori/graziano-tumbarello/",
-    "to": "/it/lavori/sassofonista-sicilia/",
-    "lang": "it"
-  },
-  {
-    "from": "/es/proyectos/graziano-tumbarello/",
-    "to": "/es/proyectos/saxofonista-sicilia/",
-    "lang": "es"
   }
 ]

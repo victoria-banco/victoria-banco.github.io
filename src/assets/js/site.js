@@ -175,6 +175,7 @@
       var name = box.getAttribute('data-name') || 'hero';
       var current = null;
       var dead = false;
+      var failed = 0;
 
       function play() {
         if (dead) return;
@@ -191,6 +192,7 @@
         var want = cutFor(r.width / r.height);
         if (want === current) return;
         current = want;
+        failed = 0;
         box.classList.remove('is-playing');
         while (video.firstChild) video.removeChild(video.firstChild);
         /* WebM first because it is roughly a third smaller; MP4 for Safari. */
@@ -206,10 +208,23 @@
       }
 
       video.addEventListener('playing', function () { box.classList.add('is-playing'); });
-      /* Capture: a failing <source> fires error on the child, not the video. */
-      video.addEventListener('error', function () {
-        dead = true;
-        box.classList.remove('is-playing');
+      /* A <source> that cannot be played fires error on that child, and the
+         browser moves on to the next one. Treating the first of those as
+         fatal threw away the MP4 the moment WebM was refused, which is
+         exactly what an iPhone does: the poster stayed and the video never
+         arrived. Only when every source has failed is there nothing to play.
+         Capture is still needed, because those events do not bubble. */
+      video.addEventListener('error', function (e) {
+        if (e.target === video) {
+          dead = true;
+          box.classList.remove('is-playing');
+          return;
+        }
+        failed++;
+        if (failed >= video.querySelectorAll('source').length) {
+          dead = true;
+          box.classList.remove('is-playing');
+        }
       }, true);
 
       /* Off screen or tab in the background: stop decoding frames. */
