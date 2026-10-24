@@ -1,6 +1,22 @@
 [
-  { "from": "/services/",       "to": "/web-design/",      "lang": "en" },
-  { "from": "/consulting/",     "to": "/strategy/",        "lang": "en" },
-  { "from": "/de/leistungen/",  "to": "/de/webdesign/",    "lang": "de" },
-  { "from": "/de/beratung/",    "to": "/de/strategie/",    "lang": "de" }
+  {
+    "from": "/services/",
+    "to": "/web-design/",
+    "lang": "en"
+  },
+  {
+    "from": "/consulting/",
+    "to": "/strategy/",
+    "lang": "en"
+  },
+  {
+    "from": "/de/leistungen/",
+    "to": "/de/webdesign/",
+    "lang": "de"
+  },
+  {
+    "from": "/de/beratung/",
+    "to": "/de/strategie/",
+    "lang": "de"
+  }
 ]

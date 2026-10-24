@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" width="960" height="600" role="img" aria-label="victoriaswart.com, Four languages · hand-coded">
+  <rect width="960" height="600" fill="#1A1720"/>
+  <rect x="0.5" y="0.5" width="959" height="599" fill="none" stroke="rgba(241,240,236,0.10)"/>
+  <line x1="72" y1="300" x2="152" y2="300" stroke="#B9A8B4" stroke-width="2"/>
+  <text x="72" y="356" fill="#F1F0EC" font-family="Georgia,'Times New Roman',serif" font-size="54">victoriaswart.com</text>
+  <text x="72" y="398" fill="rgba(241,240,236,0.62)" font-family="Helvetica,Arial,sans-serif" font-size="19" letter-spacing="2.4">FOUR LANGUAGES · HAND-CODED</text>
+</svg>
