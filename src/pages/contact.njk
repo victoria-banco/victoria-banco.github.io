@@ -9,8 +9,11 @@ copyKey: contact
 <section>
   <h1>{{ c.h1 }}</h1>
   <p class="lead">{{ c.intro }}</p>
+</section>
 
-  <div class="media-split">
+{#- Form one half, portrait the other. -#}
+<section class="split-feature">
+  <div class="split-feature__body">
   <form class="form" id="contactForm" action="{{ site.formspree }}" method="POST">
     <input type="hidden" name="_subject" value="victoriaswart.com ({{ L | upper }})">
     <input type="hidden" name="lang" value="{{ lang }}">
@@ -32,11 +35,19 @@ copyKey: contact
     <div><button class="btn btn-primary" type="submit">{{ t.form.send }}</button></div>
     <p class="form-status" id="formStatus" role="status" data-ok="{{ t.form.ok }}" data-err="{{ t.form.err }}"></p>
   </form>
-  <img src="/assets/contact-window.jpg" alt="{{ c.windowAlt }}"
-       width="768" height="1024" loading="lazy" decoding="async">
+  </div>
+  <div class="split-feature__media">
+    <img src="/assets/contact-window.jpg" alt="{{ c.windowAlt }}"
+         width="768" height="1024"
+         sizes="(min-width:861px) 50vw, 100vw"
+         loading="lazy" decoding="async">
   </div>
 </section>
-<figure class="figure-inset reveal">
-  <img src="/assets/contact-sea.jpg" alt="{{ c.seaAlt }}"
-       width="1086" height="724" loading="lazy" decoding="async">
+{#- B-roll. Decorative, so the still carries an empty alt and the video is
+    hidden from assistive tech: it says nothing the page has not already said.
+    The clip itself is fetched by site.js only once this is scrolled near. -#}
+<figure class="banner-media" data-banner-video="/assets/video/banner/boat.mp4">
+  <img src="/assets/video/banner/boat-poster.jpg" alt=""
+       width="1600" height="899" loading="lazy" decoding="async">
+  <video muted loop playsinline preload="none" aria-hidden="true" tabindex="-1"></video>
 </figure>

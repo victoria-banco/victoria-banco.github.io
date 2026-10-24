@@ -35,21 +35,24 @@ ogImage: victoria-swart-speaking.jpg
   </div>
 </section>
 
-<section>
-  <h2>{{ c.teachTitle }}</h2>
-  <ul class="tick-list">{% for i in c.teach %}<li>{{ i }}</li>{% endfor %}</ul>
-  <div class="price-table">
-  {%- for p in c.teachPricing %}
-    <div class="price-row"><div><h3>{{ p.t }}</h3><p>{{ p.d }}</p></div><div class="price-val">{{ p.p }}</div></div>
-  {%- endfor %}
+<section class="split-feature">
+  <div class="split-feature__body">
+    <h2>{{ c.teachTitle }}</h2>
+    <ul class="tick-list">{% for i in c.teach %}<li>{{ i }}</li>{% endfor %}</ul>
+    <div class="price-table">
+    {%- for p in c.teachPricing %}
+      <div class="price-row"><div><h3>{{ p.t }}</h3><p>{{ p.d }}</p></div><div class="price-val">{{ p.p }}</div></div>
+    {%- endfor %}
+    </div>
+    <p><a class="btn btn-primary" href="{{ 'contact' | route(lang) }}?topic=lessons">{{ t.cta.lesson }}</a></p>
   </div>
-  <p><a class="btn btn-primary" href="{{ 'contact' | route(lang) }}?topic=lessons">{{ t.cta.lesson }}</a></p>
+  <div class="split-feature__media">
+    <img src="/assets/languages-reading.jpg" alt="{{ c.readingAlt }}"
+         width="886" height="886"
+         sizes="(min-width:861px) 50vw, 100vw"
+         loading="lazy" decoding="async">
+  </div>
 </section>
-
-<figure class="figure-inset figure-inset--square reveal">
-  <img src="/assets/languages-reading.jpg" alt="{{ c.readingAlt }}"
-       width="886" height="886" loading="lazy" decoding="async">
-</figure>
 
 <section class="band-light">
   <h2>{{ c.specialTitle }}</h2>

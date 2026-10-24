@@ -243,4 +243,56 @@
     if (document.readyState === 'complete') afterLoad();
     else window.addEventListener('load', afterLoad);
   })();
+
+  /* B-roll banners. The still is what the page loads; the clip is fetched
+     only once the banner is actually scrolled near, so a decorative 4.6MB
+     costs nothing to anyone who never reaches it. Reduced motion or
+     Save-Data and it is never fetched at all: the still is the whole
+     experience, which is a fine one. */
+  (function () {
+    var banners = document.querySelectorAll('[data-banner-video]');
+    if (!banners.length || !window.IntersectionObserver) return;
+
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var conn = navigator.connection;
+    if (reduce || (conn && conn.saveData)) return;
+
+    function play(video) {
+      var p = video.play();
+      if (p && p.catch) p.catch(function () {});
+    }
+
+    function load(box, video) {
+      if (video.getAttribute('data-loaded')) return;
+      video.setAttribute('data-loaded', '1');
+      var s = document.createElement('source');
+      s.src = box.getAttribute('data-banner-video');
+      s.type = 'video/mp4';
+      video.appendChild(s);
+      /* Capture: a failing <source> fires error on the child, not the video. */
+      video.addEventListener('error', function () {
+        box.classList.remove('is-playing');
+      }, true);
+      video.addEventListener('playing', function () {
+        box.classList.add('is-playing');
+      });
+      video.load();
+      play(video);
+    }
+
+    var io = new IntersectionObserver(function (entries) {
+      for (var i = 0; i < entries.length; i++) {
+        var box = entries[i].target;
+        var video = box.querySelector('video');
+        if (!video) continue;
+        if (entries[i].isIntersecting) {
+          if (video.getAttribute('data-loaded')) play(video); else load(box, video);
+        } else {
+          video.pause();
+        }
+      }
+    }, { rootMargin: '200px' });
+
+    for (var i = 0; i < banners.length; i++) io.observe(banners[i]);
+  })();
 })();

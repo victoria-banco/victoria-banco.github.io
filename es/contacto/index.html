@@ -130,8 +130,8 @@
 <section>
   <h1>Escríbeme</h1>
   <p class="lead">Cuéntame qué estás construyendo, en qué idioma tiene que funcionar y más o menos cuándo. Respondo en dos días laborables.</p>
-
-  <div class="media-split">
+</section><section class="split-feature">
+  <div class="split-feature__body">
   <form class="form" id="contactForm" action="https://formspree.io/f/mdavgjok" method="POST">
     <input type="hidden" name="_subject" value="victoriaswart.com (ES)">
     <input type="hidden" name="lang" value="es">
@@ -153,13 +153,17 @@
     <div><button class="btn btn-primary" type="submit">Enviar</button></div>
     <p class="form-status" id="formStatus" role="status" data-ok="Gracias. Te respondo en un plazo de dos días laborables." data-err="Algo ha fallado. Escríbeme a victoria.c.swart@icloud.com."></p>
   </form>
-  <img src="/assets/contact-window.jpg" alt="Victoria Clara Swart sentada en una ventana redonda, en blanco y negro"
-       width="768" height="1024" loading="lazy" decoding="async">
   </div>
-</section>
-<figure class="figure-inset reveal">
-  <img src="/assets/contact-sea.jpg" alt="Barcos fondeados en una bahía azul"
-       width="1086" height="724" loading="lazy" decoding="async">
+  <div class="split-feature__media">
+    <img src="/assets/contact-window.jpg" alt="Victoria Clara Swart sentada en una ventana redonda, en blanco y negro"
+         width="768" height="1024"
+         sizes="(min-width:861px) 50vw, 100vw"
+         loading="lazy" decoding="async">
+  </div>
+</section><figure class="banner-media" data-banner-video="/assets/video/banner/boat.mp4">
+  <img src="/assets/video/banner/boat-poster.jpg" alt=""
+       width="1600" height="899" loading="lazy" decoding="async">
+  <video muted loop playsinline preload="none" aria-hidden="true" tabindex="-1"></video>
 </figure>
 
 </main>
