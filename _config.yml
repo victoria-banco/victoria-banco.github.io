@@ -1,0 +1,27 @@
+# GitHub Pages runs Jekyll over whatever sits at the repository root, and for
+# this repository that is the built site AND its source. src/ holds Nunjucks
+# templates that open with YAML front matter; Jekyll reads that front matter,
+# takes them for pages of its own, and then fails on the first Nunjucks tag it
+# cannot parse as Liquid. That is exactly what failed the build on 45eca21,
+# and why every build before it passed: src/ was not on this branch yet.
+#
+# A .nojekyll file would also fix the build, by switching Jekyll off entirely.
+# That is the wrong trade here: Jekyll's habit of leaving underscore-prefixed
+# directories unserved is the only thing keeping _originals (source
+# photography) and _archive off the public site.
+#
+# This file lives in src/static/ so Eleventy copies it to the root on every
+# build. Edit it here, never the copy at the root, which is overwritten.
+exclude:
+  # Site source and tooling.
+  - src
+  - tools
+  - package.json
+  - package-lock.json
+  - node_modules
+  - .eleventy.js
+  # The Python generator behind the previous version of the site.
+  - .build
+  # Already unserved by Jekyll's underscore rule; named so the intent survives.
+  - _archive
+  - _originals
