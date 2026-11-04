@@ -8,8 +8,14 @@
   "social": {
     "linkedin": "https://www.linkedin.com/in/victoriaswart",
     "instagram": "https://www.instagram.com/victoriaclara.css",
-    "substack": "https://substack.com/@victoriaclaraswart"
+    "substack": "https://substack.com/@victoriaclaraswart",
+    "google": "https://maps.app.goo.gl/W2oKtVz2qJMQ4iDZA"
   },
   "defaultLocale": "en",
-  "locales": ["en", "de", "it", "es"]
+  "locales": [
+    "en",
+    "de",
+    "it",
+    "es"
+  ]
 }

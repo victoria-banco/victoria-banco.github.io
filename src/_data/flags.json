@@ -1,10 +1,10 @@
 {
   "case_eqm_named": true,
   "case_graziano_named": true,
-  "web_testimonial_marco": false,
+  "web_testimonial_marco": true,
   "show_est_year": false,
   "seabreeze_own_domain": false,
-  "google_profile_url": false,
+  "google_profile_url": true,
   "street_address": false,
   "lesson_samples": false
 }

@@ -43,7 +43,9 @@
   "review": {
     "toggle": "Übersetzung anzeigen",
     "translated": "Aus dem Italienischen übersetzt",
-    "readGoogle": "Auf Google lesen"
+    "readGoogle": "Auf Google lesen",
+    "google": "Google-Bewertung",
+    "readOn": "Auf Google lesen"
   },
   "case": {
     "live": "Online",

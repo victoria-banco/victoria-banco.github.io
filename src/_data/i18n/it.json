@@ -43,7 +43,9 @@
   "review": {
     "toggle": "",
     "translated": "",
-    "readGoogle": "Leggi su Google"
+    "readGoogle": "Leggi su Google",
+    "google": "Recensione Google",
+    "readOn": "Leggila su Google"
   },
   "case": {
     "live": "Online",

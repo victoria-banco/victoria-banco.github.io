@@ -11,11 +11,37 @@ ogImage: victoria-swart-networking.jpg
   <h1>{{ c.h1 }}</h1>
   <p class="lead">{{ c.lead }}</p>
 </section>
-<section><h2>{{ c.shapedTitle }}</h2><p>{{ c.shaped }}</p><p>{{ c.stage }}</p></section>
-<section><h2>{{ c.expTitle }}</h2><ul class="tick-list">{% for e in c.exp %}<li>{{ e }}</li>{% endfor %}</ul></section>
-{#- The one photograph left on the page, so it gets half the screen.
-    sizes="50vw" above the stacking breakpoint: the source is 768px wide and
-    the browser should know the slot is about that, not the full width. -#}
+
+{#- Ping pong. Each band is half words, half picture, and the picture changes
+    side on the way down. The page used to be three bare text blocks with a
+    single image at the end, which is what made it read as fragments. -#}
+<section class="split-feature reveal">
+  <div class="split-feature__body">
+    <h2>{{ c.shapedTitle }}</h2>
+    <p>{{ c.shaped }}</p>
+    <p>{{ c.stage }}</p>
+  </div>
+  <div class="split-feature__media">
+    <img src="/assets/about-portrait.jpg" alt="{{ c.portraitAlt }}"
+         width="1084" height="724"
+         sizes="(min-width:861px) 50vw, 100vw"
+         loading="lazy" decoding="async">
+  </div>
+</section>
+
+<section class="split-feature split-feature--flip reveal">
+  <div class="split-feature__body">
+    <h2>{{ c.expTitle }}</h2>
+    <ul class="tick-list">{% for e in c.exp %}<li>{{ e }}</li>{% endfor %}</ul>
+  </div>
+  <div class="split-feature__media">
+    <img src="/assets/languages-naples.jpg" alt="{{ c.naplesAlt }}"
+         width="1086" height="724"
+         sizes="(min-width:861px) 50vw, 100vw"
+         loading="lazy" decoding="async">
+  </div>
+</section>
+
 <section class="split-feature reveal">
   <div class="split-feature__body">
     <h2>{{ c.goodTitle }}</h2>
@@ -28,6 +54,7 @@ ogImage: victoria-swart-networking.jpg
          loading="lazy" decoding="async">
   </div>
 </section>
+
 <section class="closing-band">
   <p class="closing-text">{{ copy.home.closing }}</p>
   <a class="btn btn-light" href="{{ 'contact' | route(lang) }}">{{ t.cta.write }}</a>

@@ -1,0 +1,26 @@
+{#- One review, full width, as its own band. Called with `r` (a review object)
+    and `L` (the language). The quote stays in whatever language it was written
+    in, with the translation behind a toggle, because the words belong to the
+    person who wrote them. A Google review is labelled as one and links to the
+    profile; nothing is embedded, so no third-party script loads and the
+    privacy page stays true. -#}
+<section class="review-banner reveal">
+  <blockquote{% if r.origLang %} lang="{{ r.origLang }}"{% endif %}>
+    <p>{{ r.original }}</p>
+    <cite>
+      {{ r.who[L] }}{% if r.role %}<span class="review-role">{{ r.role[L] }}</span>{% endif %}
+      {%- if r.source == 'google' %}
+      <span class="review-source">{{ t.review.google }}</span>
+      {%- endif %}
+    </cite>
+  </blockquote>
+  {%- if r.translation and r.origLang != L %}
+  <details class="review-tr-wrap">
+    <summary>{{ t.review.toggle }}</summary>
+    <p class="review-tr"><em>{{ t.review.translated }}.</em> {{ r.translation[L] }}</p>
+  </details>
+  {%- endif %}
+  {%- if r.source == 'google' and flags.google_profile_url %}
+  <p><a class="link-more" href="{{ site.social.google }}" target="_blank" rel="noopener noreferrer">{{ t.review.readOn }} &rarr;</a></p>
+  {%- endif %}
+</section>

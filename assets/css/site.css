@@ -51,6 +51,20 @@ p{margin:0 0 1.1em;max-width:68ch}
 section{padding:clamp(60px,7.5vw,112px) max(var(--pad),(100% - var(--wrap))/2);
   background:var(--black);color:var(--bone)}
 section>*{max-width:100%;margin-inline:0}
+/* ...but not the running text. The rule above has the same specificity as the
+   base `p` rule and comes later, so it was quietly cancelling the 68ch measure
+   for every paragraph that sits directly inside a section. On About that meant
+   lines over 1100px long: the page read as loose text blocks because nothing
+   held the text to a column. Inside .split-feature the text is nested one
+   level deeper, which is why only some pages looked wrong. */
+section>p,section>.lead,section>ul,section>ol{max-width:68ch}
+
+/* Two plain sections in a row stacked a full pad above and below, so a
+   paragraph and the next heading sat ~190px apart and the page looked like
+   unrelated fragments. One rhythm step between them, not two. Sections with a
+   class set their own padding and are untouched. */
+section:not([class]) + section:not([class]){padding-top:0}
+section:not([class]) + section:not([class])>:first-child{margin-top:clamp(36px,4.5vw,64px)}
 /* The closing call to action is the one deliberately centred block. */
 .closing-band>*{margin-inline:auto}
 /* Headings and the text under them already share one left edge: every direct
@@ -365,6 +379,53 @@ main>section.hero .btn-ghost:hover{background:var(--bone)}
   .split-feature__media{order:-1;min-height:min(56vh,420px)}
   .split-feature__body{padding:clamp(32px,7vw,52px) var(--pad)}
 }
+
+/* Alternating sides. The default puts the words first and the picture second;
+   --flip swaps them above the stacking breakpoint only, so the phone always
+   keeps picture-then-words and never reads in a jumbled order. */
+@media (min-width:861px){
+  .split-feature--flip .split-feature__body{order:2;
+    padding-left:clamp(24px,4vw,64px);
+    padding-right:max(var(--pad),(100vw - var(--wrap))/2)}
+  .split-feature--flip .split-feature__media{order:1}
+}
+
+/* A page's opening band carries an h1, which at full size would wrap five or
+   six times inside half a screen. Tempered a step so it still reads as the
+   largest thing on the page without running away with the column. */
+.split-feature--hero .split-feature__body h1{font-size:clamp(30px,3.9vw,48px)}
+
+/* The beat between the form and the decorative banner. Narrower than a full
+   section so it reads as a closing note rather than a new chapter. */
+.next-steps{padding-block:clamp(44px,5.5vw,80px)}
+.step-list--compact{margin:0 0 clamp(20px,2.4vw,30px)}
+.step-list--compact li{padding:clamp(13px,1.5vw,18px) clamp(16px,2vw,24px)}
+.direct-line{margin:0;color:rgba(241,240,236,.76)}
+.direct-line a{color:var(--accent)}
+
+/* Review banner: one review, its own band, centred and large enough to be
+   read as a statement rather than a card in a row. */
+.review-banner{text-align:center}
+.review-banner blockquote{margin:0 auto;max-width:34ch;border:0;background:none;padding:0}
+.review-banner blockquote p{font-family:var(--serif);font-size:clamp(23px,3vw,36px);
+  line-height:1.3;margin:0 0 clamp(18px,2vw,26px);max-width:none;
+  color:var(--bone)}
+.review-banner cite{display:block;font-style:normal;font-size:13px;
+  letter-spacing:.12em;text-transform:uppercase;color:rgba(241,240,236,.62)}
+.review-banner .review-role{display:block;letter-spacing:.08em;text-transform:none;
+  font-size:13.5px;margin-top:5px;color:rgba(241,240,236,.5)}
+.review-banner .review-source{display:inline-block;margin-top:9px;padding:3px 9px;
+  border:1px solid var(--rule-dark);border-radius:2px;font-size:10.5px;
+  letter-spacing:.14em;color:rgba(241,240,236,.55)}
+.review-banner .review-tr-wrap{margin-top:clamp(16px,2vw,22px)}
+.review-banner summary{cursor:pointer;font-size:13px;color:var(--accent)}
+.review-banner .review-tr{margin:10px auto 0;max-width:62ch;font-size:15.5px;
+  color:rgba(241,240,236,.7)}
+.review-banner .link-more{display:inline-block;margin-top:clamp(16px,2vw,22px)}
+/* The measure rule gives any direct-child paragraph a 68ch box pinned to the
+   left edge, so a centred line inside it centres within that box and lands
+   left of the band's middle. In a centred band the box itself must centre. */
+.review-banner>p{max-width:none;margin-inline:auto;text-align:center}
 
 /* ── B-roll banner ──────────────────────── */
 /* Edge to edge and shallow. The frame is mostly sky above the horizon, so the

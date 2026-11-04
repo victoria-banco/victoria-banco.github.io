@@ -365,7 +365,8 @@
     "photoAlt": "Victoria Clara Swart in conversation with business owners at an event in Rome",
     "harbourAlt": "Victoria Clara Swart at the harbour in Odense, Denmark",
     "portraitAlt": "Victoria Clara Swart, portrait",
-    "conversationAlt": "Victoria Clara Swart on a rooftop terrace in Copenhagen at dusk"
+    "conversationAlt": "Victoria Clara Swart on a rooftop terrace in Copenhagen at dusk",
+    "naplesAlt": "Victoria Clara Swart by the sea at Naples"
   },
   "work": {
     "title": "Portfolio · Website & Brand Projects · Victoria Swart",
@@ -379,7 +380,14 @@
     "h1": "Write to me",
     "intro": "Tell me what you're building, what language it needs to work in, and roughly when. I reply within two working days.",
     "windowAlt": "Victoria Clara Swart seated in a round window, black and white",
-    "seaAlt": "Boats anchored in a calm blue bay"
+    "seaAlt": "Boats anchored in a calm blue bay",
+    "nextTitle": "What happens next",
+    "nextSteps": [
+      "I reply with a few questions, usually within two working days.",
+      "If it helps, we have a thirty minute call.",
+      "You get a fixed quote before anything starts."
+    ],
+    "directLine": "Prefer email? Write to me at"
   },
   "journal": {
     "title": "Journal · Victoria Swart",

@@ -7,12 +7,19 @@ copyKey: strategy
 ogImage: victoria-swart-speaking.jpg
 ---
 {% set c = copy.strategy %}
-<section>
-  <h1>{{ c.h1 }}</h1>
-  <div class="media-split">
+{#- A real opening band: half the screen is the picture. It used to be a
+    340px-capped column beside the text, which read as an afterthought rather
+    than a hero. Eager, not lazy: this is the first thing on the page. -#}
+<section class="split-feature split-feature--hero">
+  <div class="split-feature__body">
+    <h1>{{ c.h1 }}</h1>
     <p class="lead">{{ c.intro }}</p>
+  </div>
+  <div class="split-feature__media">
     <img src="/assets/strategy-perspective.jpg" alt="{{ c.perspectiveAlt }}"
-         width="768" height="1024" loading="lazy" decoding="async">
+         width="768" height="1024"
+         sizes="(min-width:861px) 50vw, 100vw"
+         fetchpriority="high" decoding="async">
   </div>
 </section>
 

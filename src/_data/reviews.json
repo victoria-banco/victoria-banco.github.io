@@ -105,21 +105,26 @@
     ]
   },
   "marco": {
-    "en": {
-      "quote": "",
-      "who": "Marco Manca"
+    "origLang": "it",
+    "source": "google",
+    "original": "Victoria ha creato il mio sito web in pochissimo tempo, veloce, puntuale e molto esaustivo nei contenuti. Ottimo lavoro, grazie mille.",
+    "who": {
+      "en": "Marco Manca",
+      "de": "Marco Manca",
+      "it": "Marco Manca",
+      "es": "Marco Manca"
     },
-    "de": {
-      "quote": "",
-      "who": "Marco Manca"
+    "role": {
+      "en": "Seabreeze, Alghero",
+      "de": "Seabreeze, Alghero",
+      "it": "Seabreeze, Alghero",
+      "es": "Seabreeze, Alghero"
     },
-    "it": {
-      "quote": "",
-      "who": "Marco Manca"
-    },
-    "es": {
-      "quote": "",
-      "who": "Marco Manca"
+    "translation": {
+      "en": "Victoria built my website in no time at all. Fast, punctual and very thorough in the content. Excellent work, thank you so much.",
+      "de": "Victoria hat meine Website in kürzester Zeit erstellt. Schnell, pünktlich und inhaltlich sehr gründlich. Hervorragende Arbeit, vielen Dank.",
+      "it": "Victoria ha creato il mio sito web in pochissimo tempo, veloce, puntuale e molto esaustivo nei contenuti. Ottimo lavoro, grazie mille.",
+      "es": "Victoria creó mi sitio web en muy poco tiempo. Rápida, puntual y muy completa en los contenidos. Excelente trabajo, muchas gracias."
     }
   }
 }

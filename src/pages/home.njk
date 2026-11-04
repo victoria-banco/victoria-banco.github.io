@@ -73,15 +73,17 @@ ogImage: video/hero/hero-poster-desktop.jpg
   <p><a class="link-more" href="{{ 'work' | route(lang) }}">{{ t.cta.allProjects }} &rarr;</a></p>
 </section>
 
+{%- if flags.web_testimonial_marco %}
+{%- set r = reviews.marco %}{% set L = lang %}
+{% include "partials/review-banner.njk" %}
+{%- endif %}
+
 <section class="said reveal band-light">
   <h2>{{ c.saidTitle }}</h2>
   <div class="quote-grid">
     {%- for r in reviews.short[lang] %}
     <blockquote><p>{{ r.quote }}</p><cite>{{ r.who }}</cite></blockquote>
     {%- endfor %}
-    {%- if flags.web_testimonial_marco %}
-    <blockquote><p>{{ reviews.marco[lang].quote }}</p><cite>{{ reviews.marco[lang].who }}</cite></blockquote>
-    {%- endif %}
   </div>
 </section>
 

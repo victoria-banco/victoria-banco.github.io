@@ -43,6 +43,21 @@ copyKey: contact
          loading="lazy" decoding="async">
   </div>
 </section>
+{#- The form band used to end and the boat video begin in the same pixel,
+    which read as two unrelated pages joined by accident. This closes the
+    conversation first: what happens after you send, and the direct address
+    for anyone who would rather not use a form. -#}
+<section class="next-steps">
+  <h2>{{ c.nextTitle }}</h2>
+  <ol class="step-list step-list--compact">
+    {%- for step in c.nextSteps %}
+    <li><span class="step-n">{{ loop.index }}</span><span class="step-d">{{ step }}</span></li>
+    {%- endfor %}
+  </ol>
+  <p class="direct-line">{{ c.directLine }}
+    <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+</section>
+
 {#- B-roll. Decorative, so the still carries an empty alt and the video is
     hidden from assistive tech: it says nothing the page has not already said.
     The clip itself is fetched by site.js only once this is scrolled near. -#}

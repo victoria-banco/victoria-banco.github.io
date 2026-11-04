@@ -43,7 +43,9 @@
   "review": {
     "toggle": "Show translation",
     "translated": "Translated from Italian",
-    "readGoogle": "Read on Google"
+    "readGoogle": "Read on Google",
+    "google": "Google review",
+    "readOn": "Read it on Google"
   },
   "case": {
     "live": "Live",
