@@ -75,7 +75,7 @@
       {
         "n": "4",
         "t": "Build",
-        "d": "Hand-coded, or Shopify, Webflow or Wix if you'd rather edit it yourself."
+        "d": "Hand-coded for speed, or Shopify when it is a shop."
       },
       {
         "n": "5",
@@ -96,8 +96,6 @@
     "tools": [
       "HTML, CSS and JavaScript",
       "Shopify (Liquid, Online Store 2.0)",
-      "Webflow",
-      "Wix",
       "Figma",
       "Netlify",
       "AI-assisted development"

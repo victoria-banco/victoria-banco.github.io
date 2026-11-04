@@ -78,18 +78,14 @@ ogImage: video/hero/hero-poster-desktop.jpg
 {% include "partials/review-banner.njk" %}
 {%- endif %}
 
-<section class="said reveal band-light">
-  <h2>{{ c.saidTitle }}</h2>
-  <div class="quote-grid">
-    {%- for r in reviews.short[lang] %}
-    <blockquote><p>{{ r.quote }}</p><cite>{{ r.who }}</cite></blockquote>
-    {%- endfor %}
-  </div>
-</section>
-
 <section class="stage reveal">
   <h2>{{ c.stageTitle }}</h2>
   <p>{{ c.stageText }}</p>
+  {#- Leana ran the event. Her words are proof of the paragraph above them,
+      which is more use than a third quote in a row further up the page. -#}
+  {%- for r in reviews.short[lang] %}{% if r.key == 'leana' %}
+  <blockquote class="stage-quote"><p>{{ r.quote }}</p><cite>{{ r.who }}</cite></blockquote>
+  {%- endif %}{% endfor %}
   <p><a class="link-more" href="{{ 'languages' | route(lang) }}#stage">{{ t.cta.event }} &rarr;</a></p>
 </section>
 

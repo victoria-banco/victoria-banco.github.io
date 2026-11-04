@@ -75,7 +75,7 @@
       {
         "n": "4",
         "t": "Umsetzung",
-        "d": "Handgeschrieben im Code, oder Shopify, Webflow oder Wix, wenn Sie lieber selbst bearbeiten."
+        "d": "Handprogrammiert für Tempo, oder Shopify, wenn es ein Shop ist."
       },
       {
         "n": "5",
@@ -96,8 +96,6 @@
     "tools": [
       "HTML, CSS und JavaScript",
       "Shopify (Liquid, Online Store 2.0)",
-      "Webflow",
-      "Wix",
       "Figma",
       "Netlify",
       "KI-gestützte Entwicklung"

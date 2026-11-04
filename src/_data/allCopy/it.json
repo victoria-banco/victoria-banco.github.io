@@ -75,7 +75,7 @@
       {
         "n": "4",
         "t": "Sviluppo",
-        "d": "Scritto a mano nel codice, oppure Shopify, Webflow o Wix se preferisci modificarlo da sola."
+        "d": "Scritto a mano in codice per la velocità, o Shopify se è un negozio."
       },
       {
         "n": "5",
@@ -96,8 +96,6 @@
     "tools": [
       "HTML, CSS e JavaScript",
       "Shopify (Liquid, Online Store 2.0)",
-      "Webflow",
-      "Wix",
       "Figma",
       "Netlify",
       "Sviluppo assistito dall'IA"

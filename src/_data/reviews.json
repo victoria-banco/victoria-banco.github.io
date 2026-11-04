@@ -50,57 +50,69 @@
     "en": [
       {
         "quote": "Victoria was my son's teacher for a year. I absolutely loved how she made the lessons stimulating and fun for him, and his English improved remarkably. She is very empathetic and passionate about English, being a native speaker.",
-        "who": "Maria Rita, parent of a student"
+        "who": "Maria Rita, parent of a student",
+        "key": "maria_rita"
       },
       {
         "quote": "Victoria was my first German teacher. Her lessons were very useful to me and I appreciated her professionalism. She also knows how to create a pleasant atmosphere in class and a real sense of group, another quality that put me at ease.",
-        "who": "Margherita Cardinalini, German student"
+        "who": "Margherita Cardinalini, German student",
+        "key": "margherita"
       },
       {
         "quote": "Victoria Swart worked as Master of Ceremonies at the Inception AI Impact Roadshow, organized by Golden Goose Events at the Anantara Palazzo Naiadi, Rome. She hosted the program, introduced speakers, and guided the audience through a high-level executive event on artificial intelligence and enterprise innovation. Victoria adapted to last-minute agenda changes with professionalism and ease, and her warm, confident style contributed to the success of the event.",
-        "who": "Leana, Event Director, Golden Goose Events, Rome"
+        "who": "Leana, Event Director, Golden Goose Events, Rome",
+        "key": "leana"
       }
     ],
     "de": [
       {
         "quote": "Victoria war ein Jahr lang die Lehrerin meines Sohnes. Ich habe es geliebt, wie sie den Unterricht für ihn anregend und unterhaltsam gestaltet hat, und sein Englisch hat sich deutlich verbessert. Sie ist sehr empathisch und als Muttersprachlerin mit Leidenschaft bei der Sache.",
-        "who": "Maria Rita, Mutter eines Schülers"
+        "who": "Maria Rita, Mutter eines Schülers",
+        "key": "maria_rita"
       },
       {
         "quote": "Victoria war meine erste Deutschlehrerin. Ihr Unterricht war für mich sehr hilfreich, und ich habe ihre Professionalität geschätzt. Sie schafft außerdem eine angenehme Atmosphäre und echten Zusammenhalt in der Gruppe.",
-        "who": "Margherita Cardinalini, Deutschlernende"
+        "who": "Margherita Cardinalini, Deutschlernende",
+        "key": "margherita"
       },
       {
         "quote": "Victoria Swart war Moderatorin der Inception AI Impact Roadshow, die von Golden Goose Events im Anantara Palazzo Naiadi in Rom veranstaltet wurde. Sie führte durch das Programm, stellte die Sprecher vor und begleitete das Publikum durch eine hochkarätige Veranstaltung für Führungskräfte zu künstlicher Intelligenz und Unternehmensinnovation. Victoria stellte sich mit Professionalität und Leichtigkeit auf kurzfristige Programmänderungen ein, und ihre herzliche, souveräne Art trug zum Erfolg der Veranstaltung bei.",
-        "who": "Leana, Event Director, Golden Goose Events, Rom"
+        "who": "Leana, Event Director, Golden Goose Events, Rom",
+        "key": "leana"
       }
     ],
     "it": [
       {
         "quote": "Victoria è stata l'insegnante di mio figlio per 1 anno. Ho letteralmente adorato la sua capacità di rendere le lezioni stimolanti e divertenti per mio figlio ed il suo livello di inglese è notevolmente migliorato.",
-        "who": "Maria Rita, genitore di un alunno"
+        "who": "Maria Rita, genitore di un alunno",
+        "key": "maria_rita"
       },
       {
         "quote": "Victoria è stata la mia prima insegnante di tedesco. Le sue lezioni sono state molto utili per me e ho apprezzato la sua professionalità. Sa anche creare un clima piacevole in classe e coesione del gruppo.",
-        "who": "Margherita Cardinalini, studentessa di tedesco"
+        "who": "Margherita Cardinalini, studentessa di tedesco",
+        "key": "margherita"
       },
       {
         "quote": "Victoria Swart è stata Master of Ceremonies dell'Inception AI Impact Roadshow, organizzata da Golden Goose Events presso l'Anantara Palazzo Naiadi di Roma. Ha condotto il programma, presentato i relatori e accompagnato il pubblico in un evento executive di alto livello dedicato all'intelligenza artificiale e all'innovazione d'impresa. Victoria si è adattata con professionalità e naturalezza ai cambi di programma dell'ultimo minuto, e il suo stile caloroso e sicuro ha contribuito al successo dell'evento.",
-        "who": "Leana, Event Director, Golden Goose Events, Roma"
+        "who": "Leana, Event Director, Golden Goose Events, Roma",
+        "key": "leana"
       }
     ],
     "es": [
       {
         "quote": "Victoria fue la profesora de mi hijo durante un año. Me encantó su capacidad de hacer las clases estimulantes y divertidas para él, y su nivel de inglés mejoró notablemente. Es muy empática y apasionada del inglés, al ser hablante nativa.",
-        "who": "Maria Rita, madre de un alumno"
+        "who": "Maria Rita, madre de un alumno",
+        "key": "maria_rita"
       },
       {
         "quote": "Victoria fue mi primera profesora de alemán. Sus clases me resultaron muy útiles y valoré su profesionalidad. También sabe crear un clima agradable en clase y cohesión en el grupo.",
-        "who": "Margherita Cardinalini, estudiante de alemán"
+        "who": "Margherita Cardinalini, estudiante de alemán",
+        "key": "margherita"
       },
       {
         "quote": "Victoria Swart fue maestra de ceremonias del Inception AI Impact Roadshow, organizado por Golden Goose Events en el Anantara Palazzo Naiadi de Roma. Condujo el programa, presentó a los ponentes y acompañó al público en un evento ejecutivo de alto nivel sobre inteligencia artificial e innovación empresarial. Victoria se adaptó con profesionalidad y naturalidad a los cambios de programa de última hora, y su estilo cálido y seguro contribuyó al éxito del evento.",
-        "who": "Leana, Event Director, Golden Goose Events, Roma"
+        "who": "Leana, Event Director, Golden Goose Events, Roma",
+        "key": "leana"
       }
     ]
   },

@@ -34,25 +34,6 @@ ogImage: victoria-swart-speaking.jpg
   </div>
 </section>
 
-<section class="split-feature">
-  <div class="split-feature__body">
-    <h2>{{ c.teachTitle }}</h2>
-    <ul class="tick-list">{% for i in c.teach %}<li>{{ i }}</li>{% endfor %}</ul>
-    <div class="price-table">
-    {%- for p in c.teachPricing %}
-      <div class="price-row"><div><h3>{{ p.t }}</h3><p>{{ p.d }}</p></div><div class="price-val">{{ p.p }}</div></div>
-    {%- endfor %}
-    </div>
-    <p><a class="btn btn-primary" href="{{ 'contact' | route(lang) }}?topic=lessons">{{ t.cta.lesson }}</a></p>
-  </div>
-  <div class="split-feature__media">
-    <img src="/assets/languages-reading.jpg" alt="{{ c.readingAlt }}"
-         width="886" height="886"
-         sizes="(min-width:861px) 50vw, 100vw"
-         loading="lazy" decoding="async">
-  </div>
-</section>
-
 {#- One door per offering. The two specialisms used to be written out in full
     here, which was most of why the page ran long; each now has its own page
     that can rank on its own terms. -#}
@@ -68,6 +49,13 @@ ogImage: victoria-swart-speaking.jpg
     </a>
     {%- endfor %}
   </div>
+  <p>{{ t.lesson.extra }}</p>
+  <div class="price-table">
+  {%- for p in c.teachPricing %}
+    <div class="price-row"><div><h3>{{ p.t }}</h3><p>{{ p.d }}</p></div><div class="price-val">{{ p.p }}</div></div>
+  {%- endfor %}
+  </div>
+  <p><a class="btn btn-primary" href="{{ 'contact' | route(lang) }}?topic=lessons">{{ t.cta.lesson }}</a></p>
 </section>
 
 {%- if flags.lesson_samples %}
