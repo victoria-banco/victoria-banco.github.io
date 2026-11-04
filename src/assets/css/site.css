@@ -515,6 +515,11 @@ main>section.hero .btn-ghost:hover{background:var(--bone)}
 
 /* ── Cards ───────────────────────────────────────────────────── */
 .door-grid,.card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:32px}
+/* Four offerings rather than three. Two up on tablets so the cards never get
+   narrower than their text wants to be. */
+@media (min-width:861px){.door-grid--four{grid-template-columns:repeat(4,1fr)}}
+@media (min-width:601px) and (max-width:860px){.door-grid--four{grid-template-columns:repeat(2,1fr)}}
+.door .link-more{display:inline-block;margin-top:16px}
 @media (max-width:860px){.door-grid,.card-grid{grid-template-columns:1fr}}
 .door{display:block;background:var(--bone-2);padding:32px 24px;text-decoration:none;
   border-top:2px solid transparent;transition:border-color .3s,transform .3s}

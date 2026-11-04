@@ -640,4 +640,164 @@
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
+  <url>
+    <loc>https://victoriaswart.com/languages/english/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://victoriaswart.com/languages/english/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://victoriaswart.com/de/sprachen/englisch/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://victoriaswart.com/it/lingue/inglese/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://victoriaswart.com/es/idiomas/ingles/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://victoriaswart.com/languages/english/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://victoriaswart.com/de/sprachen/englisch/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://victoriaswart.com/languages/english/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://victoriaswart.com/de/sprachen/englisch/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://victoriaswart.com/it/lingue/inglese/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://victoriaswart.com/es/idiomas/ingles/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://victoriaswart.com/languages/english/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://victoriaswart.com/it/lingue/inglese/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://victoriaswart.com/languages/english/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://victoriaswart.com/de/sprachen/englisch/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://victoriaswart.com/it/lingue/inglese/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://victoriaswart.com/es/idiomas/ingles/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://victoriaswart.com/languages/english/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://victoriaswart.com/es/idiomas/ingles/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://victoriaswart.com/languages/english/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://victoriaswart.com/de/sprachen/englisch/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://victoriaswart.com/it/lingue/inglese/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://victoriaswart.com/es/idiomas/ingles/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://victoriaswart.com/languages/english/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://victoriaswart.com/languages/business-english/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://victoriaswart.com/languages/business-english/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://victoriaswart.com/de/sprachen/business-englisch/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://victoriaswart.com/it/lingue/inglese-per-il-lavoro/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://victoriaswart.com/es/idiomas/ingles-de-negocios/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://victoriaswart.com/languages/business-english/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://victoriaswart.com/de/sprachen/business-englisch/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://victoriaswart.com/languages/business-english/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://victoriaswart.com/de/sprachen/business-englisch/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://victoriaswart.com/it/lingue/inglese-per-il-lavoro/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://victoriaswart.com/es/idiomas/ingles-de-negocios/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://victoriaswart.com/languages/business-english/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://victoriaswart.com/it/lingue/inglese-per-il-lavoro/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://victoriaswart.com/languages/business-english/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://victoriaswart.com/de/sprachen/business-englisch/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://victoriaswart.com/it/lingue/inglese-per-il-lavoro/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://victoriaswart.com/es/idiomas/ingles-de-negocios/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://victoriaswart.com/languages/business-english/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://victoriaswart.com/es/idiomas/ingles-de-negocios/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://victoriaswart.com/languages/business-english/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://victoriaswart.com/de/sprachen/business-englisch/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://victoriaswart.com/it/lingue/inglese-per-il-lavoro/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://victoriaswart.com/es/idiomas/ingles-de-negocios/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://victoriaswart.com/languages/business-english/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://victoriaswart.com/languages/aviation-english/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://victoriaswart.com/languages/aviation-english/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://victoriaswart.com/de/sprachen/aviation-english/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://victoriaswart.com/it/lingue/inglese-aeronautico/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://victoriaswart.com/es/idiomas/ingles-aeronautico/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://victoriaswart.com/languages/aviation-english/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://victoriaswart.com/de/sprachen/aviation-english/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://victoriaswart.com/languages/aviation-english/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://victoriaswart.com/de/sprachen/aviation-english/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://victoriaswart.com/it/lingue/inglese-aeronautico/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://victoriaswart.com/es/idiomas/ingles-aeronautico/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://victoriaswart.com/languages/aviation-english/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://victoriaswart.com/it/lingue/inglese-aeronautico/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://victoriaswart.com/languages/aviation-english/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://victoriaswart.com/de/sprachen/aviation-english/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://victoriaswart.com/it/lingue/inglese-aeronautico/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://victoriaswart.com/es/idiomas/ingles-aeronautico/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://victoriaswart.com/languages/aviation-english/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://victoriaswart.com/es/idiomas/ingles-aeronautico/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://victoriaswart.com/languages/aviation-english/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://victoriaswart.com/de/sprachen/aviation-english/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://victoriaswart.com/it/lingue/inglese-aeronautico/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://victoriaswart.com/es/idiomas/ingles-aeronautico/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://victoriaswart.com/languages/aviation-english/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://victoriaswart.com/languages/german/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://victoriaswart.com/languages/german/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://victoriaswart.com/de/sprachen/deutsch/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://victoriaswart.com/it/lingue/tedesco/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://victoriaswart.com/es/idiomas/aleman/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://victoriaswart.com/languages/german/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://victoriaswart.com/de/sprachen/deutsch/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://victoriaswart.com/languages/german/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://victoriaswart.com/de/sprachen/deutsch/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://victoriaswart.com/it/lingue/tedesco/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://victoriaswart.com/es/idiomas/aleman/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://victoriaswart.com/languages/german/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://victoriaswart.com/it/lingue/tedesco/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://victoriaswart.com/languages/german/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://victoriaswart.com/de/sprachen/deutsch/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://victoriaswart.com/it/lingue/tedesco/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://victoriaswart.com/es/idiomas/aleman/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://victoriaswart.com/languages/german/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://victoriaswart.com/es/idiomas/aleman/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://victoriaswart.com/languages/german/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://victoriaswart.com/de/sprachen/deutsch/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://victoriaswart.com/it/lingue/tedesco/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://victoriaswart.com/es/idiomas/aleman/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://victoriaswart.com/languages/german/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>

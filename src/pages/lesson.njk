@@ -1,0 +1,60 @@
+---
+pagination: { data: lessonPages, size: 1, alias: ln }
+permalink: "{{ routes['lesson_' + ln.key][ln.lang] }}index.html"
+layout: layouts/base.njk
+---
+{%- set ls = lessons[ln.key] %}
+{%- set c = ls[ln.lang] %}
+
+{#- The same opening band every other page uses: half words, half picture. A
+    subpage does not get to invent its own layout. -#}
+<section class="split-feature split-feature--hero">
+  <div class="split-feature__body">
+    <p class="eyebrow">{{ copy.languages.h1 }}</p>
+    <h1>{{ c.h1 }}</h1>
+    <p class="lead">{{ c.lead }}</p>
+  </div>
+  <div class="split-feature__media">
+    <img src="/assets/{{ ls.image }}" alt="{{ c.name }}"
+         width="{{ ls.imgW }}" height="{{ ls.imgH }}"
+         sizes="(min-width:861px) 50vw, 100vw"
+         fetchpriority="high" decoding="async">
+  </div>
+</section>
+
+<section>
+  <h2>{{ t.lesson.who }}</h2>
+  <p>{{ c.who }}</p>
+  {%- if c.note %}
+  <p>{{ c.note }}</p>
+  {%- endif %}
+</section>
+
+{%- if c.work and c.work.length %}
+<section>
+  <h2>{{ t.lesson.work }}</h2>
+  <ul class="tick-list">{% for w in c.work %}<li>{{ w }}</li>{% endfor %}</ul>
+</section>
+{%- endif %}
+
+<section>
+  <div class="price-table">
+    <div class="price-row">
+      <div><h3>{{ c.name }}</h3><p>{{ t.lesson.price }}</p></div>
+      <div class="price-val">{{ ls.price }}</div>
+    </div>
+  </div>
+  <p><a class="btn btn-primary" href="{{ 'contact' | route(ln.lang) }}?topic=lessons">{{ t.lesson.book }}</a></p>
+</section>
+
+{#- Siblings, so someone who landed here from a search can see the rest
+    without going back up to the hub first. -#}
+<section class="band-light">
+  <h2>{{ t.lesson.other }}</h2>
+  <ul class="tick-list">
+    {%- for key, other in lessons %}{% if key != ln.key %}
+    <li><a href="{{ ('lesson_' + key) | route(ln.lang) }}">{{ other[ln.lang].name }}</a></li>
+    {%- endif %}{% endfor %}
+    <li><a href="{{ 'languages' | route(ln.lang) }}">{{ t.lesson.back }}</a></li>
+  </ul>
+</section>

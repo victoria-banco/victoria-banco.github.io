@@ -57,6 +57,10 @@ Italy. Works in German, English, Italian, Spanish and Danish. VAT: IT18420501001
 - https://victoriaswart.com/contact/ (de: /de/kontakt/ | it: /it/contatti/ | es: /es/contacto/)
 - https://victoriaswart.com/privacy/ (de: /de/datenschutz/ | it: /it/privacy/ | es: /es/privacidad/)
 - https://victoriaswart.com/legal/ (de: /de/impressum/ | it: /it/note-legali/ | es: /es/aviso-legal/)
+- https://victoriaswart.com/languages/english/ (de: /de/sprachen/englisch/ | it: /it/lingue/inglese/ | es: /es/idiomas/ingles/)
+- https://victoriaswart.com/languages/business-english/ (de: /de/sprachen/business-englisch/ | it: /it/lingue/inglese-per-il-lavoro/ | es: /es/idiomas/ingles-de-negocios/)
+- https://victoriaswart.com/languages/aviation-english/ (de: /de/sprachen/aviation-english/ | it: /it/lingue/inglese-aeronautico/ | es: /es/idiomas/ingles-aeronautico/)
+- https://victoriaswart.com/languages/german/ (de: /de/sprachen/deutsch/ | it: /it/lingue/tedesco/ | es: /es/idiomas/aleman/)
 
 ## Languages of this site
 

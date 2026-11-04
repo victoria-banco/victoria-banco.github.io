@@ -94,5 +94,29 @@
     "de": "/de/impressum/",
     "it": "/it/note-legali/",
     "es": "/es/aviso-legal/"
+  },
+  "lesson_english": {
+    "en": "/languages/english/",
+    "de": "/de/sprachen/englisch/",
+    "it": "/it/lingue/inglese/",
+    "es": "/es/idiomas/ingles/"
+  },
+  "lesson_business": {
+    "en": "/languages/business-english/",
+    "de": "/de/sprachen/business-englisch/",
+    "it": "/it/lingue/inglese-per-il-lavoro/",
+    "es": "/es/idiomas/ingles-de-negocios/"
+  },
+  "lesson_aviation": {
+    "en": "/languages/aviation-english/",
+    "de": "/de/sprachen/aviation-english/",
+    "it": "/it/lingue/inglese-aeronautico/",
+    "es": "/es/idiomas/ingles-aeronautico/"
+  },
+  "lesson_german": {
+    "en": "/languages/german/",
+    "de": "/de/sprachen/deutsch/",
+    "it": "/it/lingue/tedesco/",
+    "es": "/es/idiomas/aleman/"
   }
 }

@@ -21,17 +21,16 @@ ogImage: victoria-swart-speaking.jpg
   </ul>
 </section>
 
-<figure class="figure-inset reveal">
-  <img src="/assets/languages-naples.jpg" alt="{{ c.naplesAlt }}"
-       width="1086" height="724" loading="lazy" decoding="async">
-</figure>
-
-<section class="band-light">
-  <h2>{{ c.approachTitle }}</h2>
-  <div class="media-split">
+<section class="split-feature split-feature--flip reveal">
+  <div class="split-feature__body">
+    <h2>{{ c.approachTitle }}</h2>
     <p class="lead">{{ c.approach }}</p>
+  </div>
+  <div class="split-feature__media">
     <img src="/assets/languages-roundtable.jpg" alt="{{ c.roundtableAlt }}"
-         width="906" height="1297" loading="lazy" decoding="async">
+         width="906" height="1297"
+         sizes="(min-width:861px) 50vw, 100vw"
+         loading="lazy" decoding="async">
   </div>
 </section>
 
@@ -54,14 +53,21 @@ ogImage: victoria-swart-speaking.jpg
   </div>
 </section>
 
+{#- One door per offering. The two specialisms used to be written out in full
+    here, which was most of why the page ran long; each now has its own page
+    that can rank on its own terms. -#}
 <section class="band-light">
-  <h2>{{ c.specialTitle }}</h2>
-  {%- for s in c.special %}
-  <div class="deep">
-    <h3>{{ s.t }}</h3>
-    <p>{{ s.d }}</p>
+  <h2>{{ t.lesson.teachTitle }}</h2>
+  <p class="lead">{{ t.lesson.teachLead }}</p>
+  <div class="door-grid door-grid--four">
+    {%- for key, l in lessons %}
+    <a class="door" href="{{ ('lesson_' + key) | route(lang) }}">
+      <h3>{{ l[lang].name }}</h3>
+      <p>{{ l[lang].who }}</p>
+      <span class="link-more">{{ t.lesson.see }} &rarr;</span>
+    </a>
+    {%- endfor %}
   </div>
-  {%- endfor %}
 </section>
 
 {%- if flags.lesson_samples %}
@@ -81,16 +87,23 @@ ogImage: victoria-swart-speaking.jpg
   <p>{{ c.transText }}</p>
 </section>
 
-<section id="stage">
-  <h2>{{ c.stageTitle }}</h2>
-  <p>{{ c.stageText }}</p>
-  <img src="/assets/victoria-swart-speaking.jpg" alt="{{ c.stageAlt }}" width="1068" height="1600" loading="lazy" decoding="async" style="max-width:min(520px,100%)">
-  <div class="price-table">
+<section class="split-feature reveal" id="stage">
+  <div class="split-feature__body">
+    <h2>{{ c.stageTitle }}</h2>
+    <p>{{ c.stageText }}</p>
+    <div class="price-table">
   {%- for p in c.stagePricing %}
     <div class="price-row"><div><h3>{{ p.t }}</h3><p>{{ p.d }}</p></div><div class="price-val">{{ p.p }}</div></div>
   {%- endfor %}
   </div>
-  <p><a class="btn btn-primary" href="{{ 'contact' | route(lang) }}?topic=mc">{{ t.cta.event }}</a></p>
+    <p><a class="btn btn-primary" href="{{ 'contact' | route(lang) }}?topic=mc">{{ t.cta.event }}</a></p>
+  </div>
+  <div class="split-feature__media">
+    <img src="/assets/victoria-swart-speaking.jpg" alt="{{ c.stageAlt }}"
+         width="1068" height="1600"
+         sizes="(min-width:861px) 50vw, 100vw"
+         loading="lazy" decoding="async">
+  </div>
 </section>
 
 <section>

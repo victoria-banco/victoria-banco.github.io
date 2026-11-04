@@ -93,5 +93,16 @@
   "journal": {
     "on": "on",
     "all": "All essays on Substack"
+  },
+  "lesson": {
+    "who": "Who it is for",
+    "work": "What we work on",
+    "price": "Per lesson",
+    "back": "All language work",
+    "book": "Book a lesson",
+    "other": "Other lessons",
+    "teachTitle": "What I teach",
+    "teachLead": "Four things, each with its own page.",
+    "see": "Read more"
   }
 }

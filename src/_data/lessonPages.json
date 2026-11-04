@@ -1,0 +1,82 @@
+[
+ {
+  "key": "english",
+  "lang": "en",
+  "nextKey": "business"
+ },
+ {
+  "key": "business",
+  "lang": "en",
+  "nextKey": "aviation"
+ },
+ {
+  "key": "aviation",
+  "lang": "en",
+  "nextKey": "german"
+ },
+ {
+  "key": "german",
+  "lang": "en",
+  "nextKey": "english"
+ },
+ {
+  "key": "english",
+  "lang": "de",
+  "nextKey": "business"
+ },
+ {
+  "key": "business",
+  "lang": "de",
+  "nextKey": "aviation"
+ },
+ {
+  "key": "aviation",
+  "lang": "de",
+  "nextKey": "german"
+ },
+ {
+  "key": "german",
+  "lang": "de",
+  "nextKey": "english"
+ },
+ {
+  "key": "english",
+  "lang": "it",
+  "nextKey": "business"
+ },
+ {
+  "key": "business",
+  "lang": "it",
+  "nextKey": "aviation"
+ },
+ {
+  "key": "aviation",
+  "lang": "it",
+  "nextKey": "german"
+ },
+ {
+  "key": "german",
+  "lang": "it",
+  "nextKey": "english"
+ },
+ {
+  "key": "english",
+  "lang": "es",
+  "nextKey": "business"
+ },
+ {
+  "key": "business",
+  "lang": "es",
+  "nextKey": "aviation"
+ },
+ {
+  "key": "aviation",
+  "lang": "es",
+  "nextKey": "german"
+ },
+ {
+  "key": "german",
+  "lang": "es",
+  "nextKey": "english"
+ }
+]

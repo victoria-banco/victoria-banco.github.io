@@ -93,5 +93,16 @@
   "journal": {
     "on": "auf",
     "all": "Alle Essays auf Substack"
+  },
+  "lesson": {
+    "who": "Für wen",
+    "work": "Woran wir arbeiten",
+    "price": "Pro Stunde",
+    "back": "Alle Sprachangebote",
+    "book": "Stunde buchen",
+    "other": "Weitere Angebote",
+    "teachTitle": "Was ich unterrichte",
+    "teachLead": "Vier Angebote, jedes mit einer eigenen Seite.",
+    "see": "Mehr lesen"
   }
 }

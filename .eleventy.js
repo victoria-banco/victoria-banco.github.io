@@ -48,11 +48,23 @@ module.exports = function (eleventyConfig) {
   // it works out computed-value ordering.
   // The language of the page being rendered. Simple templates get it from their
   // pagination alias; paginated-over-objects templates carry it on the item.
+  // A lesson page's own record. The `ln` alias is not always present when
+  // computed data runs, but the paginated item behind it always is.
+  const lessonOf = (data) => {
+    if (!data) return null;
+    const it = data.ln || (data.pagination && data.pagination.items && data.pagination.items[0]);
+    if (!it || !it.key || !it.lang) return null;
+    if (!data.lessons || !data.lessons[it.key] || !data.lessons[it.key][it.lang]) return null;
+    return { key: it.key, lang: it.lang, copy: data.lessons[it.key][it.lang] };
+  };
+
   const langOf = (data) => {
     if (!data) return null;
     if (typeof data.lang === 'string' && data.lang) return data.lang;
     if (data.cp && data.cp.lang) return data.cp.lang;
     if (data.lp && data.lp.lang) return data.lp.lang;
+    const lsn = lessonOf(data);
+    if (lsn) return lsn.lang;
     return null;
   };
 
@@ -84,6 +96,8 @@ module.exports = function (eleventyConfig) {
     // ampersands are escaped exactly once.
     title: (data) => {
       if (data && data.pageTitle) return data.pageTitle;
+      const lsn = lessonOf(data);
+      if (lsn) return `${lsn.copy.name} \u00b7 Victoria Swart`;
       const cs = caseOf(data);
       // The sector, not the platform. "Hand-coded, Netlify" means nothing
       // to anyone searching, and since stack became per-language it would
@@ -102,6 +116,8 @@ module.exports = function (eleventyConfig) {
     },
     description: (data) => {
       if (data && data.pageDescription) return data.pageDescription;
+      const lsnd = lessonOf(data);
+      if (lsnd) return lsnd.copy.desc;
       const cs = caseOf(data);
       if (cs) return cs.ct.brief.slice(0, 155);
       const b = copyBlock(data);
@@ -113,7 +129,7 @@ module.exports = function (eleventyConfig) {
       if (!all || !l || !all[l]) return '';
       return all[l].jobTitle || '';
     },
-    routeKey: (data) => (data && data.routeKey) || (data && data.cp && data.cp.key) || (data && data.lp && data.lp.key) || null,
+    routeKey: (data) => (data && data.routeKey) || (data && data.cp && data.cp.key) || (data && data.lp && data.lp.key) || (lessonOf(data) && ('lesson_' + lessonOf(data).key)) || null,
   });
 
   return {

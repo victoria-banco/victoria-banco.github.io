@@ -1,0 +1,198 @@
+{
+  "english": {
+    "price": "€35",
+    "image": "languages-reading.jpg",
+    "imgW": 886,
+    "imgH": 886,
+    "en": {
+      "name": "English",
+      "h1": "English, built around the life you actually live in it.",
+      "lead": "For children, teenagers and adults. I taught my first English class in Colombia in 2016 and have not stopped since.",
+      "work": [
+        "Speaking, until the sentence arrives before you have assembled it.",
+        "Reading and writing for school, university or work.",
+        "Grammar where grammar is the thing getting in the way, and not before.",
+        "Exam preparation, when there is an exam."
+      ],
+      "who": "Anyone from a complete beginner to someone who is fluent and wants to stop sounding translated.",
+      "desc": "English lessons online for children, teenagers and adults, built around your level, your interests and the life you actually live in the language."
+    },
+    "de": {
+      "name": "Englisch",
+      "h1": "Englisch, gebaut um das Leben, das Sie darin führen.",
+      "lead": "Für Kinder, Jugendliche und Erwachsene. Meine erste Englischstunde habe ich 2016 in Kolumbien gegeben und seitdem nicht mehr aufgehört.",
+      "work": [
+        "Sprechen, bis der Satz da ist, bevor Sie ihn zusammengesetzt haben.",
+        "Lesen und Schreiben für Schule, Studium oder Beruf.",
+        "Grammatik dort, wo die Grammatik im Weg steht, und nicht vorher.",
+        "Prüfungsvorbereitung, wenn eine Prüfung ansteht."
+      ],
+      "who": "Von absoluten Anfängern bis zu Menschen, die fließend sprechen und nur nicht mehr übersetzt klingen wollen.",
+      "desc": "Englischunterricht online für Kinder, Jugendliche und Erwachsene, abgestimmt auf Ihr Niveau, Ihre Interessen und Ihren Alltag in der Sprache."
+    },
+    "it": {
+      "name": "Inglese",
+      "h1": "Inglese, costruito sulla vita che ci vivi dentro.",
+      "lead": "Per bambini, ragazzi e adulti. Ho tenuto la mia prima lezione di inglese in Colombia nel 2016 e da allora non ho più smesso.",
+      "work": [
+        "Parlare, finché la frase arriva prima che tu l'abbia montata.",
+        "Leggere e scrivere per la scuola, l'università o il lavoro.",
+        "Grammatica dove è la grammatica a creare ostacoli, e non prima.",
+        "Preparazione agli esami, quando c'è un esame."
+      ],
+      "who": "Da chi parte da zero a chi è fluente e vuole solo smettere di suonare tradotto.",
+      "desc": "Lezioni di inglese online per bambini, ragazzi e adulti, costruite sul tuo livello, sui tuoi interessi e sulla vita che vivi in quella lingua."
+    },
+    "es": {
+      "name": "Inglés",
+      "h1": "Inglés, construido sobre la vida que vives en él.",
+      "lead": "Para niños, adolescentes y adultos. Di mi primera clase de inglés en Colombia en 2016 y no he parado desde entonces.",
+      "work": [
+        "Hablar, hasta que la frase llega antes de que la hayas montado.",
+        "Leer y escribir para el colegio, la universidad o el trabajo.",
+        "Gramática donde la gramática es lo que estorba, y no antes.",
+        "Preparación de exámenes, cuando hay un examen."
+      ],
+      "who": "Desde quien empieza de cero hasta quien ya es fluido y solo quiere dejar de sonar traducido.",
+      "desc": "Clases de inglés online para niños, adolescentes y adultos, construidas sobre tu nivel, tus intereses y la vida que vives en ese idioma."
+    }
+  },
+  "business": {
+    "price": "€45",
+    "image": "languages-roundtable.jpg",
+    "imgW": 906,
+    "imgH": 1297,
+    "en": {
+      "name": "Business English",
+      "h1": "Business English for the room you are actually in.",
+      "lead": "British and American English for the situations your job actually puts you in. Speaking up in a weekly check-in without rehearsing it in your head first. Presenting to a room and keeping it. Holding a conversation at a conference when the small talk matters as much as the agenda. We work on the register, the filler phrases that buy you a second, and the difference between sounding fluent and sounding sure of yourself.",
+      "work": [],
+      "who": "People who work in English every day and want it to stop costing them effort.",
+      "desc": "Business English online for people who work in English every day: meetings, presentations, conferences, register and the phrases that buy you a second."
+    },
+    "de": {
+      "name": "Business-Englisch",
+      "h1": "Business-Englisch für den Raum, in dem Sie wirklich sitzen.",
+      "lead": "Britisches und amerikanisches Englisch für die Situationen, in die Ihr Beruf Sie tatsächlich bringt. Im wöchentlichen Jour fixe etwas sagen, ohne es vorher im Kopf zu proben. Vor einem Raum präsentieren und ihn halten. Auf einer Konferenz ein Gespräch führen, in dem der Small Talk genauso zählt wie die Agenda. Wir arbeiten an der Sprachebene, an den Füllwendungen, die Ihnen eine Sekunde verschaffen, und an dem Unterschied zwischen flüssig klingen und sicher klingen.",
+      "work": [],
+      "who": "Menschen, die täglich auf Englisch arbeiten und wollen, dass es sie keine Kraft mehr kostet.",
+      "desc": "Business-Englisch online für alle, die täglich auf Englisch arbeiten: Meetings, Präsentationen, Konferenzen, Register und die passenden Wendungen."
+    },
+    "it": {
+      "name": "Inglese per il lavoro",
+      "h1": "Inglese per il lavoro, per la stanza in cui sei davvero.",
+      "lead": "Inglese britannico e americano per le situazioni in cui il tuo lavoro ti mette davvero. Intervenire nella riunione settimanale senza provarla prima nella testa. Presentare davanti a una sala e tenerla. Reggere una conversazione a una conferenza, dove le chiacchiere contano quanto l'ordine del giorno. Lavoriamo sul registro, sulle formule che ti fanno guadagnare un secondo e sulla differenza tra sembrare fluenti e sembrare sicuri di sé.",
+      "work": [],
+      "who": "Chi lavora in inglese ogni giorno e vuole che smetta di costargli fatica.",
+      "desc": "Inglese per il lavoro online per chi lavora in inglese ogni giorno: riunioni, presentazioni, conferenze, registro e le formule che fanno guadagnare tempo."
+    },
+    "es": {
+      "name": "Inglés de negocios",
+      "h1": "Inglés de negocios para la sala en la que estás de verdad.",
+      "lead": "Inglés británico y americano para las situaciones en las que tu trabajo te pone de verdad. Intervenir en la reunión semanal sin ensayarlo antes en la cabeza. Presentar ante una sala y sostenerla. Mantener una conversación en un congreso, donde la charla informal cuenta tanto como el orden del día. Trabajamos el registro, las fórmulas que te dan un segundo de margen y la diferencia entre sonar fluida y sonar segura.",
+      "work": [],
+      "who": "Quien trabaja en inglés cada día y quiere que deje de costarle esfuerzo.",
+      "desc": "Inglés de negocios online para quien trabaja en inglés cada día: reuniones, presentaciones, congresos, registro y las fórmulas que dan un segundo."
+    }
+  },
+  "aviation": {
+    "price": "€45",
+    "image": "victoria-swart-speaking.jpg",
+    "imgW": 1068,
+    "imgH": 1600,
+    "en": {
+      "name": "Aviation English",
+      "h1": "Aviation English, precise under pressure.",
+      "lead": "For pilots and aspiring pilots, wherever you are. We work on the language of radio communication, on the physics and the mechanics of flight, and on the vocabulary you need to be precise under pressure. Grammar where grammar is the thing getting in the way. Then role plays, exercises and tasks, because in a cockpit you do not get to prepare your sentence first.",
+      "work": [],
+      "who": "Pilots and aspiring pilots, wherever you are.",
+      "note": "Aviation English is measured on the ICAO scale, levels 1 to 6, rated on six skills. Level 4 is the operational minimum, and your overall level is your lowest score. I prepare you on those skills; I do not issue official ratings.",
+      "desc": "Aviation English online for pilots and aspiring pilots: radio communication, the vocabulary of flight, and the six ICAO skills you are rated on."
+    },
+    "de": {
+      "name": "Aviation English",
+      "h1": "Aviation English, präzise unter Druck.",
+      "lead": "Für Pilotinnen, Piloten und alle, die es werden wollen, wo immer Sie sind. Wir arbeiten an der Sprache des Funkverkehrs, an der Physik und Mechanik des Fliegens und an dem Wortschatz, den Sie brauchen, um unter Druck präzise zu bleiben. Grammatik dort, wo die Grammatik im Weg steht. Dann Rollenspiele, Übungen und Aufgaben, denn im Cockpit können Sie Ihren Satz nicht vorher zurechtlegen.",
+      "work": [],
+      "who": "Pilotinnen, Piloten und alle, die es werden wollen, wo immer Sie sind.",
+      "note": "Aviation English wird auf der ICAO-Skala gemessen, Stufen 1 bis 6, bewertet in sechs Kompetenzen. Stufe 4 ist das operationelle Minimum, und Ihr Gesamtergebnis ist Ihr niedrigster Wert. Ich bereite Sie auf diese Kompetenzen vor; offizielle Einstufungen stelle ich nicht aus.",
+      "desc": "Aviation English online für Pilotinnen, Piloten und angehende: Funkverkehr, der Wortschatz des Fliegens und die sechs ICAO-Kompetenzen der Bewertung."
+    },
+    "it": {
+      "name": "Inglese aeronautico",
+      "h1": "Inglese aeronautico, preciso sotto pressione.",
+      "lead": "Per piloti e aspiranti piloti, ovunque tu sia. Lavoriamo sulla lingua delle comunicazioni radio, sulla fisica e la meccanica del volo e sul lessico che serve per essere precisi sotto pressione. Grammatica dove la grammatica è ciò che ostacola. Poi giochi di ruolo, esercizi e compiti, perché in cabina di pilotaggio non puoi prepararti la frase prima.",
+      "work": [],
+      "who": "Piloti e aspiranti piloti, ovunque tu sia.",
+      "note": "L'inglese aeronautico si misura con la scala ICAO, livelli da 1 a 6, valutati su sei competenze. Il livello 4 è il minimo operativo e il tuo livello complessivo è il più basso dei sei. Ti preparo su quelle competenze; non rilascio livelli ufficiali.",
+      "desc": "Inglese aeronautico online per piloti e aspiranti piloti: comunicazioni radio, lessico del volo e le sei competenze ICAO su cui si viene valutati."
+    },
+    "es": {
+      "name": "Inglés aeronáutico",
+      "h1": "Inglés aeronáutico, preciso bajo presión.",
+      "lead": "Para pilotos y futuros pilotos, estés donde estés. Trabajamos la lengua de las comunicaciones por radio, la física y la mecánica del vuelo y el vocabulario que necesitas para ser preciso bajo presión. Gramática allí donde la gramática es lo que estorba. Después juegos de rol, ejercicios y tareas, porque en una cabina no puedes preparar la frase antes.",
+      "work": [],
+      "who": "Pilotos y futuros pilotos, estés donde estés.",
+      "note": "El inglés aeronáutico se mide con la escala OACI, niveles 1 a 6, evaluados en seis competencias. El nivel 4 es el mínimo operativo y tu nivel global es el más bajo de los seis. Te preparo en esas competencias; no emito niveles oficiales.",
+      "desc": "Inglés aeronáutico online para pilotos y futuros pilotos: comunicaciones por radio, vocabulario de vuelo y las seis competencias OACI evaluadas."
+    }
+  },
+  "german": {
+    "price": "€35",
+    "image": "languages-naples.jpg",
+    "imgW": 1086,
+    "imgH": 724,
+    "en": {
+      "name": "German",
+      "h1": "German, from my first language to yours.",
+      "lead": "German as a foreign language, A1 to B1, including courses taught at inlingua Roma. German is my mother tongue, so the explanations come from inside the language rather than from a textbook about it.",
+      "work": [
+        "The cases, introduced when you need them rather than all at once.",
+        "Word order, which is where most learners lose the sentence.",
+        "Everyday German for living and working in a German-speaking country.",
+        "The difference between written German and the German people actually speak."
+      ],
+      "who": "Beginners through to B1, and anyone moving to Germany, Austria or Switzerland.",
+      "desc": "German lessons online from A1 to B1, taught by a native speaker: cases, word order and the German people actually speak, not only the written form."
+    },
+    "de": {
+      "name": "Deutsch",
+      "h1": "Deutsch, von meiner Muttersprache in Ihre.",
+      "lead": "Deutsch als Fremdsprache, A1 bis B1, auch in Kursen bei inlingua Roma. Deutsch ist meine Muttersprache, die Erklärungen kommen also aus der Sprache heraus und nicht aus einem Buch über sie.",
+      "work": [
+        "Die Fälle, eingeführt, wenn Sie sie brauchen, und nicht alle auf einmal.",
+        "Die Wortstellung, an der die meisten den Satz verlieren.",
+        "Alltagsdeutsch zum Leben und Arbeiten im deutschsprachigen Raum.",
+        "Der Unterschied zwischen geschriebenem Deutsch und dem, das wirklich gesprochen wird."
+      ],
+      "who": "Anfängerinnen und Anfänger bis B1, und alle, die nach Deutschland, Österreich oder in die Schweiz ziehen.",
+      "desc": "Deutschunterricht online von A1 bis B1 bei einer Muttersprachlerin: Fälle, Wortstellung und das Deutsch, das wirklich gesprochen wird."
+    },
+    "it": {
+      "name": "Tedesco",
+      "h1": "Tedesco, dalla mia lingua madre alla tua.",
+      "lead": "Tedesco come lingua straniera, da A1 a B1, anche in corsi presso inlingua Roma. Il tedesco è la mia lingua madre: le spiegazioni vengono da dentro la lingua, non da un libro che la racconta.",
+      "work": [
+        "I casi, introdotti quando ti servono e non tutti insieme.",
+        "L'ordine delle parole, dove quasi tutti perdono la frase.",
+        "Tedesco di tutti i giorni per vivere e lavorare in un paese di lingua tedesca.",
+        "La differenza tra il tedesco scritto e quello che si parla davvero."
+      ],
+      "who": "Da principiante fino al B1, e chiunque si trasferisca in Germania, Austria o Svizzera.",
+      "desc": "Lezioni di tedesco online dall'A1 al B1 con una madrelingua: i casi, l'ordine delle parole e il tedesco che si parla davvero, non solo quello scritto."
+    },
+    "es": {
+      "name": "Alemán",
+      "h1": "Alemán, de mi lengua materna a la tuya.",
+      "lead": "Alemán como lengua extranjera, de A1 a B1, también en cursos en inlingua Roma. El alemán es mi lengua materna: las explicaciones salen de dentro del idioma, no de un libro que habla de él.",
+      "work": [
+        "Los casos, introducidos cuando los necesitas y no todos de golpe.",
+        "El orden de las palabras, donde casi todos pierden la frase.",
+        "Alemán cotidiano para vivir y trabajar en un país de habla alemana.",
+        "La diferencia entre el alemán escrito y el que se habla de verdad."
+      ],
+      "who": "Desde principiante hasta B1, y cualquiera que se mude a Alemania, Austria o Suiza.",
+      "desc": "Clases de alemán online de A1 a B1 con una hablante nativa: los casos, el orden de las palabras y el alemán que se habla de verdad, no solo el escrito."
+    }
+  }
+}

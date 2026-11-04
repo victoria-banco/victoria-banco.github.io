@@ -54,12 +54,28 @@ words and the order never jumbles.
 768, 861, 1024, 1280, 1440 and 1920: no horizontal scroll anywhere, header
 holds at 72px, no element escapes the viewport.
 
+## Languages, done 5 November
+
+Four offerings, each with its own page in all four site languages: English,
+Business English, Aviation English, German. 16 pages, every one carrying
+correct hreflang, canonical and a single h1.
+
+The hub keeps the introduction, my languages, how I teach, pricing,
+translation, moderation and reviews, and links out through four doors. The two
+specialisms used to be written out in full on the hub, which was most of why
+it ran long; each can now rank on its own terms.
+
+`.media-split` is gone from the page. Its 340px image cap is why the
+roundtable photograph was the same small size at 861 and at 1280, and an
+inline `max-width:min(520px,100%)` was doing the same to the speaking
+photograph. Both are bands now. Verified: no band image is under 45% of the
+viewport at any width from 861 up.
+
+The second copy of the Naples photograph is gone from the hub; it lives on
+About since the layout pass.
+
 ## Still outstanding
 
-- **Languages**: each taught language on its own subpage, in all four site
-  languages. Victoria confirmed all four. `.media-split` caps its image at
-  340px, which is why the roundtable photograph is the same small size at 861
-  and at 1280; that rule is now used only on Languages and gets replaced here.
 - **Portfolio**: scroll-based UX/UI animation for one project, with this site
   as the showcase.
 - **Web Design**: project types as clickable blocks that open into detail.

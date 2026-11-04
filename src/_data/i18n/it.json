@@ -93,5 +93,16 @@
   "journal": {
     "on": "su",
     "all": "Tutti gli articoli su Substack"
+  },
+  "lesson": {
+    "who": "Per chi è",
+    "work": "Su cosa lavoriamo",
+    "price": "A lezione",
+    "back": "Tutti i servizi linguistici",
+    "book": "Prenota una lezione",
+    "other": "Altre lezioni",
+    "teachTitle": "Cosa insegno",
+    "teachLead": "Quattro cose, ognuna con la sua pagina.",
+    "see": "Leggi di più"
   }
 }
