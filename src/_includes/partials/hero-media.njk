@@ -20,9 +20,14 @@
   what makes poster and video agree by construction rather than by estimate:
   both read the same number, and no window height can put them out of step.
 
-    < 0.68        9:16 cut  -> mobile poster   (phones held upright)
-    0.68 - 1.20   4:5 cut   -> panel poster    (tablets upright, square-ish)
-    > 1.20        16:9 cut  -> desktop poster  (laptops, tablets on their side)
+    < 0.68                      9:16 cut -> mobile  (phones held upright)
+    0.68 - 1.20 AND <= 900px    4:5 cut  -> panel   (tablets upright)
+    anything else               16:9 cut -> desktop (laptops, wide windows)
+
+  The width condition matters: the panel files are only 864px wide, so a
+  window that is wide but tall, 1280x1100 for instance, used to be handed
+  the panel cut and stretch it across 1280. Past 900px the 1920 desktop cut
+  is sharper and object-fit: cover just crops a little more.
 
   The two boundaries are repeated in three places and must stay in step: the
   media queries below, cutFor() in site.js, and the preload hints in base.njk.
@@ -39,8 +44,8 @@
   <picture class="hero-media__poster">
     <source media="(max-aspect-ratio:68/100)" srcset="{{ base }}/{{ name }}-poster-mobile.webp" type="image/webp">
     <source media="(max-aspect-ratio:68/100)" srcset="{{ base }}/{{ name }}-poster-mobile.jpg">
-    <source media="(max-aspect-ratio:120/100)" srcset="{{ base }}/{{ name }}-poster-panel.webp" type="image/webp">
-    <source media="(max-aspect-ratio:120/100)" srcset="{{ base }}/{{ name }}-poster-panel.jpg">
+    <source media="(max-aspect-ratio:120/100) and (max-width:900px)" srcset="{{ base }}/{{ name }}-poster-panel.webp" type="image/webp">
+    <source media="(max-aspect-ratio:120/100) and (max-width:900px)" srcset="{{ base }}/{{ name }}-poster-panel.jpg">
     <source srcset="{{ base }}/{{ name }}-poster-desktop.webp" type="image/webp">
     <img src="{{ base }}/{{ name }}-poster-desktop.jpg"
          alt="{{ opts.alt }}"

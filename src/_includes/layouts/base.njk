@@ -24,9 +24,9 @@
     <picture> and cutFor() use. Keep all three in step. -#}
 <link rel="preload" as="image" media="(max-aspect-ratio:68/100)"
       href="/assets/video/hero/hero-poster-mobile.webp" type="image/webp" fetchpriority="high">
-<link rel="preload" as="image" media="(min-aspect-ratio:68/100) and (max-aspect-ratio:120/100)"
+<link rel="preload" as="image" media="(min-aspect-ratio:68/100) and (max-aspect-ratio:120/100) and (max-width:900px)"
       href="/assets/video/hero/hero-poster-panel.webp" type="image/webp" fetchpriority="high">
-<link rel="preload" as="image" media="(min-aspect-ratio:120/100)"
+<link rel="preload" as="image" media="(min-aspect-ratio:120/100),(min-aspect-ratio:68/100) and (min-width:901px)"
       href="/assets/video/hero/hero-poster-desktop.webp" type="image/webp" fetchpriority="high">
 {%- endif %}
 

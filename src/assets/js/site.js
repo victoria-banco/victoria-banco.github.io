@@ -162,9 +162,14 @@
        The hero fills the viewport, so all three read the same ratio and agree
        by construction — but they only stay in step if they are changed
        together. */
-    function cutFor(ratio) {
+    function cutFor(ratio, width) {
       if (ratio < 0.68) return 'mobile';
-      if (ratio <= 1.20) return 'panel';
+      /* The panel cut is only 864px wide. Picking it on ratio alone handed a
+         wide but tall window, 1280x1100 say, an 864px asset stretched across
+         1280: a 48% upscale on the largest image on the site. Past the asset's
+         own width the 1920 desktop cut is sharper, and object-fit: cover
+         simply crops a little more off the sides. */
+      if (ratio <= 1.20 && width <= 900) return 'panel';
       return 'desktop';
     }
 
@@ -189,7 +194,7 @@
         if (dead) return;
         var r = video.getBoundingClientRect();
         if (!r.width || !r.height) return;
-        var want = cutFor(r.width / r.height);
+        var want = cutFor(r.width / r.height, r.width);
         if (want === current) return;
         current = want;
         failed = 0;
