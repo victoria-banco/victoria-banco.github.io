@@ -101,9 +101,17 @@
     "back": "Todos los servicios de idiomas",
     "book": "Reservar una clase",
     "other": "Otras clases",
-    "teachTitle": "Qué enseño",
+    "teachTitle": "De qué me ocupo",
     "teachLead": "Cuatro cosas, cada una con su página.",
     "see": "Leer más",
     "extra": "Preparación de exámenes a petición. Todas las clases son online, individuales o en grupos pequeños."
+  },
+  "ptype": {
+    "typesTitle": "Qué construyo, por tipo",
+    "typesIntro": "Seis formas de proyecto. Cada una es una web real que puedes ver, no la descripción de algo hipotético.",
+    "includes": "Qué incluye",
+    "suits": "Para quién es",
+    "example": "Ver el ejemplo real",
+    "open": "Detalles"
   }
 }

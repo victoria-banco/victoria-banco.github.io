@@ -43,14 +43,34 @@ ogImage: video/hero/hero-poster-desktop.jpg
   <ul class="tag-row">{% for i in c.tools %}<li>{{ i }}</li>{% endfor %}</ul>
 </section>
 
+{#- Project types as blocks. Each one opens in place rather than navigating
+    away, because someone comparing shapes wants to compare them side by side.
+    <details> does the opening, so it works with no JavaScript at all and the
+    content is in the HTML for search engines either way. Every block ends at
+    a real site, not a mock-up. -#}
 <section>
-  <h2>{{ c.startersTitle }}</h2>
-  <p>{{ c.startersIntro }}</p>
-  <ul class="tick-list">
-  {%- for key in ["seabreeze","eqm","graziano","homeserv","ladolcevita"] %}
-    <li><a href="{{ cases[key].route | route(lang) }}">{{ cases[key][lang].starter }}</a></li>
-  {%- endfor %}
-  </ul>
+  <h2>{{ t.ptype.typesTitle }}</h2>
+  <p class="lead">{{ t.ptype.typesIntro }}</p>
+  <div class="ptype-grid">
+    {%- for key, p in projectTypes %}
+    {%- set pc = p[lang] %}
+    <details class="ptype">
+      <summary>
+        <span class="ptype-shape">{{ p.shape }}</span>
+        <span class="ptype-name">{{ pc.name }}</span>
+        <span class="ptype-sum">{{ pc.sum }}</span>
+        <span class="ptype-open">{{ t.ptype.open }}</span>
+      </summary>
+      <div class="ptype-body">
+        <h3>{{ t.ptype.includes }}</h3>
+        <ul class="tick-list">{% for i in pc.has %}<li>{{ i }}</li>{% endfor %}</ul>
+        <h3>{{ t.ptype.suits }}</h3>
+        <p>{{ pc['for'] }}</p>
+        <a class="link-more" href="{{ cases[p.case].route | route(lang) }}">{{ t.ptype.example }} &rarr;</a>
+      </div>
+    </details>
+    {%- endfor %}
+  </div>
 </section>
 
 <section class="band-light">

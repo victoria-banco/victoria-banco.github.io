@@ -5,10 +5,10 @@
     "description": "Mehrsprachiges Webdesign und Markenstrategie in Rom. Websites, Texte und SEO auf Deutsch, Englisch, Italienisch, Spanisch und Dänisch.",
     "eyebrow": "Marken, die weiter reisen.",
     "h1": "Websites, Marken und Worte, die in fünf Sprachen funktionieren.",
-    "intro": "Ich bin Victoria Clara Swart. Ich gestalte und baue Websites, gebe Marken ihre Sprache und unterrichte Sprachen. Ich arbeite auf Deutsch, Englisch, Italienisch, Spanisch und Dänisch. Ihre Website wird also nicht einfach übersetzt. Sie wird verstanden.",
-    "heroLead": "Gestaltung, Markensprache und Unterricht. Fünf Sprachen.",
+    "intro": "Ich bin Victoria Clara Swart. Ich gestalte und baue Websites, gebe Marken ihre Sprache und gebe Sprachcoaching. Ich arbeite auf Deutsch, Englisch, Italienisch, Spanisch und Dänisch. Ihre Website wird also nicht einfach übersetzt. Sie wird verstanden.",
+    "heroLead": "Gestaltung, Markensprache und Sprachcoaching. Fünf Sprachen.",
     "introTitle": "Nicht übersetzt. Verstanden.",
-    "introText": "Ich bin Victoria Clara Swart. Ich gestalte und baue Websites, gebe Marken ihre Sprache und unterrichte Sprachen. Ich arbeite auf Deutsch, Englisch, Italienisch, Spanisch und Dänisch. Gedacht wird also in der Sprache selbst, und nicht in einer Übersetzung davon.",
+    "introText": "Ich bin Victoria Clara Swart. Ich gestalte und baue Websites, gebe Marken ihre Sprache und gebe Sprachcoaching. Ich arbeite auf Deutsch, Englisch, Italienisch, Spanisch und Dänisch. Gedacht wird also in der Sprache selbst, und nicht in einer Übersetzung davon.",
     "proof": [
       {
         "n": "5",
@@ -16,7 +16,7 @@
       },
       {
         "n": "10",
-        "label": "Jahre Unterricht, seit 2016"
+        "label": "Jahre Sprachcoaching, seit 2016"
       },
       {
         "n": "5",
@@ -46,7 +46,7 @@
     "stageTitle": "Auf der Bühne",
     "stageText": "Ich moderiere Konferenzen und Pitch-Events in fünf Sprachen, von Pitch-Abenden im dänischen Startup-Accelerator in Kopenhagen bis zu einem B2B-Marketingabend für Führungskräfte im Anantara Palazzo Naiadi in Rom.",
     "closing": "Ein Projekt, ein Sprachziel oder eine Veranstaltung? Schreiben Sie mir.",
-    "heroAlt": "Victoria Clara Swart, Webdesignerin und Markenstrategin in Rom",
+    "heroAlt": "Victoria Clara Swart, Webdesignerin, Markenstrategin und Sprachcoach in Rom",
     "heroPosterAlt": "Porträt von Victoria Clara Swart"
   },
   "webdesign": {
@@ -147,7 +147,7 @@
   "languages": {
     "title": "Sprachunterricht & Moderation · Victoria Swart",
     "description": "Unterricht in Englisch und Deutsch, Übersetzung und kulturelle Anpassung sowie Konferenzmoderation in fünf Sprachen. Unterricht seit 2016.",
-    "h1": "Fünf Sprachen. Zehn Jahre Unterricht. Eine Person auf der Bühne.",
+    "h1": "Fünf Sprachen. Zehn Jahre Sprachcoaching. Eine Person auf der Bühne.",
     "intro": "Mit Sprachen hat meine Arbeit angefangen. Meine erste Englischstunde habe ich 2016 in Kolumbien gegeben und seitdem nie aufgehört zu unterrichten. Heute unterrichte ich, übersetze, passe Texte zwischen Märkten an und moderiere internationale Veranstaltungen.",
     "mineTitle": "Meine Sprachen",
     "mine": [
@@ -221,7 +221,7 @@
     ],
     "reviewsTitle": "Bewertungen",
     "stageAlt": "Victoria Clara Swart moderiert eine internationale Wirtschaftsveranstaltung in Rom",
-    "approachTitle": "Wie ich unterrichte",
+    "approachTitle": "Wie ich coache",
     "approach": "Die erste Stunde ist keine Stunde. Sie ist ein Gespräch. Ich möchte wissen, was Sie beruflich machen, was Sie interessiert und wie Sie tatsächlich lernen, denn wer über das Sprechen lernt, braucht eine andere Stunde als jemand, der über das Aufschreiben lernt. Danach baue ich den Kurs um Sie herum auf. Ihre Arbeit, Ihre Interessen, die Situationen, in denen Sie wirklich stehen werden.",
     "specialTitle": "Zwei Dinge, nach denen am häufigsten gefragt wird",
     "special": [
@@ -354,7 +354,7 @@
       "Web- und Markenprojekte für Kunden in Italien, auf Sardinien, auf Sizilien und in Deutschland",
       "Projektassistenz bei Beyond Beta, Erhvervshus, dem dänischen Startup-Accelerator in Kopenhagen: Webflow-Entwicklung, interne Systeme, Moderation von Pitch-Events",
       "Europäisches Solidaritätskorps, ein Jahr in Neapel",
-      "Sprachunterricht seit 2016: Kolumbien, inlingua Roma, Aviation English in Fiumicino",
+      "Sprachcoaching seit 2016: Kolumbien, inlingua Roma, Aviation English in Fiumicino",
       "Moderatorin und Gastgeberin, Rom und Kopenhagen",
       "Market and Management Anthropology, Universität Süddänemark"
     ],
@@ -489,5 +489,5 @@
     "title": "Seite nicht gefunden · Victoria Swart",
     "description": "Diese Seite gibt es nicht."
   },
-  "jobTitle": "Webdesignerin und Markenstrategin"
+  "jobTitle": "Webdesignerin, Markenstrategin und Sprachcoach"
 }

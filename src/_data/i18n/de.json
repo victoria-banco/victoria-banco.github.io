@@ -101,9 +101,17 @@
     "back": "Alle Sprachangebote",
     "book": "Stunde buchen",
     "other": "Weitere Angebote",
-    "teachTitle": "Was ich unterrichte",
+    "teachTitle": "Was ich coache",
     "teachLead": "Vier Angebote, jedes mit einer eigenen Seite.",
     "see": "Mehr lesen",
     "extra": "Prüfungsvorbereitung auf Anfrage. Alle Stunden finden online statt, einzeln oder in kleinen Gruppen."
+  },
+  "ptype": {
+    "typesTitle": "Was ich baue, nach Art",
+    "typesIntro": "Sechs Projektformen. Jede ist eine echte Website, die Sie ansehen können, und keine Beschreibung von etwas Gedachtem.",
+    "includes": "Was dazugehört",
+    "suits": "Für wen",
+    "example": "Beispiel ansehen",
+    "open": "Details"
   }
 }

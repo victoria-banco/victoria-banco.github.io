@@ -5,10 +5,10 @@
     "description": "Multilingual web designer and brand strategist in Rome. Websites, copy and SEO in German, English, Italian, Spanish and Danish.",
     "eyebrow": "Building brands designed to travel further",
     "h1": "Websites, brands and words that work in five languages.",
-    "intro": "I'm Victoria Clara Swart. I design and build websites, shape how brands speak, and teach languages. I work in German, English, Italian, Spanish and Danish, so your site doesn't just get translated. It gets understood.",
-    "heroLead": "Design, brand language and teaching. Five languages.",
+    "intro": "I'm Victoria Clara Swart. I design and build websites, shape how brands speak, and coach languages. I work in German, English, Italian, Spanish and Danish, so your site doesn't just get translated. It gets understood.",
+    "heroLead": "Design, brand language and coaching. Five languages.",
     "introTitle": "Not translated. Understood.",
-    "introText": "I'm Victoria Clara Swart. I design and build websites, shape how brands speak, and teach languages. I work in German, English, Italian, Spanish and Danish, which means the thinking happens in the language itself, rather than being run through a translation of it.",
+    "introText": "I'm Victoria Clara Swart. I design and build websites, shape how brands speak, and coach languages. I work in German, English, Italian, Spanish and Danish, which means the thinking happens in the language itself, rather than being run through a translation of it.",
     "proof": [
       {
         "n": "5",
@@ -16,7 +16,7 @@
       },
       {
         "n": "10",
-        "label": "years teaching, since 2016"
+        "label": "years coaching, since 2016"
       },
       {
         "n": "5",
@@ -147,7 +147,7 @@
   "languages": {
     "title": "Language Lessons, Translation & Event Moderation · Victoria Swart",
     "description": "Lessons in English and German, translation and cultural adaptation, and conference moderation in five languages. Teaching since 2016.",
-    "h1": "Five languages. Ten years of teaching. One person on stage.",
+    "h1": "Five languages. Ten years of coaching. One person on stage.",
     "intro": "Languages are where my work started. I taught my first English class in Colombia in 2016 and have taught ever since. Today I teach, translate and adapt copy between markets, and host international events.",
     "mineTitle": "My languages",
     "mine": [
@@ -221,7 +221,7 @@
     ],
     "reviewsTitle": "Reviews",
     "stageAlt": "Victoria Clara Swart hosting an international business event in Rome",
-    "approachTitle": "How I teach",
+    "approachTitle": "How I coach",
     "approach": "The first lesson is not a lesson. It is a conversation. I want to know what you do, what you are interested in, and how you actually learn, because a person who learns by talking needs a different hour from a person who learns by writing things down. After that I build the course around you. Your work, your hobbies, the situations you will really be in.",
     "specialTitle": "Two things I am asked for most",
     "special": [
@@ -343,7 +343,7 @@
   },
   "about": {
     "title": "About Victoria Clara Swart",
-    "description": "Web designer, brand strategist and language teacher in Rome. Market and Management Anthropology, five languages, websites written and coded by one person.",
+    "description": "Web designer, brand strategist and language coach in Rome. Market and Management Anthropology, five languages, websites written and coded by one person.",
     "h1": "Victoria Clara Swart",
     "lead": "I grew up in East Frisia, in the north of Germany, between a Frisian family on my father's side and a Volga German family on my mother's, so more than one language was always in the room. At sixteen I spent a year in Colombia and taught my first English class there. Since then I have lived and worked in Denmark, Spain and Italy, studied Market and Management Anthropology, and learned to build websites in code.",
     "shapedTitle": "What shaped the work",
@@ -354,7 +354,7 @@
       "Web and brand projects for clients in Italy, Sardinia, Sicily and Germany",
       "Project assistant at Beyond Beta, Erhvervshus, Denmark's national startup accelerator, Copenhagen: Webflow development, internal systems, pitch event moderation",
       "European Solidarity Corps, one year in Naples",
-      "Language teaching since 2016: Colombia, inlingua Roma, aviation English in Fiumicino",
+      "Language coaching since 2016: Colombia, inlingua Roma, aviation English in Fiumicino",
       "Event host and moderator, Rome and Copenhagen",
       "Market and Management Anthropology, University of Southern Denmark"
     ],
@@ -489,5 +489,5 @@
     "title": "Page not found · Victoria Swart",
     "description": "That page does not exist."
   },
-  "jobTitle": "Web designer and brand strategist"
+  "jobTitle": "Web designer, brand strategist and language coach"
 }

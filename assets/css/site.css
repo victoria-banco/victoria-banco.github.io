@@ -508,6 +508,34 @@ main>section.hero .btn-ghost:hover{background:var(--bone)}
   text-transform:uppercase;color:rgba(241,240,236,.6)}
 .stage-quote{margin-top:24px}
 
+/* Project type blocks. Two up, because each summary carries a sentence and a
+   third column would squeeze it. The block opens in place: someone comparing
+   shapes wants them side by side, not one navigation away each. */
+.ptype-grid{display:grid;grid-template-columns:1fr;gap:8px;margin-top:32px}
+@media (min-width:861px){.ptype-grid{grid-template-columns:repeat(2,1fr)}}
+.ptype{background:var(--black-2);border:1px solid var(--rule-dark);
+  border-radius:var(--radius)}
+.ptype summary{list-style:none;cursor:pointer;display:block;
+  padding:clamp(16px,2.4vw,24px);position:relative}
+.ptype summary::-webkit-details-marker{display:none}
+.ptype-shape{display:block;font-size:var(--fs-label);letter-spacing:.14em;
+  text-transform:uppercase;color:var(--accent);margin-bottom:8px}
+.ptype-name{display:block;font-family:var(--serif);font-size:var(--fs-h3);
+  color:var(--bone);margin-bottom:8px}
+.ptype-sum{display:block;font-size:var(--fs-caption);color:rgba(241,240,236,.7);
+  max-width:46ch}
+.ptype-open{display:inline-block;margin-top:16px;font-size:var(--fs-label);
+  letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.ptype-open::after{content:" +"}
+.ptype[open] .ptype-open::after{content:" \2212"}
+.ptype:hover{border-color:rgba(185,168,180,.45)}
+.ptype-body{padding:0 clamp(16px,2.4vw,24px) clamp(16px,2.4vw,24px)}
+.ptype-body h3{font-size:var(--fs-label);letter-spacing:.12em;
+  text-transform:uppercase;color:rgba(241,240,236,.6);margin:16px 0 8px}
+.ptype-body .tick-list{margin:0}
+.ptype-body p{font-size:var(--fs-caption);max-width:46ch}
+.ptype-body .link-more{display:inline-block;padding-block:4px;margin-top:8px}
+
 /* ── Proof strip ─────────────────────────────────────────────── */
 .proof{background:var(--black);color:var(--bone);padding-block:clamp(24px,4vw,40px)}
 .proof ul{list-style:none;margin:0 auto;padding:0;display:flex;justify-content:center;

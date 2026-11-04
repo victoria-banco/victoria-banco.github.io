@@ -5,10 +5,10 @@
     "description": "Diseño web multilingüe y estrategia de marca en Roma. Webs, textos y SEO en alemán, inglés, italiano, español y danés.",
     "eyebrow": "Marcas hechas para cruzar fronteras",
     "h1": "Webs, marcas y palabras que funcionan en cinco idiomas.",
-    "intro": "Soy Victoria Clara Swart. Diseño y programo webs, doy voz a las marcas y enseño idiomas. Trabajo en alemán, inglés, italiano, español y danés. Tu web no se traduce sin más. Se entiende.",
-    "heroLead": "Diseño, lenguaje de marca y enseñanza. Cinco idiomas.",
+    "intro": "Soy Victoria Clara Swart. Diseño y programo webs, doy voz a las marcas y hago coaching de idiomas. Trabajo en alemán, inglés, italiano, español y danés. Tu web no se traduce sin más. Se entiende.",
+    "heroLead": "Diseño, lenguaje de marca y coaching de idiomas. Cinco idiomas.",
     "introTitle": "No traducido. Comprendido.",
-    "introText": "Soy Victoria Clara Swart. Diseño y programo webs, doy voz a las marcas y enseño idiomas. Trabajo en alemán, inglés, italiano, español y danés. Así el pensamiento nace en el idioma mismo, y no en una traducción de él.",
+    "introText": "Soy Victoria Clara Swart. Diseño y programo webs, doy voz a las marcas y hago coaching de idiomas. Trabajo en alemán, inglés, italiano, español y danés. Así el pensamiento nace en el idioma mismo, y no en una traducción de él.",
     "proof": [
       {
         "n": "5",
@@ -16,7 +16,7 @@
       },
       {
         "n": "10",
-        "label": "años enseñando, desde 2016"
+        "label": "años de coaching, desde 2016"
       },
       {
         "n": "5",
@@ -147,7 +147,7 @@
   "languages": {
     "title": "Clases de idiomas y moderación · Victoria Swart",
     "description": "Clases de inglés y alemán, traducción y adaptación cultural, y moderación de conferencias en cinco idiomas. Enseño desde 2016.",
-    "h1": "Cinco idiomas. Diez años enseñando. Una persona en el escenario.",
+    "h1": "Cinco idiomas. Diez años de coaching. Una persona en el escenario.",
     "intro": "Mi trabajo empezó con los idiomas. Di mi primera clase de inglés en Colombia en 2016 y desde entonces no he dejado de enseñar. Hoy enseño, traduzco, adapto textos entre mercados y presento eventos internacionales.",
     "mineTitle": "Mis idiomas",
     "mine": [
@@ -221,7 +221,7 @@
     ],
     "reviewsTitle": "Reseñas",
     "stageAlt": "Victoria Clara Swart presentando un evento internacional de empresa en Roma",
-    "approachTitle": "Cómo enseño",
+    "approachTitle": "Mi método",
     "approach": "La primera clase no es una clase. Es una conversación. Quiero saber a qué te dedicas, qué te interesa y cómo aprendes de verdad, porque quien aprende hablando necesita una hora distinta de quien aprende escribiendo. Después construyo el curso a tu alrededor. Tu trabajo, tus aficiones, las situaciones en las que vas a estar realmente.",
     "specialTitle": "Las dos cosas que más me piden",
     "special": [
@@ -354,7 +354,7 @@
       "Proyectos web y de marca para clientes en Italia, Cerdeña, Sicilia y Alemania",
       "Asistente de proyecto en Beyond Beta, Erhvervshus, la aceleradora nacional danesa de startups en Copenhague: desarrollo en Webflow, sistemas internos, moderación de eventos de pitch",
       "Cuerpo Europeo de Solidaridad, un año en Nápoles",
-      "Enseñanza de idiomas desde 2016: Colombia, inlingua Roma, Aviation English en Fiumicino",
+      "Coaching de idiomas desde 2016: Colombia, inlingua Roma, Aviation English en Fiumicino",
       "Presentadora y moderadora de eventos, Roma y Copenhague",
       "Market and Management Anthropology, Universidad del Sur de Dinamarca"
     ],
@@ -489,5 +489,5 @@
     "title": "Página no encontrada · Victoria Swart",
     "description": "Esta página no existe."
   },
-  "jobTitle": "Diseñadora web y estratega de marca"
+  "jobTitle": "Diseñadora web, estratega de marca y coach de idiomas"
 }

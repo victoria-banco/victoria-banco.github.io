@@ -101,9 +101,17 @@
     "back": "Tutti i servizi linguistici",
     "book": "Prenota una lezione",
     "other": "Altre lezioni",
-    "teachTitle": "Cosa insegno",
+    "teachTitle": "Di cosa mi occupo",
     "teachLead": "Quattro cose, ognuna con la sua pagina.",
     "see": "Leggi di più",
     "extra": "Preparazione agli esami su richiesta. Tutte le lezioni sono online, individuali o in piccoli gruppi."
+  },
+  "ptype": {
+    "typesTitle": "Cosa costruisco, per tipo",
+    "typesIntro": "Sei forme di progetto. Ognuna è un sito vero che puoi guardare, non la descrizione di qualcosa di ipotetico.",
+    "includes": "Cosa comprende",
+    "suits": "A chi serve",
+    "example": "Guarda l'esempio dal vivo",
+    "open": "Dettagli"
   }
 }

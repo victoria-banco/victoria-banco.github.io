@@ -5,10 +5,10 @@
     "description": "Web design multilingue e strategia di marca a Roma. Siti, testi e SEO in tedesco, inglese, italiano, spagnolo e danese.",
     "eyebrow": "Brand costruiti per andare lontano",
     "h1": "Siti, brand e parole che funzionano in cinque lingue.",
-    "intro": "Sono Victoria Clara Swart. Progetto e costruisco siti web, do voce ai brand e insegno lingue. Lavoro in tedesco, inglese, italiano, spagnolo e danese. Il tuo sito non viene semplicemente tradotto. Viene capito.",
-    "heroLead": "Design, linguaggio di marca e insegnamento. Cinque lingue.",
+    "intro": "Sono Victoria Clara Swart. Progetto e costruisco siti web, do voce ai brand e faccio coaching linguistico. Lavoro in tedesco, inglese, italiano, spagnolo e danese. Il tuo sito non viene semplicemente tradotto. Viene capito.",
+    "heroLead": "Design, linguaggio di marca e coaching linguistico. Cinque lingue.",
     "introTitle": "Non tradotto. Compreso.",
-    "introText": "Sono Victoria Clara Swart. Progetto e costruisco siti web, do voce ai brand e insegno lingue. Lavoro in tedesco, inglese, italiano, spagnolo e danese. Il pensiero nasce quindi nella lingua stessa, e non in una sua traduzione.",
+    "introText": "Sono Victoria Clara Swart. Progetto e costruisco siti web, do voce ai brand e faccio coaching linguistico. Lavoro in tedesco, inglese, italiano, spagnolo e danese. Il pensiero nasce quindi nella lingua stessa, e non in una sua traduzione.",
     "proof": [
       {
         "n": "5",
@@ -16,7 +16,7 @@
       },
       {
         "n": "10",
-        "label": "anni di insegnamento, dal 2016"
+        "label": "anni di coaching, dal 2016"
       },
       {
         "n": "5",
@@ -147,7 +147,7 @@
   "languages": {
     "title": "Lezioni di lingua e moderazione · Victoria Swart",
     "description": "Lezioni di inglese e tedesco, traduzione e adattamento culturale, moderazione di conferenze in cinque lingue. Insegno dal 2016.",
-    "h1": "Cinque lingue. Dieci anni di insegnamento. Una persona sul palco.",
+    "h1": "Cinque lingue. Dieci anni di coaching. Una persona sul palco.",
     "intro": "Il mio lavoro è cominciato dalle lingue. Ho tenuto la mia prima lezione di inglese in Colombia nel 2016 e da allora non ho mai smesso. Oggi insegno, traduco, adatto i testi da un mercato all'altro e conduco eventi internazionali.",
     "mineTitle": "Le mie lingue",
     "mine": [
@@ -221,7 +221,7 @@
     ],
     "reviewsTitle": "Recensioni",
     "stageAlt": "Victoria Clara Swart conduce un evento internazionale d'impresa a Roma",
-    "approachTitle": "Come insegno",
+    "approachTitle": "Il mio metodo",
     "approach": "La prima lezione non è una lezione. È una conversazione. Voglio sapere di cosa ti occupi, cosa ti interessa e come impari davvero, perché chi impara parlando ha bisogno di un'ora diversa da chi impara scrivendo. Poi costruisco il corso intorno a te. Il tuo lavoro, i tuoi interessi, le situazioni in cui ti troverai davvero.",
     "specialTitle": "Le due cose che mi chiedono di più",
     "special": [
@@ -343,7 +343,7 @@
   },
   "about": {
     "title": "Chi è Victoria Clara Swart",
-    "description": "Web designer, brand strategist e insegnante di lingue a Roma. Market and Management Anthropology, cinque lingue, siti costruiti da una sola persona.",
+    "description": "Web designer, brand strategist e coach linguistica a Roma. Market and Management Anthropology, cinque lingue, siti costruiti da una sola persona.",
     "h1": "Victoria Clara Swart",
     "lead": "Sono cresciuta in Frisia orientale, nel nord della Germania, tra una famiglia frisone da parte di mio padre e una famiglia tedesca del Volga da parte di mia madre: in casa c'era sempre più di una lingua. A sedici anni ho passato un anno in Colombia e lì ho tenuto la mia prima lezione di inglese. Da allora ho vissuto e lavorato in Danimarca, Spagna e Italia, ho studiato Market and Management Anthropology e ho imparato a costruire siti nel codice.",
     "shapedTitle": "Cosa ha formato questo lavoro",
@@ -354,7 +354,7 @@
       "Progetti web e di marca per clienti in Italia, Sardegna, Sicilia e Germania",
       "Assistente di progetto presso Beyond Beta, Erhvervshus, l'acceleratore nazionale danese per startup a Copenaghen: sviluppo Webflow, sistemi interni, moderazione di eventi di pitch",
       "Corpo europeo di solidarietà, un anno a Napoli",
-      "Insegnamento delle lingue dal 2016: Colombia, inlingua Roma, Aviation English a Fiumicino",
+      "Coaching linguistico dal 2016: Colombia, inlingua Roma, Aviation English a Fiumicino",
       "Conduzione e moderazione di eventi, Roma e Copenaghen",
       "Market and Management Anthropology, Università della Danimarca meridionale"
     ],
@@ -489,5 +489,5 @@
     "title": "Pagina non trovata · Victoria Swart",
     "description": "Questa pagina non esiste."
   },
-  "jobTitle": "Web designer e brand strategist"
+  "jobTitle": "Web designer, brand strategist e coach linguistica"
 }

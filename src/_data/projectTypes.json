@@ -1,0 +1,290 @@
+{
+  "shop": {
+    "case": "eqm",
+    "shape": "Shopify",
+    "en": {
+      "name": "The small shop",
+      "sum": "A shop that sells a considered product without looking like a template.",
+      "has": [
+        "Shopify with a theme built for the product, not bought off a shelf.",
+        "Product pages that answer the questions that stop a purchase.",
+        "Delivery, returns and payment visible before checkout.",
+        "Up to five languages, each written rather than translated."
+      ],
+      "for": "Artisans and makers selling something that needs explaining."
+    },
+    "de": {
+      "name": "Der kleine Shop",
+      "sum": "Ein Shop, der ein durchdachtes Produkt verkauft, ohne nach Vorlage auszusehen.",
+      "has": [
+        "Shopify mit einem Theme für das Produkt, nicht von der Stange.",
+        "Produktseiten, die die Fragen beantworten, die einen Kauf verhindern.",
+        "Versand, Rückgabe und Zahlung sichtbar vor dem Checkout.",
+        "Bis zu fünf Sprachen, jede geschrieben statt übersetzt."
+      ],
+      "for": "Handwerk und Manufakturen, deren Produkt Erklärung braucht."
+    },
+    "it": {
+      "name": "Il piccolo negozio",
+      "sum": "Un negozio che vende un prodotto pensato senza sembrare un template.",
+      "has": [
+        "Shopify con un tema costruito sul prodotto, non comprato già fatto.",
+        "Schede prodotto che rispondono alle domande che bloccano un acquisto.",
+        "Spedizione, resi e pagamento visibili prima del checkout.",
+        "Fino a cinque lingue, ognuna scritta e non tradotta."
+      ],
+      "for": "Artigiani e produttori con un prodotto che va spiegato."
+    },
+    "es": {
+      "name": "La tienda pequeña",
+      "sum": "Una tienda que vende un producto pensado sin parecer una plantilla.",
+      "has": [
+        "Shopify con un tema hecho para el producto, no comprado ya hecho.",
+        "Fichas de producto que responden a lo que frena una compra.",
+        "Envío, devoluciones y pago visibles antes del checkout.",
+        "Hasta cinco idiomas, cada uno escrito y no traducido."
+      ],
+      "for": "Artesanos y fabricantes con un producto que hay que explicar."
+    }
+  },
+  "urgent": {
+    "case": "homeserv",
+    "shape": "One page",
+    "en": {
+      "name": "The one-page trade site",
+      "sum": "For work people search for when something has already gone wrong.",
+      "has": [
+        "Phone number and WhatsApp in the first screen, tappable.",
+        "Service area named by town, because that is what people type.",
+        "What you cover, in the words a panicking customer uses.",
+        "A response time you can actually keep."
+      ],
+      "for": "Plumbers, electricians, heating engineers, emergency callout work."
+    },
+    "de": {
+      "name": "Die Onepage-Handwerkerseite",
+      "sum": "Für Arbeit, nach der gesucht wird, wenn schon etwas schiefgegangen ist.",
+      "has": [
+        "Telefonnummer und WhatsApp im ersten Bildschirm, antippbar.",
+        "Einsatzgebiet mit Ortsnamen, denn das wird eingegeben.",
+        "Was Sie abdecken, in den Worten eines Kunden in Panik.",
+        "Eine Reaktionszeit, die Sie auch einhalten können."
+      ],
+      "for": "Sanitär, Elektrik, Heizung, Notdienst."
+    },
+    "it": {
+      "name": "Il sito artigiano di una pagina",
+      "sum": "Per un lavoro che si cerca quando qualcosa è già andato storto.",
+      "has": [
+        "Telefono e WhatsApp nella prima schermata, toccabili.",
+        "Zona di intervento con i nomi dei comuni, perché è quello che si digita.",
+        "Cosa copri, nelle parole di un cliente nel panico.",
+        "Un tempo di risposta che riesci davvero a rispettare."
+      ],
+      "for": "Idraulici, elettricisti, caldaisti, pronto intervento."
+    },
+    "es": {
+      "name": "La web de una página para oficios",
+      "sum": "Para un trabajo que se busca cuando algo ya ha salido mal.",
+      "has": [
+        "Teléfono y WhatsApp en la primera pantalla, pulsables.",
+        "Zona de actuación con nombres de localidad, que es lo que se teclea.",
+        "Qué cubres, en las palabras de un cliente en apuros.",
+        "Un plazo de respuesta que puedas cumplir."
+      ],
+      "for": "Fontanería, electricidad, calefacción, urgencias."
+    }
+  },
+  "artist": {
+    "case": "graziano",
+    "shape": "One page",
+    "en": {
+      "name": "The artist spotlight",
+      "sum": "One page that lets the work speak and then tells people what to do.",
+      "has": [
+        "The work first, at the size it deserves.",
+        "Repertoire or portfolio, and where you have performed or shown.",
+        "The questions a booker asks before they message you.",
+        "One clear way to get in touch."
+      ],
+      "for": "Musicians, performers and artists who take bookings."
+    },
+    "de": {
+      "name": "Das Künstlerporträt",
+      "sum": "Eine Seite, die das Werk sprechen lässt und dann sagt, was zu tun ist.",
+      "has": [
+        "Das Werk zuerst, in der Größe, die es verdient.",
+        "Repertoire oder Portfolio, und wo Sie aufgetreten oder ausgestellt haben.",
+        "Die Fragen, die ein Veranstalter stellt, bevor er schreibt.",
+        "Ein klarer Weg zur Kontaktaufnahme."
+      ],
+      "for": "Musikerinnen, Musiker und Künstler, die gebucht werden."
+    },
+    "it": {
+      "name": "La vetrina dell'artista",
+      "sum": "Una pagina che lascia parlare il lavoro e poi dice cosa fare.",
+      "has": [
+        "Il lavoro per primo, nella dimensione che merita.",
+        "Repertorio o portfolio, e dove hai suonato o esposto.",
+        "Le domande che fa chi prenota prima di scriverti.",
+        "Un solo modo chiaro per mettersi in contatto."
+      ],
+      "for": "Musicisti, performer e artisti che ricevono ingaggi."
+    },
+    "es": {
+      "name": "El escaparate del artista",
+      "sum": "Una página que deja hablar al trabajo y luego dice qué hacer.",
+      "has": [
+        "El trabajo primero, al tamaño que merece.",
+        "Repertorio o portafolio, y dónde has tocado o expuesto.",
+        "Las preguntas que hace quien contrata antes de escribirte.",
+        "Una sola forma clara de ponerse en contacto."
+      ],
+      "for": "Músicos, intérpretes y artistas que reciben encargos."
+    }
+  },
+  "booking": {
+    "case": "seabreeze",
+    "shape": "Multi-page",
+    "en": {
+      "name": "The booking request site",
+      "sum": "For a place people stay in, where the enquiry is the conversion.",
+      "has": [
+        "Everything a guest asks before booking, answered on the page.",
+        "Photography sequenced the way a guest arrives.",
+        "Total price including fees, and the house rules, before the form.",
+        "An enquiry form short enough to finish on a phone."
+      ],
+      "for": "Holiday rentals, boats, guesthouses and small hospitality."
+    },
+    "de": {
+      "name": "Die Anfrage-Website",
+      "sum": "Für einen Ort zum Übernachten, bei dem die Anfrage die Conversion ist.",
+      "has": [
+        "Alles, was ein Gast vor der Buchung fragt, auf der Seite beantwortet.",
+        "Fotos in der Reihenfolge, in der ein Gast ankommt.",
+        "Gesamtpreis inklusive Gebühren und die Hausregeln, vor dem Formular.",
+        "Ein Anfrageformular, das man auf dem Handy zu Ende bringt."
+      ],
+      "for": "Ferienwohnungen, Boote, Pensionen und kleine Hotellerie."
+    },
+    "it": {
+      "name": "Il sito con richiesta di prenotazione",
+      "sum": "Per un posto dove si dorme, dove la richiesta è la conversione.",
+      "has": [
+        "Tutto quello che un ospite chiede prima di prenotare, già sulla pagina.",
+        "Le foto nell'ordine in cui un ospite arriva.",
+        "Prezzo totale con le spese e le regole della casa, prima del modulo.",
+        "Un modulo abbastanza breve da finirlo dal telefono."
+      ],
+      "for": "Case vacanza, barche, b&b e piccola ospitalità."
+    },
+    "es": {
+      "name": "La web de solicitud de reserva",
+      "sum": "Para un sitio donde se duerme, donde la consulta es la conversión.",
+      "has": [
+        "Todo lo que pregunta un huésped antes de reservar, ya en la página.",
+        "Las fotos en el orden en que llega un huésped.",
+        "Precio total con gastos y las normas de la casa, antes del formulario.",
+        "Un formulario lo bastante corto para acabarlo en el móvil."
+      ],
+      "for": "Casas de vacaciones, barcos, pensiones y pequeña hotelería."
+    }
+  },
+  "luxury": {
+    "case": "ladolcevita",
+    "shape": "Multi-page",
+    "en": {
+      "name": "The multi-page luxury site",
+      "sum": "For a service judged on restraint, where the quiet version wins.",
+      "has": [
+        "A room per service, so nothing competes for the same attention.",
+        "Language that is calm and specific, with the adjectives earned.",
+        "Proof handled discreetly: named clients and press, with permission.",
+        "A short, private enquiry with a response time attached."
+      ],
+      "for": "Concierge, private travel, and services sold on trust."
+    },
+    "de": {
+      "name": "Die mehrseitige Luxus-Website",
+      "sum": "Für einen Dienst, der an Zurückhaltung gemessen wird, wo die leise Variante gewinnt.",
+      "has": [
+        "Ein Raum pro Leistung, damit nichts um dieselbe Aufmerksamkeit kämpft.",
+        "Sprache, die ruhig und konkret ist, mit verdienten Adjektiven.",
+        "Belege diskret behandelt: genannte Kunden und Presse, mit Erlaubnis.",
+        "Eine kurze, private Anfrage mit einer Reaktionszeit."
+      ],
+      "for": "Concierge, private Reisen und Dienste, die auf Vertrauen beruhen."
+    },
+    "it": {
+      "name": "Il sito di lusso multipagina",
+      "sum": "Per un servizio che si giudica sulla misura, dove vince la versione sobria.",
+      "has": [
+        "Una stanza per servizio, così niente compete per la stessa attenzione.",
+        "Una lingua calma e precisa, con gli aggettivi meritati.",
+        "Le prove trattate con discrezione: clienti e stampa, con permesso.",
+        "Una richiesta breve e riservata, con un tempo di risposta."
+      ],
+      "for": "Concierge, viaggi privati e servizi che si vendono sulla fiducia."
+    },
+    "es": {
+      "name": "La web de lujo multipágina",
+      "sum": "Para un servicio que se juzga por la contención, donde gana la versión sobria.",
+      "has": [
+        "Una sala por servicio, para que nada compita por la misma atención.",
+        "Un lenguaje tranquilo y concreto, con los adjetivos ganados.",
+        "Las pruebas con discreción: clientes y prensa, con permiso.",
+        "Una consulta breve y privada, con un plazo de respuesta."
+      ],
+      "for": "Concierge, viajes privados y servicios que se venden por confianza."
+    }
+  },
+  "personal": {
+    "case": "thissite",
+    "shape": "Multi-page",
+    "en": {
+      "name": "The multilingual personal site",
+      "sum": "For one person whose work has to read the same in every market.",
+      "has": [
+        "Up to five languages, each written rather than run through a tool.",
+        "Correct hreflang, so each version is found by the right people.",
+        "No cookies, no analytics and nothing loaded from a third party.",
+        "Everything in your name: domain, hosting, accounts."
+      ],
+      "for": "Consultants, freelancers and professionals working across borders."
+    },
+    "de": {
+      "name": "Die mehrsprachige Personenwebsite",
+      "sum": "Für eine Person, deren Arbeit in jedem Markt gleich klingen muss.",
+      "has": [
+        "Bis zu fünf Sprachen, jede geschrieben statt durch ein Tool gejagt.",
+        "Korrektes hreflang, damit jede Fassung die richtigen Leute findet.",
+        "Keine Cookies, keine Analytics, nichts von Dritten geladen.",
+        "Alles auf Ihren Namen: Domain, Hosting, Konten."
+      ],
+      "for": "Beratende, Freiberufliche und Fachleute mit Arbeit über Grenzen hinweg."
+    },
+    "it": {
+      "name": "Il sito personale multilingue",
+      "sum": "Per una persona il cui lavoro deve leggersi uguale in ogni mercato.",
+      "has": [
+        "Fino a cinque lingue, ognuna scritta e non passata in un programma.",
+        "Hreflang corretti, così ogni versione trova le persone giuste.",
+        "Niente cookie, niente analytics, niente caricato da terzi.",
+        "Tutto a tuo nome: dominio, hosting, account."
+      ],
+      "for": "Consulenti, liberi professionisti e chi lavora oltre confine."
+    },
+    "es": {
+      "name": "La web personal multilingüe",
+      "sum": "Para una persona cuyo trabajo debe leerse igual en cada mercado.",
+      "has": [
+        "Hasta cinco idiomas, cada uno escrito y no pasado por una herramienta.",
+        "Hreflang correctos, para que cada versión encuentre a quien debe.",
+        "Sin cookies, sin analítica y sin nada cargado de terceros.",
+        "Todo a tu nombre: dominio, alojamiento, cuentas."
+      ],
+      "for": "Consultores, autónomos y profesionales que trabajan fuera de su país."
+    }
+  }
+}

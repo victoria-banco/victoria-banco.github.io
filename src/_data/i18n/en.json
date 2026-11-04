@@ -101,9 +101,17 @@
     "back": "All language work",
     "book": "Book a lesson",
     "other": "Other lessons",
-    "teachTitle": "What I teach",
+    "teachTitle": "What I coach",
     "teachLead": "Four things, each with its own page.",
     "see": "Read more",
     "extra": "Exam preparation on request. All lessons are online, one to one or in small groups."
+  },
+  "ptype": {
+    "typesTitle": "What I build, by type",
+    "typesIntro": "Six shapes of project. Each one is a real site you can look at, not a description of something hypothetical.",
+    "includes": "What it includes",
+    "suits": "Who it suits",
+    "example": "See the live example",
+    "open": "Details"
   }
 }
