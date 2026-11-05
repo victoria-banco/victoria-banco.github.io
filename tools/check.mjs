@@ -6,6 +6,17 @@ const files = walk('_site');
 const routes = JSON.parse(readFileSync('src/_data/routes.json', 'utf8'));
 const valid = new Set(Object.values(routes).flatMap(r => Object.values(r)));
 let problems = [];
+// Eleventy 3.0 loads src/_data through the ESM loader even though this project
+// is CommonJS, so a .js or .cjs data file written with module.exports reaches
+// templates as the module namespace object rather than the export. It does not
+// error, it just renders empty or as [object Object], which has cost three
+// bugs: an empty pagination alias, a blank Built with field and an
+// [object Object] in the sitemap. Data files must be .json or .mjs.
+for (const f of readdirSync('src/_data')) {
+  if (/\.(js|cjs)$/.test(f)) {
+    problems.push(`src/_data/${f} must be .mjs or .json; a .js data file silently resolves to nothing`);
+  }
+}
 // The sitemap is not HTML so the per-page loop below never sees it, which is
 // how <lastmod>[object Object] got through once. Check it on its own.
 try {

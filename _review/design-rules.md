@@ -116,3 +116,30 @@ needed, but they are terminal storage and belong in the notice.
 controller you most likely need a signed data processing agreement with them
 covering the EU to US transfer. I could not find one published. This is the
 open item on the page.
+
+## The data file bug, found and fixed 5 November
+
+**Symptom.** Three separate failures over two days, none of which errored:
+a pagination alias that resolved to nothing, so sixteen pages tried to write
+to the same permalink; an empty "Built with" field on every case study; and
+`<lastmod>[object Object]` in the sitemap.
+
+**Cause.** Eleventy 3.0 loads everything in `src/_data` through the ESM
+loader, even though this project is CommonJS. A `.js` or `.cjs` file written
+with `module.exports` therefore arrives in templates as the module namespace
+object, `{ default: ..., "module.exports": ... }`, rather than as the export
+itself. A function export is never called and comes through as `{}`. Nothing
+throws. The template simply renders empty, or prints `[object Object]`.
+
+Proved by loading all three export shapes and dumping what the template
+actually received, rather than reasoning about it.
+
+**Fix.** Data files in this project are `.json` or `.mjs` with
+`export default`. Both plain values and function exports resolve correctly
+from `.mjs`, and functions are called. `.cjs` does not work either; only
+`.mjs` does. `src/_data/buildDate.mjs` is the live example, and carries the
+explanation at the top of the file.
+
+**Guard.** `tools/check.mjs` now fails if any `.js` or `.cjs` file appears in
+`src/_data`. Verified by planting one and watching the check fail, then
+removing it.
