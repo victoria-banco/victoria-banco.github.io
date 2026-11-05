@@ -6,6 +6,13 @@ const files = walk('_site');
 const routes = JSON.parse(readFileSync('src/_data/routes.json', 'utf8'));
 const valid = new Set(Object.values(routes).flatMap(r => Object.values(r)));
 let problems = [];
+// The sitemap is not HTML so the per-page loop below never sees it, which is
+// how <lastmod>[object Object] got through once. Check it on its own.
+try {
+  const sm = readFileSync('_site/sitemap.xml', 'utf8');
+  if (/\[object Object\]/.test(sm)) problems.push('/sitemap.xml [object Object]');
+  if (!/<lastmod>\d{4}-\d{2}-\d{2}<\/lastmod>/.test(sm)) problems.push('/sitemap.xml lastmod missing or malformed');
+} catch { problems.push('/sitemap.xml not built'); }
 // Redirect stubs are not content pages: no h1, no hreflang set, by design.
 const isRedirect = (h) => /http-equiv="refresh"/.test(h) && /name="robots" content="noindex/.test(h);
 // Neither are noindex utility pages, such as the hero diagnostic. They are not

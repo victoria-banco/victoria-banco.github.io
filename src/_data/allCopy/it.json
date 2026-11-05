@@ -407,13 +407,27 @@
       {
         "h": "Cookie",
         "p": [
-          "Questo sito non imposta cookie. Non usa statistiche né tracciamento di alcun tipo."
+          "Questo sito non usa cookie. Non usa analytics né tracciamento di alcun tipo. Due piccoli valori vengono salvati dal tuo browser perché il sito si comporti in modo sensato: uno ricorda che hai chiuso il suggerimento della lingua, l'altro ricorda quale sito ti ha mandato qui, così da poterlo includere se poi mi scrivi. Restano entrambi sul tuo dispositivo, non vengono condivisi con nessuno, e cancellando i dati del browser spariscono."
         ]
       },
       {
         "h": "Cosa raccoglie il modulo di contatto",
         "p": [
           "Quando invii il modulo, il tuo nome, il tuo indirizzo e-mail e il tuo messaggio vengono trattati da <a href=\"https://formspree.io/legal/privacy-policy\" target=\"_blank\" rel=\"noopener noreferrer\">Formspree</a> e inoltrati a me via e-mail. Il modulo registra anche quale versione linguistica del sito hai usato e, se sei arrivata da un link sul sito di un cliente, quale sito ti ha inviata. Questi dati servono solo a risponderti. Non vengono venduti né condivisi per finalità di marketing."
+        ]
+      },
+      {
+        "h": "Dove vengono trattati i tuoi dati",
+        "p": [
+          "Il modulo di contatto passa da Formspree, un'azienda con sede negli Stati Uniti: nome, indirizzo email e messaggio vengono quindi trattati lì e non soltanto all'interno dell'UE.",
+          "Scrivimi se vuoi sapere quali garanzie si applicano a questo trasferimento e ti dirò cosa è in essere nel momento in cui lo chiedi."
+        ]
+      },
+      {
+        "h": "Su cosa si basa il trattamento",
+        "p": [
+          "Conservo quello che mi mandi per un motivo: me lo hai mandato, per avere una risposta o per fare i primi passi verso una collaborazione. Non viene usato per altro, non viene venduto e non viene passato a nessuno.",
+          "Se un giorno acconsenti a ricevere altro da me, quella è una decisione a parte e puoi ritirarla quando vuoi."
         ]
       },
       {
@@ -431,7 +445,8 @@
       {
         "h": "I tuoi diritti secondo il GDPR",
         "p": [
-          "Se ti trovi nell'UE o nello SEE puoi chiedere di consultare, correggere o cancellare i dati personali che mi hai inviato. Scrivi a <a href=\"mailto:victoria.c.swart@icloud.com\">victoria.c.swart@icloud.com</a> e risponderò entro i termini previsti dalla legge."
+          "Se ti trovi nell'UE o nello SEE puoi chiedere di consultare, correggere o cancellare i dati personali che mi hai inviato. Scrivi a <a href=\"mailto:victoria.c.swart@icloud.com\">victoria.c.swart@icloud.com</a> e risponderò entro i termini previsti dalla legge.",
+          "Se ritieni che io abbia trattato male i tuoi dati, puoi presentare reclamo al Garante per la protezione dei dati personali, su <a href=\"https://www.gpdp.it\" target=\"_blank\" rel=\"noopener noreferrer\">gpdp.it</a>."
         ]
       },
       {

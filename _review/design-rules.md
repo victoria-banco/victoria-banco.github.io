@@ -90,3 +90,29 @@ stays in the language it was written in with the translation behind a toggle,
 because the words belong to the person who wrote them. No widget and no Maps
 iframe: both load third-party scripts, would make the privacy page untrue and
 would force a consent banner onto a site that needs none.
+
+## Privacy, 5 November
+
+Three things GDPR Article 13 requires were missing and are now on the page in
+all four languages:
+
+- **Where the data goes.** Formspree is a United States company, so the name,
+  email and message are processed outside the EU. Their own privacy policy
+  confirms US processing but names no specific safeguard: no Data Privacy
+  Framework certification, no standard contractual clauses, and their DPA page
+  returned nothing. The page therefore states the transfer honestly and
+  invites people to ask what safeguards apply, rather than claiming a
+  mechanism that may not exist.
+- **What the processing rests on.** You sent it, to get an answer or to begin
+  working together.
+- **The right to complain** to the Garante.
+
+The cookies section now also discloses the two values the site saves in the
+visitor's own browser: the dismissed language suggestion, and the referring
+site that travels with the form. Both are functional, so no consent banner is
+needed, but they are terminal storage and belong in the notice.
+
+**For the lawyer, and for Victoria to raise with Formspree:** as the
+controller you most likely need a signed data processing agreement with them
+covering the EU to US transfer. I could not find one published. This is the
+open item on the page.

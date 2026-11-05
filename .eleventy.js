@@ -88,6 +88,9 @@ module.exports = function (eleventyConfig) {
     return forLang ? forLang[key] || null : null;
   };
 
+  // Build date, for <lastmod> in the sitemap.
+  eleventyConfig.addGlobalData('buildDate', new Date().toISOString().slice(0, 10));
+
   eleventyConfig.addGlobalData('eleventyComputed', {
     L:    (data) => langOf(data),
     t:    (data) => { const l = langOf(data); return l && data.i18n ? data.i18n[l] : undefined; },

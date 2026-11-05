@@ -407,13 +407,27 @@
       {
         "h": "Cookies",
         "p": [
-          "Diese Website setzt keine Cookies. Sie verwendet keine Statistikdienste und kein Tracking jeglicher Art."
+          "Diese Website setzt keine Cookies. Sie verwendet keine Analyse und kein Tracking jeder Art. Zwei kleine Werte speichert Ihr Browser selbst, damit die Seite sich sinnvoll verhält: einer merkt sich, dass Sie den Sprachhinweis geschlossen haben, der andere, welche Seite Sie hergeschickt hat, damit das mitgeschickt werden kann, wenn Sie mir später schreiben. Beide bleiben auf Ihrem Gerät, werden an niemanden weitergegeben, und das Löschen der Browserdaten entfernt sie."
         ]
       },
       {
         "h": "Was das Kontaktformular erhebt",
         "p": [
           "Wenn Sie das Formular absenden, werden Ihr Name, Ihre E-Mail-Adresse und Ihre Nachricht von <a href=\"https://formspree.io/legal/privacy-policy\" target=\"_blank\" rel=\"noopener noreferrer\">Formspree</a> verarbeitet und mir per E-Mail zugestellt. Das Formular hält außerdem fest, welche Sprachfassung der Website Sie genutzt haben, und, falls Sie über einen Link auf der Website eines Kunden gekommen sind, welche Website Sie geschickt hat. Diese Daten dienen ausschließlich dazu, Ihnen zu antworten. Sie werden nicht verkauft und nicht zu Werbezwecken weitergegeben."
+        ]
+      },
+      {
+        "h": "Wo Ihre Daten verarbeitet werden",
+        "p": [
+          "Das Kontaktformular läuft über Formspree, ein Unternehmen mit Sitz in den Vereinigten Staaten. Name, E-Mail-Adresse und Nachricht werden also dort verarbeitet und nicht ausschließlich innerhalb der EU.",
+          "Schreiben Sie mir, wenn Sie wissen möchten, welche Garantien für diese Übermittlung gelten; ich sage Ihnen, was zum Zeitpunkt Ihrer Anfrage besteht."
+        ]
+      },
+      {
+        "h": "Worauf sich die Verarbeitung stützt",
+        "p": [
+          "Ich habe das, was Sie senden, aus einem Grund: Sie haben es gesendet, um eine Antwort zu bekommen oder um eine Zusammenarbeit anzubahnen. Es wird für nichts anderes verwendet, nicht verkauft und nicht weitergegeben.",
+          "Falls Sie irgendwann zustimmen, noch etwas anderes von mir zu bekommen, ist das eine eigene Entscheidung, die Sie jederzeit zurücknehmen können."
         ]
       },
       {
@@ -431,7 +445,8 @@
       {
         "h": "Ihre Rechte nach der DSGVO",
         "p": [
-          "Wenn Sie sich in der EU oder im EWR befinden, können Sie Auskunft über Ihre übermittelten personenbezogenen Daten verlangen sowie deren Berichtigung oder Löschung. Schreiben Sie an <a href=\"mailto:victoria.c.swart@icloud.com\">victoria.c.swart@icloud.com</a> und ich antworte innerhalb der gesetzlichen Frist."
+          "Wenn Sie sich in der EU oder im EWR befinden, können Sie Auskunft über Ihre übermittelten personenbezogenen Daten verlangen sowie deren Berichtigung oder Löschung. Schreiben Sie an <a href=\"mailto:victoria.c.swart@icloud.com\">victoria.c.swart@icloud.com</a> und ich antworte innerhalb der gesetzlichen Frist.",
+          "Wenn Sie der Ansicht sind, dass ich mit Ihren Daten falsch umgegangen bin, können Sie sich bei der italienischen Datenschutzbehörde beschweren, dem Garante per la protezione dei dati personali, unter <a href=\"https://www.gpdp.it\" target=\"_blank\" rel=\"noopener noreferrer\">gpdp.it</a>."
         ]
       },
       {
