@@ -415,8 +415,14 @@
         "Structured data for a person and her services.",
         "Every case study written from a real project."
       ],
-      "result": "Live, and the starting point for every client site I build.",
-      "starter": "Multilingual professional sites"
+      "result": "Live in four languages, and the starting point for every client site I build. It is also the honest test of the claims on the rest of this site: if I say a multilingual site can be fast and track nobody, this is the one you can check.",
+      "starter": "Multilingual professional sites",
+      "details": [
+        "Each language is written, not translated, and every page carries the full set of hreflang links so the right version is the one that gets found.",
+        "Nothing loads from anyone else. No cookies, no analytics, no embedded fonts or maps. The only request that ever leaves the site is the contact form, and only when you press send.",
+        "The hero shows a still immediately and fetches the film afterwards, in the crop that matches the shape of your screen. Under reduced motion or Low Data it stays a photograph.",
+        "Typefaces are self-hosted and cut down to the characters the site actually uses, which is why the whole page arrives in under a second."
+      ]
     },
     "de": {
       "name": "victoriaswart.com",
@@ -429,8 +435,14 @@
         "Strukturierte Daten für eine Person und ihre Leistungen.",
         "Jede Fallstudie aus einem echten Projekt geschrieben."
       ],
-      "result": "Live, und der Ausgangspunkt für jede Kundenwebsite, die ich baue.",
-      "starter": "Mehrsprachige Websites für Selbstständige"
+      "result": "Live in vier Sprachen und der Ausgangspunkt für jede Kundenseite, die ich baue. Zugleich die ehrliche Probe auf alles, was auf dieser Website behauptet wird: Wenn ich sage, eine mehrsprachige Seite kann schnell sein und niemanden verfolgen, ist das die, die Sie prüfen können.",
+      "starter": "Mehrsprachige Websites für Selbstständige",
+      "details": [
+        "Jede Sprache ist geschrieben, nicht übersetzt, und jede Seite trägt den vollständigen Satz an hreflang-Verweisen, damit die richtige Fassung gefunden wird.",
+        "Es wird nichts von Dritten geladen. Keine Cookies, keine Analyse, keine eingebetteten Schriften oder Karten. Die einzige Anfrage, die die Seite verlässt, ist das Kontaktformular, und das erst beim Absenden.",
+        "Der Kopfbereich zeigt sofort ein Standbild und holt den Film danach, im Zuschnitt, der zur Form Ihres Bildschirms passt. Bei reduzierter Bewegung oder Datensparmodus bleibt es ein Foto.",
+        "Die Schriften liegen auf dem eigenen Server und sind auf die tatsächlich verwendeten Zeichen gekürzt, weshalb die Seite in unter einer Sekunde da ist."
+      ]
     },
     "it": {
       "name": "victoriaswart.com",
@@ -443,8 +455,14 @@
         "Dati strutturati per una persona e i suoi servizi.",
         "Ogni caso studio scritto da un progetto reale."
       ],
-      "result": "Online, e il punto di partenza per ogni sito che costruisco per un cliente.",
-      "starter": "Siti multilingue per professionisti"
+      "result": "Online in quattro lingue, e il punto di partenza per ogni sito che costruisco per un cliente. È anche la prova onesta di quello che dichiaro altrove: se dico che un sito multilingue può essere veloce e non tracciare nessuno, questo è quello che puoi verificare.",
+      "starter": "Siti multilingue per professionisti",
+      "details": [
+        "Ogni lingua è scritta, non tradotta, e ogni pagina porta l'insieme completo dei collegamenti hreflang, così la versione giusta è quella che viene trovata.",
+        "Non si carica niente da terzi. Niente cookie, niente analytics, nessun font o mappa incorporati. L'unica richiesta che esce dal sito è il modulo di contatto, e solo quando premi invia.",
+        "L'apertura mostra subito un fermo immagine e recupera il filmato dopo, nel taglio adatto alla forma del tuo schermo. Con movimento ridotto o risparmio dati resta una fotografia.",
+        "I caratteri sono sul server del sito e ridotti ai segni che il sito usa davvero: per questo la pagina arriva in meno di un secondo."
+      ]
     },
     "es": {
       "name": "victoriaswart.com",
@@ -457,8 +475,14 @@
         "Datos estructurados para una persona y sus servicios.",
         "Cada caso escrito a partir de un proyecto real."
       ],
-      "result": "En línea, y el punto de partida de cada web que construyo para un cliente.",
-      "starter": "Webs multilingües para profesionales"
+      "result": "En línea en cuatro idiomas, y el punto de partida de cada web que hago para un cliente. Es también la prueba honesta de lo que afirmo en el resto del sitio: si digo que una web multilingüe puede ser rápida y no rastrear a nadie, esta es la que puedes comprobar.",
+      "starter": "Webs multilingües para profesionales",
+      "details": [
+        "Cada idioma está escrito, no traducido, y cada página lleva el conjunto completo de enlaces hreflang, para que la versión correcta sea la que se encuentra.",
+        "No se carga nada de terceros. Sin cookies, sin analítica, sin tipografías ni mapas incrustados. La única petición que sale del sitio es el formulario, y solo al pulsar enviar.",
+        "La apertura muestra enseguida un fotograma y trae el vídeo después, en el recorte que encaja con la forma de tu pantalla. Con movimiento reducido o ahorro de datos se queda en fotografía.",
+        "Las tipografías están en el servidor del propio sitio y recortadas a los signos que de verdad usa, por eso la página llega en menos de un segundo."
+      ]
     }
   }
 }
