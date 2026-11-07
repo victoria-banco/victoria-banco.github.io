@@ -112,34 +112,17 @@ visitor's own browser: the dismissed language suggestion, and the referring
 site that travels with the form. Both are functional, so no consent banner is
 needed, but they are terminal storage and belong in the notice.
 
-**For the lawyer, and for Victoria to raise with Formspree:** as the
-controller you most likely need a signed data processing agreement with them
-covering the EU to US transfer. I could not find one published. This is the
-open item on the page.
+**Correction, 7 November.** The 5 November note here said Formspree named no
+safeguard. That was wrong, and the mistake was mine: I had read their privacy
+policy, where it is not stated, and found /legal/dpa returning 404, and
+concluded there was none. Their security page says it plainly:
 
-## The data file bug, found and fixed 5 November
+> We rely on Standard Contractual Clauses (SCCs) as a data processor.
 
-**Symptom.** Three separate failures over two days, none of which errored:
-a pagination alias that resolved to nothing, so sixteen pages tried to write
-to the same permalink; an empty "Built with" field on every case study; and
-`<lastmod>[object Object]` in the sitemap.
+They are also SOC 2 Type II audited. The privacy page now names the safeguard
+rather than inviting people to ask about it.
 
-**Cause.** Eleventy 3.0 loads everything in `src/_data` through the ESM
-loader, even though this project is CommonJS. A `.js` or `.cjs` file written
-with `module.exports` therefore arrives in templates as the module namespace
-object, `{ default: ..., "module.exports": ... }`, rather than as the export
-itself. A function export is never called and comes through as `{}`. Nothing
-throws. The template simply renders empty, or prints `[object Object]`.
-
-Proved by loading all three export shapes and dumping what the template
-actually received, rather than reasoning about it.
-
-**Fix.** Data files in this project are `.json` or `.mjs` with
-`export default`. Both plain values and function exports resolve correctly
-from `.mjs`, and functions are called. `.cjs` does not work either; only
-`.mjs` does. `src/_data/buildDate.mjs` is the live example, and carries the
-explanation at the top of the file.
-
-**Guard.** `tools/check.mjs` now fails if any `.js` or `.cjs` file appears in
-`src/_data`. Verified by planting one and watching the check fail, then
-removing it.
+**Still worth doing, but no longer urgent:** ask Formspree for a countersigned
+DPA for the file. Relying on their published statement is reasonable; having
+the paperwork is better. There is no DPA published at a public URL, so it has
+to be requested from support.

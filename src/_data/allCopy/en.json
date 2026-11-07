@@ -420,7 +420,7 @@
         "h": "Where your data is processed",
         "p": [
           "The contact form is handled by Formspree, a company based in the United States, so the name, email address and message you send are processed there and not only inside the EU.",
-          "Write to me if you would like to know what safeguards apply to that transfer, and I will tell you what is in place at the time you ask."
+          "Formspree acts as a data processor and states that it relies on the European Commission's Standard Contractual Clauses for that transfer. Their <a href=\"https://formspree.io/security\" target=\"_blank\" rel=\"noopener noreferrer\">security page</a> and <a href=\"https://formspree.io/legal/privacy-policy\" target=\"_blank\" rel=\"noopener noreferrer\">privacy policy</a> set out their side of it. Ask me if you would like to know more."
         ]
       },
       {
