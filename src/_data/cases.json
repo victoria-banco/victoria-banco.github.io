@@ -421,7 +421,7 @@
         "Each language is written, not translated, and every page carries the full set of hreflang links so the right version is the one that gets found.",
         "Nothing loads from anyone else. No cookies, no analytics, no embedded fonts or maps. The only request that ever leaves the site is the contact form, and only when you press send.",
         "The hero shows a still immediately and fetches the film afterwards, in the crop that matches the shape of your screen. Under reduced motion or Low Data it stays a photograph.",
-        "Typefaces are self-hosted and cut down to the characters the site actually uses, which is why the whole page arrives in under a second."
+        "Typefaces are self-hosted and cut down to the characters the site actually uses, so the words are on screen without waiting for a font server in another country."
       ]
     },
     "de": {
@@ -441,7 +441,7 @@
         "Jede Sprache ist geschrieben, nicht übersetzt, und jede Seite trägt den vollständigen Satz an hreflang-Verweisen, damit die richtige Fassung gefunden wird.",
         "Es wird nichts von Dritten geladen. Keine Cookies, keine Analyse, keine eingebetteten Schriften oder Karten. Die einzige Anfrage, die die Seite verlässt, ist das Kontaktformular, und das erst beim Absenden.",
         "Der Kopfbereich zeigt sofort ein Standbild und holt den Film danach, im Zuschnitt, der zur Form Ihres Bildschirms passt. Bei reduzierter Bewegung oder Datensparmodus bleibt es ein Foto.",
-        "Die Schriften liegen auf dem eigenen Server und sind auf die tatsächlich verwendeten Zeichen gekürzt, weshalb die Seite in unter einer Sekunde da ist."
+        "Die Schriften liegen auf dem eigenen Server und sind auf die tatsächlich verwendeten Zeichen gekürzt, damit der Text da ist, ohne auf einen Schriftserver in einem anderen Land zu warten."
       ]
     },
     "it": {
@@ -461,7 +461,7 @@
         "Ogni lingua è scritta, non tradotta, e ogni pagina porta l'insieme completo dei collegamenti hreflang, così la versione giusta è quella che viene trovata.",
         "Non si carica niente da terzi. Niente cookie, niente analytics, nessun font o mappa incorporati. L'unica richiesta che esce dal sito è il modulo di contatto, e solo quando premi invia.",
         "L'apertura mostra subito un fermo immagine e recupera il filmato dopo, nel taglio adatto alla forma del tuo schermo. Con movimento ridotto o risparmio dati resta una fotografia.",
-        "I caratteri sono sul server del sito e ridotti ai segni che il sito usa davvero: per questo la pagina arriva in meno di un secondo."
+        "I caratteri sono sul server del sito e ridotti ai segni che il sito usa davvero, così le parole sono sullo schermo senza aspettare un server di font in un altro paese."
       ]
     },
     "es": {
@@ -481,7 +481,7 @@
         "Cada idioma está escrito, no traducido, y cada página lleva el conjunto completo de enlaces hreflang, para que la versión correcta sea la que se encuentra.",
         "No se carga nada de terceros. Sin cookies, sin analítica, sin tipografías ni mapas incrustados. La única petición que sale del sitio es el formulario, y solo al pulsar enviar.",
         "La apertura muestra enseguida un fotograma y trae el vídeo después, en el recorte que encaja con la forma de tu pantalla. Con movimiento reducido o ahorro de datos se queda en fotografía.",
-        "Las tipografías están en el servidor del propio sitio y recortadas a los signos que de verdad usa, por eso la página llega en menos de un segundo."
+        "Las tipografías están en el servidor del propio sitio y recortadas a los signos que de verdad usa, así las palabras están en pantalla sin esperar a un servidor de fuentes en otro país."
       ]
     }
   }
