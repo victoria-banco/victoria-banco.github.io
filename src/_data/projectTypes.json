@@ -248,7 +248,7 @@
       "has": [
         "Up to five languages, each written rather than run through a tool.",
         "Correct hreflang, so each version is found by the right people.",
-        "No cookies, no analytics and nothing loaded from a third party.",
+        "No cookies and no consent banner, and if you want visitor numbers, analytics that needs neither.",
         "Everything in your name: domain, hosting, accounts."
       ],
       "for": "Consultants, freelancers and professionals working across borders."
@@ -259,7 +259,7 @@
       "has": [
         "Bis zu fünf Sprachen, jede geschrieben statt durch ein Tool gejagt.",
         "Korrektes hreflang, damit jede Fassung die richtigen Leute findet.",
-        "Keine Cookies, keine Analytics, nichts von Dritten geladen.",
+        "Keine Cookies und kein Einwilligungsbanner, und wenn Sie Besucherzahlen möchten, eine Statistik, die beides nicht braucht.",
         "Alles auf Ihren Namen: Domain, Hosting, Konten."
       ],
       "for": "Beratende, Freiberufliche und Fachleute mit Arbeit über Grenzen hinweg."
@@ -270,7 +270,7 @@
       "has": [
         "Fino a cinque lingue, ognuna scritta e non passata in un programma.",
         "Hreflang corretti, così ogni versione trova le persone giuste.",
-        "Niente cookie, niente analytics, niente caricato da terzi.",
+        "Nessun cookie e nessun banner di consenso, e se vuoi i numeri delle visite, statistiche che non richiedono né l'uno né l'altro.",
         "Tutto a tuo nome: dominio, hosting, account."
       ],
       "for": "Consulenti, liberi professionisti e chi lavora oltre confine."
@@ -281,7 +281,7 @@
       "has": [
         "Hasta cinco idiomas, cada uno escrito y no pasado por una herramienta.",
         "Hreflang correctos, para que cada versión encuentre a quien debe.",
-        "Sin cookies, sin analítica y sin nada cargado de terceros.",
+        "Sin cookies y sin banner de consentimiento, y si quieres saber cuántas visitas tienes, estadísticas que no necesitan ninguno de los dos.",
         "Todo a tu nombre: dominio, alojamiento, cuentas."
       ],
       "for": "Consultores, autónomos y profesionales que trabajan fuera de su país."

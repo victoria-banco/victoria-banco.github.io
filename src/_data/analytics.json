@@ -1,0 +1,30 @@
+{
+  "enabled": false,
+  "siteToken": "",
+
+  "name": "Plausible Analytics",
+  "controller": "Plausible Insights OÜ, Tartu, Estonia",
+  "servers": "Hetzner, Falkenstein, Germany",
+  "scriptHost": "plausible.io",
+  "src": "https://plausible.io/js/script.js",
+  "dataPolicy": "https://plausible.io/data-policy",
+  "dpa": "https://plausible.io/dpa",
+
+  "_why": [
+    "One switch. `enabled` gates the script tag, the Content-Security-Policy hosts",
+    "and which variant of every claim about tracking the site prints, in all four",
+    "languages. Nothing says the site counts visitors until the counting is real,",
+    "and nothing claims the site counts nobody once it does.",
+    "",
+    "`enabled` stays false until a real site is created in the Plausible account.",
+    "`siteToken` is the domain Plausible registers the site under, which is the",
+    "value of its script's data-domain attribute, normally victoriaswart.com.",
+    "The build refuses to publish with `enabled` true and `siteToken` empty.",
+    "",
+    "Chosen over Google Analytics because it sets no cookies, so no consent",
+    "banner is needed, and over Cloudflare because the data stays with an EU",
+    "company on EU infrastructure, with no third-country transfer to explain.",
+    "To switch tools, change these fields: the privacy pages and the policy",
+    "follow from them. Facts above are from plausible.io/privacy, read 2026-11-16."
+  ]
+}

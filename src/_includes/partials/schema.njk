@@ -8,7 +8,12 @@
   "url": {{ site.url | dump | safe }},
   "image": {{ ('/assets/victoriahero.jpg' | abs) | dump | safe }},
   "email": {{ site.email | dump | safe }},
-  "address": { "@type": "PostalAddress", "addressLocality": "Rome", "addressCountry": "IT" },
+  {#- Matches the Impressum: a locality that disagrees with the visible page is
+    a name-and-address mismatch, which is one of the things local search
+    cross-checks. Deliberately locality and postcode only. The street line
+    belongs on the Impressum, where the law puts it, not in machine-readable
+    markup that feeds map listings. -#}
+  "address": { "@type": "PostalAddress", "addressLocality": "Fiumicino", "addressRegion": "RM", "postalCode": "00054", "addressCountry": "IT" },
   "knowsLanguage": ["de", "en", "it", "es", "da"],
   "alumniOf": { "@type": "CollegeOrUniversity", "name": "University of Southern Denmark" },
   "sameAs": [
@@ -47,7 +52,7 @@
   "email": {{ site.email | dump | safe }},
   "description": {{ copy.home.description | dump | safe }},
   "priceRange": "\u20ac\u20ac",
-  "address": { "@type": "PostalAddress", "addressLocality": "Rome", "addressCountry": "IT" },
+  "address": { "@type": "PostalAddress", "addressLocality": "Fiumicino", "addressRegion": "RM", "postalCode": "00054", "addressCountry": "IT" },
   "areaServed": { "@type": "Place", "name": "Europe" },
   "availableLanguage": ["de", "en", "it", "es", "da"],
   "founder": { "@type": "Person", "name": "Victoria Clara Swart" },

@@ -42,19 +42,19 @@ layout: layouts/base.njk
 
 <section>
   <h2>{{ t.case.did }}</h2>
-  <ul class="tick-list">{% for d in ct.did %}<li>{{ d }}</li>{% endfor %}</ul>
+  <ul class="tick-list">{% for d in ct.did %}<li>{{ d | claim }}</li>{% endfor %}</ul>
 </section>
 
 {%- if ct.details %}
 <section>
   <h2>{{ t.case.details }}</h2>
-  <ul class="tick-list">{% for d in ct.details %}<li>{{ d }}</li>{% endfor %}</ul>
+  <ul class="tick-list">{% for d in ct.details %}<li>{{ d | claim }}</li>{% endfor %}</ul>
 </section>
 {%- endif %}
 
 <section>
   <h2>{{ t.case.result }}</h2>
-  <p>{{ ct.result }}</p>
+  <p>{{ ct.result | claim }}</p>
   {%- if cs.live and ((not cs.liveFlag) or flags[cs.liveFlag]) %}
   <p><a class="link-more" href="{{ cs.live }}" target="_blank" rel="noopener noreferrer">{{ t.case.visit }} &rarr;</a></p>
   {%- endif %}

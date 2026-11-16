@@ -140,7 +140,7 @@
         "p": "450 € una tantum"
       }
     ],
-    "pricingNote": "Preventivo fisso prima di iniziare. Dal 30 al 50% in anticipo.",
+    "pricingNote": "Preventivo fisso prima di iniziare. Il 50% in anticipo.",
     "cta": "Raccontami del tuo sito",
     "heroAlt": "Siti realizzati da Victoria Clara Swart"
   },
@@ -395,19 +395,35 @@
   },
   "privacy": {
     "title": "Privacy · Victoria Clara Swart",
-    "description": "Come questo sito tratta i tuoi dati. Nessun cookie, nessuna statistica, nessun tracciamento.",
+    "description": {
+      "off": "Come questo sito tratta i tuoi dati. Nessun cookie, nessuna statistica, nessun tracciamento.",
+      "on": "Come questo sito tratta i tuoi dati. Nessun cookie, nessun banner di consenso, niente che ti segua."
+    },
     "h1": "Informativa sulla privacy",
     "sections": [
       {
         "h": "Chi gestisce questo sito",
         "p": [
-          "Victoria Clara Swart, libera professionista, Roma, Italia. P.IVA 18420501001. E-mail: <a href=\"mailto:victoria.c.swart@icloud.com\">victoria.c.swart@icloud.com</a>."
+          "Victoria Clara Swart, libera professionista, Viale delle Tamerici 10, 00054 Fiumicino (RM), Italia. P.IVA 18420501001. E-mail: <a href=\"mailto:victoria.c.swart@icloud.com\">victoria.c.swart@icloud.com</a>."
         ]
       },
       {
         "h": "Cookie",
         "p": [
-          "Questo sito non usa cookie. Non usa analytics né tracciamento di alcun tipo. Due piccoli valori vengono salvati dal tuo browser perché il sito si comporti in modo sensato: uno ricorda che hai chiuso il suggerimento della lingua, l'altro ricorda quale sito ti ha mandato qui, così da poterlo includere se poi mi scrivi. Restano entrambi sul tuo dispositivo, non vengono condivisi con nessuno, e cancellando i dati del browser spariscono."
+          {
+            "off": "Questo sito non usa cookie. Non usa analytics né tracciamento di alcun tipo. Due piccoli valori vengono salvati dal tuo browser perché il sito si comporti in modo sensato: uno ricorda che hai chiuso il suggerimento della lingua, l'altro ricorda quale sito ti ha mandato qui, così da poterlo includere se poi mi scrivi. Restano entrambi sul tuo dispositivo, non vengono condivisi con nessuno, e cancellando i dati del browser spariscono.",
+            "on": "Questo sito non usa cookie, ed è per questo che non ti viene chiesto di accettarne. Due piccoli valori vengono salvati dal tuo browser perché il sito si comporti in modo sensato: uno ricorda che hai chiuso il suggerimento della lingua, l'altro ricorda quale sito ti ha mandato qui, così da poterlo includere se poi mi scrivi. Restano entrambi sul tuo dispositivo, non vengono condivisi con nessuno, e cancellando i dati del browser spariscono."
+          }
+        ]
+      },
+      {
+        "only": "analytics",
+        "h": "Il conteggio delle visite",
+        "p": [
+          "Per sapere quali pagine vengono lette, questo sito usa Plausible Analytics, di Plausible Insights OÜ, Tartu, Estonia. Non usa cookie e non lascia nulla sul tuo dispositivo: per questo non c'è nessun banner che ti chiede il permesso.",
+          "Vengono contate la pagina che hai aperto, il sito che ti ha mandato qui, se c'era, e la dimensione approssimativa dello schermo. Il tuo indirizzo IP serve solo a capire in quale paese ti trovi, e poi viene scartato: non viene conservato, e non viene conservato nulla che possa identificarti o collegare una tua visita a quella successiva.",
+          "Il conteggio avviene su Hetzner, Falkenstein, Germany, e i dati restano nell'UE: non c'è quindi alcun trasferimento verso un paese terzo da spiegare qui. La loro <a href=\"https://plausible.io/data-policy\" target=\"_blank\" rel=\"noopener noreferrer\">politica sui dati</a> indica esattamente cosa viene raccolto, ed è in vigore un <a href=\"https://plausible.io/dpa\" target=\"_blank\" rel=\"noopener noreferrer\">accordo sul trattamento dei dati</a>.",
+          "Base giuridica: il mio legittimo interesse a sapere quali pagine vale la pena tenere. Non serve consenso perché non viene salvato niente sul tuo dispositivo, e puoi bloccarlo con qualsiasi blocco dei contenuti: il sito funzionerà esattamente come prima."
         ]
       },
       {
@@ -458,7 +474,10 @@
       {
         "h": "Ultimo aggiornamento",
         "p": [
-          "Ottobre 2026."
+          {
+            "off": "Ottobre 2026.",
+            "on": "Novembre 2026."
+          }
         ]
       }
     ]
@@ -471,7 +490,7 @@
       {
         "h": "Titolare del sito",
         "p": [
-          "Victoria Clara Swart<br>Libera professionista<br>Roma, Italia"
+          "Victoria Clara Swart<br>Libera professionista<br>Viale delle Tamerici 10<br>00054 Fiumicino (RM), Italia"
         ]
       },
       {

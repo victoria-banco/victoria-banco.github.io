@@ -1,5 +1,14 @@
 const routes = require('./src/_data/routes.json');
 const site   = require('./src/_data/site.json');
+const analytics = require('./src/_data/analytics.json');
+
+// Claims that depend on whether the site counts visitors are written twice,
+// as { off, on }. This returns whichever is currently true. See
+// src/_data/analytics.json for why.
+const pickClaim = (v) =>
+  (v && typeof v === 'object' && !Array.isArray(v) && ('on' in v || 'off' in v))
+    ? (analytics.enabled ? v.on : v.off)
+    : v;
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ 'src/assets': 'assets' });
@@ -39,6 +48,15 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addFilter('json', (v) => JSON.stringify(v, null, 2));
+
+  // Any claim the site makes about counting visitors is written twice, as
+  // { "off": "...", "on": "..." }, and this picks the one that is currently
+  // true. It keeps the promise and the plumbing from drifting apart: turning
+  // analytics on rewrites the sentences that would otherwise become false,
+  // in every language at once, and turning it off puts them back.
+  // A plain string passes through, so only the claims that depend on it
+  // need the two-sided form.
+  eleventyConfig.addFilter('claim', pickClaim);
 
   // Shared across every generated page. `lang` comes from each template's
   // pagination alias, so t and copy resolve to the right language on their own.
@@ -121,7 +139,7 @@ module.exports = function (eleventyConfig) {
       const cs = caseOf(data);
       if (cs) return cs.ct.brief.slice(0, 155);
       const b = copyBlock(data);
-      return b && b.description ? b.description : '';
+      return b && b.description ? pickClaim(b.description) : '';
     },
     schemaJobTitle: (data) => {
       const all = data && data.allCopy;

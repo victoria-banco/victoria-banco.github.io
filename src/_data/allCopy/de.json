@@ -140,7 +140,7 @@
         "p": "450 € einmalig"
       }
     ],
-    "pricingNote": "Festpreis, bevor wir anfangen. 30 bis 50 % im Voraus.",
+    "pricingNote": "Festpreis, bevor wir anfangen. 50 % im Voraus.",
     "cta": "Erzählen Sie mir von Ihrer Website",
     "heroAlt": "Websites von Victoria Clara Swart"
   },
@@ -395,19 +395,35 @@
   },
   "privacy": {
     "title": "Datenschutz · Victoria Clara Swart",
-    "description": "Wie diese Website mit Ihren Daten umgeht. Keine Cookies, keine Statistik, kein Tracking.",
+    "description": {
+      "off": "Wie diese Website mit Ihren Daten umgeht. Keine Cookies, keine Statistik, kein Tracking.",
+      "on": "Wie diese Website mit Ihren Daten umgeht. Keine Cookies, kein Einwilligungsbanner, nichts, was Ihnen folgt."
+    },
     "h1": "Datenschutzerklärung",
     "sections": [
       {
         "h": "Wer diese Website betreibt",
         "p": [
-          "Victoria Clara Swart, selbstständig tätig, Rom, Italien. P.IVA 18420501001. E-Mail: <a href=\"mailto:victoria.c.swart@icloud.com\">victoria.c.swart@icloud.com</a>."
+          "Victoria Clara Swart, selbstständig tätig, Viale delle Tamerici 10, 00054 Fiumicino (RM), Italien. P.IVA 18420501001. E-Mail: <a href=\"mailto:victoria.c.swart@icloud.com\">victoria.c.swart@icloud.com</a>."
         ]
       },
       {
         "h": "Cookies",
         "p": [
-          "Diese Website setzt keine Cookies. Sie verwendet keine Analyse und kein Tracking jeder Art. Zwei kleine Werte speichert Ihr Browser selbst, damit die Seite sich sinnvoll verhält: einer merkt sich, dass Sie den Sprachhinweis geschlossen haben, der andere, welche Seite Sie hergeschickt hat, damit das mitgeschickt werden kann, wenn Sie mir später schreiben. Beide bleiben auf Ihrem Gerät, werden an niemanden weitergegeben, und das Löschen der Browserdaten entfernt sie."
+          {
+            "off": "Diese Website setzt keine Cookies. Sie verwendet keine Analyse und kein Tracking jeder Art. Zwei kleine Werte speichert Ihr Browser selbst, damit die Seite sich sinnvoll verhält: einer merkt sich, dass Sie den Sprachhinweis geschlossen haben, der andere, welche Seite Sie hergeschickt hat, damit das mitgeschickt werden kann, wenn Sie mir später schreiben. Beide bleiben auf Ihrem Gerät, werden an niemanden weitergegeben, und das Löschen der Browserdaten entfernt sie.",
+            "on": "Diese Website setzt keine Cookies. Deshalb werden Sie auch nicht gebeten, welchen zuzustimmen. Zwei kleine Werte speichert Ihr Browser selbst, damit die Seite sich sinnvoll verhält: einer merkt sich, dass Sie den Sprachhinweis geschlossen haben, der andere, welche Seite Sie hergeschickt hat, damit das mitgeschickt werden kann, wenn Sie mir später schreiben. Beide bleiben auf Ihrem Gerät, werden an niemanden weitergegeben, und das Löschen der Browserdaten entfernt sie."
+          }
+        ]
+      },
+      {
+        "only": "analytics",
+        "h": "Besuche zählen",
+        "p": [
+          "Um zu wissen, welche Seiten gelesen werden, nutzt diese Website Plausible Analytics von Plausible Insights OÜ, Tartu, Estonia. Es setzt keine Cookies und legt nichts auf Ihrem Gerät ab, deshalb gibt es kein Banner, das um Ihre Erlaubnis bittet.",
+          "Gezählt werden die geöffnete Seite, die Website, die Sie hierher geschickt hat, falls es eine gab, und die ungefähre Größe Ihres Bildschirms. Ihre IP-Adresse dient allein dazu, Ihr Land zu bestimmen, und wird danach verworfen: Sie wird nicht gespeichert, und auch nichts anderes, womit man Sie herausfinden oder einen Besuch mit dem nächsten verbinden könnte.",
+          "Gezählt wird auf Hetzner, Falkenstein, Germany, und die Daten bleiben in der EU. Eine Übermittlung in ein Drittland ist hier also nicht zu erklären. Die <a href=\"https://plausible.io/data-policy\" target=\"_blank\" rel=\"noopener noreferrer\">Datenrichtlinie</a> nennt genau, was erhoben wird, und ein <a href=\"https://plausible.io/dpa\" target=\"_blank\" rel=\"noopener noreferrer\">Auftragsverarbeitungsvertrag</a> liegt vor.",
+          "Rechtsgrundlage: mein berechtigtes Interesse daran zu wissen, welche Seiten es wert sind zu bleiben. Eine Einwilligung ist nicht erforderlich, weil nichts auf Ihrem Gerät gespeichert wird. Sie können es mit jedem Inhaltsblocker unterbinden, und die Website funktioniert genau wie vorher."
         ]
       },
       {
@@ -458,7 +474,10 @@
       {
         "h": "Stand",
         "p": [
-          "Oktober 2026."
+          {
+            "off": "Oktober 2026.",
+            "on": "November 2026."
+          }
         ]
       }
     ]
@@ -471,7 +490,7 @@
       {
         "h": "Betreiberin der Website",
         "p": [
-          "Victoria Clara Swart<br>Selbstständig tätig (libera professionista)<br>Rom, Italien"
+          "Victoria Clara Swart<br>Selbstständig tätig (libera professionista)<br>Viale delle Tamerici 10<br>00054 Fiumicino (RM), Italien"
         ]
       },
       {

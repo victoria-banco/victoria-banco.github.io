@@ -140,7 +140,7 @@
         "p": "450 € una vez"
       }
     ],
-    "pricingNote": "Presupuesto cerrado antes de empezar. Entre el 30 y el 50 % por adelantado.",
+    "pricingNote": "Presupuesto cerrado antes de empezar. El 50 % por adelantado.",
     "cta": "Cuéntame sobre tu web",
     "heroAlt": "Webs creadas por Victoria Clara Swart"
   },
@@ -395,19 +395,35 @@
   },
   "privacy": {
     "title": "Privacidad · Victoria Clara Swart",
-    "description": "Cómo trata este sitio tus datos. Sin cookies, sin estadísticas, sin rastreo.",
+    "description": {
+      "off": "Cómo trata este sitio tus datos. Sin cookies, sin estadísticas, sin rastreo.",
+      "on": "Cómo trata este sitio tus datos. Sin cookies, sin banner de consentimiento, nada que te siga."
+    },
     "h1": "Política de privacidad",
     "sections": [
       {
         "h": "Quién gestiona este sitio",
         "p": [
-          "Victoria Clara Swart, profesional autónoma, Roma, Italia. P.IVA 18420501001. Correo: <a href=\"mailto:victoria.c.swart@icloud.com\">victoria.c.swart@icloud.com</a>."
+          "Victoria Clara Swart, profesional autónoma, Viale delle Tamerici 10, 00054 Fiumicino (RM), Italia. P.IVA 18420501001. Correo: <a href=\"mailto:victoria.c.swart@icloud.com\">victoria.c.swart@icloud.com</a>."
         ]
       },
       {
         "h": "Cookies",
         "p": [
-          "Este sitio no usa cookies. No usa analítica ni seguimiento de ningún tipo. Tu propio navegador guarda dos pequeños valores para que el sitio se comporte con sentido: uno recuerda que cerraste la sugerencia de idioma y el otro recuerda qué sitio te envió aquí, para poder incluirlo si luego me escribes. Ambos se quedan en tu dispositivo, no se comparten con nadie, y borrar los datos del navegador los elimina."
+          {
+            "off": "Este sitio no usa cookies. No usa analítica ni seguimiento de ningún tipo. Tu propio navegador guarda dos pequeños valores para que el sitio se comporte con sentido: uno recuerda que cerraste la sugerencia de idioma y el otro recuerda qué sitio te envió aquí, para poder incluirlo si luego me escribes. Ambos se quedan en tu dispositivo, no se comparten con nadie, y borrar los datos del navegador los elimina.",
+            "on": "Este sitio no usa cookies, y por eso no se te pide aceptar ninguna. Tu propio navegador guarda dos pequeños valores para que el sitio se comporte con sentido: uno recuerda que cerraste la sugerencia de idioma y el otro recuerda qué sitio te envió aquí, para poder incluirlo si luego me escribes. Ambos se quedan en tu dispositivo, no se comparten con nadie, y borrar los datos del navegador los elimina."
+          }
+        ]
+      },
+      {
+        "only": "analytics",
+        "h": "El recuento de visitas",
+        "p": [
+          "Para saber qué páginas se leen, este sitio usa Plausible Analytics, de Plausible Insights OÜ, Tartu, Estonia. No usa cookies ni deja nada en tu dispositivo, y por eso no hay ningún banner pidiéndote permiso.",
+          "Se cuenta la página que has abierto, el sitio que te ha enviado aquí si lo hubo, y el tamaño aproximado de tu pantalla. Tu dirección IP sirve solo para saber en qué país estás, y luego se descarta: no se guarda, ni se guarda nada que permita identificarte o enlazar una visita tuya con la siguiente.",
+          "El recuento ocurre en Hetzner, Falkenstein, Germany, y los datos permanecen en la UE, así que aquí no hay ninguna transferencia a un tercer país que explicar. Su <a href=\"https://plausible.io/data-policy\" target=\"_blank\" rel=\"noopener noreferrer\">política de datos</a> detalla exactamente qué se recoge, y hay un <a href=\"https://plausible.io/dpa\" target=\"_blank\" rel=\"noopener noreferrer\">acuerdo de tratamiento de datos</a> en vigor.",
+          "Base jurídica: mi interés legítimo en saber qué páginas merece la pena mantener. No hace falta consentimiento porque no se guarda nada en tu dispositivo, y puedes bloquearlo con cualquier bloqueador de contenido: el sitio funcionará igual que antes."
         ]
       },
       {
@@ -458,7 +474,10 @@
       {
         "h": "Última actualización",
         "p": [
-          "Octubre de 2026."
+          {
+            "off": "Octubre de 2026.",
+            "on": "Noviembre de 2026."
+          }
         ]
       }
     ]
@@ -471,7 +490,7 @@
       {
         "h": "Titular del sitio",
         "p": [
-          "Victoria Clara Swart<br>Profesional autónoma (libera professionista)<br>Roma, Italia"
+          "Victoria Clara Swart<br>Profesional autónoma (libera professionista)<br>Viale delle Tamerici 10<br>00054 Fiumicino (RM), Italia"
         ]
       },
       {

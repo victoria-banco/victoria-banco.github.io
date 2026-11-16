@@ -17,6 +17,26 @@ for (const f of readdirSync('src/_data')) {
     problems.push(`src/_data/${f} must be .mjs or .json; a .js data file silently resolves to nothing`);
   }
 }
+// Analytics has to be all-or-nothing: the script, the Content-Security-Policy
+// host and the privacy page that describes it come from one switch, and the
+// site must never claim one state while being in the other. These checks are
+// why that switch is safe to flip.
+const an = JSON.parse(readFileSync('src/_data/analytics.json', 'utf8'));
+if (an.enabled && !an.siteToken) {
+  problems.push('analytics.enabled is true but siteToken is empty: the script would load with no data-domain and count nothing');
+}
+const anHost = String(an.scriptHost || '');
+const privacyPages = files.filter(f => /\/(privacy|datenschutz|privacy-policy|privacidad)\//.test(f.replace(/\\/g, '/')));
+if (privacyPages.length !== 4) {
+  problems.push(`expected 4 privacy pages, found ${privacyPages.length}`);
+}
+for (const f of privacyPages) {
+  const h = readFileSync(f, 'utf8');
+  const names = h.includes(an.name);
+  if (an.enabled && !names) problems.push(`${f} does not name ${an.name} while analytics is on`);
+  if (!an.enabled && names) problems.push(`${f} names ${an.name} while analytics is off`);
+}
+
 // The sitemap is not HTML so the per-page loop below never sees it, which is
 // how <lastmod>[object Object] got through once. Check it on its own.
 try {
@@ -51,6 +71,21 @@ for (const f of files) {
   if (/\[object Object\]/.test(h)) problems.push(`${url} [object Object]`);
   if (/imma__victoria/.test(h)) problems.push(`${url} old instagram`);
   if (/fonts\.googleapis/.test(h)) problems.push(`${url} google fonts`);
+  // A third-party script the policy does not allow is silently blocked, and a
+  // policy that allows a host no longer used is a hole left open. Both sides
+  // are checked against the switch, on every page.
+  const hasTag = anHost ? h.includes(anHost + '/') : false;
+  const cspAllows = anHost ? new RegExp(`script-src[^"]*${anHost.replace(/\./g, '\\.')}`).test(h) : false;
+  // Standalone noindex diagnostics, such as hero-check.html, are copied
+  // verbatim and never pass through the layout, so they carry no policy and
+  // no script by design. Counting them as faults would make the guard cry
+  // wolf, which is how guards get switched off.
+  const usesLayout = /<link rel="canonical"/.test(h);
+  if (usesLayout) {
+    if (an.enabled && !hasTag) problems.push(`${url} missing the ${anHost} script while analytics is on`);
+    if (an.enabled && !cspAllows) problems.push(`${url} CSP would block ${anHost}`);
+  }
+  if (!an.enabled && (hasTag || cspAllows)) problems.push(`${url} references ${anHost} while analytics is off`);
   if (/<title>\s*<\/title>/.test(h)) problems.push(`${url} empty title`);
   for (const m of h.matchAll(/href="(\/[^"#?]*)"/g)) {
     const t = m[1];

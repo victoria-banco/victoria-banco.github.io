@@ -411,15 +411,24 @@
       "brief": "My own site, rebuilt to show what I actually do instead of describing it.",
       "did": [
         "Four languages with full hreflang and a switcher that keeps you on the same page.",
-        "Self-hosted fonts, no cookies, no analytics, no third-party requests.",
+        {
+          "off": "Self-hosted fonts, no cookies, no analytics, no third-party requests.",
+          "on": "Self-hosted fonts, no cookies, no consent banner, and a visitor count that stores nothing on your device."
+        },
         "Structured data for a person and her services.",
         "Every case study written from a real project."
       ],
-      "result": "Live in four languages, and the starting point for every client site I build. It is also the honest test of the claims on the rest of this site: if I say a multilingual site can be fast and track nobody, this is the one you can check.",
+      "result": {
+        "off": "Live in four languages, and the starting point for every client site I build. It is also the honest test of the claims on the rest of this site: if I say a multilingual site can be fast and track nobody, this is the one you can check.",
+        "on": "Live in four languages, and the starting point for every client site I build. It is also the honest test of the claims on the rest of this site: if I say a multilingual site can be fast and need no cookie banner, this is the one you can check."
+      },
       "starter": "Multilingual professional sites",
       "details": [
         "Each language is written, not translated, and every page carries the full set of hreflang links so the right version is the one that gets found.",
-        "Nothing loads from anyone else. No cookies, no analytics, no embedded fonts or maps. The only request that ever leaves the site is the contact form, and only when you press send.",
+        {
+          "off": "Nothing loads from anyone else. No cookies, no analytics, no embedded fonts or maps. The only request that ever leaves the site is the contact form, and only when you press send.",
+          "on": "No cookies, no consent banner, no embedded fonts or maps, and nothing that follows you from here to another website. Two requests leave the page: the contact form, only when you press send, and an anonymous page count held by an Estonian company on German servers, which keeps neither your IP address nor anything that could identify you."
+        },
         "The hero shows a still immediately and fetches the film afterwards, in the crop that matches the shape of your screen. Under reduced motion or Low Data it stays a photograph.",
         "Typefaces are self-hosted and cut down to the characters the site actually uses, so the words are on screen without waiting for a font server in another country."
       ]
@@ -431,15 +440,24 @@
       "brief": "Meine eigene Website, neu gebaut, um zu zeigen, was ich tue, statt es zu beschreiben.",
       "did": [
         "Vier Sprachen mit vollständigem hreflang und einem Umschalter, der Sie auf derselben Seite hält.",
-        "Selbst gehostete Schriften, keine Cookies, keine Statistik, keine Anfragen an Dritte.",
+        {
+          "off": "Selbst gehostete Schriften, keine Cookies, keine Statistik, keine Anfragen an Dritte.",
+          "on": "Selbst gehostete Schriften, keine Cookies, kein Einwilligungsbanner, und eine Besucherzählung, die nichts auf Ihrem Gerät ablegt."
+        },
         "Strukturierte Daten für eine Person und ihre Leistungen.",
         "Jede Fallstudie aus einem echten Projekt geschrieben."
       ],
-      "result": "Live in vier Sprachen und der Ausgangspunkt für jede Kundenseite, die ich baue. Zugleich die ehrliche Probe auf alles, was auf dieser Website behauptet wird: Wenn ich sage, eine mehrsprachige Seite kann schnell sein und niemanden verfolgen, ist das die, die Sie prüfen können.",
+      "result": {
+        "off": "Live in vier Sprachen und der Ausgangspunkt für jede Kundenseite, die ich baue. Zugleich die ehrliche Probe auf alles, was auf dieser Website behauptet wird: Wenn ich sage, eine mehrsprachige Seite kann schnell sein und niemanden verfolgen, ist das die, die Sie prüfen können.",
+        "on": "Live in vier Sprachen und der Ausgangspunkt für jede Kundenseite, die ich baue. Zugleich die ehrliche Probe auf alles, was auf dieser Website behauptet wird: Wenn ich sage, eine mehrsprachige Seite kann schnell sein und ohne Cookie-Banner auskommen, ist das die, die Sie prüfen können."
+      },
       "starter": "Mehrsprachige Websites für Selbstständige",
       "details": [
         "Jede Sprache ist geschrieben, nicht übersetzt, und jede Seite trägt den vollständigen Satz an hreflang-Verweisen, damit die richtige Fassung gefunden wird.",
-        "Es wird nichts von Dritten geladen. Keine Cookies, keine Analyse, keine eingebetteten Schriften oder Karten. Die einzige Anfrage, die die Seite verlässt, ist das Kontaktformular, und das erst beim Absenden.",
+        {
+          "off": "Es wird nichts von Dritten geladen. Keine Cookies, keine Analyse, keine eingebetteten Schriften oder Karten. Die einzige Anfrage, die die Seite verlässt, ist das Kontaktformular, und das erst beim Absenden.",
+          "on": "Keine Cookies, kein Einwilligungsbanner, keine eingebetteten Schriften oder Karten, und nichts, was Ihnen von hier auf eine andere Website folgt. Zwei Anfragen verlassen die Seite: das Kontaktformular, erst beim Absenden, und eine anonyme Seitenzählung bei einem estnischen Unternehmen auf deutschen Servern, die weder Ihre IP-Adresse noch sonst etwas Identifizierendes speichert."
+        },
         "Der Kopfbereich zeigt sofort ein Standbild und holt den Film danach, im Zuschnitt, der zur Form Ihres Bildschirms passt. Bei reduzierter Bewegung oder Datensparmodus bleibt es ein Foto.",
         "Die Schriften liegen auf dem eigenen Server und sind auf die tatsächlich verwendeten Zeichen gekürzt, damit der Text da ist, ohne auf einen Schriftserver in einem anderen Land zu warten."
       ]
@@ -451,15 +469,24 @@
       "brief": "Il mio sito, ricostruito per mostrare quello che faccio invece di descriverlo.",
       "did": [
         "Quattro lingue con hreflang completo e un selettore che ti lascia sulla stessa pagina.",
-        "Caratteri serviti da qui, nessun cookie, nessuna statistica, nessuna richiesta a terzi.",
+        {
+          "off": "Caratteri serviti da qui, nessun cookie, nessuna statistica, nessuna richiesta a terzi.",
+          "on": "Caratteri serviti da qui, nessun cookie, nessun banner di consenso, e un conteggio delle visite che non lascia nulla sul tuo dispositivo."
+        },
         "Dati strutturati per una persona e i suoi servizi.",
         "Ogni caso studio scritto da un progetto reale."
       ],
-      "result": "Online in quattro lingue, e il punto di partenza per ogni sito che costruisco per un cliente. È anche la prova onesta di quello che dichiaro altrove: se dico che un sito multilingue può essere veloce e non tracciare nessuno, questo è quello che puoi verificare.",
+      "result": {
+        "off": "Online in quattro lingue, e il punto di partenza per ogni sito che costruisco per un cliente. È anche la prova onesta di quello che dichiaro altrove: se dico che un sito multilingue può essere veloce e non tracciare nessuno, questo è quello che puoi verificare.",
+        "on": "Online in quattro lingue, e il punto di partenza per ogni sito che costruisco per un cliente. È anche la prova onesta di quello che dichiaro altrove: se dico che un sito multilingue può essere veloce e fare a meno del banner dei cookie, questo è quello che puoi verificare."
+      },
       "starter": "Siti multilingue per professionisti",
       "details": [
         "Ogni lingua è scritta, non tradotta, e ogni pagina porta l'insieme completo dei collegamenti hreflang, così la versione giusta è quella che viene trovata.",
-        "Non si carica niente da terzi. Niente cookie, niente analytics, nessun font o mappa incorporati. L'unica richiesta che esce dal sito è il modulo di contatto, e solo quando premi invia.",
+        {
+          "off": "Non si carica niente da terzi. Niente cookie, niente analytics, nessun font o mappa incorporati. L'unica richiesta che esce dal sito è il modulo di contatto, e solo quando premi invia.",
+          "on": "Niente cookie, nessun banner di consenso, nessun font o mappa incorporati, e niente che ti segua da qui a un altro sito. Dal sito escono due richieste: il modulo di contatto, solo quando premi invia, e un conteggio anonimo delle pagine tenuto da una società estone su server tedeschi, che non conserva né il tuo indirizzo IP né nulla che ti identifichi."
+        },
         "L'apertura mostra subito un fermo immagine e recupera il filmato dopo, nel taglio adatto alla forma del tuo schermo. Con movimento ridotto o risparmio dati resta una fotografia.",
         "I caratteri sono sul server del sito e ridotti ai segni che il sito usa davvero, così le parole sono sullo schermo senza aspettare un server di font in un altro paese."
       ]
@@ -471,15 +498,24 @@
       "brief": "Mi propia web, reconstruida para enseñar lo que hago en lugar de describirlo.",
       "did": [
         "Cuatro idiomas con hreflang completo y un selector que te deja en la misma página.",
-        "Tipografías servidas desde aquí, sin cookies, sin estadísticas, sin peticiones a terceros.",
+        {
+          "off": "Tipografías servidas desde aquí, sin cookies, sin estadísticas, sin peticiones a terceros.",
+          "on": "Tipografías servidas desde aquí, sin cookies, sin banner de consentimiento, y un recuento de visitas que no deja nada en tu dispositivo."
+        },
         "Datos estructurados para una persona y sus servicios.",
         "Cada caso escrito a partir de un proyecto real."
       ],
-      "result": "En línea en cuatro idiomas, y el punto de partida de cada web que hago para un cliente. Es también la prueba honesta de lo que afirmo en el resto del sitio: si digo que una web multilingüe puede ser rápida y no rastrear a nadie, esta es la que puedes comprobar.",
+      "result": {
+        "off": "En línea en cuatro idiomas, y el punto de partida de cada web que hago para un cliente. Es también la prueba honesta de lo que afirmo en el resto del sitio: si digo que una web multilingüe puede ser rápida y no rastrear a nadie, esta es la que puedes comprobar.",
+        "on": "En línea en cuatro idiomas, y el punto de partida de cada web que hago para un cliente. Es también la prueba honesta de lo que afirmo en el resto del sitio: si digo que una web multilingüe puede ser rápida y prescindir del aviso de cookies, esta es la que puedes comprobar."
+      },
       "starter": "Webs multilingües para profesionales",
       "details": [
         "Cada idioma está escrito, no traducido, y cada página lleva el conjunto completo de enlaces hreflang, para que la versión correcta sea la que se encuentra.",
-        "No se carga nada de terceros. Sin cookies, sin analítica, sin tipografías ni mapas incrustados. La única petición que sale del sitio es el formulario, y solo al pulsar enviar.",
+        {
+          "off": "No se carga nada de terceros. Sin cookies, sin analítica, sin tipografías ni mapas incrustados. La única petición que sale del sitio es el formulario, y solo al pulsar enviar.",
+          "on": "Sin cookies, sin banner de consentimiento, sin tipografías ni mapas incrustados, y nada que te siga de aquí a otra web. Del sitio salen dos peticiones: el formulario, solo al pulsar enviar, y un recuento anónimo de páginas que guarda una empresa estonia en servidores alemanes, y que no conserva ni tu IP ni nada que te identifique."
+        },
         "La apertura muestra enseguida un fotograma y trae el vídeo después, en el recorte que encaja con la forma de tu pantalla. Con movimiento reducido o ahorro de datos se queda en fotografía.",
         "Las tipografías están en el servidor del propio sitio y recortadas a los signos que de verdad usa, así las palabras están en pantalla sin esperar a un servidor de fuentes en otro país."
       ]

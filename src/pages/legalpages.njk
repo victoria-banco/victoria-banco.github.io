@@ -6,8 +6,15 @@ layout: layouts/base.njk
 {%- set L = lp.lang %}{% set c = allCopy[L][lp.key] %}
 <section>
   <h1>{{ c.h1 }}</h1>
+  {#- A section marked `only: "analytics"` exists on the page only while the
+      site actually counts visits. The privacy page should never describe
+      something that is not running, nor stay silent about something that is.
+      Paragraphs go through `claim` so a sentence can have an on and an off
+      wording; see src/_data/analytics.json. -#}
   {%- for s in c.sections %}
+  {%- if s.only != "analytics" or analytics.enabled %}
   <h2>{{ s.h }}</h2>
-  {%- for p in s.p %}<p>{{ p | safe }}</p>{% endfor %}
+  {%- for p in s.p %}<p>{{ p | claim | safe }}</p>{% endfor %}
+  {%- endif %}
   {%- endfor %}
 </section>

@@ -140,7 +140,7 @@
         "p": "€450 one-off"
       }
     ],
-    "pricingNote": "Fixed quote before we start. 30 to 50% upfront.",
+    "pricingNote": "Fixed quote before we start. 50% upfront.",
     "cta": "Tell me about your site",
     "heroAlt": "Websites built by Victoria Clara Swart"
   },
@@ -395,19 +395,35 @@
   },
   "privacy": {
     "title": "Privacy Policy · Victoria Clara Swart",
-    "description": "How this site handles your data. No cookies, no analytics, no tracking.",
+    "description": {
+      "off": "How this site handles your data. No cookies, no analytics, no tracking.",
+      "on": "How this site handles your data. No cookies, no consent banner, nothing that follows you."
+    },
     "h1": "Privacy policy",
     "sections": [
       {
         "h": "Who runs this site",
         "p": [
-          "Victoria Clara Swart, independent professional, Rome, Italy. P.IVA 18420501001. Email: <a href=\"mailto:victoria.c.swart@icloud.com\">victoria.c.swart@icloud.com</a>."
+          "Victoria Clara Swart, independent professional, Viale delle Tamerici 10, 00054 Fiumicino (RM), Italy. P.IVA 18420501001. Email: <a href=\"mailto:victoria.c.swart@icloud.com\">victoria.c.swart@icloud.com</a>."
         ]
       },
       {
         "h": "Cookies",
         "p": [
-          "This site sets no cookies. It uses no analytics and no tracking of any kind. Two small values are saved by your own browser so the site behaves sensibly: one remembers that you closed the language suggestion, the other remembers which site sent you here, so it can be included if you later write to me. Both stay on your device, are never shared with anyone, and clearing your browser data removes them."
+          {
+            "off": "This site sets no cookies. It uses no analytics and no tracking of any kind. Two small values are saved by your own browser so the site behaves sensibly: one remembers that you closed the language suggestion, the other remembers which site sent you here, so it can be included if you later write to me. Both stay on your device, are never shared with anyone, and clearing your browser data removes them.",
+            "on": "This site sets no cookies, which is why you are not being asked to agree to any. Two small values are saved by your own browser so the site behaves sensibly: one remembers that you closed the language suggestion, the other remembers which site sent you here, so it can be included if you later write to me. Both stay on your device, are never shared with anyone, and clearing your browser data removes them."
+          }
+        ]
+      },
+      {
+        "only": "analytics",
+        "h": "Counting visits",
+        "p": [
+          "To know which pages are read, this site uses Plausible Analytics, run by Plausible Insights OÜ, Tartu, Estonia. It sets no cookies and puts nothing on your device, which is why there is no banner asking your permission.",
+          "It counts the page you opened, the site that sent you here if any, and the rough size of your screen. Your IP address is used only to work out which country you are in, and is then discarded: it is never stored, and neither is anything else that could pick you out or join one visit of yours to the next.",
+          "The counting happens on Hetzner, Falkenstein, Germany, and the data stays inside the EU, so there is no transfer to a third country to explain here. Their <a href=\"https://plausible.io/data-policy\" target=\"_blank\" rel=\"noopener noreferrer\">data policy</a> sets out exactly what is collected, and a <a href=\"https://plausible.io/dpa\" target=\"_blank\" rel=\"noopener noreferrer\">data processing agreement</a> is in place.",
+          "Legal basis: my legitimate interest in knowing which pages are worth keeping. No consent is needed because nothing is stored on your device, but you can block it with any content blocker and the site will work exactly as before."
         ]
       },
       {
@@ -458,7 +474,10 @@
       {
         "h": "Last updated",
         "p": [
-          "October 2026."
+          {
+            "off": "October 2026.",
+            "on": "November 2026."
+          }
         ]
       }
     ]
@@ -471,7 +490,7 @@
       {
         "h": "Site owner",
         "p": [
-          "Victoria Clara Swart<br>Independent professional (libera professionista)<br>Rome, Italy"
+          "Victoria Clara Swart<br>Independent professional (libera professionista)<br>Viale delle Tamerici 10<br>00054 Fiumicino (RM), Italy"
         ]
       },
       {
